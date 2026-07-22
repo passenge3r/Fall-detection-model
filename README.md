@@ -1,17 +1,11 @@
 # 基于人体姿态的跌倒检测基准与系统原型
 
-本项目比较三条跌倒检测路线，并为后续摄像头系统提供统一的数据、模型、评估和接口基础：
-
-1. RTMPose + ST-GCN++
-2. YOLO-Pose + ST-GCN++
-3. YOLO-Pose + CTR-GCN
-
-当前状态：数据准备、两套姿态缓存、三条正式路线的内部/外部测试、第四条 RTMPose + CTR-GCN 内部实验、错误分析和预录视频滑动窗口原型均已完成。下一阶段是设备接入、多人跟踪和现场数据验证。
+本项目以统一数据、骨架接口、训练划分和评价指标比较跌倒检测路线，并为后续摄像头系统提供算法与软件基础。当前已完成 **7 个姿态/跟踪前端 × 3 个时序分类器 = 21 条路线**的四折 300 轮内部实验，以及入围路线的 MCFD 外部测试、错误分析和预录视频滑动窗口原型。下一阶段是设备接入、多人跟踪修复和现场数据验证。
 
 ## 快速查看结果
 
 - 一页式项目全貌：[`项目概要.md`](项目概要.md)
-- 15 路扩展模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
+- 21 路正交模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)

@@ -6,3 +6,5 @@ lap==0.5.13
 rtmlib==0.0.15
 onnxruntime-gpu==1.27.0
 torch>=2.12,<2.13
+easydict==1.13
+gdown==6.1.0

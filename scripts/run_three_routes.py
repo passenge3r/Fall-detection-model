@@ -22,6 +22,12 @@ ROUTES = [
     ("hourglass", "stgcnpp", "gmdcsa24_hourglass_t64.npz"),
     ("hourglass", "ctrgcn", "gmdcsa24_hourglass_t64.npz"),
     ("hourglass", "posec3d", "gmdcsa24_hourglass_t64.npz"),
+    ("openpose", "stgcnpp", "gmdcsa24_openpose_t64.npz"),
+    ("openpose", "ctrgcn", "gmdcsa24_openpose_t64.npz"),
+    ("openpose", "posec3d", "gmdcsa24_openpose_t64.npz"),
+    ("alphapose", "stgcnpp", "gmdcsa24_alphapose_t64.npz"),
+    ("alphapose", "ctrgcn", "gmdcsa24_alphapose_t64.npz"),
+    ("alphapose", "posec3d", "gmdcsa24_alphapose_t64.npz"),
 ]
 
 
@@ -37,12 +43,19 @@ def main() -> None:
         help="Experiment output directory (default: <project>/results/benchmark)",
     )
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument(
+        "--poses", nargs="+",
+        choices=("rtmpose", "yolo", "yolo_bytetrack", "rtmo", "hourglass", "openpose", "alphapose"),
+        help="Run only the selected pose frontends (default: all configured routes)",
+    )
     args = parser.parse_args()
     trainer = args.project / "scripts" / "train_gcn.py"
     splits = args.project / "data" / "splits" / "gmdcsa24_loso"
     results = args.output_root or args.project / "results" / "benchmark"
 
     for pose, model, tensor_name in ROUTES:
+        if args.poses and pose not in args.poses:
+            continue
         for fold in range(1, 5):
             output = results / f"{pose}_{model}" / f"fold_{fold}"
             if (output / "metrics.json").is_file() and not args.overwrite:

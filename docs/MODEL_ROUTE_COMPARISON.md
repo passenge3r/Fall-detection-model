@@ -1,25 +1,34 @@
-# 跌倒检测模型路线扩展对比（固定 300 轮）
+# 跌倒检测 21 路正交模型对比（固定 300 轮）
 
-更新日期：2026-07-22
+更新日期：2026-07-23
 
 ## 结论
 
-- **当前稳健单路线首选：RTMPose + ST-GCN++**。GMDCSA24 主体隔离四折 Balanced Accuracy（BA）为 **86.83%**，MCFD 未见场景固定阈值外测 BA 为 **63.08%**。它不是单项最高，但内部和跨数据集表现最均衡。
-- **内部集最高：YOLO-Pose + ByteTrack + ST-GCN++**，内部 BA 为 **89.41%**；但 MCFD 外测 BA 仅 **61.75%**，且 GMDCSA24 跌倒片段的跟踪缺失显著更多，存在学习“跟踪丢失即跌倒”捷径的风险，暂不作为最终冠军。
-- **高召回候选：RTMPose + PoseC3D-style**。内部 Recall **89.87%**、F1 **86.59%**，但 MCFD 外测 BA 仅 **59.97%**。
-- **跨数据集单项最高：YOLO-Pose + ST-GCN++**。MCFD 固定阈值 BA **64.01%**，但内部 BA 只有 **77.53%**，稳定性不如 RTMPose + ST-GCN++。
-- RTMO 和 Hourglass52 均未进入前六，最高分别为 **78.15%** 和 **76.89% BA**，因此在内部筛选阶段淘汰，不再执行耗时的 MCFD 全量推理。
+- **GMDCSA24 内部冠军：YOLO-Pose + ByteTrack + ST-GCN++**，主体隔离四折合并 Balanced Accuracy（BA）为 **89.41%**。但它在 MCFD 外测只有 61.75% BA，且跟踪缺失存在类别偏置，不能直接作为稳健系统冠军。
+- **当前稳健单路线首选：RTMPose + ST-GCN++**。内部 BA **86.83%**，MCFD 未见场景固定阈值外测 BA **63.08%**，内部与跨数据集表现最均衡。
+- **新增路线最好：AlphaPose + ST-GCN++**，内部 BA **79.43%**，全体第 7；没有超过原前六。
+- **OpenPose 最好搭配 CTR-GCN**，内部 BA **76.32%**；OpenPose + PoseC3D-style 最低，为 69.36%。
+- 分类头不存在对所有前端都占优的绝对赢家：ST-GCN++ 在 5/7 个前端变体上最好；YOLO-Pose 与 OpenPose 更适合 CTR-GCN；RTMPose 的 PoseC3D-style 接近但仍低于其 ST-GCN++。
+
+## 正交组合范围
+
+本轮统一比较 7 个姿态/跟踪前端与 3 个时序分类器，共 21 条路线：
+
+- 前端：RTMPose、YOLO-Pose、YOLO-Pose + ByteTrack、RTMO、Hourglass52、OpenPose、AlphaPose。
+- 分类器：ST-GCN++、CTR-GCN、PoseC3D-style。
+- ByteTrack 是人物关联器，不是分类器，因此作为 `YOLO-Pose + ByteTrack` 前端变体参与网格，而不是与每个底层姿态热图网络机械串联。
 
 ## 公平实验协议
 
-- 训练/验证/测试：GMDCSA24，4 名受试者严格隔离四折；四折测试合并后覆盖全部 160 个视频且每个视频仅测试一次。
-- 外部测试：MCFD，完全不参与训练；表中外测采用 cam2/4/5/6/7/8 共 415 个片段，固定阈值 0.5。
-- 输入统一为 COCO-17，张量形状 `[N,3,64,17,1]`。
-- 每个组合训练 4 折，每折固定 300 轮、无早停；每轮按验证 BA 保留 `best.pt`，结束后回载最优权重测试。
-- 优化器 AdamW，学习率 `3e-4`，weight decay `1e-3`，dropout `0.5`，batch size 16，AMP。
-- 共完成 **15 条路线 × 4 折 × 300 轮 = 18,000 epochs**。
+- 数据集：GMDCSA24，4 名受试者严格隔离四折；四折测试合并覆盖全部 160 个视频，每个视频仅测试一次。
+- 输入统一为 COCO-17，形状 `[N,3,64,17,1]`；每段均匀采样 64 帧。
+- 每条路线训练 4 折，每折完整 300 轮、无早停；按验证集 BA 保存并回载 `best.pt`。
+- AdamW，学习率 `3e-4`，weight decay `1e-3`，dropout `0.5`，batch size 16，AMP。
+- 总训练量：**21 路 × 4 折 × 300 轮 = 25,200 epochs**，共 84 个最优折模型。
+- OpenPose 使用由 CMU COCO Caffe 权重直接转换的 PyTorch 端口，在共享 YOLO 单人框内以 256×256 输入推理，并将 COCO-18 去除 neck 后映射到 COCO-17。
+- AlphaPose 使用官方 FastPose-ResNet50、COCO 256×192 权重；与 Hourglass/OpenPose 共用同一 YOLO 单人框协议。
 
-## GMDCSA24 内部四折合并结果
+## GMDCSA24 四折合并总排名
 
 | 排名 | 路线 | BA | F1 | Recall | Specificity |
 |---:|---|---:|---:|---:|---:|
@@ -29,59 +38,48 @@
 | 4 | RTMPose + CTR-GCN | 83.15% | 83.23% | 84.81% | 81.48% |
 | 5 | YOLO-Pose + ByteTrack + CTR-GCN | 83.13% | 83.02% | 83.54% | 82.72% |
 | 6 | YOLO-Pose + ByteTrack + PoseC3D-style | 82.56% | 83.13% | 87.34% | 77.78% |
-| 7 | YOLO-Pose + CTR-GCN | 78.79% | 79.27% | 82.28% | 75.31% |
-| 8 | RTMO + ST-GCN++ | 78.15% | 78.26% | 79.75% | 76.54% |
-| 9 | YOLO-Pose + ST-GCN++ | 77.53% | 77.78% | 79.75% | 75.31% |
-| 10 | Hourglass52 + ST-GCN++ | 76.89% | 77.02% | 78.48% | 75.31% |
-| 11 | RTMO + PoseC3D-style | 76.34% | 77.65% | 83.54% | 69.14% |
-| 12 | Hourglass52 + CTR-GCN | 75.72% | 77.19% | 83.54% | 67.90% |
-| 13 | YOLO-Pose + PoseC3D-style | 75.69% | 76.65% | 81.01% | 70.37% |
-| 14 | RTMO + CTR-GCN | 73.13% | 72.96% | 73.42% | 72.84% |
-| 15 | Hourglass52 + PoseC3D-style | 71.99% | 73.99% | 81.01% | 62.96% |
+| 7 | AlphaPose + ST-GCN++ | 79.43% | 80.00% | 83.54% | 75.31% |
+| 8 | YOLO-Pose + CTR-GCN | 78.79% | 79.27% | 82.28% | 75.31% |
+| 9 | RTMO + ST-GCN++ | 78.15% | 78.26% | 79.75% | 76.54% |
+| 10 | YOLO-Pose + ST-GCN++ | 77.53% | 77.78% | 79.75% | 75.31% |
+| 11 | Hourglass52 + ST-GCN++ | 76.89% | 77.02% | 78.48% | 75.31% |
+| 12 | RTMO + PoseC3D-style | 76.34% | 77.65% | 83.54% | 69.14% |
+| 13 | AlphaPose + PoseC3D-style | 76.32% | 77.38% | 82.28% | 70.37% |
+| 14 | OpenPose + CTR-GCN | 76.32% | 77.38% | 82.28% | 70.37% |
+| 15 | Hourglass52 + CTR-GCN | 75.72% | 77.19% | 83.54% | 67.90% |
+| 16 | YOLO-Pose + PoseC3D-style | 75.69% | 76.65% | 81.01% | 70.37% |
+| 17 | AlphaPose + CTR-GCN | 74.44% | 75.45% | 79.75% | 69.14% |
+| 18 | RTMO + CTR-GCN | 73.13% | 72.96% | 73.42% | 72.84% |
+| 19 | OpenPose + ST-GCN++ | 72.53% | 72.84% | 74.68% | 70.37% |
+| 20 | Hourglass52 + PoseC3D-style | 71.99% | 73.99% | 81.01% | 62.96% |
+| 21 | OpenPose + PoseC3D-style | 69.36% | 68.79% | 68.35% | 70.37% |
 
-`PoseC3D-style` 是项目内实现：把归一化骨架渲染为时空热图体，再使用 3D 残差卷积分类。它保留 PoseC3D 的核心表示思想，但不是 MMAction2 官方 SlowOnly-R50 配置，报告中不得写成官方模型复现。
+`PoseC3D-style` 是项目内实现：把归一化骨架渲染为时空热图体，再用 3D 残差卷积分类。它保留 PoseC3D 的核心表示思想，但不是 MMAction2 官方 SlowOnly-R50 配置。
 
-## MCFD 跨数据集固定阈值结果
+## 每个分类头的最佳前端
 
-RTMO 和 Hourglass52 在内部筛选中落后，未进入外测。其余九条路线如下：
+| 分类头 | 最佳前端 | BA |
+|---|---|---:|
+| ST-GCN++ | YOLO-Pose + ByteTrack | **89.41%** |
+| CTR-GCN | RTMPose | **83.15%** |
+| PoseC3D-style | RTMPose | **86.29%** |
 
-| 路线 | 外测 BA | 外测 F1 |
-|---|---:|---:|
-| YOLO-Pose + ST-GCN++ | **64.01%** | **62.28%** |
-| RTMPose + CTR-GCN | 63.48% | 61.38% |
-| RTMPose + ST-GCN++ | 63.08% | 61.65% |
-| YOLO-Pose + ByteTrack + ST-GCN++ | 61.75% | 61.31% |
-| YOLO-Pose + CTR-GCN | 60.28% | 57.29% |
-| YOLO-Pose + ByteTrack + PoseC3D-style | 60.22% | 56.61% |
-| RTMPose + PoseC3D-style | 59.97% | 56.23% |
-| YOLO-Pose + ByteTrack + CTR-GCN | 59.74% | 56.08% |
-| YOLO-Pose + PoseC3D-style | 59.58% | 56.85% |
+## 外部测试与筛选规则
 
-## ByteTrack 诊断
+MCFD 完全不参与训练。此前进入外测的九条路线中，固定阈值 0.5 的最佳 BA 是 YOLO-Pose + ST-GCN++ 的 64.01%，RTMPose + ST-GCN++ 为 63.08%。ByteTrack 内部冠军外测为 61.75%，说明内部最高不等于跨数据集最稳健。
 
-ByteTrack 是人物关联器，不是跌倒分类器。它位于 `YOLO-Pose → ByteTrack → 时序分类器` 中间。GMDCSA24 中普通 YOLO 缓存有 305 个零姿态帧，而 ByteTrack 主轨迹缓存有 1521 个零姿态帧；跌倒片段为 1233 个、ADL 为 288 个。模型很容易把跟踪中断当作类别信号。
+OpenPose 与 AlphaPose 的六条新增路线均未进入内部前六，因此按预先采用的“两阶段筛选”规则暂不进行耗时的 MCFD 全量姿态提取，不能声称它们的跨数据集性能已经测得。
 
-MCFD 的 ByteTrack 主轨迹平均覆盖率只有 67.42%，零姿态帧为 11496/35328（32.54%）。内部高分未能转化为跨数据集优势，因此下一版若继续使用 ByteTrack，应保留多轨迹、加入轨迹插值/重识别，并对“骨架缺失模式”做消融。
+## 工程建议
 
-## 其他候选的实测状态
+1. 默认系统路线继续使用 **RTMPose + ST-GCN++**。
+2. 保留 **YOLO-Pose + ByteTrack + ST-GCN++** 作为内部高分研究分支，但修复跟踪丢失偏置后再考虑上线。
+3. 若需要互补实验，优先比较 RTMPose + ST-GCN++ 与 YOLO-Pose + ST-GCN++ 的概率融合；AlphaPose + ST-GCN++ 可作为第三姿态前端，但当前没有单模型精度优势。
+4. 下一阶段优先采集设备现场数据，并报告事件级误报率、漏报率、报警延迟与跨场景性能，而不是继续扩大旧姿态模型数量。
 
-| 候选 | 定位 | 本机实测状态 | 是否进入精度排名 |
-|---|---|---|---|
-| RTMO | 单阶段多人姿态 | 官方 ONNX 权重已下载，CUDA 冒烟与全量缓存通过，三种分类头已完成 300 轮四折训练 | 是 |
-| ByteTrack | 多目标跟踪 | 已通过 Ultralytics `bytetrack.yaml` 完成 GMDCSA24/MCFD 全量缓存和三种分类头训练 | 是 |
-| PoseC3D | 热图体动作分类 | 项目内 PoseC3D-style 已实现；完成五种姿态前端的内部训练，并纳入九路外测 | 是，但注明 style |
-| OpenPose | 多人姿态 | 官方源码已拉取；本机缺少 CMake 和 MSVC，无法构建 Windows C++/CUDA 工程；许可证仅允许非商业研究 | 否 |
-| AlphaPose | 多人姿态 | 官方源码已拉取；Windows 默认禁用多项 CUDA 扩展，依赖旧 `timm==0.1.20`、额外检测器/姿态权重；许可证仅允许非商业研究 | 否 |
-| Stacked Hourglass | 姿态骨干 | 已建立隔离MMPose环境，官方Hourglass52-COCO完成CUDA全量缓存和三种分类头四折300轮训练；最高BA 76.89% | 是 |
-
-未进入排名不等于精度一定差，而是当前没有在同一 COCO-17、同一帧采样、同一划分协议下得到可复现实测值。若确实要继续三种旧模型，应在独立 Conda/Docker 环境中输出统一 `.npz` 缓存，再复用本项目分类器；不要改动现有可复现环境。
-
-## 最终建议
-
-系统默认使用 **RTMPose + ST-GCN++**，同时保留 **YOLO-Pose + ST-GCN++** 作为跨视角对照。ByteTrack 只用于多人身份维持，不把“跟踪消失”直接作为跌倒证据；PoseC3D-style 作为高召回研究分支。下一轮比继续堆叠旧姿态模型更重要的是：设备现场数据、困难负样本、多人轨迹修复、滑动窗口事件级指标与跨数据集微调。
-
-原始汇总文件：
+原始产物：
 
 - `results/benchmark_e300_full_summary.csv`
+- `results/benchmark_e300_full_summary.json`
 - `results/benchmark_e300_full/learning_curve_comparison.png`
-- `results/mcfd_external_e300_full/summary.csv`
+- `results/benchmark_e300_full/<route>/learning_curves.png`

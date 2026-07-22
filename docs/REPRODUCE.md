@@ -47,6 +47,20 @@ python scripts/make_gmdcsa24_manifest.py `
 
 ## 4. 提取姿态缓存
 
+AlphaPose 与 PyTorch OpenPose 的源码、权重受 `.gitignore` 排除，首次运行先准备：
+
+```powershell
+git clone https://github.com/MVIG-SJTU/AlphaPose.git vendor_sources/AlphaPose
+gdown 1kQhnMRURFiy7NsdS8EFL-8vtqEXOgECn `
+  -O models/alphapose/fast_res50_256x192.pth
+
+git clone https://github.com/Hzzone/pytorch-openpose.git vendor_sources/pytorch-openpose
+curl.exe -L https://huggingface.co/lllyasviel/Annotators/resolve/main/body_pose_model.pth `
+  -o models/openpose_body_pose_model.pth
+```
+
+若直接使用 CMU Caffe 权重，可选择 `--openpose-runtime caffe`，但需要另装仍支持 Caffe 的 OpenCV 4.x；默认 PyTorch 端口可直接使用现有 CUDA 环境。
+
 RTMPose：
 
 ```powershell
@@ -70,6 +84,29 @@ python scripts/extract_pose_cache.py `
   --yolo-conf 0.10 --device cuda --frames 64
 ```
 
+AlphaPose FastPose-ResNet50（需先按官方模型库取得配置、源码和权重）：
+
+```powershell
+python scripts/extract_pose_cache.py `
+  --manifest data/metadata/gmdcsa24.csv `
+  --video-root data/raw/GMDCSA24 `
+  --output-dir data/poses/gmdcsa24_alphapose_t64 `
+  --output-manifest data/metadata/gmdcsa24_alphapose_t64.csv `
+  --backend alphapose --frames 64 --device cuda
+```
+
+PyTorch OpenPose（CMU COCO Caffe 权重的直接转换版本，默认 256×256、batch 16）：
+
+```powershell
+python scripts/extract_pose_cache.py `
+  --manifest data/metadata/gmdcsa24.csv `
+  --video-root data/raw/GMDCSA24 `
+  --output-dir data/poses/gmdcsa24_openpose_t64 `
+  --output-manifest data/metadata/gmdcsa24_openpose_t64.csv `
+  --backend openpose --openpose-input-size 256 `
+  --openpose-batch-size 16 --frames 64 --device cuda
+```
+
 `--overwrite` 会重新推理已存在的缓存，正常续跑不要添加该参数。
 
 ## 5. 构建统一 GCN 张量
@@ -78,6 +115,16 @@ python scripts/extract_pose_cache.py `
 python scripts/build_gcn_tensor.py `
   --manifest data/metadata/gmdcsa24_rtmpose_t64.csv `
   --output data/gcn/gmdcsa24_rtmpose_t64.npz `
+  --project-root .
+
+python scripts/build_gcn_tensor.py `
+  --manifest data/metadata/gmdcsa24_alphapose_t64.csv `
+  --output data/gcn/gmdcsa24_alphapose_t64.npz `
+  --project-root .
+
+python scripts/build_gcn_tensor.py `
+  --manifest data/metadata/gmdcsa24_openpose_t64.csv `
+  --output data/gcn/gmdcsa24_openpose_t64.npz `
   --project-root .
 
 python scripts/build_gcn_tensor.py `
@@ -93,6 +140,17 @@ python scripts/build_gcn_tensor.py `
 ```powershell
 python scripts/run_three_routes.py --project . --epochs 80 --patience 15 --batch-size 16
 python scripts/summarize_benchmark.py --results results/benchmark --output results
+```
+
+21 路固定跑满 300 轮并保存各折验证最优模型：
+
+```powershell
+python scripts/run_three_routes.py --project . --epochs 300 --batch-size 16 `
+  --no-early-stopping --output-root results/benchmark_e300_full
+python scripts/summarize_benchmark.py `
+  --results results/benchmark_e300_full `
+  --output results/benchmark_e300_full_summary.json
+python scripts/plot_learning_curves.py --results results/benchmark_e300_full
 ```
 
 未指定 `--overwrite` 时，已有完整折会跳过。正式产物应包括：

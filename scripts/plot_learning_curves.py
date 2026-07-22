@@ -18,6 +18,8 @@ ROUTES = (
     "yolo_bytetrack_stgcnpp", "yolo_bytetrack_ctrgcn", "yolo_bytetrack_posec3d",
     "rtmo_stgcnpp", "rtmo_ctrgcn", "rtmo_posec3d",
     "hourglass_stgcnpp", "hourglass_ctrgcn", "hourglass_posec3d",
+    "openpose_stgcnpp", "openpose_ctrgcn", "openpose_posec3d",
+    "alphapose_stgcnpp", "alphapose_ctrgcn", "alphapose_posec3d",
 )
 ROUTE_LABELS = {
     "rtmpose_stgcnpp": "RTMPose + ST-GCN++",
@@ -35,6 +37,12 @@ ROUTE_LABELS = {
     "hourglass_stgcnpp": "Hourglass52 + ST-GCN++",
     "hourglass_ctrgcn": "Hourglass52 + CTR-GCN",
     "hourglass_posec3d": "Hourglass52 + PoseC3D",
+    "openpose_stgcnpp": "OpenPose + ST-GCN++",
+    "openpose_ctrgcn": "OpenPose + CTR-GCN",
+    "openpose_posec3d": "OpenPose + PoseC3D",
+    "alphapose_stgcnpp": "AlphaPose + ST-GCN++",
+    "alphapose_ctrgcn": "AlphaPose + CTR-GCN",
+    "alphapose_posec3d": "AlphaPose + PoseC3D",
 }
 
 

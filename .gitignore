@@ -8,6 +8,8 @@ data/gcn/
 __pycache__/
 .venv/
 .venv-mmpose/
+.venv-openpose*/
+.venv-alphapose/
 wheels/
 .ultralytics/
 outputs/
