@@ -6,7 +6,7 @@
 2. YOLO-Pose + ST-GCN++
 3. YOLO-Pose + CTR-GCN
 
-当前状态：数据准备、两套姿态缓存、三路线四折训练、GMDCSA24 内部测试、MCFD 外部测试和错误分析均已完成。下一阶段是预录视频滑动窗口原型和设备到位后的现场数据验证。
+当前状态：数据准备、两套姿态缓存、三路线四折训练、内部/外部测试、错误分析和预录视频滑动窗口原型均已完成。下一阶段是设备接入、多人跟踪和现场数据验证。
 
 ## 快速查看结果
 
@@ -31,6 +31,7 @@ MCFD 是未参与训练的外部数据，性能下降反映跨数据集、跨视
 
 ```text
 fall_benchmark/
+├─ app/                      预录视频推理、状态机和命令行入口
 ├─ configs/                  实验与系统参数
 ├─ data/
 │  ├─ raw/                   原始视频，不提交 Git
@@ -40,6 +41,7 @@ fall_benchmark/
 │  └─ gcn/                   统一的 N,C,T,V,M 图卷积输入
 ├─ models/                   正式 ST-GCN++、CTR-GCN 实现
 ├─ scripts/                  数据准备、训练、评估与可视化入口
+├─ tests/                    决策状态机测试
 ├─ results/
 │  ├─ benchmark/             正式三路线 12 个四折模型和内部结果
 │  ├─ mcfd_external_benchmark/ 正式权重的 MCFD 外部结果
@@ -99,6 +101,17 @@ python scripts/evaluate_mcfd_ensemble.py
 python scripts/analyze_mcfd_errors.py
 python scripts/render_mcfd_error_cases.py
 ```
+
+运行预录视频系统原型：
+
+```powershell
+python -m app.cli `
+  --input "data/raw/GMDCSA24/Subject 1/Fall/01.mp4" `
+  --output-dir outputs/demo `
+  --route yolo_stgcnpp
+```
+
+输出 `annotated.mp4`、`windows.jsonl`、`events.jsonl` 和 `summary.json`。默认使用 64 帧窗口、16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警；姿态有效率低于 50% 时输出 `UNKNOWN`。
 
 更完整的数据准备和复现实验步骤见 [`docs/REPRODUCE.md`](docs/REPRODUCE.md)。
 
