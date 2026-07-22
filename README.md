@@ -11,6 +11,7 @@
 ## 快速查看结果
 
 - 一页式项目全貌：[`项目概要.md`](项目概要.md)
+- 12 路扩展模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)
 - 中文阶段报告：[`results/三路线阶段实验报告.md`](results/三路线阶段实验报告.md)

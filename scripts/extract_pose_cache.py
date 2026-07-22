@@ -84,7 +84,7 @@ class YoloPoseBackend:
 
 
 class RTMPoseBackend:
-    def __init__(self, mode: str, device: str) -> None:
+    def __init__(self, mode: str, device: str, one_stage: bool = False) -> None:
         self._dll_handles = []
         if device.lower().startswith("cuda"):
             import os
@@ -105,6 +105,7 @@ class RTMPoseBackend:
         from rtmlib import Body
 
         self.model = Body(
+            pose="rtmo" if one_stage else None,
             mode=mode,
             backend="onnxruntime",
             device=device,
@@ -117,7 +118,8 @@ class RTMPoseBackend:
                 sessions.append(session)
         providers = [session.get_providers() for session in sessions]
         if providers:
-            print(f"RTMPose execution providers: {providers}", flush=True)
+            name = "RTMO" if one_stage else "RTMPose"
+            print(f"{name} execution providers: {providers}", flush=True)
 
     def __call__(self, image: np.ndarray) -> np.ndarray:
         keypoints, scores = self.model(image)
@@ -161,7 +163,7 @@ def main() -> None:
     parser.add_argument("--video-root", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--output-manifest", type=Path, required=True)
-    parser.add_argument("--backend", choices=("yolo", "rtmpose"), required=True)
+    parser.add_argument("--backend", choices=("yolo", "rtmpose", "rtmo"), required=True)
     parser.add_argument("--frames", type=int, default=64)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--yolo-model", default="yolo26n-pose.pt")
@@ -179,11 +181,12 @@ def main() -> None:
         rows = rows[: args.limit]
     args.output_dir.mkdir(parents=True, exist_ok=True)
     args.output_manifest.parent.mkdir(parents=True, exist_ok=True)
-    backend = (
-        YoloPoseBackend(args.yolo_model, args.device, args.yolo_conf)
-        if args.backend == "yolo"
-        else RTMPoseBackend(args.rtmpose_mode, args.device)
-    )
+    if args.backend == "yolo":
+        backend = YoloPoseBackend(args.yolo_model, args.device, args.yolo_conf)
+    else:
+        backend = RTMPoseBackend(
+            args.rtmpose_mode, args.device, one_stage=args.backend == "rtmo"
+        )
 
     output_rows = []
     for item_number, row in enumerate(rows, start=1):

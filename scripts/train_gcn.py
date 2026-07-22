@@ -159,8 +159,10 @@ def main() -> None:
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--splits", type=Path, required=True)
     parser.add_argument("--fold", type=int, choices=(1, 2, 3, 4), required=True)
-    parser.add_argument("--model", choices=("stgcnpp", "ctrgcn"), required=True)
-    parser.add_argument("--pose", choices=("rtmpose", "yolo"), required=True)
+    parser.add_argument("--model", choices=("stgcnpp", "ctrgcn", "posec3d"), required=True)
+    parser.add_argument(
+        "--pose", choices=("rtmpose", "yolo", "yolo_bytetrack", "rtmo"), required=True
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--epochs", type=int, default=80)
     parser.add_argument("--batch-size", type=int, default=16)

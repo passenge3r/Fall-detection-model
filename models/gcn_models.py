@@ -301,4 +301,8 @@ def build_model(name: str, **kwargs: object) -> nn.Module:
         return STGCNPP(**kwargs)
     if name == "ctrgcn":
         return CTRGCN(**kwargs)
+    if name == "posec3d":
+        from .posec3d import PoseC3D
+
+        return PoseC3D(**kwargs)
     raise ValueError(f"Unknown model: {name}")

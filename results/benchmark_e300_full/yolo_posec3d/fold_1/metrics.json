@@ -1,0 +1,55 @@
+{
+  "route": "yolo+posec3d",
+  "pose": "yolo",
+  "model": "posec3d",
+  "fold": 1,
+  "seed": 2027,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "best_epoch": 26,
+  "epochs_ran": 300,
+  "parameters": 3626146,
+  "latency_ms_batch1": 1.7025589999684598,
+  "samples": {
+    "train": 80,
+    "val": 48,
+    "test": 32
+  },
+  "validation": {
+    "loss": 0.4102305471897125,
+    "accuracy": 0.875,
+    "precision": 0.88,
+    "recall": 0.88,
+    "specificity": 0.8695652173913043,
+    "f1": 0.88,
+    "balanced_accuracy": 0.8747826086956522,
+    "tp": 22,
+    "tn": 20,
+    "fp": 3,
+    "fn": 3
+  },
+  "test": {
+    "loss": 0.457510843873024,
+    "accuracy": 0.875,
+    "precision": 0.8333333333333334,
+    "recall": 0.9375,
+    "specificity": 0.8125,
+    "f1": 0.8823529411764706,
+    "balanced_accuracy": 0.875,
+    "tp": 15,
+    "tn": 13,
+    "fp": 3,
+    "fn": 1
+  },
+  "config": {
+    "epochs": 300,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.001,
+    "patience": 15,
+    "early_stopping": false,
+    "dropout": 0.5,
+    "base_channels": 64,
+    "amp": true
+  }
+}

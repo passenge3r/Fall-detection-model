@@ -18,8 +18,14 @@ from models import build_model  # noqa: E402
 
 ROUTES = (
     ("rtmpose", "stgcnpp"),
+    ("rtmpose", "ctrgcn"),
+    ("rtmpose", "posec3d"),
     ("yolo", "stgcnpp"),
     ("yolo", "ctrgcn"),
+    ("yolo", "posec3d"),
+    ("yolo_bytetrack", "stgcnpp"),
+    ("yolo_bytetrack", "ctrgcn"),
+    ("yolo_bytetrack", "posec3d"),
 )
 
 
@@ -190,6 +196,7 @@ def main() -> None:
     tensors = {
         "rtmpose": PROJECT / "data/gcn/mcfd_rtmpose_t64.npz",
         "yolo": PROJECT / "data/gcn/mcfd_yolo_t64_c010.npz",
+        "yolo_bytetrack": PROJECT / "data/gcn/mcfd_yolo_bytetrack_t64_c010.npz",
     }
     results = []
     for pose, model_name in ROUTES:

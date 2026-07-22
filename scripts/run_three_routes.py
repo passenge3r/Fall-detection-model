@@ -9,8 +9,16 @@ from pathlib import Path
 ROUTES = [
     ("rtmpose", "stgcnpp", "gmdcsa24_rtmpose_t64.npz"),
     ("rtmpose", "ctrgcn", "gmdcsa24_rtmpose_t64.npz"),
+    ("rtmpose", "posec3d", "gmdcsa24_rtmpose_t64.npz"),
     ("yolo", "stgcnpp", "gmdcsa24_yolo_t64_c010.npz"),
     ("yolo", "ctrgcn", "gmdcsa24_yolo_t64_c010.npz"),
+    ("yolo", "posec3d", "gmdcsa24_yolo_t64_c010.npz"),
+    ("yolo_bytetrack", "stgcnpp", "gmdcsa24_yolo_bytetrack_t64_c010.npz"),
+    ("yolo_bytetrack", "ctrgcn", "gmdcsa24_yolo_bytetrack_t64_c010.npz"),
+    ("yolo_bytetrack", "posec3d", "gmdcsa24_yolo_bytetrack_t64_c010.npz"),
+    ("rtmo", "stgcnpp", "gmdcsa24_rtmo_t64.npz"),
+    ("rtmo", "ctrgcn", "gmdcsa24_rtmo_t64.npz"),
+    ("rtmo", "posec3d", "gmdcsa24_rtmo_t64.npz"),
 ]
 
 

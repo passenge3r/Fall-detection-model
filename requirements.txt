@@ -2,6 +2,7 @@
 numpy==2.5.1
 opencv-python==5.0.0.93
 ultralytics==8.4.55
+lap==0.5.13
 rtmlib==0.0.15
 onnxruntime-gpu==1.27.0
 torch>=2.12,<2.13
