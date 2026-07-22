@@ -1,0 +1,39 @@
+{
+  "task": {
+    "name": "binary_fall_risk",
+    "positive_omnifall_labels": [1, 2],
+    "negative_omnifall_labels": [0, 3, 4, 5, 6, 7, 8, 9],
+    "label_names": {
+      "0": "walk",
+      "1": "fall",
+      "2": "fallen",
+      "3": "sit_down",
+      "4": "sitting",
+      "5": "lie_down",
+      "6": "lying",
+      "7": "stand_up",
+      "8": "standing",
+      "9": "other"
+    }
+  },
+  "pose": {
+    "layout": "coco17",
+    "channels": ["x", "y", "confidence"],
+    "extractors": ["yolo_pose", "rtmpose"],
+    "coordinate_normalization": "first_8_frame_center_median_and_sequence_torso_scale"
+  },
+  "temporal": {
+    "window_frames": 64,
+    "offline_sampling": "uniform_over_full_video_or_annotated_segment",
+    "online_stride_frames_planned": 16
+  },
+  "experiments": [
+    "yolo_pose+stgcnpp",
+    "rtmpose+stgcnpp",
+    "yolo_pose+ctrgcn"
+  ],
+  "protocols": {
+    "train_validation": "gmdcsa24_four_fold_subject_independent",
+    "external_test": "mcfd_cross_view"
+  }
+}

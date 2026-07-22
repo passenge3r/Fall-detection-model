@@ -1,0 +1,2 @@
+path,label,start_frame,end_frame,scenario,cam,dataset,source_row,pose_path,backend,frames,zero_pose_frames,mean_confidence
+dataset/dataset/chute01/cam1.avi,0,1052,1082,1,1,mcfd,2,fall_benchmark/data/poses/rtmpose/mcfd_smoke/dataset__dataset__chute01__cam1__f1052_1082.npz,rtmpose,64,0,0.607156

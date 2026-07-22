@@ -1,0 +1,143 @@
+{
+  "videos": 160,
+  "subjects": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "folds": {
+    "1": {
+      "train": {
+        "items": 80,
+        "subjects": [
+          3,
+          4
+        ],
+        "labels": {
+          "0": 42,
+          "1": 38
+        }
+      },
+      "val": {
+        "items": 48,
+        "subjects": [
+          2
+        ],
+        "labels": {
+          "0": 23,
+          "1": 25
+        }
+      },
+      "test": {
+        "items": 32,
+        "subjects": [
+          1
+        ],
+        "labels": {
+          "0": 16,
+          "1": 16
+        }
+      }
+    },
+    "2": {
+      "train": {
+        "items": 69,
+        "subjects": [
+          1,
+          4
+        ],
+        "labels": {
+          "0": 36,
+          "1": 33
+        }
+      },
+      "val": {
+        "items": 43,
+        "subjects": [
+          3
+        ],
+        "labels": {
+          "0": 22,
+          "1": 21
+        }
+      },
+      "test": {
+        "items": 48,
+        "subjects": [
+          2
+        ],
+        "labels": {
+          "0": 23,
+          "1": 25
+        }
+      }
+    },
+    "3": {
+      "train": {
+        "items": 80,
+        "subjects": [
+          1,
+          2
+        ],
+        "labels": {
+          "0": 39,
+          "1": 41
+        }
+      },
+      "val": {
+        "items": 37,
+        "subjects": [
+          4
+        ],
+        "labels": {
+          "0": 20,
+          "1": 17
+        }
+      },
+      "test": {
+        "items": 43,
+        "subjects": [
+          3
+        ],
+        "labels": {
+          "0": 22,
+          "1": 21
+        }
+      }
+    },
+    "4": {
+      "train": {
+        "items": 91,
+        "subjects": [
+          2,
+          3
+        ],
+        "labels": {
+          "0": 45,
+          "1": 46
+        }
+      },
+      "val": {
+        "items": 32,
+        "subjects": [
+          1
+        ],
+        "labels": {
+          "0": 16,
+          "1": 16
+        }
+      },
+      "test": {
+        "items": 37,
+        "subjects": [
+          4
+        ],
+        "labels": {
+          "0": 20,
+          "1": 17
+        }
+      }
+    }
+  }
+}

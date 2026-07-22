@@ -1,0 +1,20 @@
+data/raw/
+data/poses/
+data/gcn/
+*.part
+*.pt
+*.pth
+*.onnx
+__pycache__/
+.venv/
+wheels/
+.ultralytics/
+outputs/
+vendor_sources/
+tmp/
+
+# Local exploratory runs retained for traceability but not published.
+results/gcn_matrix/
+results/mcfd_external/
+results/pilot/
+results/smoke/

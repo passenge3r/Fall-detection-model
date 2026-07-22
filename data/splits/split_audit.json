@@ -1,0 +1,144 @@
+{
+  "up_fall_subject_strict": {
+    "items": {
+      "train": 1764,
+      "val": 140,
+      "test": 522
+    },
+    "groups": {
+      "train": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        17
+      ],
+      "val": [
+        11
+      ],
+      "test": [
+        2,
+        4,
+        15,
+        16
+      ]
+    },
+    "labels": {
+      "train": {
+        "0": 170,
+        "1": 362,
+        "2": 314,
+        "3": 2,
+        "4": 78,
+        "6": 86,
+        "7": 4,
+        "8": 580,
+        "9": 168
+      },
+      "val": {
+        "0": 6,
+        "1": 30,
+        "2": 28,
+        "4": 6,
+        "6": 8,
+        "8": 50,
+        "9": 12
+      },
+      "test": {
+        "0": 26,
+        "1": 114,
+        "2": 114,
+        "3": 6,
+        "4": 30,
+        "5": 6,
+        "6": 24,
+        "8": 154,
+        "9": 48
+      }
+    },
+    "overlaps": {
+      "train_val_path_overlap": 0,
+      "train_val_subject_overlap": [],
+      "train_test_path_overlap": 0,
+      "train_test_subject_overlap": [],
+      "val_test_path_overlap": 0,
+      "val_test_subject_overlap": []
+    }
+  },
+  "mcfd_cross_view": {
+    "items": {
+      "train": 169,
+      "val": 169,
+      "test": 1014
+    },
+    "groups": {
+      "train": [
+        1
+      ],
+      "val": [
+        3
+      ],
+      "test": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "labels": {
+      "train": {
+        "0": 42,
+        "1": 32,
+        "2": 23,
+        "3": 6,
+        "4": 8,
+        "5": 2,
+        "6": 4,
+        "7": 29,
+        "8": 3,
+        "9": 20
+      },
+      "val": {
+        "0": 42,
+        "1": 32,
+        "2": 23,
+        "3": 6,
+        "4": 8,
+        "5": 2,
+        "6": 4,
+        "7": 29,
+        "8": 3,
+        "9": 20
+      },
+      "test": {
+        "0": 252,
+        "1": 192,
+        "2": 138,
+        "3": 36,
+        "4": 48,
+        "5": 12,
+        "6": 24,
+        "7": 174,
+        "8": 18,
+        "9": 120
+      }
+    },
+    "overlaps": {
+      "train_val_path_overlap": 0,
+      "train_val_cam_overlap": [],
+      "train_test_path_overlap": 0,
+      "train_test_cam_overlap": [],
+      "val_test_path_overlap": 0,
+      "val_test_cam_overlap": []
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿case_id,selection,sample,path,start_frame,end_frame,camera,label,RTMPose+ST-GCN++_probability,YOLO-Pose+ST-GCN++_probability,YOLO-Pose+CTR-GCN_probability
+case_01,共同高置信度漏报,dataset/dataset/chute12/cam7.avi#f607-637,dataset/dataset/chute12/cam7.avi,607,637,7,1,0.09780495,0.11545515,0.22093995
+case_02,共同高置信度漏报,dataset/dataset/chute23/cam6.avi#f3634-3664,dataset/dataset/chute23/cam6.avi,3634,3664,6,1,0.07804009,0.15668015,0.21871356
+case_03,共同高置信度误报,dataset/dataset/chute02/cam5.avi#f423-453,dataset/dataset/chute02/cam5.avi,423,453,5,0,0.99790953,0.99828912,0.91379419
+case_04,共同高置信度误报,dataset/dataset/chute09/cam8.avi#f656-686,dataset/dataset/chute09/cam8.avi,656,686,8,0,0.99468382,0.99571991,0.91538110
+case_05,仅YOLO-Pose+ST-GCN++判断正确,dataset/dataset/chute13/cam5.avi#f714-744,dataset/dataset/chute13/cam5.avi,714,744,5,0,0.97870998,0.41197184,0.78428452
+case_06,仅YOLO-Pose+ST-GCN++判断正确,dataset/dataset/chute16/cam5.avi#f392-422,dataset/dataset/chute16/cam5.avi,392,422,5,0,0.99999809,0.41158823,0.61791838

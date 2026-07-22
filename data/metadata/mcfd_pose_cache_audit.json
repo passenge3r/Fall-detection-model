@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "same_row_count": true,
+    "same_order_labels_subjects": true,
+    "same_frame_indices": true
+  },
+  "manifests": {
+    "fall_benchmark\\data\\metadata\\mcfd_rtmpose_t64.csv": {
+      "backend": "rtmpose",
+      "videos": 552,
+      "frames": 35328,
+      "zero_pose_frames": 0,
+      "zero_pose_rate": 0.0,
+      "mean_confidence": 0.5434028369565217,
+      "by_label": {
+        "adl": {
+          "videos": 288,
+          "frames": 18432,
+          "zero_pose_frames": 0,
+          "zero_pose_rate_ppm": 0
+        },
+        "fall": {
+          "videos": 264,
+          "frames": 16896,
+          "zero_pose_frames": 0,
+          "zero_pose_rate_ppm": 0
+        }
+      }
+    },
+    "fall_benchmark\\data\\metadata\\mcfd_yolo_t64_c010.csv": {
+      "backend": "yolo",
+      "videos": 552,
+      "frames": 35328,
+      "zero_pose_frames": 6298,
+      "zero_pose_rate": 0.1782721920289855,
+      "mean_confidence": 0.5655974492753623,
+      "by_label": {
+        "adl": {
+          "videos": 288,
+          "frames": 18432,
+          "zero_pose_frames": 3032,
+          "zero_pose_rate_ppm": 164497
+        },
+        "fall": {
+          "videos": 264,
+          "frames": 16896,
+          "zero_pose_frames": 3266,
+          "zero_pose_rate_ppm": 193300
+        }
+      }
+    }
+  }
+}

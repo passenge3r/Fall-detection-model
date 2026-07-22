@@ -1,0 +1,7 @@
+# Core experiment dependencies. Install a PyTorch/CUDA build suitable for the target GPU first.
+numpy==2.5.1
+opencv-python==5.0.0.93
+ultralytics==8.4.55
+rtmlib==0.0.15
+onnxruntime-gpu==1.27.0
+torch>=2.12,<2.13

@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "same_row_count": true,
+    "same_order_labels_subjects": true,
+    "same_frame_indices": true
+  },
+  "manifests": {
+    "fall_benchmark\\data\\metadata\\gmdcsa24_rtmpose_t64.csv": {
+      "backend": "rtmpose",
+      "videos": 160,
+      "frames": 10240,
+      "zero_pose_frames": 0,
+      "zero_pose_rate": 0.0,
+      "mean_confidence": 0.6576697375,
+      "by_label": {
+        "adl": {
+          "videos": 81,
+          "frames": 5184,
+          "zero_pose_frames": 0,
+          "zero_pose_rate_ppm": 0
+        },
+        "fall": {
+          "videos": 79,
+          "frames": 5056,
+          "zero_pose_frames": 0,
+          "zero_pose_rate_ppm": 0
+        }
+      }
+    },
+    "fall_benchmark\\data\\metadata\\gmdcsa24_yolo_t64_c010.csv": {
+      "backend": "yolo",
+      "videos": 160,
+      "frames": 10240,
+      "zero_pose_frames": 305,
+      "zero_pose_rate": 0.02978515625,
+      "mean_confidence": 0.69721426875,
+      "by_label": {
+        "adl": {
+          "videos": 81,
+          "frames": 5184,
+          "zero_pose_frames": 64,
+          "zero_pose_rate_ppm": 12346
+        },
+        "fall": {
+          "videos": 79,
+          "frames": 5056,
+          "zero_pose_frames": 241,
+          "zero_pose_rate_ppm": 47666
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "gmdcsa24": {
+    "manifest_rows": 160,
+    "missing_videos": [],
+    "empty_videos": [],
+    "split_errors": [],
+    "ok": true
+  },
+  "mcfd": {
+    "status": "complete",
+    "bad_member": null,
+    "avi_files": 192,
+    "ok": true
+  }
+}

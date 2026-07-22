@@ -1,0 +1,11 @@
+{
+  "cross_view_samples": 415,
+  "common_false_negatives": 46,
+  "common_false_positives": 50,
+  "route_disagreements": 135,
+  "yolo_stgcnpp_unique_correct": 18,
+  "selected_cases": 6,
+  "fully_missing_yolo_cross_view": 12,
+  "fully_missing_yolo_cross_view_adl": 9,
+  "fully_missing_yolo_cross_view_fall": 3
+}

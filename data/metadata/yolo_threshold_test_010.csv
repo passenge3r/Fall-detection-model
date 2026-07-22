@@ -1,0 +1,2 @@
+path,label,subject,dataset,pose_path,backend,frames,zero_pose_frames,mean_confidence
+Subject 2/Fall/10.mp4,1,2,gmdcsa24,fall_benchmark/data/poses/yolo_pose/threshold_test_010/Subject_2__Fall__10.npz,yolo,64,1,0.304301
