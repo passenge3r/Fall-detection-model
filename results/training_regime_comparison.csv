@@ -2,6 +2,9 @@ route,metric,epochs_80_early_stop,epochs_300_early_stop,epochs_300_full
 rtmpose+stgcnpp,accuracy,0.86875,0.85625,0.86875
 rtmpose+stgcnpp,f1,0.8627450980,0.8496732026,0.8627450980
 rtmpose+stgcnpp,balanced_accuracy,0.8683388029,0.8558368495,0.8683388029
+rtmpose+ctrgcn,accuracy,,,0.83125
+rtmpose+ctrgcn,f1,,,0.8322981366
+rtmpose+ctrgcn,balanced_accuracy,,,0.8314580403
 yolo+stgcnpp,accuracy,0.7875,0.79375,0.775
 yolo+stgcnpp,f1,0.7951807229,0.7975460123,0.7777777778
 yolo+stgcnpp,balanced_accuracy,0.7881387018,0.7941084544,0.7752773871

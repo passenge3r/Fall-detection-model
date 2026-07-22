@@ -1,4 +1,106 @@
 {
+  "rtmpose+ctrgcn": {
+    "route": "rtmpose+ctrgcn",
+    "folds": [
+      {
+        "fold": 1,
+        "loss": 0.6022437512874603,
+        "accuracy": 0.8125,
+        "precision": 0.8125,
+        "recall": 0.8125,
+        "specificity": 0.8125,
+        "f1": 0.8125,
+        "balanced_accuracy": 0.8125,
+        "tp": 13,
+        "tn": 13,
+        "fp": 3,
+        "fn": 3
+      },
+      {
+        "fold": 2,
+        "loss": 0.6651725371678671,
+        "accuracy": 0.7916666666666666,
+        "precision": 0.7272727272727273,
+        "recall": 0.96,
+        "specificity": 0.6086956521739131,
+        "f1": 0.8275862068965517,
+        "balanced_accuracy": 0.7843478260869565,
+        "tp": 24,
+        "tn": 14,
+        "fp": 9,
+        "fn": 1
+      },
+      {
+        "fold": 3,
+        "loss": 0.47176548492076786,
+        "accuracy": 0.8837209302325582,
+        "precision": 1.0,
+        "recall": 0.7619047619047619,
+        "specificity": 1.0,
+        "f1": 0.8648648648648648,
+        "balanced_accuracy": 0.8809523809523809,
+        "tp": 16,
+        "tn": 22,
+        "fp": 0,
+        "fn": 5
+      },
+      {
+        "fold": 4,
+        "loss": 0.5745719332952757,
+        "accuracy": 0.8378378378378378,
+        "precision": 0.8235294117647058,
+        "recall": 0.8235294117647058,
+        "specificity": 0.85,
+        "f1": 0.8235294117647058,
+        "balanced_accuracy": 0.8367647058823529,
+        "tp": 14,
+        "tn": 17,
+        "fp": 3,
+        "fn": 3
+      }
+    ],
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.8314313586842657,
+        "std": 0.03964370206702018
+      },
+      "precision": {
+        "mean": 0.8408255347593583,
+        "std": 0.11450217212319583
+      },
+      "recall": {
+        "mean": 0.8394835434173669,
+        "std": 0.08470602021179202
+      },
+      "specificity": {
+        "mean": 0.8177989130434783,
+        "std": 0.16123109530013874
+      },
+      "f1": {
+        "mean": 0.8321201208815305,
+        "std": 0.022741475040793182
+      },
+      "balanced_accuracy": {
+        "mean": 0.8286412282304225,
+        "std": 0.040926325311429465
+      }
+    },
+    "pooled_test": {
+      "accuracy": 0.83125,
+      "precision": 0.8170731707317073,
+      "recall": 0.8481012658227848,
+      "specificity": 0.8148148148148148,
+      "f1": 0.8322981366459627,
+      "balanced_accuracy": 0.8314580403187998,
+      "tp": 67,
+      "tn": 66,
+      "fp": 15,
+      "fn": 12
+    },
+    "parameters": 1421488,
+    "latency_ms_batch1_mean": 19.668721000016376,
+    "test_samples": 160
+  },
   "rtmpose+stgcnpp": {
     "route": "rtmpose+stgcnpp",
     "folds": [

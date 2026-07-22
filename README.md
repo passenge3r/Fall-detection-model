@@ -6,7 +6,7 @@
 2. YOLO-Pose + ST-GCN++
 3. YOLO-Pose + CTR-GCN
 
-当前状态：数据准备、两套姿态缓存、三路线四折训练、内部/外部测试、错误分析和预录视频滑动窗口原型均已完成。下一阶段是设备接入、多人跟踪和现场数据验证。
+当前状态：数据准备、两套姿态缓存、三条正式路线的内部/外部测试、第四条 RTMPose + CTR-GCN 内部实验、错误分析和预录视频滑动窗口原型均已完成。下一阶段是设备接入、多人跟踪和现场数据验证。
 
 ## 快速查看结果
 
@@ -82,7 +82,7 @@ $env:YOLO_CONFIG_DIR = (Resolve-Path .\.ultralytics).Path
 python scripts/verify_prepared_data.py --project .
 ```
 
-重新训练三条路线的四折模型：
+重新训练四条路线的四折模型：
 
 ```powershell
 python scripts/run_three_routes.py --project . --epochs 80 --patience 15 --batch-size 16

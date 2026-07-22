@@ -30,6 +30,7 @@
   "experiments": [
     "yolo_pose+stgcnpp",
     "rtmpose+stgcnpp",
+    "rtmpose+ctrgcn",
     "yolo_pose+ctrgcn"
   ],
   "protocols": {

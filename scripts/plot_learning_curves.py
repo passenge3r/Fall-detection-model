@@ -12,9 +12,10 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 
-ROUTES = ("rtmpose_stgcnpp", "yolo_stgcnpp", "yolo_ctrgcn")
+ROUTES = ("rtmpose_stgcnpp", "rtmpose_ctrgcn", "yolo_stgcnpp", "yolo_ctrgcn")
 ROUTE_LABELS = {
     "rtmpose_stgcnpp": "RTMPose + ST-GCN++",
+    "rtmpose_ctrgcn": "RTMPose + CTR-GCN",
     "yolo_stgcnpp": "YOLO-Pose + ST-GCN++",
     "yolo_ctrgcn": "YOLO-Pose + CTR-GCN",
 }
@@ -86,7 +87,7 @@ def plot_comparison(root: Path, summaries: list[dict[str, object]]) -> None:
         axis.set_xticks(x)
         axis.grid(alpha=0.2)
         axis.legend(fontsize=8)
-    figure.suptitle("Three-route experiment summary", fontsize=15)
+    figure.suptitle(f"{len(ROUTES)}-route experiment summary", fontsize=15)
     figure.tight_layout()
     figure.savefig(root / "learning_curve_comparison.png", dpi=180, bbox_inches="tight")
     plt.close(figure)

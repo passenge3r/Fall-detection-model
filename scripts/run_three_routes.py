@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROUTES = [
     ("rtmpose", "stgcnpp", "gmdcsa24_rtmpose_t64.npz"),
+    ("rtmpose", "ctrgcn", "gmdcsa24_rtmpose_t64.npz"),
     ("yolo", "stgcnpp", "gmdcsa24_yolo_t64_c010.npz"),
     ("yolo", "ctrgcn", "gmdcsa24_yolo_t64_c010.npz"),
 ]

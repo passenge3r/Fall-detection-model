@@ -29,6 +29,7 @@ EDGES = [
 ]
 ROUTES = {
     "rtmpose_stgcnpp": ("rtmpose", "stgcnpp"),
+    "rtmpose_ctrgcn": ("rtmpose", "ctrgcn"),
     "yolo_stgcnpp": ("yolo", "stgcnpp"),
     "yolo_ctrgcn": ("yolo", "ctrgcn"),
 }
