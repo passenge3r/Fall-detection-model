@@ -19,11 +19,15 @@ def main() -> None:
     parser.add_argument("--epochs", type=int, default=80)
     parser.add_argument("--patience", type=int, default=15)
     parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument(
+        "--output-root", type=Path,
+        help="Experiment output directory (default: <project>/results/benchmark)",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     trainer = args.project / "scripts" / "train_gcn.py"
     splits = args.project / "data" / "splits" / "gmdcsa24_loso"
-    results = args.project / "results" / "benchmark"
+    results = args.output_root or args.project / "results" / "benchmark"
 
     for pose, model, tensor_name in ROUTES:
         for fold in range(1, 5):

@@ -89,6 +89,15 @@ python scripts/run_three_routes.py --project . --epochs 80 --patience 15 --batch
 python scripts/summarize_benchmark.py --results results/benchmark --output results
 ```
 
+300轮上限与早停对照实验已保存在 `results/benchmark_e300/`，学习曲线和结论见
+[`docs/TRAINING_E300.md`](docs/TRAINING_E300.md)。复现实验：
+
+```powershell
+python scripts/run_three_routes.py --project . --epochs 300 --patience 15 `
+  --batch-size 16 --output-root results/benchmark_e300
+python scripts/plot_learning_curves.py --results results/benchmark_e300
+```
+
 用正式权重重新运行 MCFD 外部测试：
 
 ```powershell
