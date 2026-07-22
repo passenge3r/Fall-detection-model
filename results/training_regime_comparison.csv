@@ -1,0 +1,10 @@
+route,metric,epochs_80_early_stop,epochs_300_early_stop,epochs_300_full
+rtmpose+stgcnpp,accuracy,0.86875,0.85625,0.86875
+rtmpose+stgcnpp,f1,0.8627450980,0.8496732026,0.8627450980
+rtmpose+stgcnpp,balanced_accuracy,0.8683388029,0.8558368495,0.8683388029
+yolo+stgcnpp,accuracy,0.7875,0.79375,0.775
+yolo+stgcnpp,f1,0.7951807229,0.7975460123,0.7777777778
+yolo+stgcnpp,balanced_accuracy,0.7881387018,0.7941084544,0.7752773871
+yolo+ctrgcn,accuracy,0.775,0.76875,0.7875
+yolo+ctrgcn,f1,0.7857142857,0.7810650888,0.7926829268
+yolo+ctrgcn,balanced_accuracy,0.7756687764,0.7695733708,0.7879356149

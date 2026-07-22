@@ -167,6 +167,10 @@ def main() -> None:
     parser.add_argument("--learning-rate", type=float, default=3e-4)
     parser.add_argument("--weight-decay", type=float, default=1e-3)
     parser.add_argument("--patience", type=int, default=20)
+    parser.add_argument(
+        "--no-early-stopping", action="store_true",
+        help="Run every requested epoch while still saving the best validation checkpoint",
+    )
     parser.add_argument("--dropout", type=float, default=0.5)
     parser.add_argument("--base-channels", type=int, default=64)
     parser.add_argument("--seed", type=int, default=2026)
@@ -254,7 +258,7 @@ def main() -> None:
             epochs_without_improvement += 1
         print(json.dumps({"epoch": epoch, "train_loss": train_loss, "val_loss": val_loss,
                           "val_bal_acc": score, "val_f1": val_metrics["f1"], "best": improved}), flush=True)
-        if epochs_without_improvement >= args.patience:
+        if not args.no_early_stopping and epochs_without_improvement >= args.patience:
             break
 
     model.load_state_dict(torch.load(checkpoint_path, map_location=device, weights_only=True))
@@ -283,6 +287,7 @@ def main() -> None:
             "learning_rate": args.learning_rate,
             "weight_decay": args.weight_decay,
             "patience": args.patience,
+            "early_stopping": not args.no_early_stopping,
             "dropout": args.dropout,
             "base_channels": args.base_channels,
             "amp": amp_enabled,

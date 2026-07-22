@@ -32,10 +32,12 @@ def read_history(path: Path) -> dict[str, np.ndarray]:
 def plot_route(root: Path, route: str) -> list[dict[str, object]]:
     figure, axes = plt.subplots(2, 2, figsize=(14, 9), sharex=False)
     summary: list[dict[str, object]] = []
+    early_stopping: bool | None = None
     for fold, axis in enumerate(axes.flat, 1):
         fold_dir = root / route / f"fold_{fold}"
         history = read_history(fold_dir / "history.csv")
         metrics = json.loads((fold_dir / "metrics.json").read_text(encoding="utf-8"))
+        early_stopping = metrics["config"].get("early_stopping", True)
         epoch = history["epoch"]
         axis.plot(epoch, history["train_loss"], label="Train loss", color="#2474b5")
         axis.plot(epoch, history["val_loss"], label="Validation loss", color="#e36a33")
@@ -61,7 +63,8 @@ def plot_route(root: Path, route: str) -> list[dict[str, object]]:
             "test_f1": metrics["test"]["f1"],
             "test_balanced_accuracy": metrics["test"]["balanced_accuracy"],
         })
-    figure.suptitle(f"{ROUTE_LABELS[route]}: 300-epoch limit with early stopping", fontsize=15)
+    training_mode = "early stopping" if early_stopping else "all 300 epochs (no early stopping)"
+    figure.suptitle(f"{ROUTE_LABELS[route]}: {training_mode}", fontsize=15)
     figure.tight_layout()
     figure.savefig(root / route / "learning_curves.png", dpi=180, bbox_inches="tight")
     plt.close(figure)
@@ -83,7 +86,7 @@ def plot_comparison(root: Path, summaries: list[dict[str, object]]) -> None:
         axis.set_xticks(x)
         axis.grid(alpha=0.2)
         axis.legend(fontsize=8)
-    figure.suptitle("Three-route 300-epoch experiment summary", fontsize=15)
+    figure.suptitle("Three-route experiment summary", fontsize=15)
     figure.tight_layout()
     figure.savefig(root / "learning_curve_comparison.png", dpi=180, bbox_inches="tight")
     plt.close(figure)

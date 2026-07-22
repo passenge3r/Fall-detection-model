@@ -19,6 +19,7 @@ def main() -> None:
     parser.add_argument("--epochs", type=int, default=80)
     parser.add_argument("--patience", type=int, default=15)
     parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--no-early-stopping", action="store_true")
     parser.add_argument(
         "--output-root", type=Path,
         help="Experiment output directory (default: <project>/results/benchmark)",
@@ -49,6 +50,8 @@ def main() -> None:
                 "--seed", str(2026 + fold),
                 "--device", "cuda",
             ]
+            if args.no_early_stopping:
+                command.append("--no-early-stopping")
             print(f"RUN: {pose}+{model} fold {fold}", flush=True)
             subprocess.run(command, check=True)
 

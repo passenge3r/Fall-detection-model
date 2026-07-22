@@ -98,6 +98,15 @@ python scripts/run_three_routes.py --project . --epochs 300 --patience 15 `
 python scripts/plot_learning_curves.py --results results/benchmark_e300
 ```
 
+固定跑满300轮、不使用早停的实验位于 `results/benchmark_e300_full/`，结论见
+[`docs/TRAINING_E300_FULL.md`](docs/TRAINING_E300_FULL.md)。命令：
+
+```powershell
+python scripts/run_three_routes.py --project . --epochs 300 --batch-size 16 `
+  --no-early-stopping --output-root results/benchmark_e300_full
+python scripts/plot_learning_curves.py --results results/benchmark_e300_full
+```
+
 用正式权重重新运行 MCFD 外部测试：
 
 ```powershell
