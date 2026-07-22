@@ -161,7 +161,8 @@ def main() -> None:
     parser.add_argument("--fold", type=int, choices=(1, 2, 3, 4), required=True)
     parser.add_argument("--model", choices=("stgcnpp", "ctrgcn", "posec3d"), required=True)
     parser.add_argument(
-        "--pose", choices=("rtmpose", "yolo", "yolo_bytetrack", "rtmo"), required=True
+        "--pose", choices=("rtmpose", "yolo", "yolo_bytetrack", "rtmo", "hourglass"),
+        required=True,
     )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--epochs", type=int, default=80)

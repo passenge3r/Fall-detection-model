@@ -145,6 +145,64 @@ class RTMPoseBackend:
         return np.concatenate([keypoints[selected], scores[selected, :, None]], axis=1).astype(np.float32)
 
 
+class MMPoseHourglassBackend:
+    """Top-down MMPose Hourglass52 with a YOLO person-box frontend."""
+
+    def __init__(self, config: str, checkpoint: str, detector: str,
+                 device: str, confidence: float) -> None:
+        import os
+        import importlib.util
+        import sys
+        import types
+
+        config_dir = Path(__file__).resolve().parent.parent / ".ultralytics"
+        config_dir.mkdir(parents=True, exist_ok=True)
+        os.environ.setdefault("YOLO_CONFIG_DIR", str(config_dir))
+        # MMPose 1.3 eagerly imports EDPose even when building Hourglass.
+        # EDPose needs compiled mmcv ops, while Hourglass uses only standard
+        # PyTorch layers.  Stub that unused registration when running mmcv-lite.
+        if importlib.util.find_spec("mmcv._ext") is None:
+            module_name = "mmpose.models.heads.transformer_heads"
+            stub = types.ModuleType(module_name)
+            stub.EDPoseHead = None
+            sys.modules.setdefault(module_name, stub)
+        from mmpose.apis import inference_topdown, init_model
+        from ultralytics import YOLO
+
+        self.detector = YOLO(detector)
+        self.model = init_model(config, checkpoint, device=device)
+        self.inference_topdown = inference_topdown
+        self.device = device
+        self.confidence = confidence
+
+    def __call__(self, image: np.ndarray) -> np.ndarray:
+        detected = self.detector.predict(
+            image, device=self.device, conf=self.confidence, verbose=False
+        )[0]
+        if detected.boxes is None or len(detected.boxes) == 0:
+            return np.zeros((17, 3), dtype=np.float32)
+        boxes = detected.boxes.xyxy.detach().cpu().numpy()
+        areas = np.maximum(0, boxes[:, 2] - boxes[:, 0]) * np.maximum(0, boxes[:, 3] - boxes[:, 1])
+        bbox = boxes[int(np.argmax(areas))][None, :]
+        samples = self.inference_topdown(
+            self.model, image, bboxes=bbox, bbox_format="xyxy"
+        )
+        if not samples:
+            return np.zeros((17, 3), dtype=np.float32)
+        instances = samples[0].pred_instances
+        keypoints = np.asarray(instances.keypoints, dtype=np.float32)
+        scores = np.asarray(instances.keypoint_scores, dtype=np.float32)
+        if keypoints.ndim == 3:
+            keypoints = keypoints[0]
+        if scores.ndim == 2:
+            scores = scores[0]
+        if keypoints.shape != (17, 2) or scores.shape != (17,):
+            raise RuntimeError(
+                f"Expected Hourglass COCO-17 output, got {keypoints.shape} and {scores.shape}"
+            )
+        return np.concatenate([keypoints, scores[:, None]], axis=1).astype(np.float32)
+
+
 def safe_stem(relative_path: str) -> str:
     path = Path(relative_path)
     return "__".join(path.with_suffix("").parts).replace(" ", "_")
@@ -163,12 +221,25 @@ def main() -> None:
     parser.add_argument("--video-root", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--output-manifest", type=Path, required=True)
-    parser.add_argument("--backend", choices=("yolo", "rtmpose", "rtmo"), required=True)
+    parser.add_argument(
+        "--backend", choices=("yolo", "rtmpose", "rtmo", "hourglass"), required=True
+    )
     parser.add_argument("--frames", type=int, default=64)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--yolo-model", default="yolo26n-pose.pt")
     parser.add_argument("--yolo-conf", type=float, default=0.1)
     parser.add_argument("--rtmpose-mode", choices=("lightweight", "balanced", "performance"), default="balanced")
+    parser.add_argument(
+        "--hourglass-config",
+        default="vendor_sources/mmpose/configs/body_2d_keypoint/topdown_heatmap/coco/"
+                "td-hm_hourglass52_8xb32-210e_coco-256x256.py",
+    )
+    parser.add_argument(
+        "--hourglass-checkpoint",
+        default="https://download.openmmlab.com/mmpose/top_down/hourglass/"
+                "hourglass52_coco_256x256-4ec713ba_20200709.pth",
+    )
+    parser.add_argument("--hourglass-detector", default="yolo26n-pose.pt")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--path-contains")
     parser.add_argument("--overwrite", action="store_true")
@@ -183,6 +254,11 @@ def main() -> None:
     args.output_manifest.parent.mkdir(parents=True, exist_ok=True)
     if args.backend == "yolo":
         backend = YoloPoseBackend(args.yolo_model, args.device, args.yolo_conf)
+    elif args.backend == "hourglass":
+        backend = MMPoseHourglassBackend(
+            args.hourglass_config, args.hourglass_checkpoint,
+            args.hourglass_detector, args.device, args.yolo_conf,
+        )
     else:
         backend = RTMPoseBackend(
             args.rtmpose_mode, args.device, one_stage=args.backend == "rtmo"

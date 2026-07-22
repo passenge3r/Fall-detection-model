@@ -19,6 +19,9 @@ ROUTES = [
     ("rtmo", "stgcnpp", "gmdcsa24_rtmo_t64.npz"),
     ("rtmo", "ctrgcn", "gmdcsa24_rtmo_t64.npz"),
     ("rtmo", "posec3d", "gmdcsa24_rtmo_t64.npz"),
+    ("hourglass", "stgcnpp", "gmdcsa24_hourglass_t64.npz"),
+    ("hourglass", "ctrgcn", "gmdcsa24_hourglass_t64.npz"),
+    ("hourglass", "posec3d", "gmdcsa24_hourglass_t64.npz"),
 ]
 
 

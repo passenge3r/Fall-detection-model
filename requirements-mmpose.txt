@@ -1,0 +1,9 @@
+# Install in the isolated .venv-mmpose environment after PyTorch is available.
+mmengine==0.10.7
+mmcv-lite==2.1.0
+mmdet==3.2.0
+chumpy==0.70
+json-tricks==3.17.3
+munkres==1.1.4
+xtcocotools==1.14.3
+
