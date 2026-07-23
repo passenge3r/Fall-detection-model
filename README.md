@@ -117,15 +117,16 @@ python scripts/analyze_mcfd_errors.py
 python scripts/render_mcfd_error_cases.py
 ```
 
-生成同一跌倒片段的 8 个姿态/跟踪前端九宫格对比视频：
+生成适合汇报展示的前三路线、多跌倒片段对比视频：
 
 ```powershell
-python scripts/visualize_all_pose_frontends.py
+python scripts/visualize_top3_routes_multiclip.py
 ```
 
-画面包含原视频、RTMPose、RTMPose + ByteTrack、YOLO-Pose、
-YOLO-Pose + ByteTrack、RTMO、Hourglass52、OpenPose 和 AlphaPose；
-输出到 `outputs/previews/subject2_fall10_all_frontends.mp4`。
+默认比较 `YOLO-Pose + ByteTrack + ST-GCN++`、`RTMPose + ST-GCN++`
+和 `RTMPose + ByteTrack + ST-GCN++`，连续展示 5 个跨主体跌倒片段；
+输出到 `outputs/previews/top3_routes_five_falls.mp4`。如需检查全部
+8 个姿态/跟踪前端，可运行 `python scripts/visualize_all_pose_frontends.py`。
 
 运行预录视频系统原型：
 
