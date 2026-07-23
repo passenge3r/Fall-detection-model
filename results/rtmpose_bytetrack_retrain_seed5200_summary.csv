@@ -1,0 +1,2 @@
+rank,route,accuracy,precision,recall,specificity,f1,balanced_accuracy,tp,tn,fp,fn,parameters,latency_ms_batch1
+1,rtmpose_bytetrack+stgcnpp,0.83125,0.8714285714285714,0.7721518987341772,0.8888888888888888,0.8187919463087248,0.8305203938115331,61,72,9,18,1185798,20.521055749995867

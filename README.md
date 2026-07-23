@@ -7,6 +7,7 @@
 - 一页式项目全貌：[`项目概要.md`](项目概要.md)
 - 22 路模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
 - 全部路线、全部指标：[`docs/ALL_ROUTE_METRICS.md`](docs/ALL_ROUTE_METRICS.md)
+- RTMPose + ByteTrack 独立重训与丢轨分析：[`docs/RTMPOSE_BYTETRACK_RETRAIN.md`](docs/RTMPOSE_BYTETRACK_RETRAIN.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)
