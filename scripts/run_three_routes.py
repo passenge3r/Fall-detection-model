@@ -11,6 +11,7 @@ ROUTES = [
     ("rtmpose", "ctrgcn", "gmdcsa24_rtmpose_t64.npz"),
     ("rtmpose", "posec3d", "gmdcsa24_rtmpose_t64.npz"),
     ("rtmpose_bytetrack", "stgcnpp", "gmdcsa24_rtmpose_bytetrack_t64.npz"),
+    ("rtmpose_bytetrack_v2", "stgcnpp", "gmdcsa24_rtmpose_bytetrack_v2_t64.npz"),
     ("yolo", "stgcnpp", "gmdcsa24_yolo_t64_c010.npz"),
     ("yolo", "ctrgcn", "gmdcsa24_yolo_t64_c010.npz"),
     ("yolo", "posec3d", "gmdcsa24_yolo_t64_c010.npz"),
@@ -46,7 +47,7 @@ def main() -> None:
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument(
         "--poses", nargs="+",
-        choices=("rtmpose", "rtmpose_bytetrack", "yolo", "yolo_bytetrack", "rtmo", "hourglass", "openpose", "alphapose"),
+        choices=("rtmpose", "rtmpose_bytetrack", "rtmpose_bytetrack_v2", "yolo", "yolo_bytetrack", "rtmo", "hourglass", "openpose", "alphapose"),
         help="Run only the selected pose frontends (default: all configured routes)",
     )
     args = parser.parse_args()

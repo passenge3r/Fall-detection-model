@@ -1,11 +1,11 @@
 # 基于人体姿态的跌倒检测基准与系统原型
 
-本项目以统一数据、骨架接口、训练划分和评价指标比较跌倒检测路线，并为后续摄像头系统提供算法与软件基础。当前已完成 **7 个姿态/跟踪前端 × 3 个时序分类器的 21 路正交网格，以及 RTMPose + ByteTrack + ST-GCN++ 消融，共 22 条路线**的四折 300 轮内部实验。下一阶段是设备接入、多人跟踪修复和现场数据验证。
+本项目以统一数据、骨架接口、训练划分和评价指标比较跌倒检测路线，并为后续摄像头系统提供算法与软件基础。当前已完成 **7 个姿态/跟踪前端 × 3 个时序分类器的 21 路正交网格，以及两条 RTMPose + ByteTrack 消融，共 23 条路线**的四折 300 轮内部实验。下一阶段是设备接入、多人跟踪修复和现场数据验证。
 
 ## 快速查看结果
 
 - 一页式项目全貌：[`项目概要.md`](项目概要.md)
-- 22 路模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
+- 23 路模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
 - 全部路线、全部指标：[`docs/ALL_ROUTE_METRICS.md`](docs/ALL_ROUTE_METRICS.md)
 - RTMPose + ByteTrack 独立重训与丢轨分析：[`docs/RTMPOSE_BYTETRACK_RETRAIN.md`](docs/RTMPOSE_BYTETRACK_RETRAIN.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)

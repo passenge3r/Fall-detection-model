@@ -1,0 +1,32 @@
+{
+  "videos": 160,
+  "strategy": "tracked pose -> same-frame untracked RTMPose fallback -> bounded short-gap interpolation",
+  "repair_source": {
+    "0": "tracked",
+    "1": "untracked_rtmpose_fallback",
+    "2": "interpolated",
+    "3": "missing"
+  },
+  "tracked_frames": 8722,
+  "fallback_frames": 1517,
+  "interpolated_frames": 1,
+  "remaining_zero_frames": 0,
+  "by_label": {
+    "adl": {
+      "clips": 81,
+      "frames": 5184,
+      "remaining_zero_frames": 0,
+      "zero_rate": 0.0,
+      "fallback_frames": 285,
+      "interpolated_frames": 0
+    },
+    "fall": {
+      "clips": 79,
+      "frames": 5056,
+      "remaining_zero_frames": 0,
+      "zero_rate": 0.0,
+      "fallback_frames": 1232,
+      "interpolated_frames": 1
+    }
+  }
+}

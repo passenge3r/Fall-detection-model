@@ -83,6 +83,12 @@ python scripts/extract_rtmpose_bytetrack_cache.py `
   --frames 64 --device cuda
 ```
 
+ByteTrack v2（丢轨时回接同帧 RTMPose，并对仍缺失的短间隔插值）：
+
+```powershell
+python scripts/repair_rtmpose_bytetrack_cache.py
+```
+
 YOLO-Pose：
 
 ```powershell
@@ -134,6 +140,11 @@ python scripts/build_gcn_tensor.py `
   --project-root .
 
 python scripts/build_gcn_tensor.py `
+  --manifest data/metadata/gmdcsa24_rtmpose_bytetrack_v2_t64.csv `
+  --output data/gcn/gmdcsa24_rtmpose_bytetrack_v2_t64.npz `
+  --project-root .
+
+python scripts/build_gcn_tensor.py `
   --manifest data/metadata/gmdcsa24_alphapose_t64.csv `
   --output data/gcn/gmdcsa24_alphapose_t64.npz `
   --project-root .
@@ -158,7 +169,7 @@ python scripts/run_three_routes.py --project . --epochs 80 --patience 15 --batch
 python scripts/summarize_benchmark.py --results results/benchmark --output results
 ```
 
-22 路固定跑满 300 轮并保存各折验证最优模型：
+23 路固定跑满 300 轮并保存各折验证最优模型：
 
 ```powershell
 python scripts/run_three_routes.py --project . --epochs 300 --batch-size 16 `

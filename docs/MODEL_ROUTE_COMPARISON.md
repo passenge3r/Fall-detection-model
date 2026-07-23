@@ -1,4 +1,4 @@
-# 跌倒检测 21 路正交网格 + 1 路跟踪消融（固定 300 轮）
+# 跌倒检测 21 路正交网格 + 2 路跟踪消融（固定 300 轮）
 
 更新日期：2026-07-23
 
@@ -7,13 +7,14 @@
 - **GMDCSA24 内部冠军：YOLO-Pose + ByteTrack + ST-GCN++**，主体隔离四折合并 Balanced Accuracy（BA）为 **89.41%**。但它在 MCFD 外测只有 61.75% BA，且跟踪缺失存在类别偏置，不能直接作为稳健系统冠军。
 - **当前稳健单路线首选：RTMPose + ST-GCN++**。内部 BA **86.83%**，MCFD 未见场景固定阈值外测 BA **63.08%**，内部与跨数据集表现最均衡。
 - **新增 RTMPose + ByteTrack + ST-GCN++** 内部 BA 为 **86.29%**，并列第 3。它提高了 RTMPose 的 Recall（83.54% → 89.87%），但降低 Specificity（90.12% → 82.72%），总体 BA 仍比不加跟踪的 RTMPose + ST-GCN++ 低 0.54 个百分点。
+- **ByteTrack v2** 用同帧 RTMPose 回接和短间隔插值把全零骨架帧从 1518 降为 0，但 BA 只有 **84.32%**、排名第 5。逐帧在“主轨姿态”和“无跟踪姿态”之间切换仍会引入时序不连续，修复缺失不等于提升分类。
 - 在原 21 路正交网格中，新增姿态前端最好的是 AlphaPose + ST-GCN++，内部 BA **79.43%**。
 - **OpenPose 最好搭配 CTR-GCN**，内部 BA **76.32%**；OpenPose + PoseC3D-style 最低，为 69.36%。
 - 分类头不存在对所有前端都占优的绝对赢家：ST-GCN++ 在 5/7 个前端变体上最好；YOLO-Pose 与 OpenPose 更适合 CTR-GCN；RTMPose 的 PoseC3D-style 接近但仍低于其 ST-GCN++。
 
 ## 正交组合范围
 
-核心实验统一比较 7 个姿态/跟踪前端与 3 个时序分类器，共 21 条路线；随后按要求增加 `RTMPose + ByteTrack + ST-GCN++` 跟踪消融，总计 22 条实测路线：
+核心实验统一比较 7 个姿态/跟踪前端与 3 个时序分类器，共 21 条路线；随后增加原始 `RTMPose + ByteTrack + ST-GCN++` 和丢轨回接 v2 两条消融，总计 23 条实测路线：
 
 - 前端：RTMPose、YOLO-Pose、YOLO-Pose + ByteTrack、RTMO、Hourglass52、OpenPose、AlphaPose。
 - 分类器：ST-GCN++、CTR-GCN、PoseC3D-style。
@@ -25,13 +26,13 @@
 - 输入统一为 COCO-17，形状 `[N,3,64,17,1]`；每段均匀采样 64 帧。
 - 每条路线训练 4 折，每折完整 300 轮、无早停；按验证集 BA 保存并回载 `best.pt`。
 - AdamW，学习率 `3e-4`，weight decay `1e-3`，dropout `0.5`，batch size 16，AMP。
-- 总训练量：**22 路 × 4 折 × 300 轮 = 26,400 epochs**，共 88 个最优折模型。
+- 总训练量：**23 路 × 4 折 × 300 轮 = 27,600 epochs**，共 92 个最优折模型。
 - OpenPose 使用由 CMU COCO Caffe 权重直接转换的 PyTorch 端口，在共享 YOLO 单人框内以 256×256 输入推理，并将 COCO-18 去除 neck 后映射到 COCO-17。
 - AlphaPose 使用官方 FastPose-ResNet50、COCO 256×192 权重；与 Hourglass/OpenPose 共用同一 YOLO 单人框协议。
 
 ## GMDCSA24 四折合并总排名
 
-完整 22 路的 Accuracy、Precision、Recall、Specificity、F1、BA 和 TP/TN/FP/FN 见 [`ALL_ROUTE_METRICS.md`](ALL_ROUTE_METRICS.md)。前三名为：
+完整 23 路的 Accuracy、Precision、Recall、Specificity、F1、BA 和 TP/TN/FP/FN 见 [`ALL_ROUTE_METRICS.md`](ALL_ROUTE_METRICS.md)。前三名为：
 
 | 排名 | 路线 | BA | F1 | Recall | Specificity |
 |---:|---|---:|---:|---:|---:|

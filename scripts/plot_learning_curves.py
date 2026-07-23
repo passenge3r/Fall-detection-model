@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 ROUTES = (
     "rtmpose_stgcnpp", "rtmpose_ctrgcn", "rtmpose_posec3d",
     "rtmpose_bytetrack_stgcnpp",
+    "rtmpose_bytetrack_v2_stgcnpp",
     "yolo_stgcnpp", "yolo_ctrgcn", "yolo_posec3d",
     "yolo_bytetrack_stgcnpp", "yolo_bytetrack_ctrgcn", "yolo_bytetrack_posec3d",
     "rtmo_stgcnpp", "rtmo_ctrgcn", "rtmo_posec3d",
@@ -27,6 +28,7 @@ ROUTE_LABELS = {
     "rtmpose_ctrgcn": "RTMPose + CTR-GCN",
     "rtmpose_posec3d": "RTMPose + PoseC3D",
     "rtmpose_bytetrack_stgcnpp": "RTMPose + ByteTrack + ST-GCN++",
+    "rtmpose_bytetrack_v2_stgcnpp": "RTMPose + ByteTrack v2 + ST-GCN++",
     "yolo_stgcnpp": "YOLO-Pose + ST-GCN++",
     "yolo_ctrgcn": "YOLO-Pose + CTR-GCN",
     "yolo_posec3d": "YOLO-Pose + PoseC3D",
