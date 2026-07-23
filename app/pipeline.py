@@ -84,6 +84,7 @@ def create_pose_backend(
 def draw_overlay(
     frame: np.ndarray, pose: np.ndarray, frame_index: int,
     probability: float | None, state: str, pose_threshold: float,
+    route: str, pose_valid_ratio: float | None, positive_folds: int | None,
 ) -> np.ndarray:
     canvas = frame.copy()
     valid = pose[:, 2] >= pose_threshold
@@ -100,7 +101,7 @@ def draw_overlay(
         "CONFIRMED": (30, 30, 255), "COOLDOWN": (190, 100, 30),
         "UNKNOWN": (150, 150, 150), "WARMUP": (220, 220, 220),
     }
-    cv2.rectangle(canvas, (0, 0), (canvas.shape[1], 58), (0, 0, 0), -1)
+    cv2.rectangle(canvas, (0, 0), (canvas.shape[1], 82), (0, 0, 0), -1)
     probability_text = "--" if probability is None else f"{probability:.3f}"
     cv2.putText(
         canvas, f"frame={frame_index}  fall_probability={probability_text}",
@@ -110,14 +111,26 @@ def draw_overlay(
         canvas, f"state={state}", (12, 49), cv2.FONT_HERSHEY_SIMPLEX,
         0.7, colors.get(state, (255, 255, 255)), 2, cv2.LINE_AA,
     )
+    quality_text = "--" if pose_valid_ratio is None else f"{pose_valid_ratio:.2f}"
+    agreement_text = "--/4" if positive_folds is None else f"{positive_folds}/4"
+    cv2.putText(
+        canvas,
+        f"route={route}  pose_valid={quality_text}  positive_folds={agreement_text}",
+        (12, 73),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.55,
+        (220, 220, 220),
+        1,
+        cv2.LINE_AA,
+    )
     return canvas
 
 
 def run_video(
     input_path: Path,
     output_dir: Path,
-    route: str = "yolo_stgcnpp",
-    checkpoints_root: Path = PROJECT / "results/benchmark",
+    route: str = "rtmpose_stgcnpp",
+    checkpoints_root: Path = PROJECT / "results/benchmark_e300_full",
     yolo_model: Path = PROJECT / "models/yolo26n-pose.pt",
     device_name: str = "cuda",
     window_frames: int = 64,
@@ -168,6 +181,8 @@ def run_video(
     window_index = 0
     latest_probability: float | None = None
     latest_state = "WARMUP"
+    latest_pose_valid_ratio: float | None = None
+    latest_positive_folds: int | None = None
     state_counts: Counter[str] = Counter()
     event_count = 0
     zero_pose_frames = 0
@@ -199,6 +214,8 @@ def run_video(
                 positive_folds = sum(
                     probability >= config.threshold for probability in fold_probabilities
                 )
+                latest_pose_valid_ratio = pose_valid_ratio
+                latest_positive_folds = positive_folds
                 timestamp_ms = int(round(frame_index / fps * 1000))
                 latest_state, event = decision.update(
                     latest_probability, pose_valid_ratio, timestamp_ms, positive_folds
@@ -236,7 +253,8 @@ def run_video(
                 writer.write(
                     draw_overlay(
                         frame, pose, frame_index, latest_probability,
-                        latest_state, pose_threshold,
+                        latest_state, pose_threshold, route,
+                        latest_pose_valid_ratio, latest_positive_folds,
                     )
                 )
             frame_index += 1

@@ -9,11 +9,12 @@
 ```powershell
 python -m app.cli `
   --input "path/to/video.mp4" `
-  --output-dir outputs/demo `
-  --route yolo_stgcnpp
+  --output-dir outputs/demo
 ```
 
-当前实现包括：逐帧姿态、真实连续帧缓冲、四折模型概率集成、姿态质量门控、至少 3/4 折同意、连续窗口确认、冷却状态和四类输出文件。
+默认主路线是正式 300 轮 `RTMPose + ST-GCN++`。当前实现包括：逐帧姿态、
+真实连续帧缓冲、四折模型概率集成、姿态质量门控、至少 3/4 折同意、
+连续窗口确认、冷却状态和四类输出文件。
 
 | 输出 | 内容 |
 |---|---|

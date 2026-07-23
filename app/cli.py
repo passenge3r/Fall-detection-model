@@ -12,8 +12,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run the pre-recorded fall-detection prototype")
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--route", choices=sorted(ROUTES), default="yolo_stgcnpp")
-    parser.add_argument("--checkpoints-root", type=Path, default=PROJECT / "results/benchmark")
+    parser.add_argument("--route", choices=sorted(ROUTES), default="rtmpose_stgcnpp")
+    parser.add_argument(
+        "--checkpoints-root",
+        type=Path,
+        default=PROJECT / "results/benchmark_e300_full",
+    )
     parser.add_argument("--yolo-model", type=Path, default=PROJECT / "models/yolo26n-pose.pt")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--window-frames", type=int, default=64)

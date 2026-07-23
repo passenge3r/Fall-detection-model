@@ -8,6 +8,7 @@
 - 23 路模型对比与最终结论：[`docs/MODEL_ROUTE_COMPARISON.md`](docs/MODEL_ROUTE_COMPARISON.md)
 - 全部路线、全部指标：[`docs/ALL_ROUTE_METRICS.md`](docs/ALL_ROUTE_METRICS.md)
 - RTMPose + ByteTrack 独立重训与丢轨分析：[`docs/RTMPOSE_BYTETRACK_RETRAIN.md`](docs/RTMPOSE_BYTETRACK_RETRAIN.md)
+- RTMPose 正式系统演示与滑窗冒烟验证：[`docs/FINAL_SYSTEM_DEMO.md`](docs/FINAL_SYSTEM_DEMO.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)
@@ -134,11 +135,13 @@ python scripts/visualize_top3_routes_multiclip.py
 ```powershell
 python -m app.cli `
   --input "data/raw/GMDCSA24/Subject 1/Fall/01.mp4" `
-  --output-dir outputs/demo `
-  --route yolo_stgcnpp
+  --output-dir outputs/demo
 ```
 
-输出 `annotated.mp4`、`windows.jsonl`、`events.jsonl` 和 `summary.json`。默认使用 64 帧窗口、16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警；姿态有效率低于 50% 时输出 `UNKNOWN`。
+默认使用正式 `RTMPose + ST-GCN++` 四折权重，输出 `annotated.mp4`、
+`windows.jsonl`、`events.jsonl` 和 `summary.json`。默认使用 64 帧窗口、
+16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警；姿态有效率
+低于 50% 时输出 `UNKNOWN`。
 
 更完整的数据准备和复现实验步骤见 [`docs/REPRODUCE.md`](docs/REPRODUCE.md)。
 
