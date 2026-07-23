@@ -1223,6 +1223,108 @@
     "latency_ms_batch1_mean": 9.707385250003426,
     "test_samples": 160
   },
+  "rtmpose_bytetrack+stgcnpp": {
+    "route": "rtmpose_bytetrack+stgcnpp",
+    "folds": [
+      {
+        "fold": 1,
+        "loss": 0.2979164123535156,
+        "accuracy": 0.9375,
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "specificity": 0.9375,
+        "f1": 0.9375,
+        "balanced_accuracy": 0.9375,
+        "tp": 15,
+        "tn": 15,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "fold": 2,
+        "loss": 0.4726605812708537,
+        "accuracy": 0.7708333333333334,
+        "precision": 0.7333333333333333,
+        "recall": 0.88,
+        "specificity": 0.6521739130434783,
+        "f1": 0.8,
+        "balanced_accuracy": 0.7660869565217392,
+        "tp": 22,
+        "tn": 15,
+        "fp": 8,
+        "fn": 3
+      },
+      {
+        "fold": 3,
+        "loss": 0.2667138839876929,
+        "accuracy": 0.9302325581395349,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "specificity": 1.0,
+        "f1": 0.923076923076923,
+        "balanced_accuracy": 0.9285714285714286,
+        "tp": 18,
+        "tn": 22,
+        "fp": 0,
+        "fn": 3
+      },
+      {
+        "fold": 4,
+        "loss": 0.7843339137128882,
+        "accuracy": 0.8378378378378378,
+        "precision": 0.7619047619047619,
+        "recall": 0.9411764705882353,
+        "specificity": 0.75,
+        "f1": 0.8421052631578947,
+        "balanced_accuracy": 0.8455882352941176,
+        "tp": 16,
+        "tn": 15,
+        "fp": 5,
+        "fn": 1
+      }
+    ],
+    "fold_statistics": {
+      "accuracy": {
+        "mean": 0.8691009323276765,
+        "std": 0.07968565371097813
+      },
+      "precision": {
+        "mean": 0.8581845238095238,
+        "std": 0.13071621471239794
+      },
+      "recall": {
+        "mean": 0.903954831932773,
+        "std": 0.04193615640278062
+      },
+      "specificity": {
+        "mean": 0.8349184782608696,
+        "std": 0.1616391057146113
+      },
+      "f1": {
+        "mean": 0.8756705465587045,
+        "std": 0.06563257756558137
+      },
+      "balanced_accuracy": {
+        "mean": 0.8694366550968213,
+        "std": 0.08037297986253111
+      }
+    },
+    "pooled_test": {
+      "accuracy": 0.8625,
+      "precision": 0.8352941176470589,
+      "recall": 0.8987341772151899,
+      "specificity": 0.8271604938271605,
+      "f1": 0.8658536585365854,
+      "balanced_accuracy": 0.8629473355211752,
+      "tp": 71,
+      "tn": 67,
+      "fp": 14,
+      "fn": 8
+    },
+    "parameters": 1185798,
+    "latency_ms_batch1_mean": 20.70307750000211,
+    "test_samples": 160
+  },
   "rtmpose+ctrgcn": {
     "route": "rtmpose+ctrgcn",
     "folds": [

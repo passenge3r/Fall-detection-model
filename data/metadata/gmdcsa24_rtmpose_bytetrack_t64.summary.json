@@ -1,0 +1,7 @@
+{
+  "videos": 160,
+  "mean_primary_track_coverage": 0.8573505125,
+  "mean_track_count": 1.9375,
+  "zero_pose_frames": 1518,
+  "mean_confidence": 0.5802090499999999
+}

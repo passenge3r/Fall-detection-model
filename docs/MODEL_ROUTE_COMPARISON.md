@@ -1,4 +1,4 @@
-# 跌倒检测 21 路正交模型对比（固定 300 轮）
+# 跌倒检测 21 路正交网格 + 1 路跟踪消融（固定 300 轮）
 
 更新日期：2026-07-23
 
@@ -6,13 +6,14 @@
 
 - **GMDCSA24 内部冠军：YOLO-Pose + ByteTrack + ST-GCN++**，主体隔离四折合并 Balanced Accuracy（BA）为 **89.41%**。但它在 MCFD 外测只有 61.75% BA，且跟踪缺失存在类别偏置，不能直接作为稳健系统冠军。
 - **当前稳健单路线首选：RTMPose + ST-GCN++**。内部 BA **86.83%**，MCFD 未见场景固定阈值外测 BA **63.08%**，内部与跨数据集表现最均衡。
-- **新增路线最好：AlphaPose + ST-GCN++**，内部 BA **79.43%**，全体第 7；没有超过原前六。
+- **新增 RTMPose + ByteTrack + ST-GCN++** 内部 BA 为 **86.29%**，并列第 3。它提高了 RTMPose 的 Recall（83.54% → 89.87%），但降低 Specificity（90.12% → 82.72%），总体 BA 仍比不加跟踪的 RTMPose + ST-GCN++ 低 0.54 个百分点。
+- 在原 21 路正交网格中，新增姿态前端最好的是 AlphaPose + ST-GCN++，内部 BA **79.43%**。
 - **OpenPose 最好搭配 CTR-GCN**，内部 BA **76.32%**；OpenPose + PoseC3D-style 最低，为 69.36%。
 - 分类头不存在对所有前端都占优的绝对赢家：ST-GCN++ 在 5/7 个前端变体上最好；YOLO-Pose 与 OpenPose 更适合 CTR-GCN；RTMPose 的 PoseC3D-style 接近但仍低于其 ST-GCN++。
 
 ## 正交组合范围
 
-本轮统一比较 7 个姿态/跟踪前端与 3 个时序分类器，共 21 条路线：
+核心实验统一比较 7 个姿态/跟踪前端与 3 个时序分类器，共 21 条路线；随后按要求增加 `RTMPose + ByteTrack + ST-GCN++` 跟踪消融，总计 22 条实测路线：
 
 - 前端：RTMPose、YOLO-Pose、YOLO-Pose + ByteTrack、RTMO、Hourglass52、OpenPose、AlphaPose。
 - 分类器：ST-GCN++、CTR-GCN、PoseC3D-style。
@@ -24,35 +25,20 @@
 - 输入统一为 COCO-17，形状 `[N,3,64,17,1]`；每段均匀采样 64 帧。
 - 每条路线训练 4 折，每折完整 300 轮、无早停；按验证集 BA 保存并回载 `best.pt`。
 - AdamW，学习率 `3e-4`，weight decay `1e-3`，dropout `0.5`，batch size 16，AMP。
-- 总训练量：**21 路 × 4 折 × 300 轮 = 25,200 epochs**，共 84 个最优折模型。
+- 总训练量：**22 路 × 4 折 × 300 轮 = 26,400 epochs**，共 88 个最优折模型。
 - OpenPose 使用由 CMU COCO Caffe 权重直接转换的 PyTorch 端口，在共享 YOLO 单人框内以 256×256 输入推理，并将 COCO-18 去除 neck 后映射到 COCO-17。
 - AlphaPose 使用官方 FastPose-ResNet50、COCO 256×192 权重；与 Hourglass/OpenPose 共用同一 YOLO 单人框协议。
 
 ## GMDCSA24 四折合并总排名
 
+完整 22 路的 Accuracy、Precision、Recall、Specificity、F1、BA 和 TP/TN/FP/FN 见 [`ALL_ROUTE_METRICS.md`](ALL_ROUTE_METRICS.md)。前三名为：
+
 | 排名 | 路线 | BA | F1 | Recall | Specificity |
 |---:|---|---:|---:|---:|---:|
 | 1 | YOLO-Pose + ByteTrack + ST-GCN++ | **89.41%** | **89.57%** | **92.41%** | 86.42% |
 | 2 | RTMPose + ST-GCN++ | 86.83% | 86.27% | 83.54% | **90.12%** |
+| 3 | RTMPose + ByteTrack + ST-GCN++ | 86.29% | 86.59% | 89.87% | 82.72% |
 | 3 | RTMPose + PoseC3D-style | 86.29% | 86.59% | 89.87% | 82.72% |
-| 4 | RTMPose + CTR-GCN | 83.15% | 83.23% | 84.81% | 81.48% |
-| 5 | YOLO-Pose + ByteTrack + CTR-GCN | 83.13% | 83.02% | 83.54% | 82.72% |
-| 6 | YOLO-Pose + ByteTrack + PoseC3D-style | 82.56% | 83.13% | 87.34% | 77.78% |
-| 7 | AlphaPose + ST-GCN++ | 79.43% | 80.00% | 83.54% | 75.31% |
-| 8 | YOLO-Pose + CTR-GCN | 78.79% | 79.27% | 82.28% | 75.31% |
-| 9 | RTMO + ST-GCN++ | 78.15% | 78.26% | 79.75% | 76.54% |
-| 10 | YOLO-Pose + ST-GCN++ | 77.53% | 77.78% | 79.75% | 75.31% |
-| 11 | Hourglass52 + ST-GCN++ | 76.89% | 77.02% | 78.48% | 75.31% |
-| 12 | RTMO + PoseC3D-style | 76.34% | 77.65% | 83.54% | 69.14% |
-| 13 | AlphaPose + PoseC3D-style | 76.32% | 77.38% | 82.28% | 70.37% |
-| 14 | OpenPose + CTR-GCN | 76.32% | 77.38% | 82.28% | 70.37% |
-| 15 | Hourglass52 + CTR-GCN | 75.72% | 77.19% | 83.54% | 67.90% |
-| 16 | YOLO-Pose + PoseC3D-style | 75.69% | 76.65% | 81.01% | 70.37% |
-| 17 | AlphaPose + CTR-GCN | 74.44% | 75.45% | 79.75% | 69.14% |
-| 18 | RTMO + CTR-GCN | 73.13% | 72.96% | 73.42% | 72.84% |
-| 19 | OpenPose + ST-GCN++ | 72.53% | 72.84% | 74.68% | 70.37% |
-| 20 | Hourglass52 + PoseC3D-style | 71.99% | 73.99% | 81.01% | 62.96% |
-| 21 | OpenPose + PoseC3D-style | 69.36% | 68.79% | 68.35% | 70.37% |
 
 `PoseC3D-style` 是项目内实现：把归一化骨架渲染为时空热图体，再用 3D 残差卷积分类。它保留 PoseC3D 的核心表示思想，但不是 MMAction2 官方 SlowOnly-R50 配置。
 

@@ -1,0 +1,55 @@
+{
+  "route": "rtmpose_bytetrack+stgcnpp",
+  "pose": "rtmpose_bytetrack",
+  "model": "stgcnpp",
+  "fold": 3,
+  "seed": 2029,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "best_epoch": 99,
+  "epochs_ran": 300,
+  "parameters": 1185798,
+  "latency_ms_batch1": 23.92152199987322,
+  "samples": {
+    "train": 80,
+    "val": 37,
+    "test": 43
+  },
+  "validation": {
+    "loss": 0.5186414831393474,
+    "accuracy": 0.8648648648648649,
+    "precision": 0.8,
+    "recall": 0.9411764705882353,
+    "specificity": 0.8,
+    "f1": 0.8648648648648648,
+    "balanced_accuracy": 0.8705882352941177,
+    "tp": 16,
+    "tn": 16,
+    "fp": 4,
+    "fn": 1
+  },
+  "test": {
+    "loss": 0.2667138839876929,
+    "accuracy": 0.9302325581395349,
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "specificity": 1.0,
+    "f1": 0.923076923076923,
+    "balanced_accuracy": 0.9285714285714286,
+    "tp": 18,
+    "tn": 22,
+    "fp": 0,
+    "fn": 3
+  },
+  "config": {
+    "epochs": 300,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.001,
+    "patience": 15,
+    "early_stopping": false,
+    "dropout": 0.5,
+    "base_channels": 64,
+    "amp": true
+  }
+}

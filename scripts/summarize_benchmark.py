@@ -73,6 +73,16 @@ def main() -> None:
             "parameters": entry["parameters"],
             "latency_ms_batch1": entry["latency_ms_batch1_mean"],
         })
+    table.sort(key=lambda row: float(row["balanced_accuracy"]), reverse=True)
+    ranked = []
+    previous_ba: float | None = None
+    previous_rank = 0
+    for position, row in enumerate(table, 1):
+        current_ba = float(row["balanced_accuracy"])
+        rank = previous_rank if previous_ba is not None and np.isclose(current_ba, previous_ba) else position
+        ranked.append({"rank": rank, **row})
+        previous_ba, previous_rank = current_ba, rank
+    table = ranked
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     with args.output.with_suffix(".csv").open("w", encoding="utf-8", newline="") as handle:

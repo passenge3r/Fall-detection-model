@@ -72,6 +72,17 @@ python scripts/extract_pose_cache.py `
   --backend rtmpose --rtmpose-mode balanced --device cuda --frames 64
 ```
 
+RTMPose + ByteTrack（YOLO 人框跟踪，RTMPose 关键点与主轨框关联）：
+
+```powershell
+python scripts/extract_rtmpose_bytetrack_cache.py `
+  --manifest data/metadata/gmdcsa24.csv `
+  --video-root data/raw/GMDCSA24 `
+  --output-dir data/poses/gmdcsa24_rtmpose_bytetrack_t64 `
+  --output-manifest data/metadata/gmdcsa24_rtmpose_bytetrack_t64.csv `
+  --frames 64 --device cuda
+```
+
 YOLO-Pose：
 
 ```powershell
@@ -118,6 +129,11 @@ python scripts/build_gcn_tensor.py `
   --project-root .
 
 python scripts/build_gcn_tensor.py `
+  --manifest data/metadata/gmdcsa24_rtmpose_bytetrack_t64.csv `
+  --output data/gcn/gmdcsa24_rtmpose_bytetrack_t64.npz `
+  --project-root .
+
+python scripts/build_gcn_tensor.py `
   --manifest data/metadata/gmdcsa24_alphapose_t64.csv `
   --output data/gcn/gmdcsa24_alphapose_t64.npz `
   --project-root .
@@ -142,7 +158,7 @@ python scripts/run_three_routes.py --project . --epochs 80 --patience 15 --batch
 python scripts/summarize_benchmark.py --results results/benchmark --output results
 ```
 
-21 路固定跑满 300 轮并保存各折验证最优模型：
+22 路固定跑满 300 轮并保存各折验证最优模型：
 
 ```powershell
 python scripts/run_three_routes.py --project . --epochs 300 --batch-size 16 `
