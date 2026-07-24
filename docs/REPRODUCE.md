@@ -188,7 +188,29 @@ results/benchmark/<pose>_<model>/fold_1..4/metrics.json
 results/benchmark_summary.csv
 ```
 
-## 7. MCFD 外部测试
+## 7. 构建并训练部署对齐滑窗模型
+
+完整提取 GMDCSA24 的逐帧 RTMPose，然后按照原始时间标注构建连续窗口：
+
+```powershell
+python scripts/extract_full_video_rtmpose.py `
+  --video-root data/raw/GMDCSA24 `
+  --output-dir data/poses/gmdcsa24_rtmpose_full `
+  --device cuda
+
+python scripts/build_sliding_window_dataset.py `
+  --video-root data/raw/GMDCSA24 `
+  --pose-root data/poses/gmdcsa24_rtmpose_full `
+  --tensor-out data/gcn/gmdcsa24_rtmpose_sliding_w64_s16.npz `
+  --metadata-out data/metadata/gmdcsa24_rtmpose_sliding_w64_s16.csv `
+  --splits-out data/splits/gmdcsa24_sliding_loso
+```
+
+四折分别运行 `scripts/train_gcn.py`，固定 300 轮、batch 64、关闭早停，并按验证集
+Balanced Accuracy 保存最佳模型。完整参数和单折命令见
+[`SLIDING_WINDOW_TRAINING.md`](SLIDING_WINDOW_TRAINING.md)。
+
+## 8. MCFD 外部测试
 
 MCFD 姿态缓存和张量已存在时直接运行：
 
@@ -200,7 +222,7 @@ python scripts/evaluate_mcfd_ensemble.py
 
 严禁用历史目录 `results/gcn_matrix/` 的权重替代正式三路线结果，也不要把 `results/mcfd_external/` 当作最终输出；它们只保留用于追溯早期实验。
 
-## 8. 错误分析
+## 9. 错误分析
 
 ```powershell
 python scripts/analyze_mcfd_errors.py
@@ -209,7 +231,7 @@ python scripts/render_mcfd_error_cases.py
 
 输出包括融合比较、按摄像头指标、全部逐片段错误类型、6 个典型案例视频和联系图。
 
-## 9. 复现验收条件
+## 10. 复现验收条件
 
 - GMDCSA24：160 个唯一视频，81 ADL、79 跌倒。
 - 每条路线：4 个 `best.pt`，内部汇总 160 条无重复测试预测。

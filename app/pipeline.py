@@ -130,7 +130,7 @@ def run_video(
     input_path: Path,
     output_dir: Path,
     route: str = "rtmpose_stgcnpp",
-    checkpoints_root: Path = PROJECT / "results/benchmark_e300_full",
+    checkpoints_root: Path = PROJECT / "results/sliding_window_e300_b64",
     yolo_model: Path = PROJECT / "models/yolo26n-pose.pt",
     device_name: str = "cuda",
     window_frames: int = 64,
@@ -292,7 +292,7 @@ def run_video(
             "min_pose_valid_ratio": config.min_pose_valid_ratio,
             "min_positive_folds": config.min_positive_folds,
         },
-        "warning": "Research prototype; window distribution differs from uniform-sampling training clips.",
+        "warning": "Research prototype; the eight-video smoke test is not an unbiased accuracy estimate.",
     }
     (output_dir / "summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

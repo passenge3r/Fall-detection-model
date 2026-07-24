@@ -9,6 +9,7 @@
 - 全部路线、全部指标：[`docs/ALL_ROUTE_METRICS.md`](docs/ALL_ROUTE_METRICS.md)
 - RTMPose + ByteTrack 独立重训与丢轨分析：[`docs/RTMPOSE_BYTETRACK_RETRAIN.md`](docs/RTMPOSE_BYTETRACK_RETRAIN.md)
 - RTMPose 正式系统演示与滑窗冒烟验证：[`docs/FINAL_SYSTEM_DEMO.md`](docs/FINAL_SYSTEM_DEMO.md)
+- 部署对齐滑窗训练、指标与复现：[`docs/SLIDING_WINDOW_TRAINING.md`](docs/SLIDING_WINDOW_TRAINING.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)
@@ -57,7 +58,8 @@ fall_benchmark/
 - MCFD：场景 1—23 的 552 个标注片段，264 个跌倒、288 个 ADL；cam1 仅用于阈值校准，cam3 用于开发观察，cam2/4/5/6/7/8 共 415 段作为跨视角外部测试。
 - 统一骨架：COCO-17，通道为归一化 `x`、`y` 和置信度。
 - 统一输入：`[N, C, T, V, M] = [样本, 3, 64, 17, 1]`。
-- 当前离线实验在每个视频或标注片段内均匀采样 64 个位置；尚未使用在线滑动窗口。
+- 23 路模型比较仍使用每段均匀采样 64 帧；系统默认权重已改用连续 64 帧、
+  步长 16 帧的部署对齐滑窗数据训练。
 
 数据来源、许可和弃用数据集见 [`DATA_SOURCES.md`](DATA_SOURCES.md)。
 
@@ -138,7 +140,7 @@ python -m app.cli `
   --output-dir outputs/demo
 ```
 
-默认使用正式 `RTMPose + ST-GCN++` 四折权重，输出 `annotated.mp4`、
+默认使用部署对齐的 `RTMPose + ST-GCN++` 四折滑窗权重，输出 `annotated.mp4`、
 `windows.jsonl`、`events.jsonl` 和 `summary.json`。默认使用 64 帧窗口、
 16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警；姿态有效率
 低于 50% 时输出 `UNKNOWN`。
@@ -160,6 +162,7 @@ python -m app.cli `
 | 文档 | 内容 |
 |---|---|
 | [`docs/REPRODUCE.md`](docs/REPRODUCE.md) | 从数据清单到训练、外部评估的复现命令 |
+| [`docs/SLIDING_WINDOW_TRAINING.md`](docs/SLIDING_WINDOW_TRAINING.md) | 部署对齐滑窗数据、300 轮训练、指标与系统复测 |
 | [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) | 正式协议、指标、结果和已知限制 |
 | [`docs/SYSTEM_DESIGN.md`](docs/SYSTEM_DESIGN.md) | 软件模块、在线流程、状态机和接口 |
 | [`DATA_SOURCES.md`](DATA_SOURCES.md) | 数据来源、许可、完整性与取舍 |

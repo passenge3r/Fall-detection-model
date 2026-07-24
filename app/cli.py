@@ -16,7 +16,7 @@ def main() -> None:
     parser.add_argument(
         "--checkpoints-root",
         type=Path,
-        default=PROJECT / "results/benchmark_e300_full",
+        default=PROJECT / "results/sliding_window_e300_b64",
     )
     parser.add_argument("--yolo-model", type=Path, default=PROJECT / "models/yolo26n-pose.pt")
     parser.add_argument("--device", default="cuda")

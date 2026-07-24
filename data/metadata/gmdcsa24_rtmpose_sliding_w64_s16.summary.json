@@ -1,0 +1,153 @@
+{
+  "shape": [
+    1548,
+    3,
+    64,
+    17,
+    1
+  ],
+  "windows": 1548,
+  "labels": {
+    "adl": 1071,
+    "fall": 477
+  },
+  "ignored_boundary_windows": 36,
+  "window_frames": 64,
+  "stride_frames": 16,
+  "min_fall_overlap_seconds": 0.5,
+  "finite": true,
+  "splits": {
+    "1": {
+      "train": {
+        "samples": 779,
+        "labels": {
+          "0": 560,
+          "1": 219
+        },
+        "subjects": [
+          "3",
+          "4"
+        ]
+      },
+      "val": {
+        "samples": 513,
+        "labels": {
+          "0": 350,
+          "1": 163
+        },
+        "subjects": [
+          "2"
+        ]
+      },
+      "test": {
+        "samples": 256,
+        "labels": {
+          "0": 161,
+          "1": 95
+        },
+        "subjects": [
+          "1"
+        ]
+      }
+    },
+    "2": {
+      "train": {
+        "samples": 658,
+        "labels": {
+          "0": 465,
+          "1": 193
+        },
+        "subjects": [
+          "1",
+          "4"
+        ]
+      },
+      "val": {
+        "samples": 377,
+        "labels": {
+          "0": 256,
+          "1": 121
+        },
+        "subjects": [
+          "3"
+        ]
+      },
+      "test": {
+        "samples": 513,
+        "labels": {
+          "0": 350,
+          "1": 163
+        },
+        "subjects": [
+          "2"
+        ]
+      }
+    },
+    "3": {
+      "train": {
+        "samples": 769,
+        "labels": {
+          "0": 511,
+          "1": 258
+        },
+        "subjects": [
+          "1",
+          "2"
+        ]
+      },
+      "val": {
+        "samples": 402,
+        "labels": {
+          "0": 304,
+          "1": 98
+        },
+        "subjects": [
+          "4"
+        ]
+      },
+      "test": {
+        "samples": 377,
+        "labels": {
+          "0": 256,
+          "1": 121
+        },
+        "subjects": [
+          "3"
+        ]
+      }
+    },
+    "4": {
+      "train": {
+        "samples": 890,
+        "labels": {
+          "0": 606,
+          "1": 284
+        },
+        "subjects": [
+          "2",
+          "3"
+        ]
+      },
+      "val": {
+        "samples": 256,
+        "labels": {
+          "0": 161,
+          "1": 95
+        },
+        "subjects": [
+          "1"
+        ]
+      },
+      "test": {
+        "samples": 402,
+        "labels": {
+          "0": 304,
+          "1": 98
+        },
+        "subjects": [
+          "4"
+        ]
+      }
+    }
+  }
+}
