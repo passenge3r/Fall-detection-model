@@ -4,6 +4,56 @@
 
 本项目以统一数据、骨架接口、训练划分和评价指标比较跌倒检测路线，并为后续摄像头系统提供算法与软件基础。当前已完成 **7 个姿态/跟踪前端 × 3 个时序分类器的 21 路正交网格，以及两条 RTMPose + ByteTrack 消融，共 23 条路线**的四折 300 轮内部实验。下一阶段是设备接入、多人跟踪修复和现场数据验证。
 
+## 模块流程图
+
+下面展示启用 RTMPose 路线后的在线处理流程。跌倒检测判断“是否已经跌倒”，可选预警分支估计未来 **1 / 2 / 3 秒**风险；可选 Qwen 分支对触发事件补充视频语义解释。
+
+```mermaid
+flowchart TD
+    A["视频输入<br/>萤石摄像头 / 直连视频流 / 本地演示视频"] --> B["单路解码与帧处理"]
+    B --> C["RTMPose 姿态提取<br/>COCO-17 关键点与置信度"]
+    C --> D["骨架质量检查与归一化<br/>64 帧滑动窗口，步长 16 帧"]
+    D --> E["跌倒检测<br/>ST-GCN++ 多折集成"]
+    E --> F["决策状态机<br/>质量门控、多折投票、连续窗口确认"]
+    F --> G["实时检测状态与事件<br/>正常 / 疑似 / 确认跌倒 / 冷却 / 无法判断"]
+    D --> H{"预警已启用且<br/>窗口骨架质量足够？"}
+    H -->|是| I["提前风险预测<br/>1 / 2 / 3 秒多时距模型与投票"]
+    I --> J["风险等级<br/>NORMAL / LOW / MEDIUM / HIGH"]
+    H -->|否| K["不执行预警模型<br/>未启用或 POSE_UNAVAILABLE"]
+    G --> L["FastAPI 状态、事件与预览接口"]
+    J --> L
+    K --> L
+    B --> M["最近 RGB 视频缓冲"]
+    G -. "确认跌倒触发" .-> N["可选 Qwen3-VL 异步复核<br/>收集触发后画面，再抽帧分析"]
+    J -. "HIGH 风险触发" .-> N
+    M --> N
+    N --> O["动作、阶段、原因与复核建议<br/>仅辅助确认，不直接撤销骨架告警"]
+    O --> L
+    L --> P["演示界面 / 业务系统<br/>查看预览、风险、事件及复核结果"]
+```
+
+实线表示处理或结果传递，虚线表示自动复核触发。两条骨架分支共享视频连接、姿态结果和窗口；多模态分支只在启用并满足触发条件时运行，不是对每一帧调用大模型。
+
+### 各环节负责什么
+
+| 环节 | 作用与输出 | 主要实现 |
+|---|---|---|
+| 视频接入 | 解析视频源、单路拉流、维护帧与事件状态 | [`app/ezviz.py`](app/ezviz.py)、[`app/stream_service.py`](app/stream_service.py) |
+| 骨架与窗口 | 提取姿态，检查有效关节、躯干、骨骼比例及目标跳变，构建时序输入 | [`app/realtime.py`](app/realtime.py)、[`app/pose_quality.py`](app/pose_quality.py) |
+| 跌倒检测 | 多折模型输出跌倒概率，状态机确认事件并控制冷却 | [`app/pipeline.py`](app/pipeline.py)、[`app/decision.py`](app/decision.py)、[`models/gcn_models.py`](models/gcn_models.py) |
+| 提前风险预测（可选） | 输出 1 / 2 / 3 秒风险概率和投票结果；当前权重需配合 RTMPose | [`app/prefall.py`](app/prefall.py) |
+| 视频语义复核（可选） | 异步输出动作类别、阶段、原因和融合建议 | [`app/multimodal.py`](app/multimodal.py) |
+| 系统交付 | 通过接口提供状态、事件、画面和演示页面 | [`app/webapp.py`](app/webapp.py)、[`app/demo_ui.py`](app/demo_ui.py) |
+
+### 如何理解结果
+
+- **先预警、后复核**：骨架检测和风险提示立即输出，不等待 Qwen。默认自动复核在 `HIGH` 或确认跌倒时触发，继续收集约 2.5 秒画面，再从 RGB 缓冲中抽取 8 帧；实际参数可配置。
+- **无法判断不等于正常**：未积累满窗口时为 `WARMUP`；骨架质量不足时，检测状态可为 `UNKNOWN`，预警分支为 `POSE_UNAVAILABLE`，不会执行预警模型。
+- **确认跌倒优先于提前预测**：检测确认后，预警结果转为 `FALL_CONFIRMED`，冷却阶段转为 `RESPONSE_ACTIVE`，避免继续把已发生事件描述为未来风险。
+- **复核结果是辅助信息**：Qwen 未确认、解析失败或运行异常均不能直接取消骨架告警；当前预警分支仍属实验功能，不应单独触发紧急外部动作。
+
+接入时可从 `GET /v1/streams/status` 读取 `latest_result`（含 `prefall_prediction` 和 `multimodal_review`），从 `GET /v1/events` 获取事件；`GET /v1/preview.mjpg` 提供画面预览。详细配置见[视频服务说明](docs/FASTAPI_CAMERA_SERVICE.md)、[提前预警集成](docs/PREFALL_FASTAPI_INTEGRATION.md)和[多模态复核集成](docs/MULTIMODAL_FASTAPI_INTEGRATION.md)。
+
 ## 快速查看结果
 
 - 一页式项目全貌：[`项目概要.md`](项目概要.md)
