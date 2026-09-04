@@ -101,10 +101,12 @@ def plot_route(root: Path, route: str) -> list[dict[str, object]]:
     return summary
 
 
-def plot_comparison(root: Path, summaries: list[dict[str, object]]) -> None:
+def plot_comparison(
+    root: Path, summaries: list[dict[str, object]], routes: list[str]
+) -> None:
     figure, axes = plt.subplots(1, 2, figsize=(13, 5))
     x = np.arange(1, 5)
-    for route in ROUTES:
+    for route in routes:
         rows = [row for row in summaries if row["route"] == route]
         axes[0].plot(x, [row["best_epoch"] for row in rows], marker="o", label=ROUTE_LABELS[route])
         axes[1].plot(x, [row["test_balanced_accuracy"] for row in rows], marker="o",
@@ -116,7 +118,7 @@ def plot_comparison(root: Path, summaries: list[dict[str, object]]) -> None:
         axis.set_xticks(x)
         axis.grid(alpha=0.2)
         axis.legend(fontsize=8)
-    figure.suptitle(f"{len(ROUTES)}-route experiment summary", fontsize=15)
+    figure.suptitle(f"{len(routes)}-route experiment summary", fontsize=15)
     figure.tight_layout()
     figure.savefig(root / "learning_curve_comparison.png", dpi=180, bbox_inches="tight")
     plt.close(figure)
@@ -125,11 +127,16 @@ def plot_comparison(root: Path, summaries: list[dict[str, object]]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--results", type=Path, required=True)
+    parser.add_argument(
+        "--route", action="append", choices=ROUTES,
+        help="Plot only the selected route; may be repeated. Default: all routes",
+    )
     args = parser.parse_args()
+    selected_routes = args.route or list(ROUTES)
     summaries: list[dict[str, object]] = []
-    for route in ROUTES:
+    for route in selected_routes:
         summaries.extend(plot_route(args.results, route))
-    plot_comparison(args.results, summaries)
+    plot_comparison(args.results, summaries, selected_routes)
     with (args.results / "training_summary.csv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(summaries[0]))
         writer.writeheader()

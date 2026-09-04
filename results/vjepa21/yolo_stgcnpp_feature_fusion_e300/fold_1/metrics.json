@@ -1,0 +1,30 @@
+{
+  "fold": 1,
+  "best_epoch": 0,
+  "validation": {
+    "loss": 0.45142707228660583,
+    "accuracy": 0.875,
+    "precision": 0.8518518518518519,
+    "recall": 0.92,
+    "specificity": 0.8260869565217391,
+    "f1": 0.8846153846153846,
+    "balanced_accuracy": 0.8730434782608696,
+    "tp": 23,
+    "tn": 19,
+    "fp": 4,
+    "fn": 2
+  },
+  "test": {
+    "loss": 0.3891631066799164,
+    "accuracy": 0.90625,
+    "precision": 0.8421052631578947,
+    "recall": 1.0,
+    "specificity": 0.8125,
+    "f1": 0.9142857142857143,
+    "balanced_accuracy": 0.90625,
+    "tp": 16,
+    "tn": 13,
+    "fp": 3,
+    "fn": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "apiantonio/vjepa2.1-vit-base-384",
+  "revision": "ea7765861aa689985c593727725afa378fc87492",
+  "dtype": "float16",
+  "frames_per_video": 16,
+  "preprocessing": "short-side resize 384, center crop 384, ImageNet normalization",
+  "pooling": "mean over final encoder tokens",
+  "requested_samples": 160,
+  "successful_samples": 160,
+  "failed_samples": 0,
+  "feature_shape": [
+    160,
+    768
+  ],
+  "mean_seconds_per_video": 0.7141679906235368,
+  "total_seconds": 114.29560339997988,
+  "peak_cuda_memory_gib": 0.335845947265625,
+  "failures": []
+}

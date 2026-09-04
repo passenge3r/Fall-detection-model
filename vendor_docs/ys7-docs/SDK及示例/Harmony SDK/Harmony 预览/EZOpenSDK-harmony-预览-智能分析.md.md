@@ -1,0 +1,25 @@
+# EZOpenSDK-harmony-预览-智能分析.md
+
+> EZOpenSDK-harmony-预览-智能分析
+
+> 更新时间: 2026-06-02T14:03:56.000+08:00
+
+> 文档ID: 4199 | 来源树: SDK及示例
+
+---
+
+# 智能分析
+
+部分摄像机自带算法，会将画面中出现的人、车、宠物等画面进行标记，常见的是比如人形框选、车子框选等，SDK提供api开关，开发者可选择是否要将智能分析画框叠加到视频流中。api如下：
+
+EZPlayer
+
+```
+/**
+ * 设置打开播放库的智能分析，当前温感相机的框框使用了该智能分析数据，预览成功后调用，在播放过程中随时开关
+ * @param enable  true：开  false：关
+ */
+async setIntelAnalysis(enable: boolean): Promise<boolean>;
+```
+
+**注意：如果设备不支持，调用该api无效。**

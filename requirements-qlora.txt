@@ -1,0 +1,4 @@
+# Install after requirements.txt for the Qwen3-VL QLoRA experiment.
+peft==0.20.0
+accelerate==1.14.0
+bitsandbytes==0.50.0

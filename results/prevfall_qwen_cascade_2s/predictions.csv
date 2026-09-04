@@ -1,0 +1,499 @@
+﻿video_path,subject,fold,video_label,window_path,clip_start_seconds,clip_end_seconds,lead_seconds,skeleton_probability,skeleton_threshold,action_class,fall_stage,risk_level,confidence,qwen_positive,review_outcome,summary_zh,evidence,latency_seconds,model_output_valid,raw_output
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM3.mp4,3,3,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM3.mp4#f176-239,3.966667,7.966667,,0.6120507121086121,0.3839940130710602,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里,"A person is standing in the middle of a room, facing the camera. The person is wearing a white jacket and blue jeans. The room has a whiteboard, a projector, and several tables and chairs. The person is not moving or changing position.",52.42982299999949,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in the middle of a room, facing the camera. The person is wearing a white jacket and blue jeans. The room has a whiteboard, a projector, and several tables and chairs. The person is not moving or changing position."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4,4,4,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4#f768-831,23.7,27.7,,0.002969552529975772,0.002818172564730048,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩。,"A person is standing in a room with a mask on their face. They are positioned in the center of the room, facing the camera. The person remains stationary throughout the frames.",4.471778600000107,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a mask on their face. They are positioned in the center of the room, facing the camera. The person remains stationary throughout the frames."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM5.mp4,5,5,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM5.mp4#f64-127,0.233333,4.233333,,0.30758538842201233,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，面对白板。,"A person is standing in the middle of a room, facing a whiteboard. The person is upright and appears to be stationary.",4.153704700000162,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in the middle of a room, facing a whiteboard. The person is upright and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里，面对白板。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4#f672-735,20.499998,24.499998,,0.3129628598690033,0.19596992433071136,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be standing still.,4.337204800000109,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be standing still."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4,7,7,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4#f0-63,0.0,2.1,,1.0,0.9319695830345154,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间中央，,"A person is standing in the middle of a room, facing a whiteboard. The person is wearing a grey shirt and dark pants. The room has a carpeted floor with yellow markers on it. There are tables and chairs in the room, and a projector is mount",5.157722799999647,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in the middle of a room, facing a whiteboard. The person is wearing a grey shirt and dark pants. The room has a carpeted floor with yellow markers on it. There are tables and chairs in the room, and a projector is mounted on the ceiling."",
+  ""summary_zh"": ""一个人站在房间中央，"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM9.mp4,9,9,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM9.mp4#f560-623,16.766665,20.766665,,0.19381067156791687,0.19125054776668549,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary.,13.97245600000042,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM3.mp4,3,3,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM3.mp4#f32-95,0.0,3.166666,,0.4851441979408264,0.3839940130710602,standing,normal,LOW,,0,NOT_CORROBORATED,一个人站立在房间里,"a person standing in a room with a whiteboard and a table, no visible movement or change in posture",2.777931499999795,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, no visible movement or change in posture"",""summary_zh"":""一个人站立在房间里""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4,4,4,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4#f832-895,25.833333,29.833333,,0.031534966081380844,0.002818172564730048,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a black shirt and pants, with a mask on their face, and yellow tape on the floor. The person is stationary and does not move significantly. The room has a carpeted floor and",5.455589299999701,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a black shirt and pants, with a mask on their face, and yellow tape on the floor. The person is stationary and does not move significantly. The room has a carpeted floor and a projector mounted on the ceiling. The person is facing the camera and appears to be looking at the camera. The person is not moving or changing position. The person is not falling or moving in any way."
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4#f656-719,19.966665,23.966665,,0.5741197466850281,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站立在房间里,"A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their body is upright. The person's feet are on the floor, and they are not in a falling position.",5.070942899999864,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their body is upright. The person's feet are on the floor, and they are not in a falling position."",
+  ""summary_zh"": ""一个人站立在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM7.mp4,7,7,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM7.mp4#f1120-1183,35.433333,39.433333,,0.9873269200325012,0.9319695830345154,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a red hat and a grey jacket, with a blurred face, and the person is not moving or changing position, and the person is not falling or lying down, and the person is not in a ",5.348198300000149,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a red hat and a grey jacket, with a blurred face, and the person is not moving or changing position, and the person is not falling or lying down, and the person is not in a sitting position, and the person is not in a lying position, and the person is not in a falling position, and the person is not in a prefall position, and the person is not in"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM5.mp4,5,5,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM5.mp4#f64-127,0.233333,4.233333,,0.41744527220726013,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，面对白板。,"A person is standing in the middle of a room, facing a whiteboard. The person is wearing a light-colored jacket and dark pants. The room has a carpeted floor with yellow markers on it. There are desks, chairs, and a projector on the ceiling",5.563568399999895,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in the middle of a room, facing a whiteboard. The person is wearing a light-colored jacket and dark pants. The room has a carpeted floor with yellow markers on it. There are desks, chairs, and a projector on the ceiling."",
+  ""summary_zh"": ""一个人站在房间里，面对白板。"""
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4#f608-671,18.366667,22.366667,,0.2975512146949768,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be stationary.,4.617551500000445,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM3.mp4,3,3,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM3.mp4#f80-143,0.766667,4.766667,,0.4379967451095581,0.3839940130710602,standing,normal,LOW,,0,NOT_CORROBORATED,一个人站立在房间里,"a person standing in a room with a whiteboard and a table, no visible movement or change in posture",2.961705100000472,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, no visible movement or change in posture"",""summary_zh"":""一个人站立在房间里""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4#f576-639,17.3,21.3,,0.21201419830322266,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and a table. The person is wearing a black shirt and jeans. The person is standing still and not moving.,4.470822700000099,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is wearing a black shirt and jeans. The person is standing still and not moving."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM7.mp4,7,7,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM7.mp4#f128-191,2.3666669999999996,6.366667,,0.9930437803268433,0.9319695830345154,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, facing the whiteboard, with no visible movement or change in posture, and no indication of falling or falling risk.",3.219076700000187,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, facing the whiteboard, with no visible movement or change in posture, and no indication of falling or falling risk.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4#f416-479,11.966666,15.966666,1.766667,0.6092035174369812,0.5754632353782654,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人,"A person is standing in a room, facing the camera. They are wearing a grey hoodie and dark pants. Their posture is upright, and they are not moving or showing any signs of falling. The person is standing still in the middle of the room, wit",5.482136900000114,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a grey hoodie and dark pants. Their posture is upright, and they are not moving or showing any signs of falling. The person is standing still in the middle of the room, with a whiteboard and desks visible in the background."",
+  ""summary_zh"": ""一个人"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4#f192-255,4.5,8.5,1.400000,0.8768097162246704,0.6317691206932068,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间内行走,a person is walking in a room with a whiteboard and desks. The person is moving forward and the camera is stationary.,4.433664900000622,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room with a whiteboard and desks. The person is moving forward and the camera is stationary."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4#f384-447,10.9,14.9,2.000000,0.9850220084190369,0.3839940130710602,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站着，戴着口罩，没有移动或跌倒。,"A person is standing in a room, facing the camera. They are wearing a face mask and appear to be stationary. The person is not moving or falling in any of the frames.",4.9877128999996785,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a face mask and appear to be stationary. The person is not moving or falling in any of the frames."",
+  ""summary_zh"": ""一个人站着，戴着口罩，没有移动或跌倒。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4#f624-687,18.899999,22.899999,1.800000,0.9998914003372192,0.002818172564730048,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里，,"A person is standing in a room, facing the camera. They are wearing a black t-shirt with a red design, dark pants, and white shoes. They are holding a small object in their right hand and appear to be looking down at it. The person is stand",5.4004212999998344,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a black t-shirt with a red design, dark pants, and white shoes. They are holding a small object in their right hand and appear to be looking down at it. The person is standing still and not moving."",
+  ""summary_zh"": ""一个人站在房间里，"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4#f448-511,13.033332000000001,17.033332,1.600000,0.9974186420440674,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,人站立并调整头发,"A person is standing in a room, facing the camera. They raise their hands to their head, possibly adjusting their hair or a hat. The person remains in this position for the duration of the frames.",5.020911099999466,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room, facing the camera. They raise their hands to their head, possibly adjusting their hair or a hat. The person remains in this position for the duration of the frames."",
+  ""summary_zh"": ""人站立并调整头发""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4#f416-479,11.966667,15.966667,1.533333,0.7717702984809875,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩。,A person is standing in a room with a whiteboard and desks. The person is wearing a mask and appears to be stationary. The person's posture is upright and they are not moving.,4.957617699999901,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a mask and appears to be stationary. The person's posture is upright and they are not moving."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4#f320-383,8.766666,12.766666,1.666667,0.9895085096359253,0.32760852575302124,standing,normal,LOW,0.98,0,NOT_CORROBORATED,站立,"A person in a green jacket and black shorts stands in a room with a whiteboard and desks. They are facing the camera, and their posture is upright. They appear to be stationary, with no visible signs of movement or instability.",5.10072719999971,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person in a green jacket and black shorts stands in a room with a whiteboard and desks. They are facing the camera, and their posture is upright. They appear to be stationary, with no visible signs of movement or instability."",
+  ""summary_zh"": ""站立""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4#f368-431,10.366667,14.366667,1.833333,0.3643152713775635,0.19125054776668549,walking,normal,LOW,,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,"a person is walking in a room with a whiteboard and a desk, moving from the left side of the room to the right side, with a yellow marker on the floor in front of them, and the person is wearing a white shirt and black pants, and the person",5.365182999999888,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person is walking in a room with a whiteboard and a desk, moving from the left side of the room to the right side, with a yellow marker on the floor in front of them, and the person is wearing a white shirt and black pants, and the person is moving forward with a steady pace, and the person is not falling, and the person is not lying down, and the person is not sitting down, and the person is not in a lying position"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4#f400-463,11.433332,15.433332,2.000000,0.6038544774055481,0.5754632353782654,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a projector, wearing a mask, and looking at the whiteboard, then raising the mask and looking at the whiteboard again, then lowering the mask and looking at the whiteboard again, then raisin",5.420204099999864,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a projector, wearing a mask, and looking at the whiteboard, then raising the mask and looking at the whiteboard again, then lowering the mask and looking at the whiteboard again, then raising the mask and looking at the whiteboard again, then lowering the mask and looking at the whiteboard again, then raising the mask and looking at the whiteboard again, then lowering the mask and looking at the whiteboard"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4#f192-255,4.499999000000001,8.499999,1.300000,0.8165521621704102,0.6317691206932068,walking,normal,LOW,,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,"a man in a black shirt and plaid pants walks from the left side of the room towards the right side, passing by a whiteboard and a table. He moves forward with a steady pace, and his body is upright, indicating no signs of falling or instabi",5.557095200000731,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a man in a black shirt and plaid pants walks from the left side of the room towards the right side, passing by a whiteboard and a table. He moves forward with a steady pace, and his body is upright, indicating no signs of falling or instability. The room is empty except for a few yellow sticky notes on the floor and a trash can on the left side. The man's posture is consistent throughout the sequence, showing a normal walking motion. There are"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4#f400-463,11.433333,15.433333,1.600000,0.9980670809745789,0.3839940130710602,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a mask and blue jeans, holding a phone in their right hand, and looking at the phone, then looking around the room, and then looking at the phone again, and then looking at ",5.438257499999963,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a mask and blue jeans, holding a phone in their right hand, and looking at the phone, then looking around the room, and then looking at the phone again, and then looking at the phone again, and then looking at the phone again, and then looking at the phone again, and then looking at the phone again, and then looking at the phone again, and then looking at the phone"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4#f624-687,18.9,22.9,1.833333,0.9999135732650757,0.002818172564730048,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a black t-shirt with a red design, black pants, and white shoes. The person is facing the camera and appears to be stationary. The room has a dark carpet, a whiteboard, and ",5.563540000000103,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a black t-shirt with a red design, black pants, and white shoes. The person is facing the camera and appears to be stationary. The room has a dark carpet, a whiteboard, and a table with a chair. There are yellow sticky notes on the floor. The person is not moving or falling in any of the frames. The person is standing still and not in any position that suggests"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4#f448-511,13.033332000000001,17.033332,1.866667,0.9996851682662964,0.14103153347969055,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a hat and a gray shirt, with their hands raised to their face, possibly adjusting the hat or touching their face, and the room has a carpeted floor with yellow tape on the f",5.601760300000024,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a hat and a gray shirt, with their hands raised to their face, possibly adjusting the hat or touching their face, and the room has a carpeted floor with yellow tape on the floor, and a black trash can and a table with a red label on the left side of the room, and a door on the left wall, and a projector on the ceiling, and a whiteboard on the"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4#f416-479,11.966667,15.966667,1.666667,0.5991814732551575,0.19596992433071136,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a mask and holding a camera, looking at the camera, and moving slightly forward, with no visible fall or risk.",3.48481240000001,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a mask and holding a camera, looking at the camera, and moving slightly forward, with no visible fall or risk.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4#f464-527,13.566666999999999,17.566667,0.800000,0.9657567143440247,0.9319695830345154,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，手里拿着一个白色物体。,A person is standing in a room with a whiteboard and a table. The person is wearing a white t-shirt and dark pants. The person is holding a white object in their hands. The person is standing still and looking at the camera.,5.844301000000087,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is wearing a white t-shirt and dark pants. The person is holding a white object in their hands. The person is standing still and looking at the camera."",
+  ""summary_zh"": ""一个人站在房间里，手里拿着一个白色物体。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4#f320-383,8.766667,12.766667,1.766667,0.932836651802063,0.32760852575302124,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and a table. The person is wearing a green jacket and black shorts. The person is looking down at the floor.,4.731552599999304,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is wearing a green jacket and black shorts. The person is looking down at the floor."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4#f384-447,10.899999,14.899999,1.533333,0.8040200471878052,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a white shirt and black pants, holding a white object in their hands, and looking at the camera. The person is standing still and not moving. The room has a dark carpet and ",5.7137799000001905,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a white shirt and black pants, holding a white object in their hands, and looking at the camera. The person is standing still and not moving. The room has a dark carpet and a white wall with a whiteboard. There are yellow sticky notes on the floor. The person is not falling, and there is no visible risk of falling. The person is standing in a stable posture, and there"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4#f368-431,10.366666,14.366666,1.666667,0.6764538288116455,0.5754632353782654,walking,normal,LOW,0.99,0,NOT_CORROBORATED,人正在行走,"A person is walking in a room with a camera on their head. They are moving forward, with their feet in motion, and their body is in a walking posture. The person is not falling, and there is no visible risk of falling.",5.375254999999925,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is walking in a room with a camera on their head. They are moving forward, with their feet in motion, and their body is in a walking posture. The person is not falling, and there is no visible risk of falling."",
+  ""summary_zh"": ""人正在行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4#f224-287,5.566667000000001,9.566667,1.700000,0.771027684211731,0.6317691206932068,walking,normal,LOW,0.99,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,"a person is walking in a room with a mask on their face, moving from the center of the room towards the right side. The person is wearing a black shirt and plaid pants. The room has desks, a whiteboard, and a projector. The person is moving",5.720733299999665,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room with a mask on their face, moving from the center of the room towards the right side. The person is wearing a black shirt and plaid pants. The room has desks, a whiteboard, and a projector. The person is moving at a steady pace, with no visible signs of instability or falling."","
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4#f400-463,11.433333,15.433333,1.666667,0.9999349117279053,0.3839940130710602,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站着，戴着口罩，手持手机,"A person is standing in a room, facing the camera. They are wearing a mask and a black t-shirt with a graphic on it. They are holding a phone in their right hand and appear to be looking at it. The person is standing still and not moving.",5.646569700000327,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a mask and a black t-shirt with a graphic on it. They are holding a phone in their right hand and appear to be looking at it. The person is standing still and not moving."",
+  ""summary_zh"": ""一个人站着，戴着口罩，手持手机"""
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4#f640-703,19.433333,23.433333,1.600000,0.9999918937683105,0.002818172564730048,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩，保持直立,A person is standing in a room with a whiteboard and desks. The person is wearing a mask and a black shirt with a red design. The person is facing the camera and appears to be stationary. The person's posture is upright and they are not mov,5.606891199999154,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a mask and a black shirt with a red design. The person is facing the camera and appears to be stationary. The person's posture is upright and they are not moving."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩，保持直立"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4#f480-543,14.100000000000001,18.1,1.933333,0.9984890222549438,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，,"A person is standing in a room, holding a camera to their face. They are wearing a light-colored shirt and jeans. The person is standing still, with their hands raised to their face, possibly adjusting the camera. The room has a carpeted fl",5.653797900000427,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room, holding a camera to their face. They are wearing a light-colored shirt and jeans. The person is standing still, with their hands raised to their face, possibly adjusting the camera. The room has a carpeted floor, desks, and a whiteboard."",
+  ""summary_zh"": ""一个人站在房间里，"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4#f416-479,11.966666,15.966666,1.633333,0.6368363499641418,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,人站立并调整头饰,"A person is standing in a room with a whiteboard and desks. They raise their hands to their head, possibly adjusting a mask or hair. The person remains in a standing position throughout the frames.",5.182710200000656,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. They raise their hands to their head, possibly adjusting a mask or hair. The person remains in a standing position throughout the frames."",
+  ""summary_zh"": ""人站立并调整头饰""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4#f432-495,12.5,16.5,0.266667,0.9969056248664856,0.9319695830345154,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间里行走,"A person is walking in a room with a whiteboard and desks. The person is moving forward, with their arms slightly bent and legs in motion. The person is wearing a white t-shirt and dark pants.",5.1764502999994875,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is walking in a room with a whiteboard and desks. The person is moving forward, with their arms slightly bent and legs in motion. The person is wearing a white t-shirt and dark pants."",
+  ""summary_zh"": ""一个人在房间里行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4#f304-367,8.233333,12.233333,1.633333,0.8891421556472778,0.32760852575302124,standing,normal,LOW,0.98,0,NOT_CORROBORATED,人物处于站立状态,"A person in a green hoodie and black shorts stands in a room with a whiteboard and desks. They are facing the camera, and their posture is upright. They raise their right hand to their face, possibly adjusting a mask or touching their face.",5.7023072000001775,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person in a green hoodie and black shorts stands in a room with a whiteboard and desks. They are facing the camera, and their posture is upright. They raise their right hand to their face, possibly adjusting a mask or touching their face. The person remains in this position for the duration of the frames."",
+  ""summary_zh"": """
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4#f416-479,11.966667,15.966667,1.866667,0.9983158111572266,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a desk, wearing a white shirt and black pants, with a white mask on their face, and their hands raised to their head, moving slightly forward, and then lowering their hands, and then raising",5.659557199999654,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a desk, wearing a white shirt and black pants, with a white mask on their face, and their hands raised to their head, moving slightly forward, and then lowering their hands, and then raising them again, and then lowering them again, and then raising them again, and then lowering them again, and then raising them again, and then lowering them again, and then raising them again, and then lowering them again"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4#f384-447,10.899999,14.899999,1.766667,0.7480635643005371,0.5754632353782654,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a projector, the person is wearing a grey hoodie and black pants, the person is standing still and looking at the camera, the person is not moving or changing position, the person is not fal",5.545716800000264,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a projector, the person is wearing a grey hoodie and black pants, the person is standing still and looking at the camera, the person is not moving or changing position, the person is not falling or moving in any way, the person is not lying or sleeping, the person is not in a falling position, the person is not in a prefall position, the person is not in a postfall position, the person"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4#f224-287,5.566665,9.566665,1.900000,0.7993152141571045,0.6317691206932068,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a black shirt and plaid pants, holding a phone in their right hand, and moving their right hand to their face, then moving their left hand to their face, and then moving the",5.722459399999934,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a black shirt and plaid pants, holding a phone in their right hand, and moving their right hand to their face, then moving their left hand to their face, and then moving their right hand to their face again, and then moving their left hand to their face again, and then moving their right hand to their face again, and then moving their left hand to their face again, and then"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4#f400-463,11.433332,15.433332,1.933333,0.9998875856399536,0.3839940130710602,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, holding a phone in their hand, and wearing a face mask. The person is standing still and not moving. The room has a carpeted floor and a projector on the ceiling. There are yellow s",5.549582900000132,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, holding a phone in their hand, and wearing a face mask. The person is standing still and not moving. The room has a carpeted floor and a projector on the ceiling. There are yellow stickers on the floor. The person is wearing a black shirt and blue jeans. The person is not falling, and there is no visible risk of falling. The person is standing still and not moving. The person"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4#f640-703,19.433332,23.433332,1.933333,0.9921073317527771,0.002818172564730048,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a mask on their face, moving slightly and then bending down, but not falling, with no visible signs of instability or injury.",3.044503799999802,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a mask on their face, moving slightly and then bending down, but not falling, with no visible signs of instability or injury.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4#f480-543,14.099999,18.099999,1.900000,0.9991052746772766,0.14103153347969055,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里，拿着相机。,"A person is standing in a room, holding a camera and looking at it. The person is wearing a grey shirt and blue jeans. The room has a whiteboard, a table, and a black trash can. The person is standing still and not moving.",5.610087100000783,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, holding a camera and looking at it. The person is wearing a grey shirt and blue jeans. The room has a whiteboard, a table, and a black trash can. The person is standing still and not moving."",
+  ""summary_zh"": ""一个人站在房间里，拿着相机。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4#f416-479,11.966667,15.966667,1.733333,0.6700455546379089,0.19596992433071136,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, holding a camera and looking at the camera, with no visible movement or change in posture, and no indication of falling or falling risk.",3.3383966999999757,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, holding a camera and looking at the camera, with no visible movement or change in posture, and no indication of falling or falling risk.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4#f432-495,12.499998999999999,16.499999,0.600000,0.9830980896949768,0.9319695830345154,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room, moving from the center of the room towards the left side. The person is wearing a white t-shirt and dark pants, and is holding a phone in their right hand. The person is moving forward, and their body is in a ",5.578535199999351,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room, moving from the center of the room towards the left side. The person is wearing a white t-shirt and dark pants, and is holding a phone in their right hand. The person is moving forward, and their body is in a walking posture."",
+  ""summary_zh"": ""一个人在房间内行走"""
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4#f304-367,8.233333,12.233333,1.733333,0.5694206953048706,0.32760852575302124,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a green jacket and black shorts, with a yellow sticker on the floor, and a black trash can on the left side of the room. The person is facing the camera and appears to be in",5.561048599999594,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a green jacket and black shorts, with a yellow sticker on the floor, and a black trash can on the left side of the room. The person is facing the camera and appears to be in a stationary position. The room has a carpeted floor and a wooden baseboard. The person is not moving or changing posture. The person is not falling or lying down. The person is not sitting or"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4#f416-479,11.966667,15.966667,1.766667,0.9601957201957703,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a white shirt and black pants, with a white mask on their face, and their hands raised to their head, and the room has a dark carpet and a projector on the ceiling, and the ",5.727968000000146,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a white shirt and black pants, with a white mask on their face, and their hands raised to their head, and the room has a dark carpet and a projector on the ceiling, and the person is not moving or falling, and the person is standing still, and the person is not falling, and the person is not lying or sleeping, and the person is not sitting, and the person is"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4#f368-431,10.366667,14.366667,1.900000,0.8352476954460144,0.5754632353782654,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，面对着镜头。,A person is standing in a room with a whiteboard and desks. The person is wearing a grey hoodie and black pants. The person is facing the camera and appears to be stationary.,5.162465499999598,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a grey hoodie and black pants. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里，面对着镜头。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4#f240-303,6.1,10.1,1.200000,0.7712821960449219,0.6317691206932068,walking,normal,LOW,0.98,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room with a whiteboard and desks. The person is moving forward, and their posture is upright.",4.577148800000032,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""a person is walking in a room with a whiteboard and desks. The person is moving forward, and their posture is upright."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4#f320-383,8.766667,12.766667,1.866667,0.8086346983909607,0.3839940130710602,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room with a mask on their face, moving from the center of the room towards the camera. The person is in a stable posture and not showing any signs of falling.",5.495137899999463,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room with a mask on their face, moving from the center of the room towards the camera. The person is in a stable posture and not showing any signs of falling."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4#f576-639,17.3,21.3,1.766667,0.9999452829360962,0.002818172564730048,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩和背包。,A person is standing in a room with a whiteboard and desks. The person is wearing a mask and a backpack. The person is facing the camera and appears to be stationary.,5.196954000000005,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a mask and a backpack. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩和背包。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4#f528-591,15.7,19.7,0.533333,0.9360243678092957,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary.,4.442215699999906,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4#f464-527,13.566666999999999,17.566667,1.700000,0.981253445148468,0.19596992433071136,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩，身体保持直立。,A person is standing in a room with a mask on their face. They are facing the camera and appear to be stationary. The person's posture is upright and they are not moving their body or limbs in a way that suggests falling or preparing to fal,5.7458888000001025,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a mask on their face. They are facing the camera and appear to be stationary. The person's posture is upright and they are not moving their body or limbs in a way that suggests falling or preparing to fall."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩，身体保持直立。"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4#f448-511,13.033332000000001,17.033332,0.833333,0.9951243996620178,0.9319695830345154,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，面对着镜头。,A person is standing in a room with a whiteboard and desks. The person is wearing a white t-shirt and dark pants. The person is facing the camera and appears to be stationary.,5.214031100000284,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a white t-shirt and dark pants. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里，面对着镜头。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM8.mp4#f272-335,7.166667,11.166667,0.966667,0.3829258382320404,0.32760852575302124,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person wearing a green jacket and a face mask is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary.,4.676641199999722,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person wearing a green jacket and a face mask is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4#f384-447,10.9,14.9,1.400000,0.3958061635494232,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and tables, wearing a white shirt and black pants, with a mask on their face, and the person is standing still, not moving, not falling, not lying, not sitting, not falling, not prefall, not pos",5.802192600000126,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and tables, wearing a white shirt and black pants, with a mask on their face, and the person is standing still, not moving, not falling, not lying, not sitting, not falling, not prefall, not postfall, not falling, not prefall, not postfall, not falling, not prefall, not postfall, not falling, not prefall, not postfall, not falling, not"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4#f368-431,10.366667,14.366667,1.700000,0.9047515988349915,0.5754632353782654,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a grey hoodie and black pants, with a mask on their face, and yellow sticky notes on the floor. The person is stationary and not moving, and the room is empty except for the",5.725368200000048,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a grey hoodie and black pants, with a mask on their face, and yellow sticky notes on the floor. The person is stationary and not moving, and the room is empty except for the person and the furniture. The person is not falling, and there is no visible risk of falling. The person is standing still, and the room is empty, so there is no risk of falling. The person"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4#f224-287,5.566667000000001,9.566667,1.800000,0.8056214451789856,0.6317691206932068,walking,normal,LOW,,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,a man wearing a mask and plaid pants is walking in a room with a whiteboard and a table. He is moving from the left side of the room towards the right side. The room has a dark carpet and a few yellow sticky notes on the floor. There is a p,5.767111699999987,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a man wearing a mask and plaid pants is walking in a room with a whiteboard and a table. He is moving from the left side of the room towards the right side. The room has a dark carpet and a few yellow sticky notes on the floor. There is a projector mounted on the ceiling and a trash can on the left side of the room. The man is walking with a steady pace and appears to be in good health. There is no visible sign of"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4#f368-431,10.366666,14.366666,0.433333,0.9998173117637634,0.3839940130710602,standing,normal,LOW,0.99,0,NOT_CORROBORATED,人站立在房间中,A person wearing a mask and blue jeans stands in a room with a whiteboard and a black trash can. The person is facing the camera and appears to be stationary. The person's posture is upright and they are not moving.,5.451059900000473,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person wearing a mask and blue jeans stands in a room with a whiteboard and a black trash can. The person is facing the camera and appears to be stationary. The person's posture is upright and they are not moving."",
+  ""summary_zh"": ""人站立在房间中""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4#f576-639,17.299999,21.299999,1.533333,0.9999815225601196,0.002818172564730048,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a mask on their face, moving slightly forward and then bending down, then standing up again, with no visible fall or risk of fall, and no other visible changes in posture or position.",3.7232639000003473,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a mask on their face, moving slightly forward and then bending down, then standing up again, with no visible fall or risk of fall, and no other visible changes in posture or position.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4#f528-591,15.7,19.7,0.700000,0.9856729507446289,0.14103153347969055,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, looking at the floor and moving slightly forward, with no visible signs of falling or instability, and the environment appears stable and safe.",3.441114600000219,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, looking at the floor and moving slightly forward, with no visible signs of falling or instability, and the environment appears stable and safe.""}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4#f464-527,13.566666000000001,17.566666,1.800000,0.9612759351730347,0.19596992433071136,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a mask and a gray shirt, with yellow sticky notes on the floor, and a black trash can on the left side of the room. The person is standing still and not moving, and the room",5.733534199999667,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a mask and a gray shirt, with yellow sticky notes on the floor, and a black trash can on the left side of the room. The person is standing still and not moving, and the room is empty except for the person and the objects in the room. The person is not falling, and there is no visible risk of falling. The person is not sitting, lying, or sleeping. The"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4#f448-511,13.033332000000001,17.033332,0.766667,0.9992769360542297,0.9319695830345154,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, the person is wearing a white t-shirt and black pants, the person is standing still and looking at the camera, the person is not moving, the person is not falling, the person is not",5.748555199999828,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, the person is wearing a white t-shirt and black pants, the person is standing still and looking at the camera, the person is not moving, the person is not falling, the person is not lying down, the person is not sitting, the person is not falling, the person is not lying down, the person is not sitting, the person is not falling, the person is not lying down, the"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4#f256-319,6.633333,10.633333,0.966667,0.8981261849403381,0.32760852575302124,walking,normal,LOW,0.99,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,"a person in a green jacket and black shorts is walking in a room with a whiteboard and a table. The person is moving forward, with their feet in motion, and their body is in a walking posture. The room has a carpeted floor and a few yellow ",5.743283799999517,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""confidence"":0.99,""evidence"":""a person in a green jacket and black shorts is walking in a room with a whiteboard and a table. The person is moving forward, with their feet in motion, and their body is in a walking posture. The room has a carpeted floor and a few yellow markers on the floor. The person is not falling, and there is no visible risk of falling in the frame. The person is not sitting, lying, or falling in"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4#f384-447,10.9,14.9,1.233333,0.6790760159492493,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, the person is facing the camera, the person is wearing a white jacket and black pants, the person is standing still, the person is not moving, the person is not falling, the person ",5.722885299999689,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, the person is facing the camera, the person is wearing a white jacket and black pants, the person is standing still, the person is not moving, the person is not falling, the person is not lying down, the person is not sitting, the person is not falling, the person is not lying down, the person is not sitting, the person is not falling, the person is not lying down,"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4#f448-511,13.033332999999999,17.033333,1.866667,0.9515755772590637,0.5754632353782654,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary.,4.26692279999952,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4#f304-367,8.233333,12.233333,0.366667,0.9965717792510986,0.6317691206932068,walking,normal,LOW,0.98,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room with a mask on their face, moving from the center of the room towards the camera.",4.565040299999964,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""a person is walking in a room with a mask on their face, moving from the center of the room towards the camera."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4#f384-447,10.9,14.9,0.966667,0.8165547847747803,0.3839940130710602,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room, moving from the center towards the camera. The person is wearing a mask and casual clothing. The room has desks, a whiteboard, and a projector. The person is moving forward with a steady gait.",5.6100510999995095,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room, moving from the center towards the camera. The person is wearing a mask and casual clothing. The room has desks, a whiteboard, and a projector. The person is moving forward with a steady gait."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4#f624-687,18.9,22.9,1.800000,0.9965502023696899,0.002818172564730048,standing,normal,LOW,0.98,0,NOT_CORROBORATED,人物处于站立状态,"A person is standing in a room with a mask on their face. They are positioned in the center of the room, facing the camera. The person is wearing a black t-shirt with a red design, dark pants, and white shoes. The room has desks, a whiteboa",5.815149600000041,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a mask on their face. They are positioned in the center of the room, facing the camera. The person is wearing a black t-shirt with a red design, dark pants, and white shoes. The room has desks, a whiteboard, and a projector. The person remains stationary throughout the frames."","
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4#f544-607,16.233333,20.233333,0.066667,0.9591175317764282,0.19596992433071136,standing,normal,LOW,0.99,0,NOT_CORROBORATED,人站立，弯腰触地,"A person is standing in a room with a whiteboard and desks. They are wearing a mask and appear to be looking at the floor. They then bend down and touch the floor, but do not fall.",5.434509099999559,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. They are wearing a mask and appear to be looking at the floor. They then bend down and touch the floor, but do not fall."",
+  ""summary_zh"": ""人站立，弯腰触地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4#f464-527,13.566666000000001,17.566666,0.633333,0.9876603484153748,0.9319695830345154,walking,normal,LOW,0.98,0,NOT_CORROBORATED,一个人在房间内行走,"a person is walking in a room with a whiteboard and desks. The person is moving forward and slightly to the left, with their arms swinging naturally. The person's posture is upright and they are not showing any signs of instability or falli",5.6110632999998415,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""a person is walking in a room with a whiteboard and desks. The person is moving forward and slightly to the left, with their arms swinging naturally. The person's posture is upright and they are not showing any signs of instability or falling."",
+  ""summary_zh"": ""一个人在房间内行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4#f224-287,5.566667000000001,9.566667,1.933333,0.9348548650741577,0.32760852575302124,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站着，穿着绿色上衣和口罩,"A person is standing in a room, facing the camera. They are wearing a green hoodie and a face mask. The person remains stationary throughout the frames.",4.866153299999496,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a green hoodie and a face mask. The person remains stationary throughout the frames."",
+  ""summary_zh"": ""一个人站着，穿着绿色上衣和口罩""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4#f400-463,11.433333,15.433333,1.700000,0.8415170311927795,0.19125054776668549,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间里行走,a person is walking in a room with a whiteboard and desks. The person is moving forward and appears to be walking normally.,4.380522800000108,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room with a whiteboard and desks. The person is moving forward and appears to be walking normally."",
+  ""summary_zh"": ""一个人在房间里行走""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4#f448-511,13.033332999999999,17.033333,1.600000,0.8978840112686157,0.5754632353782654,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a projector, the person is facing the camera and the person is not moving, the person is standing still, the person is not falling, the person is not lying or sleeping, the person is not in ",5.651596099998642,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a projector, the person is facing the camera and the person is not moving, the person is standing still, the person is not falling, the person is not lying or sleeping, the person is not in a falling position, the person is not in a prefall position, the person is not in a postfall position, the person is not in a falling position, the person is not in a prefall position,"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4#f304-367,8.233333,12.233333,1.033333,0.9332797527313232,0.6317691206932068,walking,normal,LOW,,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,a person is walking in a room with a whiteboard and a table. The person is moving from the left side of the room to the right side. The person is wearing a black shirt and plaid pants. The room has a carpeted floor and a wooden baseboard. T,5.742621599998529,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person is walking in a room with a whiteboard and a table. The person is moving from the left side of the room to the right side. The person is wearing a black shirt and plaid pants. The room has a carpeted floor and a wooden baseboard. There are yellow sticky notes on the floor. The person is walking towards the right side of the room. The person is not falling. The person is not sitting. The person is not lying down"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4#f416-479,11.966667,15.966667,0.033333,0.9999992847442627,0.3839940130710602,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person wearing a mask is walking in a room, then suddenly bends forward and falls to the ground.",4.350276799999847,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person wearing a mask is walking in a room, then suddenly bends forward and falls to the ground."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4#f640-703,19.433332,23.433332,1.500000,0.9999687671661377,0.002818172564730048,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, the person is wearing a black t-shirt with a red design, black pants, and white shoes, the person is facing the camera and appears to be standing still, the person's posture is upri",5.819141900001341,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, the person is wearing a black t-shirt with a red design, black pants, and white shoes, the person is facing the camera and appears to be standing still, the person's posture is upright and the person is not moving, the person is not leaning or bending, the person is not falling or in a state of lying or sleeping, the person is not in a state of prefall or postfall"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4#f496-559,14.633333,18.633333,0.666667,0.4850533604621887,0.14103153347969055,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间里，戴着口罩。,A person is standing in a room with a whiteboard and a table. The person is wearing a mask and jeans. The person is standing still and looking at the camera.,5.142076300000554,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is wearing a mask and jeans. The person is standing still and looking at the camera."",
+  ""summary_zh"": ""一个人站在房间里，戴着口罩。""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4#f544-607,16.233333,20.233333,0.166667,0.9481474757194519,0.19596992433071136,walking,normal,LOW,0.99,0,NOT_CORROBORATED,一个人在房间里行走,"A person is walking in a room with a whiteboard and a table. The person is moving forward, and their body is in a walking posture. The person is wearing a mask and has a backpack. The room has a carpeted floor and a few yellow sticky notes ",5.743431599999894,True,"```json
+{
+  ""class"": ""walking"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is walking in a room with a whiteboard and a table. The person is moving forward, and their body is in a walking posture. The person is wearing a mask and has a backpack. The room has a carpeted floor and a few yellow sticky notes on the floor."",
+  ""summary_zh"": ""一个人在房间里行走"""
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4#f464-527,13.566666000000001,17.566666,0.566667,0.985224723815918,0.9319695830345154,walking,normal,LOW,,0,NOT_CORROBORATED,人物正在行走，未见明显跌倒过程,"a person wearing a white shirt and black pants is walking in a room with a whiteboard and a table. The person is moving forward, with their feet in motion, and their body is in a walking posture. There are yellow sticky notes on the floor, ",5.824743600000147,True,"{""class"":""walking"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person wearing a white shirt and black pants is walking in a room with a whiteboard and a table. The person is moving forward, with their feet in motion, and their body is in a walking posture. There are yellow sticky notes on the floor, and the room has a carpeted floor. The person is not falling, and there is no visible risk of falling in the frame. The person is moving forward, with their feet in motion, and their body is"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4#f240-303,6.099999,10.099999,1.533333,0.921579897403717,0.32760852575302124,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a green jacket and black shorts, with a mask on their face, and the person is standing still, not moving, not falling, not lying down, not sitting, not falling, not in a pre",5.843124400000306,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a green jacket and black shorts, with a mask on their face, and the person is standing still, not moving, not falling, not lying down, not sitting, not falling, not in a prefall or postfall state, not in a falling state, not in a lying_sleeping state, not in a sitting state, not in a falling state, not in a prefall state,"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4#f384-447,10.9,14.9,1.900000,0.9241852760314941,0.19125054776668549,standing,normal,LOW,,0,NOT_CORROBORATED,人物处于站立状态,"a person standing in a room with a whiteboard and a table, wearing a mask and dark pants, with yellow markers on the floor, and a projector on the ceiling, and no visible movement or change in posture, and the person is not falling or lying",5.776072100001329,True,"{""class"":""standing"",""fall_stage"":""normal"",""risk"":""low"",""evidence"":""a person standing in a room with a whiteboard and a table, wearing a mask and dark pants, with yellow markers on the floor, and a projector on the ceiling, and no visible movement or change in posture, and the person is not falling or lying down, and the room is empty except for the person and the objects, and the person is not moving or changing position, and the person is not in a state of rest or sleep, and the person is not"

@@ -1,0 +1,1991 @@
+{
+  "matched_rows": 22557,
+  "unmatched_rows": 0,
+  "videos": 108,
+  "class_counts": {
+    "1": 8469,
+    "0": 11754,
+    "2": 2334
+  },
+  "videos_with_fall": 72,
+  "videos_with_abnormal": 106,
+  "per_video": [
+    {
+      "video": "CGFM1",
+      "labeled_frames": 216,
+      "min_frame": 0,
+      "max_frame": 1642,
+      "stage_counts": {
+        "Abnormal": 108,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 108,
+        "0": 108
+      },
+      "abnormal_first_frame": 1023,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM2",
+      "labeled_frames": 226,
+      "min_frame": 0,
+      "max_frame": 594,
+      "stage_counts": {
+        "Abnormal": 116,
+        "Normal": 110
+      },
+      "class_counts": {
+        "1": 116,
+        "0": 110
+      },
+      "abnormal_first_frame": 338,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM3",
+      "labeled_frames": 215,
+      "min_frame": 4,
+      "max_frame": 1104,
+      "stage_counts": {
+        "Abnormal": 108,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 108,
+        "0": 107
+      },
+      "abnormal_first_frame": 658,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM4",
+      "labeled_frames": 206,
+      "min_frame": 4,
+      "max_frame": 1968,
+      "stage_counts": {
+        "Abnormal": 101,
+        "Normal": 105
+      },
+      "class_counts": {
+        "1": 101,
+        "0": 105
+      },
+      "abnormal_first_frame": 1168,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM5",
+      "labeled_frames": 214,
+      "min_frame": 4,
+      "max_frame": 1206,
+      "stage_counts": {
+        "Abnormal": 106,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 106,
+        "0": 108
+      },
+      "abnormal_first_frame": 786,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM6",
+      "labeled_frames": 209,
+      "min_frame": 4,
+      "max_frame": 1004,
+      "stage_counts": {
+        "Abnormal": 108,
+        "Normal": 101
+      },
+      "class_counts": {
+        "1": 108,
+        "0": 101
+      },
+      "abnormal_first_frame": 766,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM7",
+      "labeled_frames": 211,
+      "min_frame": 4,
+      "max_frame": 1514,
+      "stage_counts": {
+        "Abnormal": 102,
+        "Normal": 109
+      },
+      "class_counts": {
+        "1": 102,
+        "0": 109
+      },
+      "abnormal_first_frame": 1090,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM8",
+      "labeled_frames": 205,
+      "min_frame": 4,
+      "max_frame": 1098,
+      "stage_counts": {
+        "Abnormal": 101,
+        "Normal": 104
+      },
+      "class_counts": {
+        "1": 101,
+        "0": 104
+      },
+      "abnormal_first_frame": 696,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGFM9",
+      "labeled_frames": 392,
+      "min_frame": 4,
+      "max_frame": 1460,
+      "stage_counts": {
+        "Abnormal": 275,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 275,
+        "0": 117
+      },
+      "abnormal_first_frame": 912,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM1",
+      "labeled_frames": 211,
+      "min_frame": 54,
+      "max_frame": 1698,
+      "stage_counts": {
+        "Abnormal": 103,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 103,
+        "0": 108
+      },
+      "abnormal_first_frame": 1306,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM2",
+      "labeled_frames": 444,
+      "min_frame": 0,
+      "max_frame": 1698,
+      "stage_counts": {
+        "Abnormal": 220,
+        "Normal": 224
+      },
+      "class_counts": {
+        "1": 220,
+        "0": 224
+      },
+      "abnormal_first_frame": 372,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM3",
+      "labeled_frames": 211,
+      "min_frame": 0,
+      "max_frame": 1182,
+      "stage_counts": {
+        "Abnormal": 104,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 104,
+        "0": 107
+      },
+      "abnormal_first_frame": 768,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM4",
+      "labeled_frames": 212,
+      "min_frame": 4,
+      "max_frame": 1964,
+      "stage_counts": {
+        "Abnormal": 109,
+        "Normal": 103
+      },
+      "class_counts": {
+        "1": 109,
+        "0": 103
+      },
+      "abnormal_first_frame": 1696,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM5",
+      "labeled_frames": 212,
+      "min_frame": 4,
+      "max_frame": 1202,
+      "stage_counts": {
+        "Abnormal": 104,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 104,
+        "0": 108
+      },
+      "abnormal_first_frame": 696,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM6",
+      "labeled_frames": 222,
+      "min_frame": 4,
+      "max_frame": 1016,
+      "stage_counts": {
+        "Abnormal": 105,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 105,
+        "0": 117
+      },
+      "abnormal_first_frame": 786,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM7",
+      "labeled_frames": 224,
+      "min_frame": 4,
+      "max_frame": 1514,
+      "stage_counts": {
+        "Abnormal": 114,
+        "Normal": 110
+      },
+      "class_counts": {
+        "1": 114,
+        "0": 110
+      },
+      "abnormal_first_frame": 1014,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM8",
+      "labeled_frames": 208,
+      "min_frame": 4,
+      "max_frame": 1098,
+      "stage_counts": {
+        "Abnormal": 101,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 101,
+        "0": 107
+      },
+      "abnormal_first_frame": 656,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CGSM9",
+      "labeled_frames": 224,
+      "min_frame": 4,
+      "max_frame": 1456,
+      "stage_counts": {
+        "Abnormal": 119,
+        "Normal": 105
+      },
+      "class_counts": {
+        "1": 119,
+        "0": 105
+      },
+      "abnormal_first_frame": 1128,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM1",
+      "labeled_frames": 333,
+      "min_frame": 4,
+      "max_frame": 1698,
+      "stage_counts": {
+        "Abnormal": 232,
+        "Normal": 101
+      },
+      "class_counts": {
+        "1": 232,
+        "0": 101
+      },
+      "abnormal_first_frame": 427,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM2",
+      "labeled_frames": 223,
+      "min_frame": 3,
+      "max_frame": 850,
+      "stage_counts": {
+        "Abnormal": 107,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 107,
+        "0": 116
+      },
+      "abnormal_first_frame": 427,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM3",
+      "labeled_frames": 237,
+      "min_frame": 2,
+      "max_frame": 680,
+      "stage_counts": {
+        "Abnormal": 112,
+        "Normal": 125
+      },
+      "class_counts": {
+        "1": 112,
+        "0": 125
+      },
+      "abnormal_first_frame": 404,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM4",
+      "labeled_frames": 218,
+      "min_frame": 5,
+      "max_frame": 1383,
+      "stage_counts": {
+        "Abnormal": 118,
+        "Normal": 100
+      },
+      "class_counts": {
+        "1": 118,
+        "0": 100
+      },
+      "abnormal_first_frame": 827,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM5",
+      "labeled_frames": 230,
+      "min_frame": 3,
+      "max_frame": 1302,
+      "stage_counts": {
+        "Abnormal": 117,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 117,
+        "0": 113
+      },
+      "abnormal_first_frame": 706,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM6",
+      "labeled_frames": 202,
+      "min_frame": 3,
+      "max_frame": 876,
+      "stage_counts": {
+        "Abnormal": 86,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 86,
+        "0": 116
+      },
+      "abnormal_first_frame": 537,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM7",
+      "labeled_frames": 212,
+      "min_frame": 5,
+      "max_frame": 1327,
+      "stage_counts": {
+        "Abnormal": 95,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 95,
+        "0": 117
+      },
+      "abnormal_first_frame": 568,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM8",
+      "labeled_frames": 190,
+      "min_frame": 3,
+      "max_frame": 692,
+      "stage_counts": {
+        "Abnormal": 97,
+        "Normal": 93
+      },
+      "class_counts": {
+        "1": 97,
+        "0": 93
+      },
+      "abnormal_first_frame": 500,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLFM9",
+      "labeled_frames": 230,
+      "min_frame": 4,
+      "max_frame": 758,
+      "stage_counts": {
+        "Abnormal": 123,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 123,
+        "0": 107
+      },
+      "abnormal_first_frame": 514,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM1",
+      "labeled_frames": 215,
+      "min_frame": 4,
+      "max_frame": 1697,
+      "stage_counts": {
+        "Abnormal": 116,
+        "Normal": 99
+      },
+      "class_counts": {
+        "1": 116,
+        "0": 99
+      },
+      "abnormal_first_frame": 1073,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM2",
+      "labeled_frames": 232,
+      "min_frame": 0,
+      "max_frame": 844,
+      "stage_counts": {
+        "Abnormal": 116,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 116,
+        "0": 116
+      },
+      "abnormal_first_frame": 536,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM3",
+      "labeled_frames": 233,
+      "min_frame": 1,
+      "max_frame": 678,
+      "stage_counts": {
+        "Abnormal": 117,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 117,
+        "0": 116
+      },
+      "abnormal_first_frame": 425,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM4",
+      "labeled_frames": 211,
+      "min_frame": 2,
+      "max_frame": 1379,
+      "stage_counts": {
+        "Abnormal": 115,
+        "Normal": 96
+      },
+      "class_counts": {
+        "1": 115,
+        "0": 96
+      },
+      "abnormal_first_frame": 837,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM5",
+      "labeled_frames": 595,
+      "min_frame": 0,
+      "max_frame": 1328,
+      "stage_counts": {
+        "Abnormal": 309,
+        "Normal": 286
+      },
+      "class_counts": {
+        "1": 309,
+        "0": 286
+      },
+      "abnormal_first_frame": 712,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM6",
+      "labeled_frames": 232,
+      "min_frame": 3,
+      "max_frame": 876,
+      "stage_counts": {
+        "Abnormal": 119,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 119,
+        "0": 113
+      },
+      "abnormal_first_frame": 588,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM7",
+      "labeled_frames": 263,
+      "min_frame": 5,
+      "max_frame": 1299,
+      "stage_counts": {
+        "Abnormal": 153,
+        "Normal": 110
+      },
+      "class_counts": {
+        "1": 153,
+        "0": 110
+      },
+      "abnormal_first_frame": 690,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM8",
+      "labeled_frames": 223,
+      "min_frame": 3,
+      "max_frame": 692,
+      "stage_counts": {
+        "Abnormal": 116,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 116,
+        "0": 107
+      },
+      "abnormal_first_frame": 463,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "CLSM9",
+      "labeled_frames": 207,
+      "min_frame": 4,
+      "max_frame": 758,
+      "stage_counts": {
+        "Abnormal": 107,
+        "Normal": 100
+      },
+      "class_counts": {
+        "1": 107,
+        "0": 100
+      },
+      "abnormal_first_frame": 546,
+      "fall_first_frame": null,
+      "fall_last_frame": null
+    },
+    {
+      "video": "FDFFM1",
+      "labeled_frames": 205,
+      "min_frame": 3,
+      "max_frame": 624,
+      "stage_counts": {
+        "Abnormal": 55,
+        "Fall": 47,
+        "Normal": 103
+      },
+      "class_counts": {
+        "1": 55,
+        "2": 47,
+        "0": 103
+      },
+      "abnormal_first_frame": 422,
+      "fall_first_frame": 532,
+      "fall_last_frame": 624
+    },
+    {
+      "video": "FDFFM2",
+      "labeled_frames": 182,
+      "min_frame": 1,
+      "max_frame": 377,
+      "stage_counts": {
+        "Abnormal": 42,
+        "Fall": 41,
+        "Normal": 99
+      },
+      "class_counts": {
+        "1": 42,
+        "2": 41,
+        "0": 99
+      },
+      "abnormal_first_frame": 213,
+      "fall_first_frame": 297,
+      "fall_last_frame": 377
+    },
+    {
+      "video": "FDFFM3",
+      "labeled_frames": 220,
+      "min_frame": 19,
+      "max_frame": 581,
+      "stage_counts": {
+        "Abnormal": 69,
+        "Fall": 38,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 69,
+        "2": 38,
+        "0": 113
+      },
+      "abnormal_first_frame": 369,
+      "fall_first_frame": 507,
+      "fall_last_frame": 581
+    },
+    {
+      "video": "FDFFM4",
+      "labeled_frames": 209,
+      "min_frame": 3,
+      "max_frame": 821,
+      "stage_counts": {
+        "Abnormal": 55,
+        "Fall": 41,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 55,
+        "2": 41,
+        "0": 113
+      },
+      "abnormal_first_frame": 631,
+      "fall_first_frame": 741,
+      "fall_last_frame": 821
+    },
+    {
+      "video": "FDFFM5",
+      "labeled_frames": 196,
+      "min_frame": 4,
+      "max_frame": 607,
+      "stage_counts": {
+        "Abnormal": 70,
+        "Fall": 25,
+        "Normal": 101
+      },
+      "class_counts": {
+        "1": 70,
+        "2": 25,
+        "0": 101
+      },
+      "abnormal_first_frame": 419,
+      "fall_first_frame": 559,
+      "fall_last_frame": 607
+    },
+    {
+      "video": "FDFFM6",
+      "labeled_frames": 171,
+      "min_frame": 3,
+      "max_frame": 571,
+      "stage_counts": {
+        "Abnormal": 40,
+        "Fall": 24,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 40,
+        "2": 24,
+        "0": 107
+      },
+      "abnormal_first_frame": 445,
+      "fall_first_frame": 525,
+      "fall_last_frame": 571
+    },
+    {
+      "video": "FDFFM7",
+      "labeled_frames": 197,
+      "min_frame": 3,
+      "max_frame": 602,
+      "stage_counts": {
+        "Abnormal": 67,
+        "Fall": 32,
+        "Normal": 98
+      },
+      "class_counts": {
+        "1": 67,
+        "2": 32,
+        "0": 98
+      },
+      "abnormal_first_frame": 406,
+      "fall_first_frame": 540,
+      "fall_last_frame": 602
+    },
+    {
+      "video": "FDFFM8",
+      "labeled_frames": 195,
+      "min_frame": 1,
+      "max_frame": 479,
+      "stage_counts": {
+        "Abnormal": 58,
+        "Fall": 24,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 58,
+        "2": 24,
+        "0": 113
+      },
+      "abnormal_first_frame": 317,
+      "fall_first_frame": 433,
+      "fall_last_frame": 479
+    },
+    {
+      "video": "FDFFM9",
+      "labeled_frames": 183,
+      "min_frame": 3,
+      "max_frame": 538,
+      "stage_counts": {
+        "Abnormal": 62,
+        "Fall": 27,
+        "Normal": 94
+      },
+      "class_counts": {
+        "1": 62,
+        "2": 27,
+        "0": 94
+      },
+      "abnormal_first_frame": 368,
+      "fall_first_frame": 486,
+      "fall_last_frame": 538
+    },
+    {
+      "video": "FDFSM1",
+      "labeled_frames": 206,
+      "min_frame": 3,
+      "max_frame": 621,
+      "stage_counts": {
+        "Abnormal": 56,
+        "Fall": 50,
+        "Normal": 100
+      },
+      "class_counts": {
+        "1": 56,
+        "2": 50,
+        "0": 100
+      },
+      "abnormal_first_frame": 411,
+      "fall_first_frame": 523,
+      "fall_last_frame": 621
+    },
+    {
+      "video": "FDFSM2",
+      "labeled_frames": 183,
+      "min_frame": 0,
+      "max_frame": 378,
+      "stage_counts": {
+        "Abnormal": 43,
+        "Fall": 43,
+        "Normal": 97
+      },
+      "class_counts": {
+        "1": 43,
+        "2": 43,
+        "0": 97
+      },
+      "abnormal_first_frame": 208,
+      "fall_first_frame": 294,
+      "fall_last_frame": 378
+    },
+    {
+      "video": "FDFSM3",
+      "labeled_frames": 197,
+      "min_frame": 7,
+      "max_frame": 581,
+      "stage_counts": {
+        "Abnormal": 73,
+        "Fall": 36,
+        "Normal": 88
+      },
+      "class_counts": {
+        "1": 73,
+        "2": 36,
+        "0": 88
+      },
+      "abnormal_first_frame": 365,
+      "fall_first_frame": 511,
+      "fall_last_frame": 581
+    },
+    {
+      "video": "FDFSM4",
+      "labeled_frames": 211,
+      "min_frame": 3,
+      "max_frame": 822,
+      "stage_counts": {
+        "Abnormal": 57,
+        "Fall": 41,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 57,
+        "2": 41,
+        "0": 113
+      },
+      "abnormal_first_frame": 628,
+      "fall_first_frame": 742,
+      "fall_last_frame": 822
+    },
+    {
+      "video": "FDFSM5",
+      "labeled_frames": 194,
+      "min_frame": 3,
+      "max_frame": 607,
+      "stage_counts": {
+        "Abnormal": 72,
+        "Fall": 21,
+        "Normal": 101
+      },
+      "class_counts": {
+        "1": 72,
+        "2": 21,
+        "0": 101
+      },
+      "abnormal_first_frame": 423,
+      "fall_first_frame": 567,
+      "fall_last_frame": 607
+    },
+    {
+      "video": "FDFSM6",
+      "labeled_frames": 150,
+      "min_frame": 4,
+      "max_frame": 571,
+      "stage_counts": {
+        "Abnormal": 39,
+        "Fall": 22,
+        "Normal": 89
+      },
+      "class_counts": {
+        "1": 39,
+        "2": 22,
+        "0": 89
+      },
+      "abnormal_first_frame": 451,
+      "fall_first_frame": 529,
+      "fall_last_frame": 571
+    },
+    {
+      "video": "FDFSM7",
+      "labeled_frames": 193,
+      "min_frame": 3,
+      "max_frame": 603,
+      "stage_counts": {
+        "Abnormal": 66,
+        "Fall": 27,
+        "Normal": 100
+      },
+      "class_counts": {
+        "1": 66,
+        "2": 27,
+        "0": 100
+      },
+      "abnormal_first_frame": 419,
+      "fall_first_frame": 551,
+      "fall_last_frame": 603
+    },
+    {
+      "video": "FDFSM8",
+      "labeled_frames": 196,
+      "min_frame": 0,
+      "max_frame": 478,
+      "stage_counts": {
+        "Abnormal": 58,
+        "Fall": 22,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 58,
+        "2": 22,
+        "0": 116
+      },
+      "abnormal_first_frame": 320,
+      "fall_first_frame": 436,
+      "fall_last_frame": 478
+    },
+    {
+      "video": "FDFSM9",
+      "labeled_frames": 170,
+      "min_frame": 3,
+      "max_frame": 539,
+      "stage_counts": {
+        "Abnormal": 55,
+        "Fall": 24,
+        "Normal": 91
+      },
+      "class_counts": {
+        "1": 55,
+        "2": 24,
+        "0": 91
+      },
+      "abnormal_first_frame": 383,
+      "fall_first_frame": 493,
+      "fall_last_frame": 539
+    },
+    {
+      "video": "FDSFM1",
+      "labeled_frames": 189,
+      "min_frame": 3,
+      "max_frame": 565,
+      "stage_counts": {
+        "Abnormal": 56,
+        "Fall": 43,
+        "Normal": 90
+      },
+      "class_counts": {
+        "1": 56,
+        "2": 43,
+        "0": 90
+      },
+      "abnormal_first_frame": 369,
+      "fall_first_frame": 481,
+      "fall_last_frame": 565
+    },
+    {
+      "video": "FDSFM2",
+      "labeled_frames": 194,
+      "min_frame": 1,
+      "max_frame": 398,
+      "stage_counts": {
+        "Abnormal": 45,
+        "Fall": 31,
+        "Normal": 118
+      },
+      "class_counts": {
+        "1": 45,
+        "2": 31,
+        "0": 118
+      },
+      "abnormal_first_frame": 248,
+      "fall_first_frame": 338,
+      "fall_last_frame": 398
+    },
+    {
+      "video": "FDSFM3",
+      "labeled_frames": 184,
+      "min_frame": 3,
+      "max_frame": 559,
+      "stage_counts": {
+        "Abnormal": 69,
+        "Fall": 24,
+        "Normal": 91
+      },
+      "class_counts": {
+        "1": 69,
+        "2": 24,
+        "0": 91
+      },
+      "abnormal_first_frame": 375,
+      "fall_first_frame": 513,
+      "fall_last_frame": 559
+    },
+    {
+      "video": "FDSFM4",
+      "labeled_frames": 193,
+      "min_frame": 4,
+      "max_frame": 805,
+      "stage_counts": {
+        "Abnormal": 48,
+        "Fall": 28,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 48,
+        "2": 28,
+        "0": 117
+      },
+      "abnormal_first_frame": 655,
+      "fall_first_frame": 751,
+      "fall_last_frame": 805
+    },
+    {
+      "video": "FDSFM5",
+      "labeled_frames": 211,
+      "min_frame": 4,
+      "max_frame": 643,
+      "stage_counts": {
+        "Abnormal": 84,
+        "Fall": 22,
+        "Normal": 105
+      },
+      "class_counts": {
+        "1": 84,
+        "2": 22,
+        "0": 105
+      },
+      "abnormal_first_frame": 433,
+      "fall_first_frame": 601,
+      "fall_last_frame": 643
+    },
+    {
+      "video": "FDSFM6",
+      "labeled_frames": 172,
+      "min_frame": 4,
+      "max_frame": 572,
+      "stage_counts": {
+        "Abnormal": 41,
+        "Fall": 23,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 41,
+        "2": 23,
+        "0": 108
+      },
+      "abnormal_first_frame": 446,
+      "fall_first_frame": 528,
+      "fall_last_frame": 572
+    },
+    {
+      "video": "FDSFM7",
+      "labeled_frames": 185,
+      "min_frame": 3,
+      "max_frame": 565,
+      "stage_counts": {
+        "Abnormal": 63,
+        "Fall": 32,
+        "Normal": 90
+      },
+      "class_counts": {
+        "1": 63,
+        "2": 32,
+        "0": 90
+      },
+      "abnormal_first_frame": 377,
+      "fall_first_frame": 503,
+      "fall_last_frame": 565
+    },
+    {
+      "video": "FDSFM8",
+      "labeled_frames": 181,
+      "min_frame": 1,
+      "max_frame": 458,
+      "stage_counts": {
+        "Abnormal": 51,
+        "Fall": 22,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 51,
+        "2": 22,
+        "0": 108
+      },
+      "abnormal_first_frame": 314,
+      "fall_first_frame": 416,
+      "fall_last_frame": 458
+    },
+    {
+      "video": "FDSFM9",
+      "labeled_frames": 181,
+      "min_frame": 3,
+      "max_frame": 575,
+      "stage_counts": {
+        "Abnormal": 62,
+        "Fall": 21,
+        "Normal": 98
+      },
+      "class_counts": {
+        "1": 62,
+        "2": 21,
+        "0": 98
+      },
+      "abnormal_first_frame": 411,
+      "fall_first_frame": 535,
+      "fall_last_frame": 575
+    },
+    {
+      "video": "FDSSM1",
+      "labeled_frames": 185,
+      "min_frame": 5,
+      "max_frame": 566,
+      "stage_counts": {
+        "Abnormal": 64,
+        "Fall": 34,
+        "Normal": 87
+      },
+      "class_counts": {
+        "1": 64,
+        "2": 34,
+        "0": 87
+      },
+      "abnormal_first_frame": 372,
+      "fall_first_frame": 500,
+      "fall_last_frame": 566
+    },
+    {
+      "video": "FDSSM2",
+      "labeled_frames": 226,
+      "min_frame": 1,
+      "max_frame": 397,
+      "stage_counts": {
+        "Abnormal": 72,
+        "Fall": 40,
+        "Normal": 114
+      },
+      "class_counts": {
+        "1": 72,
+        "2": 40,
+        "0": 114
+      },
+      "abnormal_first_frame": 242,
+      "fall_first_frame": 344,
+      "fall_last_frame": 397
+    },
+    {
+      "video": "FDSSM3",
+      "labeled_frames": 186,
+      "min_frame": 3,
+      "max_frame": 559,
+      "stage_counts": {
+        "Abnormal": 78,
+        "Fall": 20,
+        "Normal": 88
+      },
+      "class_counts": {
+        "1": 78,
+        "2": 20,
+        "0": 88
+      },
+      "abnormal_first_frame": 365,
+      "fall_first_frame": 521,
+      "fall_last_frame": 559
+    },
+    {
+      "video": "FDSSM4",
+      "labeled_frames": 180,
+      "min_frame": 4,
+      "max_frame": 805,
+      "stage_counts": {
+        "Abnormal": 46,
+        "Fall": 23,
+        "Normal": 111
+      },
+      "class_counts": {
+        "1": 46,
+        "2": 23,
+        "0": 111
+      },
+      "abnormal_first_frame": 669,
+      "fall_first_frame": 761,
+      "fall_last_frame": 805
+    },
+    {
+      "video": "FDSSM5",
+      "labeled_frames": 212,
+      "min_frame": 3,
+      "max_frame": 644,
+      "stage_counts": {
+        "Abnormal": 85,
+        "Fall": 23,
+        "Normal": 104
+      },
+      "class_counts": {
+        "1": 85,
+        "2": 23,
+        "0": 104
+      },
+      "abnormal_first_frame": 430,
+      "fall_first_frame": 600,
+      "fall_last_frame": 644
+    },
+    {
+      "video": "FDSSM6",
+      "labeled_frames": 171,
+      "min_frame": 3,
+      "max_frame": 571,
+      "stage_counts": {
+        "Abnormal": 41,
+        "Fall": 21,
+        "Normal": 109
+      },
+      "class_counts": {
+        "1": 41,
+        "2": 21,
+        "0": 109
+      },
+      "abnormal_first_frame": 449,
+      "fall_first_frame": 531,
+      "fall_last_frame": 571
+    },
+    {
+      "video": "FDSSM7",
+      "labeled_frames": 185,
+      "min_frame": 3,
+      "max_frame": 565,
+      "stage_counts": {
+        "Abnormal": 65,
+        "Fall": 27,
+        "Normal": 93
+      },
+      "class_counts": {
+        "1": 65,
+        "2": 27,
+        "0": 93
+      },
+      "abnormal_first_frame": 383,
+      "fall_first_frame": 513,
+      "fall_last_frame": 565
+    },
+    {
+      "video": "FDSSM8",
+      "labeled_frames": 183,
+      "min_frame": 0,
+      "max_frame": 457,
+      "stage_counts": {
+        "Abnormal": 53,
+        "Fall": 20,
+        "Normal": 110
+      },
+      "class_counts": {
+        "1": 53,
+        "2": 20,
+        "0": 110
+      },
+      "abnormal_first_frame": 313,
+      "fall_first_frame": 419,
+      "fall_last_frame": 457
+    },
+    {
+      "video": "FDSSM9",
+      "labeled_frames": 185,
+      "min_frame": 6,
+      "max_frame": 576,
+      "stage_counts": {
+        "Abnormal": 63,
+        "Fall": 23,
+        "Normal": 99
+      },
+      "class_counts": {
+        "1": 63,
+        "2": 23,
+        "0": 99
+      },
+      "abnormal_first_frame": 406,
+      "fall_first_frame": 532,
+      "fall_last_frame": 576
+    },
+    {
+      "video": "FWFFM1",
+      "labeled_frames": 200,
+      "min_frame": 3,
+      "max_frame": 606,
+      "stage_counts": {
+        "Abnormal": 45,
+        "Fall": 60,
+        "Normal": 95
+      },
+      "class_counts": {
+        "1": 45,
+        "2": 60,
+        "0": 95
+      },
+      "abnormal_first_frame": 398,
+      "fall_first_frame": 488,
+      "fall_last_frame": 606
+    },
+    {
+      "video": "FWFFM2",
+      "labeled_frames": 224,
+      "min_frame": 1,
+      "max_frame": 402,
+      "stage_counts": {
+        "Abnormal": 45,
+        "Fall": 64,
+        "Normal": 115
+      },
+      "class_counts": {
+        "1": 45,
+        "2": 64,
+        "0": 115
+      },
+      "abnormal_first_frame": 294,
+      "fall_first_frame": 339,
+      "fall_last_frame": 402
+    },
+    {
+      "video": "FWFFM3",
+      "labeled_frames": 223,
+      "min_frame": 0,
+      "max_frame": 496,
+      "stage_counts": {
+        "Abnormal": 65,
+        "Fall": 45,
+        "Normal": 113
+      },
+      "class_counts": {
+        "1": 65,
+        "2": 45,
+        "0": 113
+      },
+      "abnormal_first_frame": 352,
+      "fall_first_frame": 439,
+      "fall_last_frame": 496
+    },
+    {
+      "video": "FWFFM4",
+      "labeled_frames": 208,
+      "min_frame": 40,
+      "max_frame": 740,
+      "stage_counts": {
+        "Abnormal": 60,
+        "Fall": 40,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 60,
+        "2": 40,
+        "0": 108
+      },
+      "abnormal_first_frame": 620,
+      "fall_first_frame": 692,
+      "fall_last_frame": 740
+    },
+    {
+      "video": "FWFFM5",
+      "labeled_frames": 227,
+      "min_frame": 4,
+      "max_frame": 637,
+      "stage_counts": {
+        "Abnormal": 80,
+        "Fall": 31,
+        "Normal": 116
+      },
+      "class_counts": {
+        "1": 80,
+        "2": 31,
+        "0": 116
+      },
+      "abnormal_first_frame": 527,
+      "fall_first_frame": 607,
+      "fall_last_frame": 637
+    },
+    {
+      "video": "FWFFM6",
+      "labeled_frames": 240,
+      "min_frame": 4,
+      "max_frame": 612,
+      "stage_counts": {
+        "Abnormal": 98,
+        "Fall": 35,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 98,
+        "2": 35,
+        "0": 107
+      },
+      "abnormal_first_frame": 480,
+      "fall_first_frame": 578,
+      "fall_last_frame": 612
+    },
+    {
+      "video": "FWFFM7",
+      "labeled_frames": 229,
+      "min_frame": 4,
+      "max_frame": 596,
+      "stage_counts": {
+        "Abnormal": 74,
+        "Fall": 48,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 74,
+        "2": 48,
+        "0": 107
+      },
+      "abnormal_first_frame": 438,
+      "fall_first_frame": 536,
+      "fall_last_frame": 596
+    },
+    {
+      "video": "FWFFM8",
+      "labeled_frames": 205,
+      "min_frame": 2,
+      "max_frame": 419,
+      "stage_counts": {
+        "Abnormal": 40,
+        "Fall": 55,
+        "Normal": 110
+      },
+      "class_counts": {
+        "1": 40,
+        "2": 55,
+        "0": 110
+      },
+      "abnormal_first_frame": 324,
+      "fall_first_frame": 364,
+      "fall_last_frame": 419
+    },
+    {
+      "video": "FWFFM9",
+      "labeled_frames": 216,
+      "min_frame": 3,
+      "max_frame": 518,
+      "stage_counts": {
+        "Abnormal": 84,
+        "Fall": 30,
+        "Normal": 102
+      },
+      "class_counts": {
+        "1": 84,
+        "2": 30,
+        "0": 102
+      },
+      "abnormal_first_frame": 405,
+      "fall_first_frame": 489,
+      "fall_last_frame": 518
+    },
+    {
+      "video": "FWFSM1",
+      "labeled_frames": 163,
+      "min_frame": 4,
+      "max_frame": 606,
+      "stage_counts": {
+        "Fall": 63,
+        "Normal": 100
+      },
+      "class_counts": {
+        "2": 63,
+        "0": 100
+      },
+      "abnormal_first_frame": null,
+      "fall_first_frame": 482,
+      "fall_last_frame": 606
+    },
+    {
+      "video": "FWFSM2",
+      "labeled_frames": 232,
+      "min_frame": 0,
+      "max_frame": 402,
+      "stage_counts": {
+        "Abnormal": 63,
+        "Fall": 52,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 63,
+        "2": 52,
+        "0": 117
+      },
+      "abnormal_first_frame": 266,
+      "fall_first_frame": 341,
+      "fall_last_frame": 402
+    },
+    {
+      "video": "FWFSM3",
+      "labeled_frames": 169,
+      "min_frame": 3,
+      "max_frame": 497,
+      "stage_counts": {
+        "Fall": 47,
+        "Normal": 122
+      },
+      "class_counts": {
+        "2": 47,
+        "0": 122
+      },
+      "abnormal_first_frame": null,
+      "fall_first_frame": 444,
+      "fall_last_frame": 497
+    },
+    {
+      "video": "FWFSM4",
+      "labeled_frames": 245,
+      "min_frame": 3,
+      "max_frame": 740,
+      "stage_counts": {
+        "Abnormal": 77,
+        "Fall": 49,
+        "Normal": 119
+      },
+      "class_counts": {
+        "1": 77,
+        "2": 49,
+        "0": 119
+      },
+      "abnormal_first_frame": 595,
+      "fall_first_frame": 685,
+      "fall_last_frame": 740
+    },
+    {
+      "video": "FWFSM5",
+      "labeled_frames": 239,
+      "min_frame": 4,
+      "max_frame": 631,
+      "stage_counts": {
+        "Abnormal": 104,
+        "Fall": 16,
+        "Normal": 119
+      },
+      "class_counts": {
+        "1": 104,
+        "2": 16,
+        "0": 119
+      },
+      "abnormal_first_frame": 492,
+      "fall_first_frame": 612,
+      "fall_last_frame": 631
+    },
+    {
+      "video": "FWFSM6",
+      "labeled_frames": 231,
+      "min_frame": 3,
+      "max_frame": 601,
+      "stage_counts": {
+        "Abnormal": 99,
+        "Fall": 18,
+        "Normal": 114
+      },
+      "class_counts": {
+        "1": 99,
+        "2": 18,
+        "0": 114
+      },
+      "abnormal_first_frame": 465,
+      "fall_first_frame": 581,
+      "fall_last_frame": 601
+    },
+    {
+      "video": "FWFSM7",
+      "labeled_frames": 227,
+      "min_frame": 3,
+      "max_frame": 594,
+      "stage_counts": {
+        "Abnormal": 74,
+        "Fall": 47,
+        "Normal": 106
+      },
+      "class_counts": {
+        "1": 74,
+        "2": 47,
+        "0": 106
+      },
+      "abnormal_first_frame": 433,
+      "fall_first_frame": 534,
+      "fall_last_frame": 594
+    },
+    {
+      "video": "FWFSM8",
+      "labeled_frames": 234,
+      "min_frame": 0,
+      "max_frame": 419,
+      "stage_counts": {
+        "Abnormal": 44,
+        "Fall": 72,
+        "Normal": 118
+      },
+      "class_counts": {
+        "1": 44,
+        "2": 72,
+        "0": 118
+      },
+      "abnormal_first_frame": 304,
+      "fall_first_frame": 348,
+      "fall_last_frame": 419
+    },
+    {
+      "video": "FWFSM9",
+      "labeled_frames": 218,
+      "min_frame": 4,
+      "max_frame": 517,
+      "stage_counts": {
+        "Abnormal": 79,
+        "Fall": 32,
+        "Normal": 107
+      },
+      "class_counts": {
+        "1": 79,
+        "2": 32,
+        "0": 107
+      },
+      "abnormal_first_frame": 398,
+      "fall_first_frame": 484,
+      "fall_last_frame": 517
+    },
+    {
+      "video": "FWSFM1",
+      "labeled_frames": 195,
+      "min_frame": 3,
+      "max_frame": 651,
+      "stage_counts": {
+        "Abnormal": 35,
+        "Fall": 43,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 35,
+        "2": 43,
+        "0": 117
+      },
+      "abnormal_first_frame": 497,
+      "fall_first_frame": 567,
+      "fall_last_frame": 651
+    },
+    {
+      "video": "FWSFM2",
+      "labeled_frames": 130,
+      "min_frame": 1,
+      "max_frame": 444,
+      "stage_counts": {
+        "Abnormal": 14,
+        "Fall": 34,
+        "Normal": 82
+      },
+      "class_counts": {
+        "1": 14,
+        "2": 34,
+        "0": 82
+      },
+      "abnormal_first_frame": 350,
+      "fall_first_frame": 378,
+      "fall_last_frame": 444
+    },
+    {
+      "video": "FWSFM3",
+      "labeled_frames": 159,
+      "min_frame": 6,
+      "max_frame": 514,
+      "stage_counts": {
+        "Abnormal": 51,
+        "Fall": 20,
+        "Normal": 88
+      },
+      "class_counts": {
+        "1": 51,
+        "2": 20,
+        "0": 88
+      },
+      "abnormal_first_frame": 374,
+      "fall_first_frame": 476,
+      "fall_last_frame": 514
+    },
+    {
+      "video": "FWSFM4",
+      "labeled_frames": 202,
+      "min_frame": 2,
+      "max_frame": 809,
+      "stage_counts": {
+        "Abnormal": 42,
+        "Fall": 35,
+        "Normal": 125
+      },
+      "class_counts": {
+        "1": 42,
+        "2": 35,
+        "0": 125
+      },
+      "abnormal_first_frame": 657,
+      "fall_first_frame": 741,
+      "fall_last_frame": 809
+    },
+    {
+      "video": "FWSFM5",
+      "labeled_frames": 191,
+      "min_frame": 1,
+      "max_frame": 621,
+      "stage_counts": {
+        "Abnormal": 60,
+        "Fall": 16,
+        "Normal": 115
+      },
+      "class_counts": {
+        "1": 60,
+        "2": 16,
+        "0": 115
+      },
+      "abnormal_first_frame": 471,
+      "fall_first_frame": 591,
+      "fall_last_frame": 621
+    },
+    {
+      "video": "FWSFM6",
+      "labeled_frames": 172,
+      "min_frame": 4,
+      "max_frame": 639,
+      "stage_counts": {
+        "Abnormal": 26,
+        "Fall": 16,
+        "Normal": 130
+      },
+      "class_counts": {
+        "1": 26,
+        "2": 16,
+        "0": 130
+      },
+      "abnormal_first_frame": 557,
+      "fall_first_frame": 609,
+      "fall_last_frame": 639
+    },
+    {
+      "video": "FWSFM7",
+      "labeled_frames": 181,
+      "min_frame": 3,
+      "max_frame": 598,
+      "stage_counts": {
+        "Abnormal": 43,
+        "Fall": 27,
+        "Normal": 111
+      },
+      "class_counts": {
+        "1": 43,
+        "2": 27,
+        "0": 111
+      },
+      "abnormal_first_frame": 460,
+      "fall_first_frame": 546,
+      "fall_last_frame": 598
+    },
+    {
+      "video": "FWSFM8",
+      "labeled_frames": 121,
+      "min_frame": 0,
+      "max_frame": 389,
+      "stage_counts": {
+        "Abnormal": 29,
+        "Fall": 23,
+        "Normal": 69
+      },
+      "class_counts": {
+        "1": 29,
+        "2": 23,
+        "0": 69
+      },
+      "abnormal_first_frame": 287,
+      "fall_first_frame": 345,
+      "fall_last_frame": 389
+    },
+    {
+      "video": "FWSFM9",
+      "labeled_frames": 164,
+      "min_frame": 0,
+      "max_frame": 554,
+      "stage_counts": {
+        "Abnormal": 35,
+        "Fall": 21,
+        "Normal": 108
+      },
+      "class_counts": {
+        "1": 35,
+        "2": 21,
+        "0": 108
+      },
+      "abnormal_first_frame": 444,
+      "fall_first_frame": 514,
+      "fall_last_frame": 554
+    },
+    {
+      "video": "FWSSM1",
+      "labeled_frames": 200,
+      "min_frame": 1,
+      "max_frame": 651,
+      "stage_counts": {
+        "Abnormal": 38,
+        "Fall": 47,
+        "Normal": 115
+      },
+      "class_counts": {
+        "1": 38,
+        "2": 47,
+        "0": 115
+      },
+      "abnormal_first_frame": 483,
+      "fall_first_frame": 559,
+      "fall_last_frame": 651
+    },
+    {
+      "video": "FWSSM2",
+      "labeled_frames": 138,
+      "min_frame": 0,
+      "max_frame": 444,
+      "stage_counts": {
+        "Abnormal": 36,
+        "Fall": 24,
+        "Normal": 78
+      },
+      "class_counts": {
+        "1": 36,
+        "2": 24,
+        "0": 78
+      },
+      "abnormal_first_frame": 326,
+      "fall_first_frame": 398,
+      "fall_last_frame": 444
+    },
+    {
+      "video": "FWSSM3",
+      "labeled_frames": 142,
+      "min_frame": 4,
+      "max_frame": 514,
+      "stage_counts": {
+        "Abnormal": 19,
+        "Fall": 18,
+        "Normal": 105
+      },
+      "class_counts": {
+        "1": 19,
+        "2": 18,
+        "0": 105
+      },
+      "abnormal_first_frame": 442,
+      "fall_first_frame": 480,
+      "fall_last_frame": 514
+    },
+    {
+      "video": "FWSSM4",
+      "labeled_frames": 194,
+      "min_frame": 0,
+      "max_frame": 806,
+      "stage_counts": {
+        "Abnormal": 40,
+        "Fall": 30,
+        "Normal": 124
+      },
+      "class_counts": {
+        "1": 40,
+        "2": 30,
+        "0": 124
+      },
+      "abnormal_first_frame": 668,
+      "fall_first_frame": 748,
+      "fall_last_frame": 806
+    },
+    {
+      "video": "FWSSM5",
+      "labeled_frames": 192,
+      "min_frame": 4,
+      "max_frame": 627,
+      "stage_counts": {
+        "Abnormal": 56,
+        "Fall": 25,
+        "Normal": 111
+      },
+      "class_counts": {
+        "1": 56,
+        "2": 25,
+        "0": 111
+      },
+      "abnormal_first_frame": 467,
+      "fall_first_frame": 579,
+      "fall_last_frame": 627
+    },
+    {
+      "video": "FWSSM6",
+      "labeled_frames": 177,
+      "min_frame": 0,
+      "max_frame": 638,
+      "stage_counts": {
+        "Abnormal": 28,
+        "Fall": 14,
+        "Normal": 135
+      },
+      "class_counts": {
+        "1": 28,
+        "2": 14,
+        "0": 135
+      },
+      "abnormal_first_frame": 556,
+      "fall_first_frame": 612,
+      "fall_last_frame": 638
+    },
+    {
+      "video": "FWSSM7",
+      "labeled_frames": 175,
+      "min_frame": 3,
+      "max_frame": 598,
+      "stage_counts": {
+        "Abnormal": 30,
+        "Fall": 28,
+        "Normal": 117
+      },
+      "class_counts": {
+        "1": 30,
+        "2": 28,
+        "0": 117
+      },
+      "abnormal_first_frame": 484,
+      "fall_first_frame": 544,
+      "fall_last_frame": 598
+    },
+    {
+      "video": "FWSSM8",
+      "labeled_frames": 119,
+      "min_frame": 6,
+      "max_frame": 389,
+      "stage_counts": {
+        "Abnormal": 38,
+        "Fall": 21,
+        "Normal": 60
+      },
+      "class_counts": {
+        "1": 38,
+        "2": 21,
+        "0": 60
+      },
+      "abnormal_first_frame": 273,
+      "fall_first_frame": 349,
+      "fall_last_frame": 389
+    },
+    {
+      "video": "FWSSM9",
+      "labeled_frames": 166,
+      "min_frame": 0,
+      "max_frame": 554,
+      "stage_counts": {
+        "Abnormal": 36,
+        "Fall": 26,
+        "Normal": 104
+      },
+      "class_counts": {
+        "1": 36,
+        "2": 26,
+        "0": 104
+      },
+      "abnormal_first_frame": 432,
+      "fall_first_frame": 504,
+      "fall_last_frame": 554
+    }
+  ],
+  "unmatched_examples": []
+}

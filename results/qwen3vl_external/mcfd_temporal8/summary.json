@@ -1,0 +1,48 @@
+{
+  "protocol": "zero-shot Qwen, annotated 31-frame segments, cameras 1/2/4/5/6/7/8",
+  "frames": 8,
+  "parse_errors": 0,
+  "mean_inference_seconds": 0.7713740940118201,
+  "total_seconds": 495.49347380001564,
+  "metrics": {
+    "all_selected": {
+      "samples": 484,
+      "accuracy": 0.7210743801652892,
+      "balanced_accuracy": 0.7099069512862616,
+      "precision": 0.9532710280373832,
+      "recall": 0.4396551724137931,
+      "specificity": 0.9801587301587301,
+      "f1": 0.6017699115044247,
+      "tp": 102,
+      "tn": 247,
+      "fp": 5,
+      "fn": 130
+    },
+    "cam1": {
+      "samples": 69,
+      "accuracy": 0.6811594202898551,
+      "balanced_accuracy": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "specificity": 1.0,
+      "f1": 0.5,
+      "tp": 11,
+      "tn": 36,
+      "fp": 0,
+      "fn": 22
+    },
+    "cross_view_test": {
+      "samples": 415,
+      "accuracy": 0.727710843373494,
+      "balanced_accuracy": 0.717069142006328,
+      "precision": 0.9479166666666666,
+      "recall": 0.457286432160804,
+      "specificity": 0.9768518518518519,
+      "f1": 0.6169491525423728,
+      "tp": 91,
+      "tn": 211,
+      "fp": 5,
+      "fn": 108
+    }
+  }
+}

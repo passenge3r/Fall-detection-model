@@ -1,0 +1,831 @@
+﻿route,sample,label,probability,baseline_prediction,pose_valid_ratio,quality_decision,baseline_correct,quality_reasons
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1052-1082,0,0.98763570,1,0.859375,FALL,0,"{""implausible_bone"": 9, ""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1083-1113,1,0.99630912,1,0.515625,FALL,1,"{""implausible_bone"": 23, ""target_jump"": 8, ""too_few_joints"": 6, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1114-1144,0,0.62495641,1,0.875000,FALL,0,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1053-1083,0,0.12470352,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1084-1114,1,0.99949428,1,0.453125,UNKNOWN,1,"{""implausible_bone"": 13, ""target_jump"": 21, ""too_few_joints"": 6, ""torso_missing"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1115-1145,0,0.99990170,1,0.218750,UNKNOWN,0,"{""implausible_bone"": 18, ""target_jump"": 2, ""too_few_joints"": 27, ""torso_missing"": 44}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1072-1102,0,0.23048194,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1103-1133,1,0.51925809,1,0.968750,FALL,1,"{""implausible_bone"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1134-1164,0,0.59265771,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1055-1085,0,0.22925406,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1086-1116,1,0.98049666,1,0.968750,FALL,1,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1117-1147,0,0.83534187,1,0.968750,FALL,0,"{""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1055-1085,0,0.44693834,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1086-1116,1,0.92153034,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1117-1147,0,0.26967623,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1049-1079,0,0.21754721,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1080-1110,1,0.46818174,0,0.968750,ADL,0,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1111-1141,0,0.99999484,1,0.078125,UNKNOWN,0,"{""implausible_bone"": 15, ""target_jump"": 33, ""too_few_joints"": 8, ""torso_missing"": 59}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f384-414,0,0.20945746,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f415-445,1,0.89525506,1,0.609375,FALL,1,"{""target_jump"": 13, ""too_few_joints"": 6, ""torso_missing"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f445-475,0,0.94306397,1,0.187500,UNKNOWN,0,"{""target_jump"": 11, ""too_few_joints"": 39, ""torso_missing"": 52}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f360-390,0,0.13754842,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f391-421,1,0.97856756,1,0.781250,FALL,1,"{""implausible_bone"": 2, ""target_jump"": 8, ""too_few_joints"": 2, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f421-451,0,0.99973013,1,0.046875,UNKNOWN,0,"{""implausible_bone"": 16, ""target_jump"": 27, ""too_few_joints"": 10, ""torso_missing"": 43}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f362-392,0,0.24562756,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f393-423,1,0.98318912,1,0.703125,FALL,1,"{""implausible_bone"": 7, ""target_jump"": 4, ""too_few_joints"": 4, ""torso_missing"": 15}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f423-453,0,0.99790953,1,0.250000,UNKNOWN,0,"{""implausible_bone"": 18, ""target_jump"": 23, ""too_few_joints"": 4, ""torso_missing"": 40}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f377-407,0,0.07760101,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f408-438,1,0.23467147,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f438-468,0,0.42973545,0,0.968750,ADL,1,"{""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f377-407,0,0.60456555,1,0.937500,FALL,0,"{""implausible_bone"": 2, ""target_jump"": 4, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f408-438,1,0.48792724,0,0.875000,ADL,0,"{""implausible_bone"": 2, ""target_jump"": 2, ""too_few_joints"": 4, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f438-468,0,0.94223924,1,0.703125,FALL,0,"{""implausible_bone"": 9, ""target_jump"": 6, ""too_few_joints"": 5, ""torso_missing"": 19}"
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f350-380,0,0.22043511,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f381-411,1,0.66030509,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f411-441,0,0.97855407,1,0.093750,UNKNOWN,0,"{""target_jump"": 20, ""too_few_joints"": 36, ""torso_missing"": 58}"
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam2.avi#f576-606,0,0.14396752,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam2.avi#f607-637,1,0.37238089,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam4.avi#f576-606,0,0.18847513,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam4.avi#f607-637,1,0.99105081,1,0.781250,FALL,1,"{""target_jump"": 10, ""too_few_joints"": 2, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam5.avi#f595-625,0,0.14856441,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam5.avi#f626-656,1,0.22426825,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam6.avi#f580-610,0,0.23319185,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam6.avi#f611-641,1,0.89116776,1,0.875000,FALL,1,"{""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam7.avi#f580-610,0,0.31366683,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam7.avi#f611-641,1,0.80252346,1,0.906250,FALL,1,"{""target_jump"": 6, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam8.avi#f560-590,0,0.13846416,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute03/cam8.avi#f591-621,1,0.29210440,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f336-366,0,0.12398091,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f367-397,1,0.91598822,1,0.875000,FALL,1,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f398-428,0,0.97487426,1,0.093750,UNKNOWN,0,"{""implausible_bone"": 9, ""target_jump"": 52, ""too_few_joints"": 6, ""torso_missing"": 58}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f683-713,1,0.98987529,1,0.906250,FALL,1,"{""implausible_bone"": 4, ""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f714-744,0,0.97144017,1,0.812500,FALL,0,"{""implausible_bone"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f257-287,0,0.12342257,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f288-318,1,0.93060358,1,0.812500,FALL,1,"{""implausible_bone"": 4, ""target_jump"": 6, ""too_few_joints"": 4, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f319-349,0,1.00000000,1,0.125000,UNKNOWN,0,"{""implausible_bone"": 12, ""target_jump"": 8, ""too_few_joints"": 13, ""torso_missing"": 56}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f604-634,1,0.98985602,1,0.828125,FALL,1,"{""implausible_bone"": 7, ""target_jump"": 4, ""torso_missing"": 11}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f635-665,0,0.99240203,1,0.078125,UNKNOWN,0,"{""implausible_bone"": 16, ""too_few_joints"": 16, ""torso_missing"": 51}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f325-355,0,0.20973375,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f356-386,1,0.99066527,1,0.609375,FALL,1,"{""implausible_bone"": 14, ""target_jump"": 2, ""torso_missing"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f387-417,0,0.96315192,1,0.062500,UNKNOWN,0,"{""implausible_bone"": 31, ""target_jump"": 5, ""torso_missing"": 58}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f672-702,1,0.99937375,1,0.484375,UNKNOWN,1,"{""implausible_bone"": 31, ""target_jump"": 4, ""torso_missing"": 23}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f703-733,0,0.99985869,1,0.093750,UNKNOWN,0,"{""implausible_bone"": 45, ""target_jump"": 23, ""torso_missing"": 34}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f339-369,0,0.12359660,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f370-400,1,0.62138987,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f401-431,0,0.75587535,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f686-716,1,0.99364850,1,0.640625,FALL,1,"{""target_jump"": 23}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f717-747,0,0.99086638,1,0.234375,UNKNOWN,0,"{""target_jump"": 49, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f340-370,0,0.99756067,1,0.500000,FALL,0,"{""implausible_bone"": 19, ""target_jump"": 28, ""too_few_joints"": 2, ""torso_missing"": 32}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f371-401,1,0.14391298,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f402-432,0,0.11730916,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f687-717,1,0.15047491,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f718-748,0,0.07768644,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f313-343,0,0.20396177,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f344-374,1,0.67361356,1,0.968750,FALL,1,"{""target_jump"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f375-405,0,0.99563482,1,0.125000,UNKNOWN,0,"{""too_few_joints"": 52, ""torso_missing"": 56}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f660-690,1,0.88845436,1,0.609375,FALL,1,"{""implausible_bone"": 2, ""torso_missing"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f691-721,0,0.98124258,1,0.812500,FALL,0,"{""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam2.avi#f333-363,1,0.95534770,1,0.781250,FALL,1,"{""implausible_bone"": 10, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam2.avi#f364-394,0,0.96146885,1,0.625000,FALL,0,"{""implausible_bone"": 22, ""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam4.avi#f320-350,1,0.68069176,1,0.812500,FALL,1,"{""implausible_bone"": 6, ""target_jump"": 2, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam4.avi#f351-381,0,0.99999496,1,0.062500,UNKNOWN,0,"{""implausible_bone"": 12, ""target_jump"": 6, ""torso_missing"": 54}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam5.avi#f327-357,1,0.99718481,1,0.671875,FALL,1,"{""implausible_bone"": 12, ""target_jump"": 4, ""torso_missing"": 15}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam5.avi#f358-388,0,0.82833989,1,0.281250,UNKNOWN,0,"{""implausible_bone"": 36, ""target_jump"": 6, ""torso_missing"": 28}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam6.avi#f335-365,1,0.32257522,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam6.avi#f366-396,0,0.81079143,1,0.875000,FALL,0,"{""target_jump"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam7.avi#f337-367,1,0.99678855,1,0.828125,FALL,1,"{""too_few_joints"": 5, ""torso_missing"": 11}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam7.avi#f368-398,0,0.52536218,1,0.937500,FALL,0,"{""too_few_joints"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam8.avi#f309-339,1,0.99894613,1,0.718750,FALL,1,"{""implausible_bone"": 6, ""target_jump"": 6, ""torso_missing"": 18}"
+RTMPose+ST-GCN++,dataset/dataset/chute05/cam8.avi#f340-370,0,0.96045999,1,0.000000,UNKNOWN,0,"{""implausible_bone"": 38, ""too_few_joints"": 19, ""torso_missing"": 64}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f632-662,0,0.24751313,0,0.968750,ADL,1,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f683-713,1,0.18600122,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f703-733,1,0.19327917,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f740-770,0,0.10661071,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f622-652,0,0.12472356,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f673-703,1,0.41908907,0,0.968750,ADL,0,"{""implausible_bone"": 2, ""target_jump"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f693-723,1,0.99933803,1,0.500000,FALL,1,"{""implausible_bone"": 19, ""target_jump"": 9, ""torso_missing"": 24}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f730-760,0,0.94155574,1,0.062500,UNKNOWN,0,"{""implausible_bone"": 58, ""target_jump"": 13, ""too_few_joints"": 9, ""torso_missing"": 56}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f622-652,0,0.17133735,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f673-703,1,0.16932229,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f693-723,1,0.27459785,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f730-760,0,0.20861588,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f635-665,0,0.15238723,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f686-716,1,0.65410535,1,0.968750,FALL,1,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f706-736,1,0.99258049,1,0.875000,FALL,1,"{""implausible_bone"": 2, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f743-773,0,0.81431864,1,0.843750,FALL,0,"{""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f635-665,0,0.17961162,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f686-716,1,0.18010288,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f706-736,1,0.64654124,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f743-773,0,0.10860922,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f621-651,0,0.20429480,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f672-702,1,0.21021965,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f692-722,1,0.21006774,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f729-759,0,0.57525279,1,0.875000,FALL,0,"{""implausible_bone"": 2, ""target_jump"": 8, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam2.avi#f460-490,0,0.17445656,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam2.avi#f491-521,1,0.83504818,1,0.968750,FALL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam4.avi#f445-475,0,0.27199252,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam4.avi#f476-506,1,0.16960184,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam5.avi#f463-493,0,0.20531542,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam5.avi#f494-524,1,0.99985635,1,0.250000,UNKNOWN,1,"{""implausible_bone"": 46, ""target_jump"": 2, ""torso_missing"": 48}"
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam6.avi#f463-493,0,0.14253949,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam6.avi#f494-524,1,0.07799958,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam7.avi#f463-493,0,0.24028776,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam7.avi#f494-524,1,0.18895555,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam8.avi#f463-493,0,0.23885325,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute07/cam8.avi#f494-524,1,0.41615379,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam2.avi#f319-349,0,0.17243381,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam2.avi#f350-380,1,0.99592365,1,0.703125,FALL,1,"{""target_jump"": 17, ""too_few_joints"": 2, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam4.avi#f321-351,0,0.13220094,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam4.avi#f352-382,1,0.99490719,1,0.671875,FALL,1,"{""implausible_bone"": 15, ""target_jump"": 4, ""torso_missing"": 15}"
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam5.avi#f304-334,0,0.20436228,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam5.avi#f335-365,1,0.93784459,1,0.640625,FALL,1,"{""implausible_bone"": 21, ""target_jump"": 2, ""torso_missing"": 23}"
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam6.avi#f321-351,0,0.14764638,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam6.avi#f352-382,1,0.89702579,1,0.968750,FALL,1,"{""implausible_bone"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam7.avi#f321-351,0,0.07047407,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam7.avi#f352-382,1,0.08593460,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam8.avi#f296-326,0,0.13685965,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute08/cam8.avi#f327-357,1,0.09620172,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f603-633,0,0.76279740,1,0.937500,FALL,0,"{""implausible_bone"": 4, ""target_jump"": 4, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f634-664,1,0.08705970,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f665-695,0,0.99257116,1,0.484375,UNKNOWN,0,"{""implausible_bone"": 6, ""target_jump"": 27, ""torso_missing"": 33}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f612-642,0,0.99999362,1,0.125000,UNKNOWN,0,"{""implausible_bone"": 48, ""target_jump"": 2, ""too_few_joints"": 4, ""torso_missing"": 31}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f643-673,1,0.99320003,1,0.531250,FALL,1,"{""implausible_bone"": 18, ""target_jump"": 2, ""too_few_joints"": 2, ""torso_missing"": 22}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f674-704,0,0.93381292,1,0.156250,UNKNOWN,0,"{""implausible_bone"": 40, ""target_jump"": 38, ""too_few_joints"": 2, ""torso_missing"": 19}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f606-636,0,0.09260216,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f637-667,1,0.59702899,1,0.968750,FALL,1,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f668-698,0,0.98583283,1,0.812500,FALL,0,"{""implausible_bone"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f606-636,0,0.94421881,1,0.937500,FALL,0,"{""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f637-667,1,0.98001447,1,0.937500,FALL,1,"{""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f668-698,0,0.73854543,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f606-636,0,0.75138853,1,0.968750,FALL,0,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f637-667,1,0.94975984,1,0.750000,FALL,1,"{""too_few_joints"": 10, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f668-698,0,0.94595040,1,0.125000,UNKNOWN,0,"{""implausible_bone"": 5, ""too_few_joints"": 29, ""torso_missing"": 56}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f594-624,0,0.11403639,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f625-655,1,0.77612430,1,0.875000,FALL,1,"{""implausible_bone"": 6, ""target_jump"": 4, ""too_few_joints"": 2, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f656-686,0,0.99468382,1,0.250000,UNKNOWN,0,"{""implausible_bone"": 27, ""target_jump"": 16, ""torso_missing"": 42}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f499-529,0,0.28170433,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f520-550,1,0.70751826,1,0.968750,FALL,1,"{""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f551-581,0,0.24535315,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f518-548,0,0.53573823,1,0.968750,FALL,0,"{""implausible_bone"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f539-569,1,0.99956608,1,0.546875,FALL,1,"{""implausible_bone"": 15, ""target_jump"": 4, ""torso_missing"": 21}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f570-600,0,0.95769814,1,0.640625,FALL,0,"{""implausible_bone"": 17, ""target_jump"": 2, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f497-527,0,0.11455899,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f518-548,1,0.79661468,1,0.906250,FALL,1,"{""implausible_bone"": 4, ""target_jump"": 4, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f549-579,0,0.12129838,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f502-532,0,0.14056347,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f523-553,1,0.99393313,1,0.875000,FALL,1,"{""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f554-584,0,0.91039780,1,0.906250,FALL,0,"{""implausible_bone"": 4, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f504-534,0,0.10929313,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f525-555,1,0.15839955,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f556-586,0,0.18731459,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f485-515,0,0.11957752,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f506-536,1,0.15851593,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f537-567,0,0.16610458,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f435-465,0,0.17132684,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f466-496,1,0.45782981,0,0.937500,ADL,0,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f497-527,0,0.98897487,1,0.281250,UNKNOWN,0,"{""target_jump"": 6, ""too_few_joints"": 40, ""torso_missing"": 46}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f445-475,0,0.22841994,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f476-506,1,0.98294377,1,0.781250,FALL,1,"{""implausible_bone"": 10, ""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f507-537,0,0.99528183,1,0.062500,UNKNOWN,0,"{""implausible_bone"": 51, ""target_jump"": 20, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f431-461,0,0.18723476,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f462-492,1,0.86311926,1,0.968750,FALL,1,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f493-523,0,0.48908633,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f437-467,0,0.07254960,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f468-498,1,0.99956673,1,0.609375,FALL,1,"{""target_jump"": 23, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f499-529,0,0.89756596,1,0.156250,UNKNOWN,0,"{""torso_missing"": 54}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f437-467,0,0.08302558,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f468-498,1,0.88302833,1,0.937500,FALL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f499-529,0,0.96457717,1,0.421875,UNKNOWN,0,"{""target_jump"": 7, ""too_few_joints"": 22, ""torso_missing"": 37}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f443-473,0,0.16037214,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f474-504,1,0.87447605,1,0.875000,FALL,1,"{""target_jump"": 4, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f505-535,0,0.89531824,1,0.328125,UNKNOWN,0,"{""target_jump"": 5, ""too_few_joints"": 2, ""torso_missing"": 43}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f575-605,0,0.11674740,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f606-636,1,0.18058034,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f634-664,1,0.90477727,1,0.609375,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 23, ""torso_missing"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f577-607,0,0.11740616,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f608-638,1,0.12931028,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f636-666,1,0.98848422,1,0.671875,FALL,1,"{""implausible_bone"": 17, ""torso_missing"": 15}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f569-599,0,0.16114613,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f600-630,1,0.14745148,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f628-658,1,0.94344351,1,0.843750,FALL,1,"{""implausible_bone"": 8, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f572-602,0,0.10447296,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f603-633,1,0.11926825,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f631-661,1,0.71409635,1,0.875000,FALL,1,"{""target_jump"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f576-606,0,0.21579156,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f607-637,1,0.09780495,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f635-665,1,0.76158144,1,0.812500,FALL,1,"{""target_jump"": 4, ""too_few_joints"": 4, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f569-599,0,0.19860556,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f600-630,1,0.15638007,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f628-658,1,0.41711943,0,0.937500,ADL,0,"{""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam2.avi#f720-750,0,0.09158668,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam2.avi#f861-891,1,0.15182913,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam4.avi#f694-724,0,0.99680491,1,0.765625,FALL,0,"{""implausible_bone"": 6, ""target_jump"": 2, ""torso_missing"": 9}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam4.avi#f835-865,1,0.98615977,1,0.781250,FALL,1,"{""implausible_bone"": 6, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam5.avi#f714-744,0,0.97870998,1,0.515625,FALL,0,"{""implausible_bone"": 21, ""target_jump"": 8, ""torso_missing"": 27}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam5.avi#f855-885,1,0.57116534,1,0.937500,FALL,1,"{""implausible_bone"": 4, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam6.avi#f714-744,0,0.80449671,1,0.968750,FALL,0,"{""implausible_bone"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam6.avi#f855-885,1,0.92807989,1,0.875000,FALL,1,"{""implausible_bone"": 4, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam7.avi#f723-753,0,0.97503053,1,0.500000,FALL,0,"{""implausible_bone"": 30, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam7.avi#f864-894,1,0.58888302,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam8.avi#f700-730,0,0.78422894,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute13/cam8.avi#f841-871,1,0.23567135,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam2.avi#f1027-1057,1,0.98876540,1,0.843750,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam2.avi#f1058-1088,0,0.09969436,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam4.avi#f991-1021,1,0.97840118,1,0.750000,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 4, ""torso_missing"": 14}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam4.avi#f1022-1052,0,0.87239821,1,0.031250,UNKNOWN,0,"{""implausible_bone"": 36, ""target_jump"": 35, ""too_few_joints"": 4, ""torso_missing"": 40}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam5.avi#f1019-1049,1,0.11652826,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam5.avi#f1050-1080,0,0.18658533,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam6.avi#f1019-1049,1,0.70000865,1,0.906250,FALL,1,"{""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam6.avi#f1050-1080,0,0.98915501,1,0.609375,FALL,0,"{""target_jump"": 17, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam7.avi#f998-1028,1,0.45287171,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam7.avi#f1029-1059,0,0.98945175,1,0.562500,FALL,0,"{""implausible_bone"": 14, ""target_jump"": 10, ""torso_missing"": 18}"
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam8.avi#f1005-1035,1,0.13393254,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute14/cam8.avi#f1036-1066,0,0.93984114,1,0.093750,UNKNOWN,0,"{""target_jump"": 58, ""torso_missing"": 58}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam2.avi#f743-773,0,0.10451727,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam2.avi#f774-804,1,0.98670164,1,0.781250,FALL,1,"{""implausible_bone"": 2, ""target_jump"": 8, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam4.avi#f739-769,0,0.13800510,0,0.968750,ADL,1,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam4.avi#f770-800,1,0.78374365,1,0.843750,FALL,1,"{""implausible_bone"": 2, ""too_few_joints"": 2, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam5.avi#f758-788,0,0.23839482,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam5.avi#f789-819,1,0.99713026,1,0.781250,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 6, ""torso_missing"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam6.avi#f764-794,0,0.20235573,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam6.avi#f795-825,1,0.78873010,1,0.750000,FALL,1,"{""target_jump"": 4, ""too_few_joints"": 2, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam7.avi#f747-777,0,0.17291849,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam7.avi#f778-808,1,0.24517976,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam8.avi#f724-754,0,0.10358653,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute15/cam8.avi#f755-785,1,0.20382372,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f409-439,0,0.83176824,1,0.906250,FALL,0,"{""implausible_bone"": 2, ""target_jump"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f847-877,0,0.99982905,1,0.390625,UNKNOWN,0,"{""implausible_bone"": 12, ""target_jump"": 31, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f925-955,1,0.19960541,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f382-412,0,0.08947855,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f820-850,0,0.99989165,1,0.062500,UNKNOWN,0,"{""implausible_bone"": 15, ""target_jump"": 11, ""too_few_joints"": 15, ""torso_missing"": 60}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f898-928,1,0.90541680,1,0.671875,FALL,1,"{""torso_missing"": 21}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f392-422,0,0.99999809,1,0.875000,FALL,0,"{""target_jump"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f830-860,0,0.27121935,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f908-938,1,0.12196579,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f389-419,0,0.06481918,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f827-857,0,0.12173519,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f905-935,1,0.94446929,1,0.640625,FALL,1,"{""implausible_bone"": 6, ""target_jump"": 8, ""torso_missing"": 15}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f383-413,0,0.08260043,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f821-851,0,0.11386532,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f899-929,1,0.74861567,1,0.968750,FALL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f383-413,0,0.14814677,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f821-851,0,0.15248439,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f899-929,1,0.12914267,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam2.avi#f367-397,0,0.10311690,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam2.avi#f761-791,1,0.45716195,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam4.avi#f341-371,0,0.87053381,1,0.812500,FALL,0,"{""implausible_bone"": 6, ""too_few_joints"": 2, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam4.avi#f735-765,1,0.97582380,1,0.546875,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 2, ""too_few_joints"": 2, ""torso_missing"": 29}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam5.avi#f351-381,0,0.99979068,1,0.406250,UNKNOWN,0,"{""implausible_bone"": 18, ""target_jump"": 22, ""torso_missing"": 18}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam5.avi#f745-775,1,0.99714078,1,0.843750,FALL,1,"{""target_jump"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam6.avi#f341-371,0,0.75524227,1,0.859375,FALL,0,"{""torso_missing"": 9}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam6.avi#f735-765,1,0.95260528,1,0.843750,FALL,1,"{""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam7.avi#f370-400,0,0.99609701,1,0.968750,FALL,0,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam7.avi#f764-794,1,0.46483339,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam8.avi#f359-389,0,0.75242025,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute17/cam8.avi#f753-783,1,0.11244992,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam2.avi#f635-665,0,0.93241251,1,0.890625,FALL,0,"{""implausible_bone"": 7, ""target_jump"": 5}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam2.avi#f676-706,1,0.99629575,1,0.156250,UNKNOWN,1,"{""target_jump"": 52, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam4.avi#f530-560,0,0.56868983,1,0.968750,FALL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam4.avi#f571-601,1,0.99993594,1,0.718750,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 2, ""too_few_joints"": 4, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam5.avi#f615-645,0,0.12237653,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam5.avi#f656-686,1,0.11644362,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam6.avi#f638-668,0,0.76701929,1,0.968750,FALL,0,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam6.avi#f679-709,1,0.98633103,1,0.968750,FALL,1,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam7.avi#f638-668,0,1.00000000,1,0.187500,UNKNOWN,0,"{""implausible_bone"": 33, ""target_jump"": 52, ""torso_missing"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam7.avi#f679-709,1,0.99773817,1,0.875000,FALL,1,"{""implausible_bone"": 8, ""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam8.avi#f607-637,0,0.15226530,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute18/cam8.avi#f648-678,1,0.51573138,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f447-477,0,0.13507113,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f495-525,0,0.98752901,1,0.609375,FALL,0,"{""implausible_bone"": 5, ""target_jump"": 25}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f527-557,1,0.21113667,0,0.968750,ADL,0,"{""target_jump"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f557-587,1,0.12940849,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f587-617,1,0.21780164,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f439-469,0,0.10056088,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f487-517,0,0.22754075,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f519-549,1,0.76887571,1,0.937500,FALL,1,"{""implausible_bone"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f549-579,1,0.99814314,1,0.203125,UNKNOWN,1,"{""implausible_bone"": 12, ""target_jump"": 2, ""too_few_joints"": 14, ""torso_missing"": 49}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f579-609,1,0.99497466,1,0.062500,UNKNOWN,1,"{""implausible_bone"": 18, ""target_jump"": 4, ""too_few_joints"": 34, ""torso_missing"": 60}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f425-455,0,0.12287876,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f473-503,0,0.13950700,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f505-535,1,0.14830395,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f535-565,1,0.99037318,1,0.781250,FALL,1,"{""implausible_bone"": 2, ""too_few_joints"": 12, ""torso_missing"": 14}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f565-595,1,0.99433018,1,0.578125,FALL,1,"{""implausible_bone"": 5, ""target_jump"": 4, ""too_few_joints"": 12, ""torso_missing"": 27}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f449-479,0,0.41646532,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f497-527,0,0.22456130,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f529-559,1,0.47703411,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f559-589,1,0.95330495,1,0.390625,UNKNOWN,1,"{""target_jump"": 15, ""torso_missing"": 37}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f589-619,1,0.93681364,1,0.296875,UNKNOWN,1,"{""target_jump"": 6, ""torso_missing"": 45}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f420-450,0,0.09009869,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f468-498,0,0.21611059,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f500-530,1,0.40870531,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f530-560,1,0.99727872,1,0.250000,UNKNOWN,1,"{""implausible_bone"": 16, ""target_jump"": 13, ""too_few_joints"": 31, ""torso_missing"": 48}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f560-590,1,0.99789852,1,0.031250,UNKNOWN,1,"{""implausible_bone"": 42, ""target_jump"": 20, ""too_few_joints"": 8, ""torso_missing"": 54}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f440-470,0,0.08916873,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f488-518,0,0.18703535,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f520-550,1,0.35458480,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f550-580,1,0.79479379,1,0.937500,FALL,1,"{""target_jump"": 4, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f580-610,1,0.64157335,1,0.937500,FALL,1,"{""target_jump"": 4, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f359-389,0,0.16295191,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f409-439,0,0.18426430,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f554-584,1,0.08634515,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f584-614,1,0.13312607,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f614-644,1,0.14568383,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f644-674,1,0.40547317,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f360-390,0,0.08902949,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f410-440,0,0.11903713,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f555-585,1,0.18505910,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f585-615,1,0.87766907,1,0.906250,FALL,1,"{""implausible_bone"": 2, ""too_few_joints"": 2, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f615-645,1,0.98173176,1,0.500000,FALL,1,"{""implausible_bone"": 5, ""too_few_joints"": 21, ""torso_missing"": 32}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f645-675,1,0.99999970,1,0.062500,UNKNOWN,1,"{""implausible_bone"": 24, ""target_jump"": 21, ""too_few_joints"": 22, ""torso_missing"": 60}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f360-390,0,0.15022202,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f410-440,0,0.14354911,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f555-585,1,0.16773031,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f585-615,1,0.14731533,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f615-645,1,0.13813719,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f645-675,1,0.88794760,1,0.734375,FALL,1,"{""implausible_bone"": 2, ""too_few_joints"": 11, ""torso_missing"": 17}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f354-384,0,0.09780925,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f404-434,0,0.11326102,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f549-579,1,0.40254918,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f579-609,1,0.78349197,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f609-639,1,0.94439818,1,0.484375,UNKNOWN,1,"{""target_jump"": 10, ""too_few_joints"": 2, ""torso_missing"": 33}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f639-669,1,0.99008855,1,0.468750,UNKNOWN,1,"{""target_jump"": 4, ""too_few_joints"": 8, ""torso_missing"": 34}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f354-384,0,0.31799185,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f404-434,0,0.10187624,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f549-579,1,0.27673976,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f579-609,1,0.76502469,1,0.781250,FALL,1,"{""target_jump"": 6, ""torso_missing"": 14}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f609-639,1,0.98631212,1,0.671875,FALL,1,"{""implausible_bone"": 3, ""target_jump"": 7, ""too_few_joints"": 6, ""torso_missing"": 21}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f639-669,1,0.96116742,1,0.750000,FALL,1,"{""implausible_bone"": 4, ""target_jump"": 2, ""too_few_joints"": 6, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f350-380,0,0.14288515,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f400-430,0,0.14160982,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f545-575,1,0.19340040,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f575-605,1,0.15627860,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f605-635,1,0.15547065,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f635-665,1,0.94877021,1,0.656250,FALL,1,"{""implausible_bone"": 6, ""target_jump"": 18, ""torso_missing"": 12}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam2.avi#f568-598,0,0.14122912,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam2.avi#f898-928,1,0.74677743,1,0.968750,FALL,1,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam4.avi#f538-568,0,0.99996114,1,0.218750,UNKNOWN,0,"{""implausible_bone"": 13, ""target_jump"": 35, ""too_few_joints"": 4, ""torso_missing"": 14}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam4.avi#f868-898,1,0.99999994,1,0.062500,UNKNOWN,1,"{""implausible_bone"": 14, ""target_jump"": 6, ""too_few_joints"": 34, ""torso_missing"": 58}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam5.avi#f546-576,0,0.25601074,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam5.avi#f876-906,1,0.99999455,1,0.234375,UNKNOWN,1,"{""implausible_bone"": 39, ""target_jump"": 4, ""torso_missing"": 47}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam6.avi#f570-600,0,0.49250443,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam6.avi#f900-930,1,0.91663471,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam7.avi#f570-600,0,0.16151991,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam7.avi#f900-930,1,0.83126147,1,0.750000,FALL,1,"{""too_few_joints"": 6, ""torso_missing"": 16}"
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam8.avi#f538-568,0,0.14527501,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute21/cam8.avi#f868-898,1,0.40154344,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam2.avi#f782-812,0,0.11724578,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam2.avi#f818-848,1,0.82891425,1,0.843750,FALL,1,"{""target_jump"": 10}"
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam4.avi#f777-807,0,0.10712903,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam4.avi#f813-843,1,0.76903467,1,0.906250,FALL,1,"{""implausible_bone"": 2, ""too_few_joints"": 4, ""torso_missing"": 6}"
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam5.avi#f789-819,0,0.99701065,1,0.328125,UNKNOWN,0,"{""implausible_bone"": 39, ""target_jump"": 6, ""torso_missing"": 43}"
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam5.avi#f825-855,1,0.99131975,1,0.515625,FALL,1,"{""implausible_bone"": 31, ""target_jump"": 8, ""torso_missing"": 31}"
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam6.avi#f782-812,0,0.19808581,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam6.avi#f818-848,1,0.37869392,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam7.avi#f782-812,0,0.10399427,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam7.avi#f818-848,1,0.10995036,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam8.avi#f770-800,0,0.53573146,1,1.000000,FALL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute22/cam8.avi#f806-836,1,0.83785050,1,0.968750,FALL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f715-745,0,0.08623783,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1572-1602,1,0.96743615,1,0.968750,FALL,1,"{""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1602-1632,1,0.22416466,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1714-1744,0,0.15655358,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f3626-3656,1,0.99999055,1,0.359375,UNKNOWN,1,"{""target_jump"": 2, ""too_few_joints"": 33, ""torso_missing"": 41}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f4158-4188,0,0.15717661,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1572-1602,1,0.81275166,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f708-738,0,0.99995668,1,0.906250,FALL,0,"{""target_jump"": 2, ""torso_missing"": 4}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1565-1595,1,0.15135892,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1595-1625,1,0.13150515,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1707-1737,0,0.11650189,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f3619-3649,1,0.19060730,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f4151-4181,0,0.13404174,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f717-747,0,0.16388405,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1574-1604,1,0.82001186,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1604-1634,1,0.81814064,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1716-1746,0,0.21392768,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f3628-3658,1,0.92158075,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f4160-4190,0,0.21069602,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f723-753,0,0.18510069,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1580-1610,1,0.13517756,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1610-1640,1,0.08524375,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1722-1752,0,0.07782404,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f3634-3664,1,0.07804009,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f4166-4196,0,0.17336292,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f713-743,0,0.15538034,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1570-1600,1,0.79650997,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1600-1630,1,0.66086164,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1712-1742,0,0.17040962,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f3624-3654,1,0.12828824,0,1.000000,ADL,0,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f4156-4186,0,0.09159466,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f663-693,0,0.15124167,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1520-1550,1,0.99708961,1,0.875000,FALL,1,"{""implausible_bone"": 2, ""target_jump"": 8}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1550-1580,1,0.85218658,1,0.343750,UNKNOWN,1,"{""implausible_bone"": 23, ""target_jump"": 42, ""torso_missing"": 2}"
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1662-1692,0,0.14171371,0,1.000000,ADL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f3574-3604,1,0.56777131,1,1.000000,FALL,1,{}
+RTMPose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f4106-4136,0,0.13512923,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1052-1082,0,0.60375397,1,0.937500,FALL,0,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1083-1113,1,0.76908978,1,0.812500,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam2.avi#f1114-1144,0,0.20077869,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1053-1083,0,0.47120205,0,0.718750,ADL,1,"{""target_jump"": 18}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1084-1114,1,0.86504634,1,0.125000,UNKNOWN,1,"{""target_jump"": 37, ""too_few_joints"": 19, ""torso_missing"": 19}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam4.avi#f1115-1145,0,0.79995222,1,0.687500,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 18, ""torso_missing"": 18}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1072-1102,0,0.28334350,0,0.937500,ADL,1,"{""target_jump"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1103-1133,1,0.82315838,1,0.718750,FALL,1,"{""target_jump"": 14, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam5.avi#f1134-1164,0,0.29862220,0,0.375000,UNKNOWN,1,"{""target_jump"": 38, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1055-1085,0,0.80201222,1,0.671875,FALL,0,"{""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1086-1116,1,0.97894461,1,0.359375,UNKNOWN,1,"{""too_few_joints"": 41, ""torso_missing"": 41}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam6.avi#f1117-1147,0,0.99466830,1,0.031250,UNKNOWN,0,"{""too_few_joints"": 62, ""torso_missing"": 62}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1055-1085,0,0.17137877,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1086-1116,1,0.91981450,1,0.625000,FALL,1,"{""too_few_joints"": 24, ""torso_missing"": 24}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam7.avi#f1117-1147,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1049-1079,0,0.17345029,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1080-1110,1,0.60929396,1,0.843750,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute01/cam8.avi#f1111-1141,0,0.90463635,1,0.406250,UNKNOWN,0,"{""too_few_joints"": 38, ""torso_missing"": 38}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f384-414,0,0.13351966,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f415-445,1,0.97980419,1,0.640625,FALL,1,"{""too_few_joints"": 23, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam2.avi#f445-475,0,0.97672047,1,0.437500,UNKNOWN,0,"{""target_jump"": 2, ""too_few_joints"": 34, ""torso_missing"": 34}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f360-390,0,0.33264422,0,0.875000,ADL,1,"{""target_jump"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f391-421,1,0.44306784,0,0.468750,UNKNOWN,0,"{""target_jump"": 30, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam4.avi#f421-451,0,0.43933553,0,0.640625,ADL,1,"{""target_jump"": 17, ""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f362-392,0,0.78158181,1,0.812500,FALL,0,"{""target_jump"": 6, ""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f393-423,1,0.56964778,1,0.656250,FALL,1,"{""target_jump"": 8, ""too_few_joints"": 14, ""torso_missing"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam5.avi#f423-453,0,0.99828912,1,0.593750,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 24, ""torso_missing"": 24}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f377-407,0,0.12146542,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f408-438,1,0.28170423,0,0.937500,ADL,0,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam6.avi#f438-468,0,0.32245447,0,0.843750,ADL,1,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f377-407,0,0.10363164,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f408-438,1,0.31639928,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam7.avi#f438-468,0,0.45912633,0,0.937500,ADL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f350-380,0,0.26345815,0,0.125000,UNKNOWN,1,"{""target_jump"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f381-411,1,0.87560135,1,0.937500,FALL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute02/cam8.avi#f411-441,0,0.96061830,1,0.281250,UNKNOWN,0,"{""too_few_joints"": 46, ""torso_missing"": 46}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam2.avi#f576-606,0,0.10131013,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam2.avi#f607-637,1,0.56917989,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam4.avi#f576-606,0,0.50820914,1,0.296875,UNKNOWN,0,"{""target_jump"": 45}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam4.avi#f607-637,1,0.94490939,1,0.187500,UNKNOWN,1,"{""target_jump"": 50, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam5.avi#f595-625,0,0.27787505,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam5.avi#f626-656,1,0.98358288,1,0.546875,FALL,1,"{""target_jump"": 27, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam6.avi#f580-610,0,0.15672833,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam6.avi#f611-641,1,0.95791611,1,0.609375,FALL,1,"{""too_few_joints"": 25, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam7.avi#f580-610,0,0.15355422,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam7.avi#f611-641,1,0.62440754,1,0.937500,FALL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam8.avi#f560-590,0,0.23042625,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute03/cam8.avi#f591-621,1,0.41103888,0,0.968750,ADL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f336-366,0,0.08926814,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f367-397,1,0.98044699,1,0.671875,FALL,1,"{""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f398-428,0,0.99201119,1,0.156250,UNKNOWN,0,"{""target_jump"": 2, ""too_few_joints"": 52, ""torso_missing"": 52}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f683-713,1,0.97399433,1,0.406250,UNKNOWN,1,"{""too_few_joints"": 38, ""torso_missing"": 38}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam2.avi#f714-744,0,0.96829320,1,0.093750,UNKNOWN,0,"{""too_few_joints"": 58, ""torso_missing"": 58}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f257-287,0,0.32995927,0,0.875000,ADL,1,"{""target_jump"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f288-318,1,0.45131277,0,0.812500,ADL,0,"{""target_jump"": 8, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f319-349,0,0.84022552,1,0.625000,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 22, ""torso_missing"": 22}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f604-634,1,0.93268348,1,0.609375,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 23, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam4.avi#f635-665,0,0.88877232,1,0.687500,FALL,0,"{""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f325-355,0,0.49093095,0,0.343750,UNKNOWN,1,"{""target_jump"": 40, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f356-386,1,0.61275578,1,0.609375,FALL,1,"{""target_jump"": 13, ""too_few_joints"": 12, ""torso_missing"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f387-417,0,0.92724644,1,0.546875,FALL,0,"{""target_jump"": 4, ""too_few_joints"": 25, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f672-702,1,0.72154633,1,0.843750,FALL,1,"{""target_jump"": 8, ""too_few_joints"": 2, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam5.avi#f703-733,0,0.81605884,1,0.796875,FALL,0,"{""target_jump"": 5, ""too_few_joints"": 8, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f339-369,0,0.13930728,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f370-400,1,0.21346603,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f401-431,0,0.49649637,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f686-716,1,0.98139651,1,0.578125,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 25, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam6.avi#f717-747,0,0.32379758,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f340-370,0,0.64061175,1,0.750000,FALL,0,"{""too_few_joints"": 16, ""torso_missing"": 16}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f371-401,1,0.28554852,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f402-432,0,0.54552762,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f687-717,1,0.61399279,1,0.781250,FALL,1,"{""target_jump"": 4, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam7.avi#f718-748,0,0.97370133,1,0.250000,UNKNOWN,0,"{""target_jump"": 4, ""too_few_joints"": 44, ""torso_missing"": 44}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f313-343,0,0.57445729,1,0.031250,UNKNOWN,0,"{""target_jump"": 62}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f344-374,1,0.87320223,1,0.906250,FALL,1,"{""target_jump"": 4, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f375-405,0,0.98614055,1,0.031250,UNKNOWN,0,"{""target_jump"": 9, ""too_few_joints"": 53, ""torso_missing"": 53}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f660-690,1,0.80407400,1,0.546875,FALL,1,"{""target_jump"": 8, ""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute04/cam8.avi#f691-721,0,0.98997982,1,0.218750,UNKNOWN,0,"{""too_few_joints"": 50, ""torso_missing"": 50}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam2.avi#f333-363,1,0.94828996,1,0.687500,FALL,1,"{""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam2.avi#f364-394,0,0.99344046,1,0.031250,UNKNOWN,0,"{""too_few_joints"": 62, ""torso_missing"": 62}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam4.avi#f320-350,1,0.31490432,0,0.796875,ADL,0,"{""target_jump"": 11, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam4.avi#f351-381,0,0.50967904,1,0.453125,UNKNOWN,0,"{""target_jump"": 25, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam5.avi#f327-357,1,0.96217303,1,0.093750,UNKNOWN,1,"{""target_jump"": 37, ""too_few_joints"": 21, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam5.avi#f358-388,0,0.93670240,1,0.500000,FALL,0,"{""target_jump"": 8, ""too_few_joints"": 24, ""torso_missing"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam6.avi#f335-365,1,0.43073352,0,0.843750,ADL,0,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam6.avi#f366-396,0,0.98871979,1,0.093750,UNKNOWN,0,"{""too_few_joints"": 58, ""torso_missing"": 58}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam7.avi#f337-367,1,0.95083357,1,0.671875,FALL,1,"{""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam7.avi#f368-398,0,0.98467194,1,0.062500,UNKNOWN,0,"{""target_jump"": 8, ""too_few_joints"": 52, ""torso_missing"": 52}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam8.avi#f309-339,1,0.87311485,1,0.187500,UNKNOWN,1,"{""target_jump"": 37, ""too_few_joints"": 15, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute05/cam8.avi#f340-370,0,0.89311627,1,0.390625,UNKNOWN,0,"{""too_few_joints"": 39, ""torso_missing"": 39}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f632-662,0,0.28377034,0,0.937500,ADL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f683-713,1,0.20662908,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f703-733,1,0.53358452,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam2.avi#f740-770,0,0.22024919,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f622-652,0,0.64014043,1,0.828125,FALL,0,"{""target_jump"": 11}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f673-703,1,0.40338407,0,0.562500,ADL,0,"{""target_jump"": 26, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f693-723,1,0.90092233,1,0.484375,UNKNOWN,1,"{""target_jump"": 12, ""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam4.avi#f730-760,0,0.83863778,1,0.671875,FALL,0,"{""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f622-652,0,0.81916359,1,0.359375,UNKNOWN,0,"{""target_jump"": 26, ""too_few_joints"": 15, ""torso_missing"": 19}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f673-703,1,0.57503559,1,0.875000,FALL,1,"{""target_jump"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f693-723,1,0.42219523,0,0.562500,ADL,0,"{""target_jump"": 20, ""too_few_joints"": 8, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam5.avi#f730-760,0,0.46134841,0,0.328125,UNKNOWN,1,"{""target_jump"": 39, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f635-665,0,0.15735831,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f686-716,1,0.94188103,1,0.609375,FALL,1,"{""too_few_joints"": 25, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f706-736,1,0.99571991,1,0.000000,UNKNOWN,1,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam6.avi#f743-773,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f635-665,0,0.13937343,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f686-716,1,0.25049044,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f706-736,1,0.71473698,1,0.843750,FALL,1,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam7.avi#f743-773,0,0.54905233,1,0.703125,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f621-651,0,0.19662298,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f672-702,1,0.13016629,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f692-722,1,0.26181680,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute06/cam8.avi#f729-759,0,0.84307301,1,0.281250,UNKNOWN,0,"{""target_jump"": 9, ""too_few_joints"": 37, ""torso_missing"": 37}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam2.avi#f460-490,0,0.29432593,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam2.avi#f491-521,1,0.91857736,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam4.avi#f445-475,0,0.41706582,0,0.156250,UNKNOWN,1,"{""target_jump"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam4.avi#f476-506,1,0.51467789,1,0.734375,FALL,1,"{""target_jump"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam5.avi#f463-493,0,0.50055452,1,0.453125,UNKNOWN,0,"{""target_jump"": 31, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam5.avi#f494-524,1,0.83912042,1,0.593750,FALL,1,"{""target_jump"": 9, ""too_few_joints"": 17, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam6.avi#f463-493,0,0.32629515,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam6.avi#f494-524,1,0.30984691,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam7.avi#f463-493,0,0.12443523,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam7.avi#f494-524,1,0.29896866,0,0.968750,ADL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam8.avi#f463-493,0,0.14193956,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute07/cam8.avi#f494-524,1,0.53898358,1,0.968750,FALL,1,"{""target_jump"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam2.avi#f319-349,0,0.32165056,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam2.avi#f350-380,1,0.99158254,1,0.828125,FALL,1,"{""too_few_joints"": 11, ""torso_missing"": 11}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam4.avi#f321-351,0,0.33401753,0,0.531250,ADL,1,"{""target_jump"": 30}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam4.avi#f352-382,1,0.77184626,1,0.125000,UNKNOWN,1,"{""target_jump"": 39, ""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam5.avi#f304-334,0,0.37099124,0,0.578125,ADL,1,"{""target_jump"": 23, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam5.avi#f335-365,1,0.58265206,1,0.484375,UNKNOWN,1,"{""target_jump"": 12, ""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam6.avi#f321-351,0,0.28905069,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam6.avi#f352-382,1,0.97700658,1,0.546875,FALL,1,"{""too_few_joints"": 29, ""torso_missing"": 29}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam7.avi#f321-351,0,0.10193144,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam7.avi#f352-382,1,0.37967613,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam8.avi#f296-326,0,0.11273905,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute08/cam8.avi#f327-357,1,0.37549258,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f603-633,0,0.24244634,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f634-664,1,0.57930524,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam2.avi#f665-695,0,0.96339013,1,0.343750,UNKNOWN,0,"{""too_few_joints"": 42, ""torso_missing"": 42}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f612-642,0,0.82613163,1,0.781250,FALL,0,"{""too_few_joints"": 14, ""torso_missing"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f643-673,1,0.67314927,1,0.937500,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam4.avi#f674-704,0,0.92918591,1,0.765625,FALL,0,"{""too_few_joints"": 15, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f606-636,0,0.27031058,0,0.906250,ADL,1,"{""target_jump"": 4, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f637-667,1,0.83503196,1,0.781250,FALL,1,"{""too_few_joints"": 14, ""torso_missing"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam5.avi#f668-698,0,0.97502635,1,0.062500,UNKNOWN,0,"{""target_jump"": 15, ""too_few_joints"": 45, ""torso_missing"": 45}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f606-636,0,0.85514456,1,0.484375,UNKNOWN,0,"{""too_few_joints"": 33, ""torso_missing"": 33}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f637-667,1,0.98104076,1,0.515625,FALL,1,"{""too_few_joints"": 31, ""torso_missing"": 31}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam6.avi#f668-698,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f606-636,0,0.47919697,0,0.500000,ADL,1,"{""too_few_joints"": 32, ""torso_missing"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f637-667,1,0.96629536,1,0.687500,FALL,1,"{""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam7.avi#f668-698,0,0.99538073,1,0.125000,UNKNOWN,0,"{""too_few_joints"": 56, ""torso_missing"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f594-624,0,0.10446458,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f625-655,1,0.69816736,1,0.843750,FALL,1,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute09/cam8.avi#f656-686,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f499-529,0,0.72202279,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f520-550,1,0.83695838,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam2.avi#f551-581,0,0.60216398,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f518-548,0,0.70539539,1,0.906250,FALL,0,"{""target_jump"": 4, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f539-569,1,0.86673321,1,0.656250,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam4.avi#f570-600,0,0.84837601,1,0.593750,FALL,0,"{""too_few_joints"": 26, ""torso_missing"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f497-527,0,0.63365335,1,0.375000,UNKNOWN,0,"{""target_jump"": 23, ""too_few_joints"": 17, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f518-548,1,0.87972131,1,0.531250,FALL,1,"{""target_jump"": 11, ""too_few_joints"": 19, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam5.avi#f549-579,0,0.53504182,1,0.765625,FALL,0,"{""target_jump"": 13, ""too_few_joints"": 2, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f502-532,0,0.68055302,1,0.937500,FALL,0,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f523-553,1,0.99425113,1,0.250000,UNKNOWN,1,"{""too_few_joints"": 48, ""torso_missing"": 48}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam6.avi#f554-584,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f504-534,0,0.35337476,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f525-555,1,0.87629907,1,0.843750,FALL,1,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam7.avi#f556-586,0,0.48181017,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f485-515,0,0.55964177,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f506-536,1,0.20831396,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute10/cam8.avi#f537-567,0,0.27147490,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f435-465,0,0.14866123,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f466-496,1,0.20921392,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam2.avi#f497-527,0,0.60417461,1,0.968750,FALL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f445-475,0,0.93201301,1,0.406250,UNKNOWN,0,"{""target_jump"": 38}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f476-506,1,0.42007734,0,0.390625,UNKNOWN,0,"{""target_jump"": 29, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam4.avi#f507-537,0,0.90118510,1,0.421875,UNKNOWN,0,"{""too_few_joints"": 37, ""torso_missing"": 37}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f431-461,0,0.48441150,0,0.421875,UNKNOWN,1,"{""target_jump"": 14, ""too_few_joints"": 23, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f462-492,1,0.54351773,1,0.718750,FALL,1,"{""target_jump"": 10, ""too_few_joints"": 8, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam5.avi#f493-523,0,0.79939568,1,0.609375,FALL,0,"{""target_jump"": 4, ""too_few_joints"": 21, ""torso_missing"": 21}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f437-467,0,0.24797170,0,0.937500,ADL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f468-498,1,0.91776280,1,0.640625,FALL,1,"{""too_few_joints"": 23, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam6.avi#f499-529,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f437-467,0,0.19943136,0,0.890625,ADL,1,"{""target_jump"": 7}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f468-498,1,0.95209894,1,0.906250,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam7.avi#f499-529,0,0.74659381,1,0.515625,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 29, ""torso_missing"": 29}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f443-473,0,0.12271231,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f474-504,1,0.96330386,1,0.812500,FALL,1,"{""target_jump"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute11/cam8.avi#f505-535,0,0.45318688,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f575-605,0,0.27765000,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f606-636,1,0.14068407,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam2.avi#f634-664,1,0.95920886,1,0.828125,FALL,1,"{""too_few_joints"": 11, ""torso_missing"": 11}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f577-607,0,0.39511049,0,0.593750,ADL,1,"{""target_jump"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f608-638,1,0.36085598,0,0.500000,ADL,0,"{""target_jump"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam4.avi#f636-666,1,0.66636556,1,0.656250,FALL,1,"{""target_jump"": 8, ""too_few_joints"": 14, ""torso_missing"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f569-599,0,0.73281258,1,0.734375,FALL,0,"{""target_jump"": 6, ""too_few_joints"": 11, ""torso_missing"": 13}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f600-630,1,0.57096717,1,0.671875,FALL,1,"{""target_jump"": 15, ""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam5.avi#f628-658,1,0.98673005,1,0.343750,UNKNOWN,1,"{""target_jump"": 29, ""too_few_joints"": 13, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f572-602,0,0.25150870,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f603-633,1,0.39561347,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam6.avi#f631-661,1,0.92658591,1,0.703125,FALL,1,"{""too_few_joints"": 19, ""torso_missing"": 19}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f576-606,0,0.11200852,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f607-637,1,0.11545515,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam7.avi#f635-665,1,0.48328996,0,0.968750,ADL,0,"{""target_jump"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f569-599,0,0.13867123,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f600-630,1,0.10221870,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute12/cam8.avi#f628-658,1,0.77311626,1,0.812500,FALL,1,"{""target_jump"": 10, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam2.avi#f720-750,0,0.29150582,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam2.avi#f861-891,1,0.22804154,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam4.avi#f694-724,0,0.94827183,1,0.593750,FALL,0,"{""too_few_joints"": 26, ""torso_missing"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam4.avi#f835-865,1,0.48227770,0,0.718750,ADL,0,"{""target_jump"": 14, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam5.avi#f714-744,0,0.41197184,0,0.796875,ADL,1,"{""target_jump"": 5, ""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam5.avi#f855-885,1,0.30022445,0,0.500000,ADL,0,"{""target_jump"": 20, ""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam6.avi#f714-744,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam6.avi#f855-885,1,0.87847844,1,0.750000,FALL,1,"{""too_few_joints"": 16, ""torso_missing"": 16}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam7.avi#f723-753,0,0.86398970,1,0.328125,UNKNOWN,0,"{""too_few_joints"": 43, ""torso_missing"": 43}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam7.avi#f864-894,1,0.71138504,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam8.avi#f700-730,0,0.27109152,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute13/cam8.avi#f841-871,1,0.20518219,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam2.avi#f1027-1057,1,0.73492110,1,0.906250,FALL,1,"{""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam2.avi#f1058-1088,0,0.44065428,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam4.avi#f991-1021,1,0.90791248,1,0.187500,UNKNOWN,1,"{""target_jump"": 52}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam4.avi#f1022-1052,0,0.84471704,1,0.843750,FALL,0,"{""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam5.avi#f1019-1049,1,0.99255791,1,0.187500,UNKNOWN,1,"{""target_jump"": 34, ""too_few_joints"": 18, ""torso_missing"": 24}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam5.avi#f1050-1080,0,0.71830639,1,0.265625,UNKNOWN,0,"{""target_jump"": 8, ""too_few_joints"": 39, ""torso_missing"": 43}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam6.avi#f1019-1049,1,0.77689646,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam6.avi#f1050-1080,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam7.avi#f998-1028,1,0.37166382,0,0.937500,ADL,0,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam7.avi#f1029-1059,0,0.99003918,1,0.234375,UNKNOWN,0,"{""too_few_joints"": 49, ""torso_missing"": 49}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam8.avi#f1005-1035,1,0.14142270,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute14/cam8.avi#f1036-1066,0,0.94858809,1,0.218750,UNKNOWN,0,"{""target_jump"": 50}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam2.avi#f743-773,0,0.15686494,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam2.avi#f774-804,1,0.94128104,1,0.734375,FALL,1,"{""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam4.avi#f739-769,0,0.34060103,0,0.578125,ADL,1,"{""target_jump"": 25, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam4.avi#f770-800,1,0.89105737,1,0.500000,FALL,1,"{""target_jump"": 8, ""too_few_joints"": 24, ""torso_missing"": 24}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam5.avi#f758-788,0,0.79227441,1,0.640625,FALL,0,"{""target_jump"": 6, ""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam5.avi#f789-819,1,0.83508889,1,0.390625,UNKNOWN,1,"{""target_jump"": 15, ""too_few_joints"": 24, ""torso_missing"": 28}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam6.avi#f764-794,0,0.24006504,0,0.968750,ADL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam6.avi#f795-825,1,0.88983987,1,0.687500,FALL,1,"{""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam7.avi#f747-777,0,0.20240242,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam7.avi#f778-808,1,0.30255039,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam8.avi#f724-754,0,0.23715097,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute15/cam8.avi#f755-785,1,0.73083220,1,0.968750,FALL,1,"{""target_jump"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f409-439,0,0.54252268,1,0.765625,FALL,0,"{""too_few_joints"": 13, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f847-877,0,0.32968814,0,0.937500,ADL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam2.avi#f925-955,1,0.42374155,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f382-412,0,0.15062707,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f820-850,0,0.76874286,1,0.562500,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 26, ""torso_missing"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam4.avi#f898-928,1,0.74719970,1,0.265625,UNKNOWN,1,"{""target_jump"": 24, ""too_few_joints"": 23, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f392-422,0,0.41158823,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f830-860,0,0.45405968,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam5.avi#f908-938,1,0.46878525,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f389-419,0,0.10614034,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f827-857,0,0.76365423,1,0.656250,FALL,0,"{""too_few_joints"": 22, ""torso_missing"": 22}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam6.avi#f905-935,1,0.98085971,1,0.578125,FALL,1,"{""too_few_joints"": 27, ""torso_missing"": 27}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f383-413,0,0.08396440,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f821-851,0,0.22744195,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam7.avi#f899-929,1,0.60507509,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f383-413,0,0.75658134,1,0.937500,FALL,0,"{""target_jump"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f821-851,0,0.37136453,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute16/cam8.avi#f899-929,1,0.33402818,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam2.avi#f367-397,0,0.25840670,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam2.avi#f761-791,1,0.58422719,1,0.859375,FALL,1,"{""too_few_joints"": 9, ""torso_missing"": 9}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam4.avi#f341-371,0,0.55895071,1,0.734375,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 15, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam4.avi#f735-765,1,0.30742610,0,0.031250,UNKNOWN,0,"{""target_jump"": 45, ""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam5.avi#f351-381,0,0.39670582,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam5.avi#f745-775,1,0.42612223,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam6.avi#f341-371,0,0.87794916,1,0.390625,UNKNOWN,0,"{""too_few_joints"": 39, ""torso_missing"": 39}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam6.avi#f735-765,1,0.99194923,1,0.281250,UNKNOWN,1,"{""too_few_joints"": 46, ""torso_missing"": 46}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam7.avi#f370-400,0,0.44676748,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam7.avi#f764-794,1,0.68075277,1,0.968750,FALL,1,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam8.avi#f359-389,0,0.94944374,1,0.968750,FALL,0,"{""target_jump"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute17/cam8.avi#f753-783,1,0.31999447,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam2.avi#f635-665,0,0.99571991,1,0.000000,UNKNOWN,0,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam2.avi#f676-706,1,0.98844519,1,0.875000,FALL,1,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam4.avi#f530-560,0,0.49922531,0,0.546875,ADL,1,"{""target_jump"": 27, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam4.avi#f571-601,1,0.80309752,1,0.843750,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam5.avi#f615-645,0,0.30694810,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam5.avi#f656-686,1,0.46409088,0,0.875000,ADL,0,"{""target_jump"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam6.avi#f638-668,0,0.91502039,1,0.437500,UNKNOWN,0,"{""too_few_joints"": 36, ""torso_missing"": 36}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam6.avi#f679-709,1,0.98001924,1,0.421875,UNKNOWN,1,"{""too_few_joints"": 37, ""torso_missing"": 37}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam7.avi#f638-668,0,0.75386056,1,0.609375,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 23, ""torso_missing"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam7.avi#f679-709,1,0.95722398,1,0.937500,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam8.avi#f607-637,0,0.21322426,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute18/cam8.avi#f648-678,1,0.54664258,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f447-477,0,0.18523562,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f495-525,0,0.16605649,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f527-557,1,0.14971890,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f557-587,1,0.27174742,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam2.avi#f587-617,1,0.35705078,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f439-469,0,0.52989155,1,0.687500,FALL,0,"{""target_jump"": 18, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f487-517,0,0.51494896,1,0.765625,FALL,0,"{""target_jump"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f519-549,1,0.49554965,0,0.640625,ADL,0,"{""target_jump"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f549-579,1,0.69965211,1,0.375000,UNKNOWN,1,"{""target_jump"": 30, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam4.avi#f579-609,1,0.95615233,1,0.406250,UNKNOWN,1,"{""too_few_joints"": 38, ""torso_missing"": 38}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f425-455,0,0.78428923,1,0.781250,FALL,0,"{""target_jump"": 14}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f473-503,0,0.91502558,1,0.765625,FALL,0,"{""target_jump"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f505-535,1,0.36553496,0,0.250000,UNKNOWN,0,"{""target_jump"": 48}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f535-565,1,0.77112630,1,0.968750,FALL,1,"{""target_jump"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam5.avi#f565-595,1,0.96738321,1,0.703125,FALL,1,"{""target_jump"": 15, ""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f449-479,0,0.27371686,0,0.906250,ADL,1,"{""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f497-527,0,0.17333900,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f529-559,1,0.57313310,1,0.937500,FALL,1,"{""too_few_joints"": 4, ""torso_missing"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f559-589,1,0.99522239,1,0.125000,UNKNOWN,1,"{""too_few_joints"": 56, ""torso_missing"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam6.avi#f589-619,1,0.99571991,1,0.000000,UNKNOWN,1,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f420-450,0,0.09728507,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f468-498,0,0.20038639,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f500-530,1,0.56085128,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f530-560,1,0.94582748,1,0.500000,FALL,1,"{""too_few_joints"": 32, ""torso_missing"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam7.avi#f560-590,1,0.98075470,1,0.453125,UNKNOWN,1,"{""too_few_joints"": 35, ""torso_missing"": 35}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f440-470,0,0.19550588,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f488-518,0,0.25009216,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f520-550,1,0.46755693,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f550-580,1,0.99558207,1,0.156250,UNKNOWN,1,"{""too_few_joints"": 54, ""torso_missing"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute19/cam8.avi#f580-610,1,0.98826319,1,0.125000,UNKNOWN,1,"{""too_few_joints"": 56, ""torso_missing"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f359-389,0,0.33800977,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f409-439,0,0.42014483,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f554-584,1,0.19295963,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f584-614,1,0.41010710,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f614-644,1,0.49735781,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam2.avi#f644-674,1,0.86035550,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f360-390,0,0.50623974,1,0.468750,UNKNOWN,0,"{""target_jump"": 34}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f410-440,0,0.55346572,1,0.125000,UNKNOWN,0,"{""target_jump"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f555-585,1,0.92302401,1,0.312500,UNKNOWN,1,"{""target_jump"": 44}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f585-615,1,0.37179606,0,0.500000,ADL,0,"{""target_jump"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f615-645,1,0.93970641,1,0.093750,UNKNOWN,1,"{""target_jump"": 56, ""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam4.avi#f645-675,1,0.82898487,1,0.718750,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 16, ""torso_missing"": 16}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f360-390,0,0.63474872,1,0.812500,FALL,0,"{""target_jump"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f410-440,0,0.49612993,0,0.500000,ADL,1,"{""target_jump"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f555-585,1,0.53364633,1,0.531250,FALL,1,"{""target_jump"": 30}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f585-615,1,0.96477720,1,0.500000,FALL,1,"{""target_jump"": 25, ""too_few_joints"": 7, ""torso_missing"": 7}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f615-645,1,0.86654776,1,0.640625,FALL,1,"{""target_jump"": 23}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam5.avi#f645-675,1,0.75279087,1,0.703125,FALL,1,"{""target_jump"": 10, ""too_few_joints"": 9, ""torso_missing"": 9}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f354-384,0,0.11441790,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f404-434,0,0.19252374,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f549-579,1,0.36048358,0,0.968750,ADL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f579-609,1,0.94875346,1,0.406250,UNKNOWN,1,"{""too_few_joints"": 38, ""torso_missing"": 38}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f609-639,1,0.99571991,1,0.000000,UNKNOWN,1,"{""too_few_joints"": 64, ""torso_missing"": 64}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam6.avi#f639-669,1,0.99455662,1,0.125000,UNKNOWN,1,"{""too_few_joints"": 56, ""torso_missing"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f354-384,0,0.18216029,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f404-434,0,0.11043659,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f549-579,1,0.38205392,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f579-609,1,0.65318227,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f609-639,1,0.66170686,1,0.875000,FALL,1,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam7.avi#f639-669,1,0.99443874,1,0.156250,UNKNOWN,1,"{""too_few_joints"": 54, ""torso_missing"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f350-380,0,0.11238453,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f400-430,0,0.19526902,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f545-575,1,0.48800030,0,0.968750,ADL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f575-605,1,0.69216730,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f605-635,1,0.66483023,1,1.000000,FALL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute20/cam8.avi#f635-665,1,0.99534215,1,0.156250,UNKNOWN,1,"{""too_few_joints"": 54, ""torso_missing"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam2.avi#f568-598,0,0.58194088,1,0.906250,FALL,0,"{""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam2.avi#f898-928,1,0.63880395,1,0.812500,FALL,1,"{""too_few_joints"": 12, ""torso_missing"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam4.avi#f538-568,0,0.52040508,1,0.640625,FALL,0,"{""target_jump"": 14, ""too_few_joints"": 9, ""torso_missing"": 9}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam4.avi#f868-898,1,0.80869791,1,0.750000,FALL,1,"{""too_few_joints"": 16, ""torso_missing"": 16}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam5.avi#f546-576,0,0.96595806,1,0.343750,UNKNOWN,0,"{""target_jump"": 34, ""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam5.avi#f876-906,1,0.97898769,1,0.406250,UNKNOWN,1,"{""target_jump"": 5, ""too_few_joints"": 33, ""torso_missing"": 33}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam6.avi#f570-600,0,0.89452724,1,0.734375,FALL,0,"{""too_few_joints"": 17, ""torso_missing"": 17}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam6.avi#f900-930,1,0.99070990,1,0.156250,UNKNOWN,1,"{""too_few_joints"": 54, ""torso_missing"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam7.avi#f570-600,0,0.30437391,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam7.avi#f900-930,1,0.98566528,1,0.453125,UNKNOWN,1,"{""too_few_joints"": 35, ""torso_missing"": 35}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam8.avi#f538-568,0,0.53329624,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute21/cam8.avi#f868-898,1,0.72853160,1,0.906250,FALL,1,"{""too_few_joints"": 6, ""torso_missing"": 6}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam2.avi#f782-812,0,0.18877388,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam2.avi#f818-848,1,0.49654388,0,0.875000,ADL,0,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam4.avi#f777-807,0,0.52757216,1,0.125000,UNKNOWN,0,"{""target_jump"": 56}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam4.avi#f813-843,1,0.33650134,0,0.437500,UNKNOWN,0,"{""target_jump"": 36}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam5.avi#f789-819,0,0.92752942,1,0.593750,FALL,0,"{""target_jump"": 2, ""too_few_joints"": 24, ""torso_missing"": 24}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam5.avi#f825-855,1,0.90872219,1,0.609375,FALL,1,"{""too_few_joints"": 25, ""torso_missing"": 25}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam6.avi#f782-812,0,0.84008746,1,0.296875,UNKNOWN,0,"{""too_few_joints"": 45, ""torso_missing"": 45}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam6.avi#f818-848,1,0.85430792,1,0.421875,UNKNOWN,1,"{""too_few_joints"": 37, ""torso_missing"": 37}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam7.avi#f782-812,0,0.19487359,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam7.avi#f818-848,1,0.60318445,1,0.875000,FALL,1,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam8.avi#f770-800,0,0.86361678,1,0.578125,FALL,0,"{""too_few_joints"": 27, ""torso_missing"": 27}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute22/cam8.avi#f806-836,1,0.97027153,1,0.515625,FALL,1,"{""too_few_joints"": 31, ""torso_missing"": 31}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f715-745,0,0.26574783,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1572-1602,1,0.99377464,1,0.031250,UNKNOWN,1,"{""too_few_joints"": 62, ""torso_missing"": 62}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1602-1632,1,0.34018419,0,0.968750,ADL,0,"{""too_few_joints"": 2, ""torso_missing"": 2}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f1714-1744,0,0.26203928,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f3626-3656,1,0.99343975,1,0.156250,UNKNOWN,1,"{""too_few_joints"": 54, ""torso_missing"": 54}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam2.avi#f4158-4188,0,0.21021572,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1572-1602,1,0.73586177,1,0.750000,FALL,1,"{""too_few_joints"": 16, ""torso_missing"": 16}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f708-738,0,0.29374932,0,0.515625,ADL,1,"{""target_jump"": 24, ""too_few_joints"": 7, ""torso_missing"": 7}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1565-1595,1,0.28679931,0,0.937500,ADL,0,"{""target_jump"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1595-1625,1,0.31626963,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f1707-1737,0,0.39596050,0,0.843750,ADL,1,"{""target_jump"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f3619-3649,1,0.14718095,0,0.500000,ADL,0,"{""target_jump"": 32}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam4.avi#f4151-4181,0,0.59333669,1,0.593750,FALL,0,"{""target_jump"": 26}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f717-747,0,0.64675306,1,0.546875,FALL,0,"{""target_jump"": 29}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1574-1604,1,0.73240477,1,0.765625,FALL,1,"{""too_few_joints"": 15, ""torso_missing"": 15}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1604-1634,1,0.79181762,1,0.812500,FALL,1,"{""target_jump"": 2, ""too_few_joints"": 10, ""torso_missing"": 10}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f1716-1746,0,0.31246095,0,0.812500,ADL,1,"{""target_jump"": 12}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f3628-3658,1,0.70172488,1,0.031250,UNKNOWN,1,"{""target_jump"": 51, ""too_few_joints"": 11, ""torso_missing"": 11}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam5.avi#f4160-4190,0,0.15468825,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f723-753,0,0.30220922,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1580-1610,1,0.39257423,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1610-1640,1,0.28140346,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f1722-1752,0,0.11568331,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f3634-3664,1,0.15668015,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam6.avi#f4166-4196,0,0.36051529,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f713-743,0,0.55539381,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1570-1600,1,0.47641645,0,0.875000,ADL,0,"{""too_few_joints"": 8, ""torso_missing"": 8}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1600-1630,1,0.32823447,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f1712-1742,0,0.09890561,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f3624-3654,1,0.29289330,0,1.000000,ADL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam7.avi#f4156-4186,0,0.23917040,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f663-693,0,0.63830546,1,1.000000,FALL,0,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1520-1550,1,0.93566315,1,0.687500,FALL,1,"{""too_few_joints"": 20, ""torso_missing"": 20}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1550-1580,1,0.99554770,1,0.031250,UNKNOWN,1,"{""too_few_joints"": 62, ""torso_missing"": 62}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f1662-1692,0,0.36094324,0,1.000000,ADL,1,{}
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f3574-3604,1,0.87599450,1,0.937500,FALL,1,"{""target_jump"": 4}"
+YOLO-Pose+ST-GCN++,dataset/dataset/chute23/cam8.avi#f4106-4136,0,0.17880394,0,1.000000,ADL,1,{}

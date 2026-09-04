@@ -1,0 +1,229 @@
+path,label,prediction,fall_probability,raw_output,seconds
+Subject 1/ADL/01.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible fall or abrupt",5.941432800027542
+Subject 1/ADL/02.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible fall or abrupt",4.95502240001224
+Subject 1/ADL/03.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible fall or abrupt",5.0260659999912605
+Subject 1/ADL/04.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying on the bed and then sitting up, but there is no visible fall or abrupt downward transition from",5.062175299972296
+Subject 1/ADL/05.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and reading a book, there is no visible fall or abrupt transition from standing or",5.110281700035557
+Subject 1/ADL/06.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and reading a book, there is no visible fall or abrupt movement in the sequence",5.103718600003049
+Subject 1/ADL/07.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a chair and reading a book, and there is no visible movement or change in posture that",5.181272199959494
+Subject 1/ADL/08.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man walks across the room without any visible fall or abrupt movement""}",4.882945399964228
+Subject 1/ADL/09.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is walking and standing in the room, not falling or showing any signs of falling""}",5.242950899992138
+Subject 1/ADL/10.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is walking and standing in the room without any visible fall or abrupt movement""}",5.109502299921587
+Subject 1/ADL/11.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man walks to the chair, sits down, and begins reading a book. There is no visible fall or abrupt",5.156069800024852
+Subject 1/ADL/12.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving from a seated position to a standing position, but there is no visible fall or abrupt",5.200516000040807
+Subject 1/ADL/13.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person walks to the chair and sits down, but there is no visible fall or abrupt transition to the floor.""",5.128456500009634
+Subject 1/ADL/14.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving from a seated position to standing, without any visible fall or abrupt downward transition.""}",5.188620499917306
+Subject 1/ADL/15.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then sitting on a chair, but there is no visible fall or abrupt transition to the floor",5.170280300080776
+Subject 1/ADL/16.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a chair and then bends down to pick up an object from the floor, but does not",5.207346500013955
+Subject 1/Fall/01.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen bending forward and then falling to the floor, indicating a sudden downward",5.1205825000070035
+Subject 1/Fall/02.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a chair and then falls to the floor, but the motion is not abrupt",5.1566138000926
+Subject 1/Fall/03.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a seated position, then abruptly falls to the floor, showing",5.176348799956031
+Subject 1/Fall/04.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a seated position, then abruptly falls to the floor, with",5.121631699963473
+Subject 1/Fall/05.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is seen moving from a standing position to lying on the floor, indicating a",5.184239700087346
+Subject 1/Fall/06.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is seen walking towards the floor and then falling to the ground, with a",5.197054099990055
+Subject 1/Fall/07.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to a lying position on the floor,",5.148249599966221
+Subject 1/Fall/08.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to a lying position on the floor,",5.132359899929725
+Subject 1/Fall/09.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a standing position, then suddenly bends forward and falls to the",5.189590899972245
+Subject 1/Fall/10.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to a lying position on the floor,",5.145544099970721
+Subject 1/Fall/11.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a standing position, then suddenly falls to the floor, with",5.191834299941547
+Subject 1/Fall/12.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen standing, then suddenly falls to the floor, with a visible transition",5.193260199972428
+Subject 1/Fall/13.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then sitting on the floor, but there is no visible fall or abrupt transition",2.0829280000180006
+Subject 1/Fall/14.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a standing position, then suddenly falls to the floor, with",2.050286200013943
+Subject 1/Fall/15.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen sitting on a chair, then suddenly bending forward and falling to the",2.0957157999509946
+Subject 1/Fall/16.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a seated position, then abruptly transitions to a lying position on",5.196718999999575
+Subject 2/ADL/01.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and then stands up, but does not fall to the ground.""}",5.131912999902852
+Subject 2/ADL/02.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then stands up, but does not fall to the ground",5.18262069998309
+Subject 2/ADL/03.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking to the bed and then sitting on it, but does not fall""}",4.931930299964733
+Subject 2/ADL/04.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and bending at the knees, but does not fall to the ground or show any signs of falling",5.172626299900003
+Subject 2/ADL/05.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and then stands up and walks away from the camera, without any visible fall or",5.206987399957143
+Subject 2/ADL/06.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and bending down, but there is no visible fall or impact with the floor.""}",5.202464299974963
+Subject 2/ADL/07.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing on a mat in a room, performing arm movements, and there is no",5.299850800074637
+Subject 2/ADL/08.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and bending, but there is no visible fall or impact with the floor.""}",5.109303400036879
+Subject 2/ADL/09.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then sitting on the floor, but there is no visible fall or abrupt transition to the floor",5.21009830001276
+Subject 2/ADL/10.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving in a normal manner, without any visible fall or abrupt transition to",5.266245799954049
+Subject 2/ADL/11.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is standing and moving his arms and legs in a normal manner, without any visible fall",5.237744800047949
+Subject 2/ADL/12.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is moving from standing to lying down on the bed, but there is no visible fall or abrupt transition to",5.2389570999657735
+Subject 2/ADL/13.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is standing and then sitting on the floor, but there is no visible fall or abrupt transition to the floor",5.212093999958597
+Subject 2/ADL/14.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person walks into the room, sits on the bed, and remains seated without any visible fall or abrupt movement.""",5.195285500027239
+Subject 2/ADL/15.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then begins to read a book, there is no visible fall or abrupt transition",5.177920600050129
+Subject 2/ADL/16.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying on the bed and moving slightly, but there is no visible fall or abrupt transition to the floor",5.216018000035547
+Subject 2/ADL/17.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving from the bed to the left side of the room, but there is no visible fall",5.164555800030939
+Subject 2/ADL/18.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person walks to the window and stands still, not falling""}",4.908013100037351
+Subject 2/ADL/19.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking and then sitting on the floor, but there is no visible fall or abrupt transition to the floor",5.167789400089532
+Subject 2/ADL/20.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor, not falling, and there is no visible evidence of a fall.""}",5.19571499992162
+Subject 2/ADL/21.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and bending, but there is no visible fall or impact with the floor.""}",5.056664299918339
+Subject 2/ADL/22.mp4,0,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is performing a push-up, which is a controlled movement, and there is no visible fall",5.1840160000137985
+Subject 2/ADL/23.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and remains in the same position throughout the frames, with no visible signs of falling",2.174606899963692
+Subject 2/Fall/01.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then begins to bend down and then lies down on the floor, but there",5.211635599960573
+Subject 2/Fall/02.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking and then lying down on the floor, but there is no visible fall or abrupt",5.175903900060803
+Subject 2/Fall/03.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying down on the bed, but there is no visible fall or abrupt transition from standing or sitting to",5.188268200028688
+Subject 2/Fall/04.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is not falling, but instead moving from standing to lying down on the mat.""}",5.002757300040685
+Subject 2/Fall/05.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is moving from standing to lying down on the mat, but there is no visible fall or",5.195614500087686
+Subject 2/Fall/06.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is standing and then he is seen lying down on the mat, but there is no visible",5.180930500035174
+Subject 2/Fall/07.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then bends down to pick up a bottle, then falls forward and lands on",5.17784020002
+Subject 2/Fall/08.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and then lies down on the floor, but there is no visible",5.23408650001511
+Subject 2/Fall/09.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then falls to the floor, but the fall is not abrupt or uncontrolled",5.1868635000428185
+Subject 2/Fall/10.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to lying on the floor, indicating a",5.192345199990086
+Subject 2/Fall/11.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from standing to lying down on the floor, but there is no visible fall",5.248941599973477
+Subject 2/Fall/12.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then walks to the floor and lies down on the floor""}",1.9116315999999642
+Subject 2/Fall/13.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then bends down and then lies down on the floor""}
+```",2.0246090999571607
+Subject 2/Fall/14.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then lies down on the bed, but there is no visible fall or abrupt transition to the",2.1206312000285834
+Subject 2/Fall/15.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and then he falls to the floor, but the fall is not",5.220550499972887
+Subject 2/Fall/16.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is not falling, but instead moving from standing to lying down on a mat.""}",5.022733799996786
+Subject 2/Fall/17.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then transitions to lying down on a mat, but there is no visible fall or abrupt downward",5.2416500999825075
+Subject 2/Fall/18.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing on a mat and moving his body in a normal manner, without any visible fall or abrupt transition",5.2839835999766365
+Subject 2/Fall/19.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then falls to the ground, but the fall is not abrupt or uncontrolled",5.201573299942538
+Subject 2/Fall/20.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then lies down on the mat, but there is no visible fall or abrupt transition from standing",5.15981889993418
+Subject 2/Fall/21.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing on a mat and then transitions to lying down on the mat, but there is",5.150368899921887
+Subject 2/Fall/22.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen jumping and landing on the mat, but there is no visible fall or impact,",5.17930229997728
+Subject 2/Fall/23.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen falling from a standing position to the floor, with a clear transition",5.217126100091264
+Subject 2/Fall/24.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a seated position on the bed, then bends forward and falls",5.286366300075315
+Subject 2/Fall/25.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying down on the mat, but the transition is not abrupt or uncontrolled, and",5.2116481999401
+Subject 3/ADL/01.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and writing on a book, there is no visible fall or",7.598756199935451
+Subject 3/ADL/02.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving arms in a controlled manner, with no visible signs of falling or",5.26564400002826
+Subject 3/ADL/03.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then stands up, but there is no visible fall or abrupt downward transition from",5.214538999949582
+Subject 3/ADL/04.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving in a normal manner, without any visible fall or abrupt transition to the floor.""}",5.202067199978046
+Subject 3/ADL/05.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving in a controlled manner, with no visible fall or abrupt transition to",5.201434100046754
+Subject 3/ADL/06.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is in a standing position and then bends down to pick up an object, then sits down on the floor",5.197156999958679
+Subject 3/ADL/07.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is standing and then crouching down, but does not fall to the ground or show any signs of",5.277756299939938
+Subject 3/ADL/08.mp4,0,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and then lies down on the floor, but there is no visible",5.25564700004179
+Subject 3/ADL/09.mp4,0,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is initially lying on the floor, then sits up and moves his arms and legs, but",5.222195099922828
+Subject 3/ADL/10.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving his arms to adjust the curtain, but there is no visible fall",5.265550699899904
+Subject 3/ADL/11.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man walks into the room, then stands and adjusts the curtain, but does not fall or",5.366511500091292
+Subject 3/ADL/12.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then stands up, but there is no visible fall or abrupt downward transition from",5.262694500037469
+Subject 3/ADL/13.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor, not falling or in any uncontrolled motion.""}",5.059926199959591
+Subject 3/ADL/14.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and drinking from a bottle, there is no visible fall or abrupt transition to the",5.212555899983272
+Subject 3/ADL/15.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on a chair and reading a book, there is no visible evidence of a",5.199984400067478
+Subject 3/ADL/16.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and eating, and there is no visible evidence of a fall in the frames provided",5.202212799922563
+Subject 3/ADL/17.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and drinking water, then he puts the water bottle down and continues to sit on",5.213719099992886
+Subject 3/ADL/18.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and moving his hands, but there is no visible fall or abrupt downward transition from",2.1081459000706673
+Subject 3/ADL/19.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking and bending but does not show any signs of falling""}",1.8557258000364527
+Subject 3/ADL/20.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and moving his hands, but there is no visible fall or abrupt downward transition from",2.081399800023064
+Subject 3/ADL/21.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and then he is standing up and moving his legs and arms, but he does",5.297437199973501
+Subject 3/ADL/22.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the bed and writing on a piece of paper, there is no visible movement or change in",5.275535000022501
+Subject 3/Fall/01.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to lying down on the floor, but there is no",5.2728385999798775
+Subject 3/Fall/02.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then lies down on the bed, but there is no visible fall or abrupt",5.272429800010286
+Subject 3/Fall/03.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then falls to the floor, but the fall is not abrupt or uncontrolled, and the",5.314914899994619
+Subject 3/Fall/04.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is walking and then lying down on the mat, but there is no visible fall or abrupt transition from standing",5.200064599979669
+Subject 3/Fall/05.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is standing and then he is lying down on the floor, but there is no visible fall or abrupt transition",5.258185600047
+Subject 3/Fall/06.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying down on the floor, and there is no visible fall or abrupt transition from a",5.234968299977481
+Subject 3/Fall/07.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is moving from standing to lying down on the floor, but there is no visible fall or abrupt transition to",5.28322790004313
+Subject 3/Fall/08.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from a standing position to lying down on a mat, but there is no",5.2435086000477895
+Subject 3/Fall/09.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on the floor and then he falls to the ground, but the motion is not",5.280356999952346
+Subject 3/Fall/10.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying down on the bed, but there is no visible fall or abrupt transition from standing or sitting to",5.327804200001992
+Subject 3/Fall/11.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then suddenly falls to the ground, but the motion is not abrupt or un",5.219100199989043
+Subject 3/Fall/12.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen falling from a standing position to the floor, with a clear transition",5.242213299963623
+Subject 3/Fall/13.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is sitting on a mat and then lies down on the mat, but there is no visible",5.326232900028117
+Subject 3/Fall/14.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person walks into the room, then turns and lies down on the floor, but does not fall.""}",5.281175600015558
+Subject 3/Fall/15.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen falling from a standing position to the floor, with a clear transition",5.269556700019166
+Subject 3/Fall/16.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person walks into the room and then lies down on the mat, but there is no visible fall or abrupt transition",5.297523199929856
+Subject 3/Fall/17.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible fall or abrupt",5.247886599972844
+Subject 3/Fall/18.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then begins to lie down on the floor, but does not",5.342406100011431
+Subject 3/Fall/19.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen in a standing position, then suddenly falls to the floor, with",2.1017793000210077
+Subject 3/Fall/20.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then begins to move toward the floor, but does not fall; instead, they move to",2.1409308000002056
+Subject 3/Fall/21.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the man is standing and then he falls to the ground, but the fall is not abrupt and the",5.285754200071096
+Subject 4/ADL/01.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a bed and moving his hands and head, but there is no visible",5.335321700084023
+Subject 4/ADL/02.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is walking and standing in the room, not falling""}",5.020723700057715
+Subject 4/ADL/03.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and moving his legs and hands, but there is no visible",5.288555099978112
+Subject 4/ADL/04.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and using a laptop, there is no visible evidence of a fall or abrupt downward",5.30039690004196
+Subject 4/ADL/05.mp4,0,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking into the room and then bending down to perform a push-up, but there is",5.2831793000223115
+Subject 4/ADL/06.mp4,0,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is performing a push-up, which is a controlled movement, not a fall.""}
+```",5.375573100056499
+Subject 4/ADL/07.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is performing push-ups, which is a controlled movement and not a fall""}",5.002640099963173
+Subject 4/ADL/08.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then sitting on the floor, but there is no visible fall or abrupt transition",5.236699200002477
+Subject 4/ADL/09.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and reading a book, there is no visible movement or change in posture that indicates",5.385488100000657
+Subject 4/ADL/10.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from standing to lying down on the bed, but there is no visible fall or abrupt transition",5.314198200008832
+Subject 4/ADL/11.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and writing in a book, there is no visible fall or abrupt transition in the",5.269957599928603
+Subject 4/ADL/12.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the floor and drinking water from a bottle, but there is no visible fall or abrupt transition",5.315455599920824
+Subject 4/ADL/13.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a chair and looking at a phone, with no visible movement or change",5.267158200033009
+Subject 4/ADL/14.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving around the room, but there is no visible fall or abrupt downward transition from standing or",5.304851100081578
+Subject 4/ADL/15.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible fall or abrupt",5.27197779994458
+Subject 4/ADL/16.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and then sitting on the bed, then lying down on the bed, but there is no visible",5.322933400049806
+Subject 4/ADL/17.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is walking and bending but does not show any signs of falling""}",4.914810599992052
+Subject 4/ADL/18.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and reading a book, there is no visible fall or abrupt downward transition from standing",2.1408766000531614
+Subject 4/ADL/19.mp4,0,0,0.010000000000000009,"{""class"":""not_falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is standing and moving, then sitting on the bed, but there is no visible fall",2.1109863000456244
+Subject 4/ADL/20.mp4,0,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing and sitting on the bed, and there is no visible fall or abrupt downward transition from standing or",2.1040427999105304
+Subject 4/Fall/01.mp4,1,0,0.010000000000000009,"{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is standing on the bed and then lies down on the bed, but there is no visible fall or abrupt",2.0954794000135735
+Subject 4/Fall/02.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is lying on the bed and then suddenly moves to the floor, but there is no visible",2.117332199937664
+Subject 4/Fall/03.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""a person is seen moving from standing to lying down on the floor, but there is no visible fall",2.084426600020379
+Subject 4/Fall/04.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""a person is seen moving from a standing position to lying down on the floor, but the motion is",5.2492546999128535
+Subject 4/Fall/05.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on a bed and then begins to lie down, but does not fall, only",5.275517500005662
+Subject 4/Fall/06.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then falls to the floor, but the motion is not abrupt",5.252041000057943
+Subject 4/Fall/07.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen bending down and then lying down on the floor, which is a controlled and intentional",5.313632600009441
+Subject 4/Fall/08.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then falls backward, but the motion is not abrupt or un",5.383261499926448
+Subject 4/Fall/09.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then bends over and lies down on the floor, but there",7.628500999999233
+Subject 4/Fall/10.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen falling from a seated position to the floor, with a clear transition",5.378150699893013
+Subject 4/Fall/11.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from standing to lying down on the floor, but the transition is not abrupt",5.264563699951395
+Subject 4/Fall/12.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen falling from a seated position to the floor, with a clear transition",5.2041491999989375
+Subject 4/Fall/13.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then lies down on the bed, but there is no visible",5.223743599955924
+Subject 4/Fall/14.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then transitions to lying on the floor, but there is no",5.279759599943645
+Subject 4/Fall/15.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the man is seen falling from a seated position to the floor, with his body transitioning",5.191597800003365
+Subject 4/Fall/16.mp4,1,1,0.99,"```json
+{""class"":""falling_or_not_falling"",""confidence"":0.99,""evidence"":""the person is seen moving from standing to lying on the floor, indicating a fall.""",5.279426599969156
+Subject 4/Fall/17.mp4,1,0,0.010000000000000009,"```json
+{""class"":""not_falling"",""confidence"":0.99,""evidence"":""the person is sitting on the bed and then falls forward, but the motion is not abrupt or un",5.2158965999260545

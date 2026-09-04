@@ -1,0 +1,42 @@
+{
+  "fold": 4,
+  "train_subjects": [
+    "2",
+    "3"
+  ],
+  "val_subject": "1",
+  "test_subject": "4",
+  "samples": {
+    "train": 91,
+    "val": 32,
+    "test": 37
+  },
+  "epochs_ran": 300,
+  "best_epoch": 1,
+  "validation": {
+    "loss": 0.6169338822364807,
+    "accuracy": 0.65625,
+    "precision": 0.6470588235294118,
+    "recall": 0.6875,
+    "specificity": 0.625,
+    "f1": 0.6666666666666667,
+    "balanced_accuracy": 0.65625,
+    "tp": 11,
+    "tn": 10,
+    "fp": 6,
+    "fn": 5
+  },
+  "test": {
+    "loss": 0.6301027536392212,
+    "accuracy": 0.7297297297297297,
+    "precision": 0.7692307692307693,
+    "recall": 0.5882352941176471,
+    "specificity": 0.85,
+    "f1": 0.6666666666666667,
+    "balanced_accuracy": 0.7191176470588235,
+    "tp": 10,
+    "tn": 17,
+    "fp": 3,
+    "fn": 7
+  }
+}

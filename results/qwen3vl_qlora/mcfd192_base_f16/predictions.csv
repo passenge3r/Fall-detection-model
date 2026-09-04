@@ -1,0 +1,1016 @@
+﻿sample,camera,label,prediction,risk,reason,raw_output,seconds
+dataset/dataset/chute01/cam2.avi#f1083-1113,2,1,1,high,"The person is seen falling from a standing position onto a mat, indicating a sudden and uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto a mat, indicating a sudden and uncontrolled downward transition.""
+}",2.6225172000004022
+dataset/dataset/chute01/cam2.avi#f1114-1144,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a white mattress in a controlled environment with no visible signs of falling or sudden movement. The scene appears",2.284192400000393
+dataset/dataset/chute02/cam2.avi#f415-445,2,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto a mattress, which indicates a sudden and uncontrolled downward transition.""
+}",2.270471300000281
+dataset/dataset/chute03/cam2.avi#f607-637,2,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is moving on a mat and appears to be in a controlled manner, with no visible signs of a sudden fall or uncontrolled descent",2.2778565999997227
+dataset/dataset/chute04/cam2.avi#f714-744,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor in a stable position with no visible signs of uncontrolled fall or abrupt downward transition.""
+}",2.271722800000134
+dataset/dataset/chute05/cam2.avi#f364-394,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mattress in a controlled environment with no visible signs of uncontrolled movement or fall risk.""
+}
+```",2.336699299999964
+dataset/dataset/chute06/cam2.avi#f740-770,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat in a controlled environment with no visible signs of uncontrolled movement or fall risk.""
+}
+```",2.2824956999993447
+dataset/dataset/chute08/cam2.avi#f319-349,2,0,0,low,The person remains upright and does not exhibit any visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of a fall or sudden downward transition.""
+}",2.0131319000001895
+dataset/dataset/chute09/cam2.avi#f634-664,2,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying down on a mat and appears to be in a controlled manner, with no visible signs of a fall or sudden downward transition",2.3316781000003175
+dataset/dataset/chute09/cam2.avi#f665-695,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat in a controlled environment with no visible signs of uncontrolled movement or fall risk.""
+}
+```",2.327498100000412
+dataset/dataset/chute10/cam2.avi#f520-550,2,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.3150722999998834
+dataset/dataset/chute10/cam2.avi#f551-581,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat and appears to be in a stable position with no visible signs of an uncontrolled fall.",2.3792316000008213
+dataset/dataset/chute11/cam2.avi#f466-496,2,1,0,low,The person is lying on a mat and appears to be in a stable position with no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat and appears to be in a stable position with no visible signs of a fall or sudden downward transition.""
+}",2.347088900000017
+dataset/dataset/chute12/cam2.avi#f575-605,2,0,0,low,The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly.""
+}",1.981942400000662
+dataset/dataset/chute12/cam2.avi#f606-636,2,1,0,low,The person remains upright and there are no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or sudden downward transition.""
+}",1.9802392000001419
+dataset/dataset/chute12/cam2.avi#f634-664,2,1,0,low,"The person is seen lying on the floor after a controlled movement, indicating a safe transition rather than a fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seen lying on the floor after a controlled movement, indicating a safe transition rather than a fall.""
+}",2.1477427999998326
+dataset/dataset/chute13/cam2.avi#f720-750,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or abrupt downward transition.""
+}
+```",2.1733013000002757
+dataset/dataset/chute14/cam2.avi#f1027-1057,2,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seen lying down on the floor, indicating a controlled transition rather than a fall. There is no visible uncontrolled downward motion or",2.3627816999996867
+dataset/dataset/chute16/cam2.avi#f409-439,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and moving normally without any visible signs of falling or abrupt downward transition.""
+}
+```",2.231640299999526
+dataset/dataset/chute16/cam2.avi#f847-877,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated on the sofa and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}
+```",2.3471489999992627
+dataset/dataset/chute16/cam2.avi#f925-955,2,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position to the floor, indicating an uncontrolled downward transition.""
+}
+```",2.309109300000273
+dataset/dataset/chute17/cam2.avi#f367-397,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and does not exhibit any visible signs of falling or sudden downward motion.""
+}
+```",2.1686858000002758
+dataset/dataset/chute17/cam2.avi#f761-791,2,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position onto the floor, indicating an uncontrolled downward transition.""
+}
+```",2.3106924000003346
+dataset/dataset/chute19/cam2.avi#f495-525,2,0,0,low,The person remains upright and there are no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or sudden downward transition.""
+}",1.9873263999998017
+dataset/dataset/chute19/cam2.avi#f527-557,2,1,0,low,The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.2392524999995658
+dataset/dataset/chute20/cam2.avi#f409-439,2,0,0,low,The person remains upright and there are no visible signs of a fall or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or abrupt downward transition.""
+}",2.011675599999762
+dataset/dataset/chute20/cam2.avi#f614-644,2,1,0,low,"The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.""
+}",2.1039177000002383
+dataset/dataset/chute21/cam2.avi#f898-928,2,1,1,high,"The person is seen falling from a seated position to the floor, indicating a sudden and uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position to the floor, indicating a sudden and uncontrolled downward transition.""
+}",2.2429495000005772
+dataset/dataset/chute22/cam2.avi#f818-848,2,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying down in a chair and appears to be in a stable position with no visible signs of a sudden fall or uncontrolled movement",2.3673092999997607
+dataset/dataset/chute23/cam2.avi#f1602-1632,2,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and there is no visible downward transition or fall.""
+}
+```",2.0121656999999686
+dataset/dataset/chute23/cam2.avi#f1714-1744,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving normally in a controlled environment with no visible signs of falling or sudden movement.""
+}
+```",2.3351059999995414
+dataset/dataset/chute23/cam2.avi#f4158-4188,2,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not show signs of a sudden fall or downward transition. The movement is controlled and gradual.""
+}",2.378686899999593
+dataset/dataset/chute01/cam4.avi#f1053-1083,4,0,0,low,The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.""
+}",1.9933745999996972
+dataset/dataset/chute02/cam4.avi#f360-390,4,0,0,low,The person remains upright and does not exhibit any visible signs of falling or sudden downward motion.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or sudden downward motion.""
+}",2.0205034999999043
+dataset/dataset/chute02/cam4.avi#f421-451,4,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on their back on a chair, and there is no visible downward transition or fall. The scene appears stable with no signs",2.3546373000008316
+dataset/dataset/chute03/cam4.avi#f576-606,4,0,0,low,The person remains stationary and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of a fall or sudden downward movement.""
+}",2.04730120000022
+dataset/dataset/chute04/cam4.avi#f257-287,4,0,0,low,The person remains upright and does not exhibit any visible signs of falling or sudden downward motion. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or sudden downward motion. The environment appears stable with no immediate hazards.""
+}",2.44389929999943
+dataset/dataset/chute04/cam4.avi#f288-318,4,1,0,low,The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.193857900000694
+dataset/dataset/chute06/cam4.avi#f730-760,4,0,0,low,"The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt movement.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt movement.""
+}",2.056380099999842
+dataset/dataset/chute07/cam4.avi#f445-475,4,0,0,low,The person is standing upright and moving normally in a controlled environment with no visible signs of falling or sudden downward motion.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and moving normally in a controlled environment with no visible signs of falling or sudden downward motion.""
+}",2.2301607000008516
+dataset/dataset/chute07/cam4.avi#f476-506,4,1,0,low,The person remains upright and does not exhibit any visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of a fall or sudden downward transition.""
+}",2.0441320999998425
+dataset/dataset/chute09/cam4.avi#f612-642,4,0,0,low,No visible uncontrolled or abrupt downward transition is observed in the video frames.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""No visible uncontrolled or abrupt downward transition is observed in the video frames.""
+}",1.8223293999999441
+dataset/dataset/chute09/cam4.avi#f674-704,4,0,0,low,The person is stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.""
+}",2.3314081999997143
+dataset/dataset/chute10/cam4.avi#f518-548,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""No visible uncontrolled or abrupt downward transition is observed in the frames.""
+}
+```",1.9871424000002662
+dataset/dataset/chute10/cam4.avi#f570-600,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of a fall or sudden downward movement.""
+}
+```",2.150642499999776
+dataset/dataset/chute11/cam4.avi#f445-475,4,0,0,low,The person is standing on a stable surface and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and there are no visible signs of a fall or sudden downward movement.""
+}",2.123854299999948
+dataset/dataset/chute11/cam4.avi#f476-506,4,1,0,low,The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of falling or sudden movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of falling or sudden movement.""
+}",2.347533199999816
+dataset/dataset/chute12/cam4.avi#f636-666,4,1,0,low,"The person remains seated and stationary throughout the video, with no visible downward transition or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and stationary throughout the video, with no visible downward transition or fall.""
+}",1.948819199999889
+dataset/dataset/chute13/cam4.avi#f694-724,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing in a stable environment with no visible signs of uncontrolled movement or fall risk.""
+}
+```",2.2563607000001866
+dataset/dataset/chute17/cam4.avi#f735-765,4,1,0,low,The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition.""
+}",2.017659499999354
+dataset/dataset/chute18/cam4.avi#f571-601,4,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is moving across a marked floor area without any visible downward transition or fall, and there are no signs of uncontrolled movement or falling",2.317257200000313
+dataset/dataset/chute19/cam4.avi#f487-517,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing upright and moving normally without any visible signs of falling or sudden downward motion.""
+}
+```",2.2226333999997223
+dataset/dataset/chute19/cam4.avi#f519-549,4,1,0,low,The person is walking normally on a marked floor with no visible signs of falling or sudden movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is walking normally on a marked floor with no visible signs of falling or sudden movement.""
+}",2.019442299999355
+dataset/dataset/chute19/cam4.avi#f579-609,4,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor in a stable position with no visible signs of uncontrolled movement or fall, suggesting a controlled",2.310788499999944
+dataset/dataset/chute20/cam4.avi#f360-390,4,0,0,low,"The person is standing and moving within a controlled environment, with no visible signs of falling or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving within a controlled environment, with no visible signs of falling or abrupt downward transition.""
+}",2.146461199999976
+dataset/dataset/chute20/cam4.avi#f585-615,4,1,0,low,"The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.""
+}",2.047819200000049
+dataset/dataset/chute20/cam4.avi#f615-645,4,1,0,low,"The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.""
+}",2.057430900000327
+dataset/dataset/chute20/cam4.avi#f645-675,4,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.3239254000000074
+dataset/dataset/chute21/cam4.avi#f868-898,4,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing in a controlled environment with no visible signs of falling or abrupt movement. The floor is stable and there are no indications of",2.3667686999997386
+dataset/dataset/chute23/cam4.avi#f708-738,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is bending over in a controlled manner, with no visible signs of sudden movement or fall. The environment appears stable and",2.356138000000101
+dataset/dataset/chute23/cam4.avi#f1707-1737,4,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is walking normally in a controlled environment with no visible signs of falling or sudden movement.""
+}
+```",2.1816580999993676
+dataset/dataset/chute23/cam4.avi#f3619-3649,4,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is in a controlled environment and appears to be performing a task with stability, without any visible signs of sudden movement or",2.3650210000005245
+dataset/dataset/chute01/cam5.avi#f1072-1102,5,0,0,low,The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly. The environment appears stable with no immediate hazards.""
+}",2.3226887999999235
+dataset/dataset/chute01/cam5.avi#f1103-1133,5,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person maintains balance and does not show signs of an uncontrolled or abrupt downward transition toward the floor.""
+}
+```",2.2804116000006616
+dataset/dataset/chute02/cam5.avi#f393-423,5,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}
+```",2.2681079999993017
+dataset/dataset/chute02/cam5.avi#f423-453,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat in a controlled environment with no visible signs of uncontrolled fall or abrupt downward transition.""
+}",2.331297800000357
+dataset/dataset/chute03/cam5.avi#f626-656,5,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and moving normally without any visible signs of falling or sudden downward motion.""
+}
+```",2.16092800000024
+dataset/dataset/chute04/cam5.avi#f325-355,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or sudden downward motion.""
+}
+```",2.169118600000729
+dataset/dataset/chute04/cam5.avi#f387-417,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary on the floor with no visible signs of uncontrolled or abrupt downward transition.""
+}
+```",2.232776599999852
+dataset/dataset/chute04/cam5.avi#f703-733,5,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.3390238000001773
+dataset/dataset/chute06/cam5.avi#f622-652,5,0,0,low,"The person remains upright and stationary throughout the video, with no visible signs of falling or sudden downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and stationary throughout the video, with no visible signs of falling or sudden downward motion.""
+}",2.1204564999998183
+dataset/dataset/chute06/cam5.avi#f693-723,5,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a marked floor area with no visible signs of falling or uncontrolled movement. The environment appears stable and there are no",2.3230829000003723
+dataset/dataset/chute07/cam5.avi#f463-493,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing in a controlled environment with no visible signs of falling or sudden movement. The scene appears stable and there are",2.361190699999497
+dataset/dataset/chute07/cam5.avi#f494-524,5,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.3409386000002996
+dataset/dataset/chute08/cam5.avi#f335-365,5,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}
+```",2.259824099999605
+dataset/dataset/chute09/cam5.avi#f637-667,5,1,0,low,"The person is standing upright and moving normally, with no visible signs of falling or sudden downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and moving normally, with no visible signs of falling or sudden downward transition.""
+}",2.085749300000316
+dataset/dataset/chute09/cam5.avi#f668-698,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall. The environment appears stable with no abrupt movements or transitions.""",2.342283199999656
+dataset/dataset/chute10/cam5.avi#f497-527,5,0,0,low,The person is seated and appears to be in a stable position with no visible signs of falling or sudden movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears to be in a stable position with no visible signs of falling or sudden movement.""
+}",2.1829117999996015
+dataset/dataset/chute10/cam5.avi#f549-579,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears stable, with no visible signs of uncontrolled movement or fall risk.""
+}
+```",2.2409063000004608
+dataset/dataset/chute12/cam5.avi#f569-599,5,0,0,low,The person remains upright and there are no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or sudden downward transition.""
+}",1.9688307000005807
+dataset/dataset/chute12/cam5.avi#f628-658,5,1,0,low,The person remains upright and there are no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or sudden downward transition.""
+}",2.036173100000269
+dataset/dataset/chute13/cam5.avi#f855-885,5,1,0,low,The person is standing on a stable surface and there is no visible indication of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and there is no visible indication of a fall or sudden downward transition.""
+}",2.1585838999999396
+dataset/dataset/chute14/cam5.avi#f1050-1080,5,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor in a stable position with no visible signs of uncontrolled fall or abrupt downward transition.""
+}",2.319953400000486
+dataset/dataset/chute17/cam5.avi#f351-381,5,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is bending down and moving a piece of furniture, which is a controlled action with no visible uncontrolled or abrupt downward transition toward the",2.337282100000266
+dataset/dataset/chute17/cam5.avi#f745-775,5,1,0,low,"The person is standing and moving in a controlled manner, with no visible signs of uncontrolled downward transition or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving in a controlled manner, with no visible signs of uncontrolled downward transition or fall.""
+}",2.1943795999995928
+dataset/dataset/chute18/cam5.avi#f615-645,5,0,0,low,"The main person remains seated and stationary throughout the video, with no visible downward transition or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person remains seated and stationary throughout the video, with no visible downward transition or fall.""
+}",1.9907897000002777
+dataset/dataset/chute18/cam5.avi#f656-686,5,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a marked floor with no visible signs of falling or uncontrolled movement. The environment appears stable and there are no indications",2.346904099999847
+dataset/dataset/chute19/cam5.avi#f425-455,5,0,0,low,The person remains upright and there are no visible signs of a fall or sudden downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and there are no visible signs of a fall or sudden downward transition.""
+}",1.9963592999993125
+dataset/dataset/chute19/cam5.avi#f505-535,5,1,0,low,"The person is standing and moving within a controlled environment, with no visible signs of uncontrolled or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving within a controlled environment, with no visible signs of uncontrolled or abrupt downward motion.""
+}",2.1986188999999285
+dataset/dataset/chute19/cam5.avi#f535-565,5,1,0,low,"The person is lying on their back on the floor, indicating a controlled or static position with no visible downward transition or fall.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on their back on the floor, indicating a controlled or static position with no visible downward transition or fall.""
+}",2.3189378999995824
+dataset/dataset/chute19/cam5.avi#f565-595,5,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains in a stable position on the floor with no visible signs of uncontrolled downward motion or fall.""
+}
+```",2.3402591000003667
+dataset/dataset/chute20/cam5.avi#f585-615,5,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is maintaining balance and appears to be in a controlled position, with no visible signs of an uncontrolled fall or abrupt downward transition.""",2.346562599999743
+dataset/dataset/chute21/cam5.avi#f546-576,5,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and there are no visible signs of a fall or sudden downward transition. The environment appears stable with no immediate hazards.""",2.357950300000084
+dataset/dataset/chute21/cam5.avi#f876-906,5,1,0,low,The person remains stationary and there are no visible signs of a sudden fall or downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of a sudden fall or downward transition.""
+}",1.9814350000006016
+dataset/dataset/chute23/cam5.avi#f717-747,5,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing on the floor and there is no visible downward transition or fall. The person is in a stable position with no signs",2.338912199999868
+dataset/dataset/chute23/cam5.avi#f1572-1602,5,1,0,low,The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion.""
+}",1.9755289000004268
+dataset/dataset/chute23/cam5.avi#f1716-1746,5,0,0,low,The person is standing upright and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and there are no visible signs of a fall or sudden downward movement.""
+}",2.041667800000141
+dataset/dataset/chute23/cam5.avi#f3628-3658,5,1,0,low,The person is standing on the floor and appears to be in a stable position with no visible signs of a sudden fall or downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on the floor and appears to be in a stable position with no visible signs of a sudden fall or downward transition.""
+}",2.336790999999721
+dataset/dataset/chute01/cam6.avi#f1055-1085,6,0,0,low,The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.""
+}",1.9991282999999385
+dataset/dataset/chute01/cam6.avi#f1117-1147,6,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a white mattress with no visible signs of falling or uncontrolled movement. The environment appears stable with no immediate hazards.""",2.3549772999995184
+dataset/dataset/chute02/cam6.avi#f377-407,6,0,0,low,The person remains stationary and does not exhibit any visible signs of falling or sudden downward motion. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or sudden downward motion. The environment appears stable with no immediate hazards.""
+}",2.340379700000085
+dataset/dataset/chute02/cam6.avi#f408-438,6,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a marked floor with no visible signs of falling or slipping. The environment appears stable and the person is not in a",2.3475770999993983
+dataset/dataset/chute03/cam6.avi#f580-610,6,0,0,low,The person is standing on a stable surface with no visible signs of falling or abrupt movement. The environment appears safe and controlled.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface with no visible signs of falling or abrupt movement. The environment appears safe and controlled.""
+}",2.328915699999925
+dataset/dataset/chute03/cam6.avi#f611-641,6,1,0,low,The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of imminent fall risk.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of imminent fall risk.""
+}",2.3091430999993463
+dataset/dataset/chute04/cam6.avi#f686-716,6,1,1,high,"The person is seen falling from a seated position onto the floor, indicating an uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position onto the floor, indicating an uncontrolled downward transition.""
+}",2.108914200000072
+dataset/dataset/chute05/cam6.avi#f366-396,6,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat with no visible signs of falling, and the environment appears stable with no immediate hazards.""
+}",2.3554579999999987
+dataset/dataset/chute06/cam6.avi#f686-716,6,1,0,low,The person is standing on a stable surface with no visible signs of falling or sudden movement. The environment appears safe and controlled.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface with no visible signs of falling or sudden movement. The environment appears safe and controlled.""
+}",2.3062552999999753
+dataset/dataset/chute06/cam6.avi#f706-736,6,1,0,low,The person remains on the ground and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the ground and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.2052843999999823
+dataset/dataset/chute06/cam6.avi#f743-773,6,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mat with no visible signs of a fall, and the environment appears stable with no abrupt downward motion",2.3619932999999946
+dataset/dataset/chute07/cam6.avi#f463-493,6,0,0,low,The person remains stationary and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of a fall or sudden downward movement.""
+}",1.992926400000215
+dataset/dataset/chute08/cam6.avi#f352-382,6,1,0,low,The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or transitioning downward abruptly. The environment appears stable with no immediate hazards.""
+}",2.3768044999997073
+dataset/dataset/chute09/cam6.avi#f606-636,6,0,0,low,The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.052694099999826
+dataset/dataset/chute09/cam6.avi#f637-667,6,1,0,low,The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.165123799999492
+dataset/dataset/chute09/cam6.avi#f668-698,6,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a flat surface with no visible signs of falling or uncontrolled movement, and the environment appears stable with no immediate hazards",2.390067199999976
+dataset/dataset/chute11/cam6.avi#f499-529,6,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on their back on a marked floor with no visible signs of falling or sudden movement, indicating a stable and controlled position.""",2.396387799999502
+dataset/dataset/chute13/cam6.avi#f714-744,6,0,0,low,No visible uncontrolled or abrupt downward transition observed; person remains stable on the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""No visible uncontrolled or abrupt downward transition observed; person remains stable on the floor.""
+}",1.9730373000002146
+dataset/dataset/chute13/cam6.avi#f855-885,6,1,0,low,The person remains on the ground and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the ground and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.1474662000000535
+dataset/dataset/chute15/cam6.avi#f795-825,6,1,0,low,The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.059116499999618
+dataset/dataset/chute16/cam6.avi#f827-857,6,0,0,low,The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.""
+}",2.3229162999996333
+dataset/dataset/chute17/cam6.avi#f341-371,6,0,0,low,The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.2043455000002723
+dataset/dataset/chute17/cam6.avi#f735-765,6,1,0,low,The person remains on the floor and does not undergo a visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor and does not undergo a visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.189046800000142
+dataset/dataset/chute18/cam6.avi#f638-668,6,0,0,low,"The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt downward motion.""
+}",2.1298157000001083
+dataset/dataset/chute18/cam6.avi#f679-709,6,1,1,high,"The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}",2.1408798000002207
+dataset/dataset/chute19/cam6.avi#f449-479,6,0,0,low,The person remains stationary and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of a fall or sudden downward movement.""
+}",1.9712061999998696
+dataset/dataset/chute19/cam6.avi#f559-589,6,1,0,low,The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion. The environment appears stable with no immediate hazards.""
+}",2.3359017000002495
+dataset/dataset/chute20/cam6.avi#f404-434,6,0,0,low,The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of imminent fall risk.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of imminent fall risk.""
+}",2.30975269999999
+dataset/dataset/chute21/cam6.avi#f900-930,6,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is moving in a controlled manner and does not show signs of an uncontrolled fall. The environment appears stable with no immediate hazards.""",2.3857811999996557
+dataset/dataset/chute22/cam6.avi#f782-812,6,0,0,low,"The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and stationary throughout the video, with no visible signs of falling or abrupt downward motion.""
+}",2.1713952999998583
+dataset/dataset/chute22/cam6.avi#f818-848,6,1,0,low,The person remains on the floor without any visible uncontrolled or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains on the floor without any visible uncontrolled or abrupt downward transition.""
+}",1.910219700000198
+dataset/dataset/chute23/cam6.avi#f723-753,6,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and there are no visible signs of a fall or sudden downward movement. The environment appears stable with no immediate hazards.""",2.3143818999997166
+dataset/dataset/chute23/cam6.avi#f1580-1610,6,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of falling or sudden movement",2.3615920000002006
+dataset/dataset/chute23/cam6.avi#f1722-1752,6,0,0,low,The main person is standing and moving normally without any visible signs of falling or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing and moving normally without any visible signs of falling or abrupt downward transition.""
+}",2.068137299999762
+dataset/dataset/chute23/cam6.avi#f4166-4196,6,0,0,low,The main person is standing and moving normally in the room without any visible signs of falling or sudden downward motion.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing and moving normally in the room without any visible signs of falling or sudden downward motion.""
+}",2.1705572000000757
+dataset/dataset/chute01/cam7.avi#f1117-1147,7,0,0,low,"The person is lying on a platform with no visible signs of falling or uncontrolled movement, and the environment appears stable.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a platform with no visible signs of falling or uncontrolled movement, and the environment appears stable.""
+}",2.2610787000003256
+dataset/dataset/chute03/cam7.avi#f580-610,7,0,0,low,The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible uncontrolled or abrupt downward transition toward the floor.""
+}",2.0570034000002124
+dataset/dataset/chute06/cam7.avi#f686-716,7,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing upright and there are no visible signs of a sudden fall or downward transition. The environment appears stable with no immediate hazards",2.334421499999735
+dataset/dataset/chute07/cam7.avi#f494-524,7,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seen moving and placing a mattress on the floor, but there is no visible uncontrolled or abrupt downward transition toward the floor.",2.3437503000004654
+dataset/dataset/chute08/cam7.avi#f352-382,7,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying down on a mattress, which is supported by a frame, and there is no visible indication of a fall or abrupt downward",2.3429596000005404
+dataset/dataset/chute09/cam7.avi#f606-636,7,0,0,low,The person is seated and appears to be in a stable position with no visible signs of uncontrolled downward motion or fall.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears to be in a stable position with no visible signs of uncontrolled downward motion or fall.""
+}",2.2378828999999314
+dataset/dataset/chute10/cam7.avi#f504-534,7,0,0,low,"The person is standing and moving carefully on a marked floor, with no visible signs of uncontrolled or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving carefully on a marked floor, with no visible signs of uncontrolled or abrupt downward transition.""
+}",2.276394000000437
+dataset/dataset/chute11/cam7.avi#f437-467,7,0,0,low,"The main person is standing and moving normally, with no visible signs of a fall or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing and moving normally, with no visible signs of a fall or abrupt downward transition.""
+}",2.121049299999868
+dataset/dataset/chute12/cam7.avi#f576-606,7,0,0,low,The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or abrupt downward transition.""
+}",1.9855907999999545
+dataset/dataset/chute12/cam7.avi#f607-637,7,1,0,low,"The main person is standing upright and appears to be in a stable position, with no visible signs of uncontrolled or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person is standing upright and appears to be in a stable position, with no visible signs of uncontrolled or abrupt downward motion.""
+}",2.3590888999997333
+dataset/dataset/chute12/cam7.avi#f635-665,7,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a mattress and appears to be in a controlled environment with no visible signs of a fall. The movement is gradual and",2.354340200000479
+dataset/dataset/chute13/cam7.avi#f723-753,7,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.3669583000000785
+dataset/dataset/chute14/cam7.avi#f998-1028,7,1,1,high,"The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}",2.145817999999963
+dataset/dataset/chute14/cam7.avi#f1029-1059,7,0,0,low,The person is lying on a platform and appears to be in a stable position with no visible signs of falling or sudden movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a platform and appears to be in a stable position with no visible signs of falling or sudden movement.""
+}",2.290240100000119
+dataset/dataset/chute15/cam7.avi#f778-808,7,1,0,low,The person remains seated and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains seated and there are no visible signs of a fall or sudden downward movement.""
+}",1.9860584999996718
+dataset/dataset/chute16/cam7.avi#f383-413,7,0,0,low,The person is standing and moving normally without any visible downward transition or fall.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving normally without any visible downward transition or fall.""
+}",1.8688515000003463
+dataset/dataset/chute16/cam7.avi#f821-851,7,0,0,low,The main person remains seated and there is no visible downward transition or fall.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The main person remains seated and there is no visible downward transition or fall.""
+}",1.9121483000008084
+dataset/dataset/chute16/cam7.avi#f899-929,7,1,1,high,"The person is seen falling from a seated position onto the floor, indicating an uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position onto the floor, indicating an uncontrolled downward transition.""
+}",2.136526100000083
+dataset/dataset/chute17/cam7.avi#f370-400,7,0,0,low,The person is bending over a box and appears to be in a stable position with no visible signs of sudden movement or fall.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is bending over a box and appears to be in a stable position with no visible signs of sudden movement or fall.""
+}",2.3289107999999032
+dataset/dataset/chute18/cam7.avi#f679-709,7,1,1,high,"The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.","{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}",2.190560199999709
+dataset/dataset/chute19/cam7.avi#f500-530,7,1,0,low,"The person is standing and moving in a controlled manner, with no visible signs of a fall or sudden downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving in a controlled manner, with no visible signs of a fall or sudden downward transition.""
+}",2.2282156000001123
+dataset/dataset/chute19/cam7.avi#f560-590,7,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is seated and appears stable, with no visible signs of uncontrolled downward motion or fall.""
+}
+```",2.3080400999997437
+dataset/dataset/chute20/cam7.avi#f354-384,7,0,0,low,The person remains upright and does not exhibit any visible signs of falling or abrupt downward transition.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or abrupt downward transition.""
+}",2.0128017000006366
+dataset/dataset/chute20/cam7.avi#f549-579,7,1,0,low,"The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.""
+}",2.2626790000003894
+dataset/dataset/chute20/cam7.avi#f609-639,7,1,0,low,"The person is in a stable position on the floor, with no visible signs of uncontrolled or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is in a stable position on the floor, with no visible signs of uncontrolled or abrupt downward motion.""
+}",2.2656291000002966
+dataset/dataset/chute20/cam7.avi#f639-669,7,1,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on the floor, but there is no visible uncontrolled or abrupt downward transition. The person appears to be in a stable",2.441481599999861
+dataset/dataset/chute21/cam7.avi#f900-930,7,1,0,low,"The person is on the floor in a controlled manner, with no visible signs of an uncontrolled fall or sudden downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is on the floor in a controlled manner, with no visible signs of an uncontrolled fall or sudden downward transition.""
+}",2.3255779999999504
+dataset/dataset/chute22/cam7.avi#f818-848,7,1,0,low,"The person is lying down in a chair and appears to be stable, with no visible signs of a sudden fall or uncontrolled movement.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying down in a chair and appears to be stable, with no visible signs of a sudden fall or uncontrolled movement.""
+}",2.390783900000315
+dataset/dataset/chute23/cam7.avi#f713-743,7,0,-1,,,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is bending down in a controlled manner and does not show signs of an uncontrolled fall. The movement appears to be deliberate and stable",2.375047199999244
+dataset/dataset/chute23/cam7.avi#f1570-1600,7,1,0,low,The person is standing upright and there are no visible signs of a fall or sudden downward movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and there are no visible signs of a fall or sudden downward movement.""
+}",2.0459189999992304
+dataset/dataset/chute23/cam7.avi#f1600-1630,7,1,0,low,"The person is standing and moving within a controlled environment, with no visible signs of uncontrolled or abrupt downward motion.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving within a controlled environment, with no visible signs of uncontrolled or abrupt downward motion.""
+}",2.239708199999768
+dataset/dataset/chute01/cam8.avi#f1080-1110,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a marked area and appears to be in a controlled environment with no visible signs of a fall. There",2.3541298999998617
+dataset/dataset/chute01/cam8.avi#f1111-1141,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a mattress in a controlled environment with no visible signs of uncontrolled fall or abrupt downward transition.""
+}",2.413604200000009
+dataset/dataset/chute02/cam8.avi#f381-411,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving within a controlled environment, with no visible signs of a fall or sudden downward transition.""
+}
+```",2.3877744000001258
+dataset/dataset/chute02/cam8.avi#f411-441,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary on the platform with no visible signs of uncontrolled downward motion or fall.""
+}
+```",2.256509400000141
+dataset/dataset/chute04/cam8.avi#f313-343,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible downward movement or fall risk.""
+}
+```",2.1411957999998776
+dataset/dataset/chute04/cam8.avi#f375-405,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a bed with no visible signs of a fall, and the environment appears stable with no abrupt downward motion",2.3537108000000444
+dataset/dataset/chute04/cam8.avi#f660-690,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and appears to be in a controlled environment with no visible signs of an uncontrolled fall",2.3878834000006464
+dataset/dataset/chute05/cam8.avi#f309-339,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains upright and does not exhibit any visible signs of falling or sudden downward motion. The movement is gradual and controlled.""",2.3458873999998104
+dataset/dataset/chute05/cam8.avi#f340-370,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on a bed with no visible signs of uncontrolled or abrupt downward transition, and the environment appears stable with",2.3446296000001894
+dataset/dataset/chute06/cam8.avi#f672-702,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and moving normally without any visible signs of falling or sudden downward motion.""
+}
+```",2.355868399999963
+dataset/dataset/chute06/cam8.avi#f692-722,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is moving normally on a marked floor, with no visible signs of falling or sudden downward transition.""
+}
+```",2.3263029999998253
+dataset/dataset/chute07/cam8.avi#f494-524,8,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen moving towards the floor and falling, indicating an uncontrolled downward transition.""
+}
+```",2.198211099999753
+dataset/dataset/chute09/cam8.avi#f625-655,8,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a standing position onto the floor, indicating an uncontrolled downward transition.""
+}
+```",2.281978799999706
+dataset/dataset/chute11/cam8.avi#f474-504,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a flat surface and appears to be moving normally without any visible signs of a fall or sudden downward transition",2.3577813000001697
+dataset/dataset/chute11/cam8.avi#f505-535,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is lying on their back on a mat with no visible signs of a fall, and the environment appears stable with no",2.375773200000367
+dataset/dataset/chute12/cam8.avi#f569-599,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving normally without any visible signs of falling or abrupt downward transition.""
+}
+```",2.1405712000005224
+dataset/dataset/chute12/cam8.avi#f600-630,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving calmly without any visible signs of falling or sudden movement.""
+}
+```",2.109145399999761
+dataset/dataset/chute14/cam8.avi#f1005-1035,8,1,0,low,"The person is standing and moving carefully, with no visible signs of a fall or sudden downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving carefully, with no visible signs of a fall or sudden downward transition.""
+}",2.0968321999998807
+dataset/dataset/chute15/cam8.avi#f724-754,8,0,0,low,"The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.""
+}",2.1587956999992457
+dataset/dataset/chute15/cam8.avi#f755-785,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and does not show any signs of falling or sudden downward movement.""
+}
+```",2.313508400000501
+dataset/dataset/chute16/cam8.avi#f383-413,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion.""
+}
+```",2.1558648000000176
+dataset/dataset/chute18/cam8.avi#f607-637,8,0,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and there are no visible signs of uncontrolled or abrupt downward motion.""
+}
+```",2.1845205999998143
+dataset/dataset/chute19/cam8.avi#f440-470,8,0,0,low,The person is standing on a stable surface and moving normally without any visible signs of falling or sudden movement.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing on a stable surface and moving normally without any visible signs of falling or sudden movement.""
+}",2.1671901999998227
+dataset/dataset/chute20/cam8.avi#f635-665,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing upright and there is no visible indication of a fall or sudden downward transition.""
+}
+```",2.216286400000172
+dataset/dataset/chute21/cam8.avi#f868-898,8,1,-1,,,"```json
+{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is moving in a controlled manner and does not show signs of an uncontrolled fall. The motion is gradual and the",2.374769500000184
+dataset/dataset/chute22/cam8.avi#f806-836,8,1,-1,,,"```json
+{
+  ""class"": ""FALL"",
+  ""risk"": ""high"",
+  ""reason"": ""The person is seen falling from a seated position on a marked floor, indicating an uncontrolled downward transition.""
+}
+```",2.3830432000004294
+dataset/dataset/chute23/cam8.avi#f1662-1692,8,0,0,low,The person remains stationary and does not exhibit any visible signs of falling or sudden downward motion.,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person remains stationary and does not exhibit any visible signs of falling or sudden downward motion.""
+}",2.029106499999216
+dataset/dataset/chute23/cam8.avi#f3574-3604,8,1,0,low,"The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.","{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing and moving in a controlled manner, with no visible signs of falling or abrupt downward transition.""
+}",2.1932912000002034

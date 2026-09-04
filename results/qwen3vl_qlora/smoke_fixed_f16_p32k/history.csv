@@ -1,0 +1,2 @@
+epoch,train_loss,samples,accuracy,macro_f1,balanced_accuracy,recall,specificity,f1_fall,f1_safe,parse_errors,tp,tn,fp,fn
+1,2.4443825483322144,2,0.5,0.5,0.5,0.0,1.0,0.0,1.0,1,0,1,0,0

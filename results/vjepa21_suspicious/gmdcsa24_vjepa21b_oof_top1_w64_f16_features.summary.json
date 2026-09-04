@@ -1,0 +1,15 @@
+{
+  "model": "apiantonio/vjepa2.1-vit-base-384",
+  "revision": "ea7765861aa689985c593727725afa378fc87492",
+  "selector": "out-of-fold RTMPose + ST-GCN++ maximum-probability 64-frame window",
+  "selector_predictions": "C:\\Users\\HP\\Documents\\挑战杯\\fall_benchmark\\results\\sliding_window_e300_b64\\rtmpose_stgcnpp",
+  "samples": 160,
+  "feature_shape": [
+    160,
+    768
+  ],
+  "frames_per_window": 16,
+  "mean_seconds_per_video": 0.5172607549968233,
+  "total_seconds": 82.79432750004344,
+  "peak_cuda_memory_gib": 0.335845947265625
+}

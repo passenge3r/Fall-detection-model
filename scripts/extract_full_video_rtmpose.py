@@ -46,6 +46,10 @@ def main() -> None:
     parser.add_argument("--subjects", type=int, nargs="+")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--rtmpose-mode", default="balanced")
+    parser.add_argument(
+        "--target-fps", type=float,
+        help="Uniformly downsample before pose inference; useful for high-frame-rate sources",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
@@ -69,14 +73,21 @@ def main() -> None:
             if not capture.isOpened():
                 raise RuntimeError(f"Cannot open video: {video}")
             fps = float(capture.get(cv2.CAP_PROP_FPS))
+            sample_step = max(1, int(round(fps / args.target_fps))) if args.target_fps else 1
+            sampled_fps = fps / sample_step
             width = int(capture.get(cv2.CAP_PROP_FRAME_WIDTH))
             height = int(capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
             sequence: list[np.ndarray] = []
+            source_indices: list[int] = []
+            source_index = 0
             while True:
                 ok, frame = capture.read()
                 if not ok:
                     break
-                sequence.append(np.asarray(backend(frame), dtype=np.float32))
+                if source_index % sample_step == 0:
+                    sequence.append(np.asarray(backend(frame), dtype=np.float32))
+                    source_indices.append(source_index)
+                source_index += 1
             capture.release()
             if not sequence:
                 raise RuntimeError(f"No frames decoded: {video}")
@@ -84,9 +95,11 @@ def main() -> None:
             np.savez_compressed(
                 output,
                 keypoints=poses,
-                frame_indices=np.arange(len(poses), dtype=np.int32),
+                frame_indices=np.asarray(source_indices, dtype=np.int32),
                 image_size=np.asarray([height, width], dtype=np.int32),
-                fps=np.asarray(fps, dtype=np.float32),
+                fps=np.asarray(sampled_fps, dtype=np.float32),
+                source_fps=np.asarray(fps, dtype=np.float32),
+                sample_step=np.asarray(sample_step, dtype=np.int32),
             )
             print(
                 f"[{number}/{len(rows)}] {row['path']} frames={len(poses)}",

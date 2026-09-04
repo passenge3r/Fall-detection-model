@@ -1,0 +1,56 @@
+{
+  "skeleton_only": {
+    "accuracy": 0.775,
+    "precision": 0.7590361445783133,
+    "recall": 0.7974683544303798,
+    "specificity": 0.7530864197530864,
+    "f1": 0.7777777777777778,
+    "balanced_accuracy": 0.7752773870917331,
+    "tp": 63,
+    "tn": 61,
+    "fp": 20,
+    "fn": 16
+  },
+  "qwen_only": {
+    "accuracy": 0.65625,
+    "precision": 1.0,
+    "recall": 0.3037974683544304,
+    "specificity": 1.0,
+    "f1": 0.46601941747572817,
+    "balanced_accuracy": 0.6518987341772152,
+    "tp": 24,
+    "tn": 81,
+    "fp": 0,
+    "fn": 55
+  },
+  "both_confirm_intersection": {
+    "accuracy": 0.65,
+    "precision": 1.0,
+    "recall": 0.2911392405063291,
+    "specificity": 1.0,
+    "f1": 0.45098039215686275,
+    "balanced_accuracy": 0.6455696202531646,
+    "tp": 23,
+    "tn": 81,
+    "fp": 0,
+    "fn": 56
+  },
+  "safety_union": {
+    "accuracy": 0.78125,
+    "precision": 0.7619047619047619,
+    "recall": 0.810126582278481,
+    "specificity": 0.7530864197530864,
+    "f1": 0.7852760736196319,
+    "balanced_accuracy": 0.7816065010157838,
+    "tp": 64,
+    "tn": 61,
+    "fp": 20,
+    "fn": 15
+  },
+  "tier_counts": {
+    "level_1_both_confirm": 23,
+    "level_2_skeleton_only_review": 60,
+    "level_2_qwen_only_review": 1,
+    "no_alert": 76
+  }
+}

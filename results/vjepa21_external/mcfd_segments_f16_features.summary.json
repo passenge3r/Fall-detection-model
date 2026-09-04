@@ -1,0 +1,12 @@
+{
+  "model": "apiantonio/vjepa2.1-vit-base-384",
+  "revision": "ea7765861aa689985c593727725afa378fc87492",
+  "samples": 552,
+  "frames_per_segment": 16,
+  "feature_shape": [
+    552,
+    768
+  ],
+  "mean_seconds": 0.2345159887679957,
+  "total_seconds": 129.51926620001905
+}

@@ -1,0 +1,96 @@
+{
+  "classes": {
+    "0": "walking",
+    "1": "standing",
+    "2": "sitting",
+    "3": "lying_sleeping",
+    "4": "falling"
+  },
+  "samples": 292,
+  "class_counts": {
+    "sitting": 78,
+    "lying_sleeping": 15,
+    "walking": 59,
+    "standing": 62,
+    "falling": 78
+  },
+  "subject_class_counts": {
+    "1": {
+      "falling": 16,
+      "lying_sleeping": 4,
+      "sitting": 19,
+      "standing": 5,
+      "walking": 13
+    },
+    "2": {
+      "falling": 25,
+      "lying_sleeping": 3,
+      "sitting": 17,
+      "standing": 31,
+      "walking": 25
+    },
+    "3": {
+      "falling": 21,
+      "lying_sleeping": 3,
+      "sitting": 20,
+      "standing": 22,
+      "walking": 10
+    },
+    "4": {
+      "falling": 16,
+      "lying_sleeping": 5,
+      "sitting": 22,
+      "standing": 4,
+      "walking": 11
+    }
+  },
+  "min_duration_seconds": 0.5,
+  "rejected": [
+    {
+      "path": "Subject 1/ADL/14.mp4",
+      "class_name": "standing",
+      "start_seconds": 4.7,
+      "end_seconds": 5.0,
+      "reason": "duration<0.5"
+    },
+    {
+      "path": "Subject 1/Fall/13.mp4",
+      "class_name": "standing",
+      "start_seconds": 0.0,
+      "end_seconds": 0.3,
+      "reason": "duration<0.5"
+    },
+    {
+      "path": "Subject 1/Fall/14.mp4",
+      "class_name": "standing",
+      "start_seconds": 0.0,
+      "end_seconds": 0.2,
+      "reason": "duration<0.5"
+    },
+    {
+      "path": "Subject 2/ADL/12.mp4",
+      "class_name": "standing",
+      "start_seconds": 0.0,
+      "end_seconds": 0.1,
+      "reason": "duration<0.5"
+    },
+    {
+      "path": "Subject 3/ADL/07.mp4",
+      "class_name": "standing",
+      "start_seconds": 0.0,
+      "end_seconds": 0.3,
+      "reason": "duration<0.5"
+    },
+    {
+      "path": "Subject 4/ADL/07.mp4",
+      "reason": "no posture interval"
+    },
+    {
+      "path": "Subject 4/ADL/14.mp4",
+      "class_name": "standing",
+      "start_seconds": 0.0,
+      "end_seconds": 0.3,
+      "reason": "duration<0.5"
+    }
+  ]
+}

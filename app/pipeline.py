@@ -19,6 +19,7 @@ from scripts.build_gcn_tensor import sequence_normalize  # noqa: E402
 from scripts.extract_pose_cache import RTMPoseBackend, YoloPoseBackend  # noqa: E402
 
 from .decision import DecisionConfig, DecisionEngine
+from .pose_quality import PoseQualityConfig, assess_pose_frame
 
 
 EDGES = [
@@ -85,6 +86,8 @@ def draw_overlay(
     frame: np.ndarray, pose: np.ndarray, frame_index: int,
     probability: float | None, state: str, pose_threshold: float,
     route: str, pose_valid_ratio: float | None, positive_folds: int | None,
+    pose_source: str, pose_quality_reason: str,
+    prefall: dict[str, object] | None = None,
 ) -> np.ndarray:
     canvas = frame.copy()
     valid = pose[:, 2] >= pose_threshold
@@ -101,7 +104,7 @@ def draw_overlay(
         "CONFIRMED": (30, 30, 255), "COOLDOWN": (190, 100, 30),
         "UNKNOWN": (150, 150, 150), "WARMUP": (220, 220, 220),
     }
-    cv2.rectangle(canvas, (0, 0), (canvas.shape[1], 82), (0, 0, 0), -1)
+    cv2.rectangle(canvas, (0, 0), (canvas.shape[1], 105), (0, 0, 0), -1)
     probability_text = "--" if probability is None else f"{probability:.3f}"
     cv2.putText(
         canvas, f"frame={frame_index}  fall_probability={probability_text}",
@@ -123,6 +126,35 @@ def draw_overlay(
         1,
         cv2.LINE_AA,
     )
+    cv2.putText(
+        canvas,
+        f"pose_source={pose_source}  quality={pose_quality_reason}",
+        (12, 97),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.50,
+        (190, 210, 230) if pose_quality_reason == "ok" else (60, 180, 255),
+        1,
+        cv2.LINE_AA,
+    )
+    if prefall and prefall.get("enabled"):
+        probabilities = prefall.get("probabilities", {})
+        risk = str(prefall.get("risk_level", "WARMUP"))
+        risk_colors = {
+            "NORMAL": (60, 210, 70), "LOW": (0, 220, 255),
+            "MEDIUM": (0, 140, 255), "HIGH": (30, 30, 255),
+            "FALL_CONFIRMED": (30, 30, 255), "RESPONSE_ACTIVE": (190, 100, 30),
+            "WARMUP": (220, 220, 220),
+        }
+        values = " ".join(
+            f"p{label}={float(probabilities[label]):.3f}"
+            for label in ("1s", "2s", "3s") if label in probabilities
+        )
+        cv2.rectangle(canvas, (0, 105), (canvas.shape[1], 139), (0, 0, 0), -1)
+        cv2.putText(
+            canvas, f"pre-fall={risk}  {values}", (12, 129),
+            cv2.FONT_HERSHEY_SIMPLEX, 0.56, risk_colors.get(risk, (255, 255, 255)),
+            2, cv2.LINE_AA,
+        )
     return canvas
 
 
@@ -137,6 +169,11 @@ def run_video(
     stride_frames: int = 16,
     pose_threshold: float = 0.2,
     yolo_confidence: float = 0.1,
+    pose_fallback: str = "none",
+    min_valid_joints: int = 5,
+    min_torso_joints: int = 2,
+    max_bone_image_ratio: float = 0.35,
+    max_center_jump_ratio: float = 0.25,
     decision_config: DecisionConfig | None = None,
     write_video: bool = True,
     max_frames: int | None = None,
@@ -145,6 +182,8 @@ def run_video(
         raise ValueError(f"route must be one of {sorted(ROUTES)}")
     if window_frames < 2 or stride_frames < 1:
         raise ValueError("window_frames must be >=2 and stride_frames must be >=1")
+    if pose_fallback not in {"none", "auto"}:
+        raise ValueError("pose_fallback must be 'none' or 'auto'")
     if not input_path.is_file():
         raise FileNotFoundError(f"Input video not found: {input_path}")
     config = decision_config or DecisionConfig()
@@ -163,9 +202,30 @@ def run_video(
 
     output_dir.mkdir(parents=True, exist_ok=True)
     pose_backend = create_pose_backend(pose_name, str(device), yolo_model, yolo_confidence)
+    fallback_name = None
+    fallback_backend = None
+    fallback_disabled_reason = None
+    if pose_fallback == "auto":
+        fallback_name = "yolo" if pose_name == "rtmpose" else "rtmpose"
+        try:
+            fallback_backend = create_pose_backend(
+                fallback_name, str(device), yolo_model, yolo_confidence
+            )
+        except FileNotFoundError as error:
+            fallback_disabled_reason = str(error)
+            fallback_name = None
+    quality_config = PoseQualityConfig(
+        confidence_threshold=pose_threshold,
+        min_valid_joints=min_valid_joints,
+        min_torso_joints=min_torso_joints,
+        max_bone_image_ratio=max_bone_image_ratio,
+        max_center_jump_ratio=max_center_jump_ratio,
+    )
     classifier = FoldEnsemble(route, checkpoints_root, device)
     decision = DecisionEngine(config)
     pose_buffer: deque[np.ndarray] = deque(maxlen=window_frames)
+    source_buffer: deque[str] = deque(maxlen=window_frames)
+    reason_buffer: deque[str] = deque(maxlen=window_frames)
     writer = None
     if write_video:
         writer = cv2.VideoWriter(
@@ -186,6 +246,13 @@ def run_video(
     state_counts: Counter[str] = Counter()
     event_count = 0
     zero_pose_frames = 0
+    primary_zero_pose_frames = 0
+    quality_rejected_frames = 0
+    pose_source_counts: Counter[str] = Counter()
+    pose_rejection_reasons: Counter[str] = Counter()
+    previous_accepted_pose: np.ndarray | None = None
+    latest_pose_source = "warmup"
+    latest_pose_quality_reason = "ok"
     with (
         (output_dir / "windows.jsonl").open("w", encoding="utf-8") as windows_handle,
         (output_dir / "events.jsonl").open("w", encoding="utf-8") as events_handle,
@@ -194,18 +261,72 @@ def run_video(
             ok, frame = capture.read()
             if not ok:
                 break
-            pose = np.asarray(pose_backend(frame), dtype=np.float32)
-            if pose.shape != (17, 3):
-                raise RuntimeError(f"Unexpected pose shape at frame {frame_index}: {pose.shape}")
+            primary_pose = np.asarray(pose_backend(frame), dtype=np.float32)
+            if primary_pose.shape != (17, 3):
+                raise RuntimeError(
+                    f"Unexpected primary pose shape at frame {frame_index}: {primary_pose.shape}"
+                )
+            if not np.any(primary_pose[:, 2] >= pose_threshold):
+                primary_zero_pose_frames += 1
+            primary_quality = assess_pose_frame(
+                primary_pose,
+                np.asarray([height, width]),
+                quality_config,
+                previous_pose=previous_accepted_pose,
+            )
+            pose = primary_pose
+            pose_source = "primary"
+            quality = primary_quality
+            if not primary_quality.usable and fallback_backend is not None:
+                fallback_pose = np.asarray(fallback_backend(frame), dtype=np.float32)
+                if fallback_pose.shape != (17, 3):
+                    raise RuntimeError(
+                        f"Unexpected fallback pose shape at frame {frame_index}: "
+                        f"{fallback_pose.shape}"
+                    )
+                fallback_quality = assess_pose_frame(
+                    fallback_pose,
+                    np.asarray([height, width]),
+                    quality_config,
+                    previous_pose=previous_accepted_pose,
+                )
+                if fallback_quality.usable:
+                    pose = fallback_pose
+                    pose_source = "fallback"
+                    quality = fallback_quality
+            if not quality.usable:
+                # Preserve the route-native pose distribution for the classifier.
+                # The quality ratio gates the decision as UNKNOWN when failures
+                # dominate a window. Replacing isolated RTMPose frames with YOLO
+                # frames is experimental because the classifier was not trained
+                # on mixed-backend sequences.
+                pose = primary_pose
+                pose_source = "rejected"
+                quality_rejected_frames += 1
+                for reason in quality.reasons:
+                    pose_rejection_reasons[reason] += 1
+            else:
+                previous_accepted_pose = pose.copy()
             if not np.any(pose[:, 2] >= pose_threshold):
                 zero_pose_frames += 1
+            pose_source_counts[pose_source] += 1
+            quality_reason = "ok" if quality.usable else ",".join(quality.reasons)
             pose_buffer.append(pose)
+            source_buffer.append(pose_source)
+            reason_buffer.append(quality_reason)
+            latest_pose_source = pose_source
+            latest_pose_quality_reason = quality_reason
 
             window_ready = len(pose_buffer) == window_frames
             if window_ready and (frame_index - window_frames + 1) % stride_frames == 0:
                 raw_poses = np.stack(pose_buffer)
-                pose_valid_ratio = float(
-                    np.mean(np.max(raw_poses[:, :, 2], axis=1) >= pose_threshold)
+                sources = list(source_buffer)
+                pose_valid_ratio = float(np.mean(np.asarray(sources) != "rejected"))
+                source_counts = Counter(sources)
+                window_reasons = Counter(
+                    reason
+                    for reason in reason_buffer
+                    if reason != "ok"
                 )
                 sample = sequence_normalize(
                     raw_poses, np.asarray([height, width]), pose_threshold
@@ -231,6 +352,8 @@ def run_video(
                     "fold_probabilities": fold_probabilities,
                     "positive_folds": positive_folds,
                     "pose_valid_ratio": pose_valid_ratio,
+                    "pose_source_counts": dict(source_counts),
+                    "pose_quality_reasons": dict(window_reasons),
                     "state": latest_state,
                 }
                 write_jsonl(windows_handle, record)
@@ -255,6 +378,7 @@ def run_video(
                         frame, pose, frame_index, latest_probability,
                         latest_state, pose_threshold, route,
                         latest_pose_valid_ratio, latest_positive_folds,
+                        latest_pose_source, latest_pose_quality_reason,
                     )
                 )
             frame_index += 1
@@ -281,6 +405,25 @@ def run_video(
         "stride_frames": stride_frames,
         "zero_pose_frames": zero_pose_frames,
         "zero_pose_rate": zero_pose_frames / frame_index if frame_index else 0.0,
+        "primary_zero_pose_frames": primary_zero_pose_frames,
+        "quality_rejected_frames": quality_rejected_frames,
+        "quality_rejected_rate": (
+            quality_rejected_frames / frame_index if frame_index else 0.0
+        ),
+        "pose_source_counts": dict(pose_source_counts),
+        "pose_rejection_reasons": dict(pose_rejection_reasons),
+        "pose_fallback": {
+            "mode": pose_fallback,
+            "primary": pose_name,
+            "fallback": fallback_name,
+            "disabled_reason": fallback_disabled_reason,
+        },
+        "pose_quality": {
+            "min_valid_joints": quality_config.min_valid_joints,
+            "min_torso_joints": quality_config.min_torso_joints,
+            "max_bone_image_ratio": quality_config.max_bone_image_ratio,
+            "max_center_jump_ratio": quality_config.max_center_jump_ratio,
+        },
         "state_counts": dict(state_counts),
         "confirmed_events": event_count,
         "elapsed_seconds": elapsed,

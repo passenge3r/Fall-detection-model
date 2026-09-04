@@ -1,0 +1,99 @@
+{
+  "start": {
+    "status": {
+      "running": true,
+      "state": "STARTING",
+      "camera_id": "local-smoke-camera",
+      "frames_decoded": 0,
+      "frames_processed": 0,
+      "reconnects": 0,
+      "last_error": null,
+      "latest_result": null,
+      "detector": {
+        "route": "yolo_stgcnpp",
+        "checkpoints_root": "results\\benchmark_e300_full",
+        "yolo_model": "yolo26n-pose.pt",
+        "device": "cuda",
+        "window_frames": 64,
+        "stride_frames": 16,
+        "pose_threshold": 0.2,
+        "yolo_confidence": 0.1,
+        "threshold": 0.5,
+        "confirm_windows": 3,
+        "cooldown_windows": 10,
+        "min_pose_valid_ratio": 0.5,
+        "min_positive_folds": 3
+      }
+    }
+  },
+  "running_status": {
+    "running": true,
+    "state": "RUNNING",
+    "camera_id": "local-smoke-camera",
+    "frames_decoded": 76,
+    "frames_processed": 76,
+    "reconnects": 0,
+    "last_error": null,
+    "latest_result": {
+      "frame_index": 75,
+      "window_index": 1,
+      "evaluated": false,
+      "state": "NORMAL",
+      "fall_probability": 0.12038520770147443,
+      "positive_folds": 0,
+      "pose_valid_ratio": 1.0,
+      "pose_quality": "ok",
+      "latency_ms": 12.375299993436784
+    },
+    "detector": {
+      "route": "yolo_stgcnpp",
+      "checkpoints_root": "results\\benchmark_e300_full",
+      "yolo_model": "yolo26n-pose.pt",
+      "device": "cuda",
+      "window_frames": 64,
+      "stride_frames": 16,
+      "pose_threshold": 0.2,
+      "yolo_confidence": 0.1,
+      "threshold": 0.5,
+      "confirm_windows": 3,
+      "cooldown_windows": 10,
+      "min_pose_valid_ratio": 0.5,
+      "min_positive_folds": 3
+    }
+  },
+  "stopped_status": {
+    "running": false,
+    "state": "STOPPED",
+    "camera_id": "local-smoke-camera",
+    "frames_decoded": 77,
+    "frames_processed": 77,
+    "reconnects": 0,
+    "last_error": null,
+    "latest_result": {
+      "frame_index": 76,
+      "window_index": 1,
+      "evaluated": false,
+      "state": "NORMAL",
+      "fall_probability": 0.12038520770147443,
+      "positive_folds": 0,
+      "pose_valid_ratio": 1.0,
+      "pose_quality": "ok",
+      "latency_ms": 16.285299992887303
+    },
+    "detector": {
+      "route": "yolo_stgcnpp",
+      "checkpoints_root": "results\\benchmark_e300_full",
+      "yolo_model": "yolo26n-pose.pt",
+      "device": "cuda",
+      "window_frames": 64,
+      "stride_frames": 16,
+      "pose_threshold": 0.2,
+      "yolo_confidence": 0.1,
+      "threshold": 0.5,
+      "confirm_windows": 3,
+      "cooldown_windows": 10,
+      "min_pose_valid_ratio": 0.5,
+      "min_positive_folds": 3
+    }
+  }
+}

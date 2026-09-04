@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "protocol": "zero-shot binary, full-video ordered uniform sampling",
+  "samples": 160,
+  "frames": 8,
+  "parse_errors": 43,
+  "mean_inference_seconds": 4.890013939370692,
+  "total_seconds": 883.3498176999856,
+  "metrics": {
+    "accuracy": 0.3875,
+    "precision": 0.0,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "f1": 0.0,
+    "balanced_accuracy": 0.5,
+    "tp": 0,
+    "tn": 62,
+    "fp": 0,
+    "fn": 55
+  }
+}

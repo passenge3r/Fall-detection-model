@@ -1,0 +1,122 @@
+[
+  {
+    "route": "YOLO-Pose + ByteTrack + ST-GCN++ + Qwen safety union",
+    "family": "Qwen fusion",
+    "accuracy": 0.9,
+    "precision": 0.8705882352941177,
+    "recall": 0.9367088607594937,
+    "specificity": 0.8641975308641975,
+    "f1": 0.9024390243902438,
+    "balanced_accuracy": 0.9004531958118456,
+    "additional_video_ms": 4890.013939370692,
+    "note": "fixed OR rule; recovers one additional fall without new false positive"
+  },
+  {
+    "route": "yolo_bytetrack+stgcnpp",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.89375,
+    "precision": 0.8690476190476191,
+    "recall": 0.9240506329113924,
+    "specificity": 0.8641975308641975,
+    "f1": 0.8957055214723927,
+    "balanced_accuracy": 0.8941240818877949,
+    "additional_video_ms": 0.0,
+    "note": "classifier 12.88 ms; pose frontend excluded"
+  },
+  {
+    "route": "YOLO-Pose + ByteTrack + ST-GCN++ + Qwen weighted fusion",
+    "family": "Qwen fusion",
+    "accuracy": 0.89375,
+    "precision": 0.8690476190476191,
+    "recall": 0.9240506329113924,
+    "specificity": 0.8641975308641975,
+    "f1": 0.8957055214723927,
+    "balanced_accuracy": 0.8941240818877949,
+    "additional_video_ms": 4890.013939370692,
+    "note": "validation selected skeleton only in every fold"
+  },
+  {
+    "route": "YOLO-Pose + ByteTrack + ST-GCN++ + V-JEPA feature fusion",
+    "family": "V-JEPA fusion",
+    "accuracy": 0.8875,
+    "precision": 0.8674698795180723,
+    "recall": 0.9113924050632911,
+    "specificity": 0.8641975308641975,
+    "f1": 0.8888888888888888,
+    "balanced_accuracy": 0.8877949679637442,
+    "additional_video_ms": 714.1679906235368,
+    "note": "full-video 16-frame frozen features; head trained 300 epochs/fold"
+  },
+  {
+    "route": "RTMPose + ST-GCN++ + V-JEPA suspicious-window score fusion",
+    "family": "Previous V-JEPA fusion",
+    "accuracy": 0.875,
+    "precision": 0.8641975308641975,
+    "recall": 0.8860759493670886,
+    "specificity": 0.8641975308641975,
+    "f1": 0.8749999999999999,
+    "balanced_accuracy": 0.875136740115643,
+    "additional_video_ms": 517.26,
+    "note": "previous pose-selected suspicious-window experiment"
+  },
+  {
+    "route": "rtmpose+stgcnpp",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.86875,
+    "precision": 0.8918918918918919,
+    "recall": 0.8354430379746836,
+    "specificity": 0.9012345679012346,
+    "f1": 0.8627450980392156,
+    "balanced_accuracy": 0.8683388029379591,
+    "additional_video_ms": 0.0,
+    "note": "classifier 10.15 ms; pose frontend excluded"
+  },
+  {
+    "route": "rtmpose_bytetrack+stgcnpp",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.8625,
+    "precision": 0.8352941176470589,
+    "recall": 0.8987341772151899,
+    "specificity": 0.8271604938271605,
+    "f1": 0.8658536585365854,
+    "balanced_accuracy": 0.8629473355211752,
+    "additional_video_ms": 0.0,
+    "note": "classifier 20.70 ms; pose frontend excluded"
+  },
+  {
+    "route": "rtmpose+posec3d",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.8625,
+    "precision": 0.8352941176470589,
+    "recall": 0.8987341772151899,
+    "specificity": 0.8271604938271605,
+    "f1": 0.8658536585365854,
+    "balanced_accuracy": 0.8629473355211752,
+    "additional_video_ms": 0.0,
+    "note": "classifier 1.91 ms; pose frontend excluded"
+  },
+  {
+    "route": "rtmpose_bytetrack_v2+stgcnpp",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.84375,
+    "precision": 0.875,
+    "recall": 0.7974683544303798,
+    "specificity": 0.8888888888888888,
+    "f1": 0.8344370860927153,
+    "balanced_accuracy": 0.8431786216596343,
+    "additional_video_ms": 0.0,
+    "note": "classifier 19.10 ms; pose frontend excluded"
+  },
+  {
+    "route": "rtmpose+ctrgcn",
+    "family": "300-epoch skeleton baseline",
+    "accuracy": 0.83125,
+    "precision": 0.8170731707317073,
+    "recall": 0.8481012658227848,
+    "specificity": 0.8148148148148148,
+    "f1": 0.8322981366459627,
+    "balanced_accuracy": 0.8314580403187998,
+    "additional_video_ms": 0.0,
+    "note": "classifier 19.67 ms; pose frontend excluded"
+  }
+]

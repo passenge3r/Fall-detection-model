@@ -189,6 +189,12 @@ def main() -> None:
         "--output-root", type=Path, default=PROJECT / "results/mcfd_external_benchmark"
     )
     parser.add_argument("--batch-size", type=int, default=32)
+    parser.add_argument(
+        "--route",
+        action="append",
+        choices=[f"{pose}_{model}" for pose, model in ROUTES],
+        help="Evaluate only the selected route; may be repeated. Default: all routes",
+    )
     args = parser.parse_args()
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA is required")
@@ -199,7 +205,11 @@ def main() -> None:
         "yolo_bytetrack": PROJECT / "data/gcn/mcfd_yolo_bytetrack_t64_c010.npz",
     }
     results = []
-    for pose, model_name in ROUTES:
+    selected_routes = (
+        [(pose, model_name) for pose, model_name in ROUTES if f"{pose}_{model_name}" in args.route]
+        if args.route else list(ROUTES)
+    )
+    for pose, model_name in selected_routes:
         result = evaluate_route(
             pose, model_name, tensors[pose], args.checkpoints_root, args.output_root,
             args.batch_size, torch.device("cuda"),

@@ -1,0 +1,28 @@
+{
+  "policy": {
+    "level_1": "skeleton=falling AND Qwen=falling",
+    "level_2": "only one branch says falling; retain alert for review",
+    "no_alert": "neither branch says falling"
+  },
+  "samples": 50,
+  "alarm_counts": {
+    "no_fall_alert": 37,
+    "level_2_pose_trigger_review": 8,
+    "level_1_confirmed_fall": 5
+  },
+  "alarm_counts_by_truth": {
+    "falling": {
+      "level_1_confirmed_fall": 5,
+      "level_2_pose_trigger_review": 5
+    },
+    "non_falling": {
+      "no_fall_alert": 37,
+      "level_2_pose_trigger_review": 3
+    }
+  },
+  "qwen_triggered_segments": 13,
+  "qwen_always_on_segments": 50,
+  "qwen_invocation_reduction": 0.74,
+  "estimated_qwen_seconds_triggered": 57.11748070605099,
+  "estimated_qwen_seconds_always_on": 219.68261810019612
+}

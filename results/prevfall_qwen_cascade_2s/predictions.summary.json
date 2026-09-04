@@ -1,0 +1,55 @@
+{
+  "samples_completed": 85,
+  "skeleton_only": {
+    "tp": 70,
+    "tn": 21,
+    "fp": 15,
+    "fn": 2,
+    "accuracy": 0.8425925925925926,
+    "precision": 0.8235294117647058,
+    "recall": 0.9722222222222222,
+    "specificity": 0.5833333333333334,
+    "f1": 0.89171974522293,
+    "balanced_accuracy": 0.7777777777777778
+  },
+  "qwen_as_strict_confirmer": {
+    "tp": 1,
+    "tn": 36,
+    "fp": 0,
+    "fn": 71,
+    "accuracy": 0.3425925925925926,
+    "precision": 1.0,
+    "recall": 0.013888888888888888,
+    "specificity": 1.0,
+    "f1": 0.0273972602739726,
+    "balanced_accuracy": 0.5069444444444444
+  },
+  "safe_fusion": {
+    "metrics": {
+      "tp": 70,
+      "tn": 21,
+      "fp": 15,
+      "fn": 2,
+      "accuracy": 0.8425925925925926,
+      "precision": 0.8235294117647058,
+      "recall": 0.9722222222222222,
+      "specificity": 0.5833333333333334,
+      "f1": 0.89171974522293,
+      "balanced_accuracy": 0.7777777777777778
+    },
+    "policy": "Qwen escalates or flags conflict but never suppresses a skeleton alert"
+  },
+  "qwen_confirmation_rate_on_skeleton_tp": 0.014285714285714285,
+  "qwen_false_confirmation_rate_on_skeleton_fp": 0.0,
+  "latency_seconds": {
+    "mean": 5.780302045882319,
+    "median": 5.451059900000473,
+    "min": 2.777931499999795,
+    "max": 52.42982299999949
+  },
+  "action_class_counts": {
+    "standing": 66,
+    "walking": 18,
+    "falling": 1
+  }
+}

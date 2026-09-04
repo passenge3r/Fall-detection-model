@@ -1,0 +1,51 @@
+segment_id,subject,label,class_name,prediction,predicted_class,raw_output,seconds
+Subject 1/ADL/05.mp4#t1.000-3.000-walking-2,1,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",4.100547300069593
+Subject 2/ADL/01.mp4#t8.100-11.000-walking-3,2,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.3037144999252632
+Subject 3/ADL/03.mp4#t8.500-9.000-walking-4,3,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.2963304000440985
+Subject 4/ADL/02.mp4#t0.000-10.000-walking-1,4,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.3201383999548852
+Subject 1/ADL/08.mp4#t0.000-6.000-walking-1,1,0,walking,0,walking,"{""class"":""walking: upright locomotion""}",3.2823672000085935
+Subject 2/ADL/03.mp4#t0.000-4.600-walking-3,2,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.3454103999538347
+Subject 3/ADL/11.mp4#t0.000-2.700-walking-2,3,0,walking,0,walking,"{""class"":""walking: upright locomotion""}",3.3105102999834344
+Subject 4/ADL/05.mp4#t0.000-1.900-walking-1,4,0,walking,0,walking,"{""class"":""walking: upright locomotion""}",3.301551700104028
+Subject 1/ADL/09.mp4#t0.000-4.000-walking-1,1,0,walking,0,walking,"{""class"":""walking: upright locomotion""}",3.337534200050868
+Subject 2/ADL/05.mp4#t4.100-10.000-walking-3,2,0,walking,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.3984460999490693
+Subject 1/ADL/12.mp4#t3.300-5.000-standing-2,1,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.415193699998781
+Subject 2/ADL/01.mp4#t7.300-8.100-standing-2,2,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.383936500060372
+Subject 3/ADL/02.mp4#t0.000-9.000-standing-1,3,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.4023984000086784
+Subject 4/ADL/14.mp4#t1.500-8.000-standing-2,4,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.3698061000322923
+Subject 1/Fall/09.mp4#t0.000-0.600-standing-2,1,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.4666120000183582
+Subject 2/ADL/04.mp4#t0.000-7.000-standing-1,2,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.4425840999465436
+Subject 3/ADL/03.mp4#t7.600-8.400-standing-3,3,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.435724599985406
+Subject 4/ADL/19.mp4#t3.000-6.400-standing-2,4,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",0.9394477000460029
+Subject 1/Fall/10.mp4#t0.000-0.700-standing-2,1,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.468072200077586
+Subject 2/ADL/05.mp4#t3.100-4.100-standing-2,2,1,standing,1,standing,"{""class"":""standing: upright and mostly stationary""}",3.457531900028698
+Subject 1/ADL/01.mp4#t0.000-1.000-sitting-1,1,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.780901000020094
+Subject 2/ADL/01.mp4#t0.000-7.000-sitting-1,2,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.7880378999980167
+Subject 3/ADL/01.mp4#t0.000-8.000-sitting-1,3,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.7820756000000983
+Subject 4/ADL/01.mp4#t0.000-12.000-sitting-1,4,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.7857608000049368
+Subject 1/ADL/02.mp4#t0.000-0.500-sitting-1,1,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.8134253000607714
+Subject 2/ADL/02.mp4#t0.000-11.000-sitting-1,2,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",4.66676039993763
+Subject 3/ADL/03.mp4#t3.000-7.400-sitting-1,3,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.745243399986066
+Subject 4/ADL/03.mp4#t0.000-8.000-sitting-1,4,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.8146008999319747
+Subject 1/ADL/03.mp4#t0.000-0.500-sitting-1,1,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.825717599946074
+Subject 2/ADL/03.mp4#t5.600-7.400-sitting-1,2,2,sitting,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.854971199994907
+Subject 1/ADL/01.mp4#t2.000-8.000-lying_sleeping-2,1,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.754124000086449
+Subject 2/ADL/03.mp4#t8.000-11.000-lying_sleeping-2,2,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7682644000742584
+Subject 3/ADL/03.mp4#t0.000-1.000-lying_sleeping-2,3,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7161722999298945
+Subject 4/ADL/08.mp4#t0.000-1.100-lying_sleeping-2,4,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.720906800008379
+Subject 1/ADL/02.mp4#t1.500-6.000-lying_sleeping-2,1,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.740250700036995
+Subject 2/ADL/12.mp4#t3.000-7.000-lying_sleeping-1,2,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7173067000694573
+Subject 3/ADL/08.mp4#t0.800-4.000-lying_sleeping-2,3,3,lying_sleeping,2,sitting,"{""class"":""sitting: seated on a bed, chair, or floor""}",3.8141464999644086
+Subject 4/ADL/10.mp4#t4.300-12.000-lying_sleeping-1,4,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7649898000527173
+Subject 1/ADL/03.mp4#t1.000-6.000-lying_sleeping-2,1,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.762592099956237
+Subject 2/ADL/16.mp4#t9.000-11.000-lying_sleeping-1,2,3,lying_sleeping,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.732604800025001
+Subject 1/Fall/01.mp4#t3.400-6.000-falling-1,1,4,falling,4,falling,"{""class"":""falling: an uncontrolled transition toward the floor or ground""}",3.8397763000102714
+Subject 2/Fall/01.mp4#t1.400-6.000-falling-1,2,4,falling,4,falling,"{""class"":""falling: an uncontrolled transition toward the floor or ground""}",3.8090072999475524
+Subject 3/Fall/01.mp4#t0.000-3.000-falling-1,3,4,falling,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.714981499942951
+Subject 4/Fall/01.mp4#t1.800-4.000-falling-1,4,4,falling,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",1.1117069999454543
+Subject 1/Fall/02.mp4#t1.900-6.000-falling-1,1,4,falling,4,falling,"{""class"":""falling: an uncontrolled transition toward the floor or ground""}",3.8178823000052944
+Subject 2/Fall/02.mp4#t2.700-8.000-falling-1,2,4,falling,4,falling,"{""class"":""falling: an uncontrolled transition toward the floor or ground""}",3.8243724999483675
+Subject 3/Fall/02.mp4#t2.600-6.000-falling-1,3,4,falling,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7522107999539003
+Subject 4/Fall/02.mp4#t1.500-2.000-falling-1,4,4,falling,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",1.1038084999890998
+Subject 1/Fall/03.mp4#t2.500-5.000-falling-1,1,4,falling,4,falling,"{""class"":""falling: an uncontrolled transition toward the floor or ground""}",3.8054945999756455
+Subject 2/Fall/03.mp4#t0.000-7.000-falling-1,2,4,falling,3,lying_sleeping,"{""class"":""lying_sleeping: intentionally lying or sleeping on a bed""}",3.7957705000881106

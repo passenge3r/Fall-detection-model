@@ -1,0 +1,175 @@
+{
+  "fold": 2,
+  "epochs_ran": 300,
+  "best_epoch": 58,
+  "validation": {
+    "loss": 0.6778801930578131,
+    "accuracy": 0.8552631578947368,
+    "macro_precision": 0.8064661654135339,
+    "macro_recall_balanced_accuracy": 0.885974025974026,
+    "macro_f1": 0.8304690431519701,
+    "per_class": {
+      "walking": {
+        "precision": 0.6428571428571429,
+        "recall": 0.9,
+        "f1": 0.75,
+        "support": 10
+      },
+      "standing": {
+        "precision": 0.8947368421052632,
+        "recall": 0.7727272727272727,
+        "f1": 0.8292682926829269,
+        "support": 22
+      },
+      "sitting": {
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231,
+        "support": 20
+      },
+      "lying_sleeping": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "support": 3
+      },
+      "falling": {
+        "precision": 0.9473684210526315,
+        "recall": 0.8571428571428571,
+        "f1": 0.9,
+        "support": 21
+      }
+    },
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        18,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        18
+      ]
+    ],
+    "fall_vs_rest": {
+      "balanced_accuracy": 0.9194805194805195,
+      "recall": 0.8571428571428571,
+      "specificity": 0.9818181818181818,
+      "tp": 18,
+      "tn": 54,
+      "fp": 1,
+      "fn": 3
+    }
+  },
+  "test": {
+    "loss": 0.8926584844542022,
+    "accuracy": 0.7227722772277227,
+    "macro_precision": 0.7297922312556459,
+    "macro_recall_balanced_accuracy": 0.6949576217583807,
+    "macro_f1": 0.690866910866911,
+    "per_class": {
+      "walking": {
+        "precision": 0.7,
+        "recall": 0.56,
+        "f1": 0.6222222222222222,
+        "support": 25
+      },
+      "standing": {
+        "precision": 0.6341463414634146,
+        "recall": 0.8387096774193549,
+        "f1": 0.7222222222222222,
+        "support": 31
+      },
+      "sitting": {
+        "precision": 1.0,
+        "recall": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "support": 17
+      },
+      "lying_sleeping": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1": 0.5714285714285715,
+        "support": 3
+      },
+      "falling": {
+        "precision": 0.8148148148148148,
+        "recall": 0.88,
+        "f1": 0.8461538461538461,
+        "support": 25
+      }
+    },
+    "confusion_matrix": [
+      [
+        14,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        26,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        9,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        22
+      ]
+    ],
+    "fall_vs_rest": {
+      "balanced_accuracy": 0.9071052631578947,
+      "recall": 0.88,
+      "specificity": 0.9342105263157895,
+      "tp": 22,
+      "tn": 71,
+      "fp": 5,
+      "fn": 3
+    }
+  }
+}

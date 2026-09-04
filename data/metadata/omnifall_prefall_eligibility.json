@@ -1,0 +1,64 @@
+{
+  "omnifall_up_fall": {
+    "source": "data\\metadata\\omnifall_up_fall.csv",
+    "annotated_video_views_with_fall": 504,
+    "estimated_unique_fall_trials": 252,
+    "subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "eligible_video_views": {
+      "at_least_1s": 124,
+      "at_least_2s": 10,
+      "at_least_3s": 4
+    },
+    "eligible_unique_trials": {
+      "at_least_1s": 62,
+      "at_least_2s": 5,
+      "at_least_3s": 2
+    },
+    "prefall_context_seconds": {
+      "min": 0.0,
+      "median": 0.720931,
+      "max": 6.463
+    }
+  },
+  "omnifall_mcfd": {
+    "source": "data\\metadata\\omnifall_mcfd.csv",
+    "annotated_video_views_with_fall": 184,
+    "estimated_unique_fall_trials": 184,
+    "subjects": [
+      1
+    ],
+    "eligible_video_views": {
+      "at_least_1s": 176,
+      "at_least_2s": 176,
+      "at_least_3s": 160
+    },
+    "eligible_unique_trials": {
+      "at_least_1s": 176,
+      "at_least_2s": 176,
+      "at_least_3s": 160
+    },
+    "prefall_context_seconds": {
+      "min": 0.8826899999999984,
+      "median": 7.0,
+      "max": 38.118
+    }
+  }
+}

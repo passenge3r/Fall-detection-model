@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "protocol": "balanced zero-shot pilot, 10 per class",
+  "prompt_mode": "temporal",
+  "classes": [
+    "walking",
+    "standing",
+    "sitting",
+    "lying_sleeping",
+    "falling"
+  ],
+  "samples": 50,
+  "frames_per_segment": 8,
+  "max_pixels_per_frame": 131072,
+  "max_new_tokens": 32,
+  "accuracy": 0.82,
+  "macro_recall": 0.82,
+  "per_class_recall": {
+    "walking": 0.9,
+    "standing": 0.7,
+    "sitting": 1.0,
+    "lying_sleeping": 1.0,
+    "falling": 0.5
+  },
+  "confusion_matrix": [
+    [
+      9,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      7,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      5
+    ]
+  ],
+  "parse_errors": 0,
+  "mean_inference_seconds": 4.393652362003922,
+  "total_seconds": 250.71269359998405
+}

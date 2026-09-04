@@ -1,0 +1,43 @@
+{
+  "config": {
+    "min_pose_valid_ratio": 0.5,
+    "min_valid_joints": 5,
+    "min_torso_joints": 2,
+    "max_bone_image_ratio": 0.35,
+    "max_center_jump_ratio": 0.25
+  },
+  "routes": [
+    {
+      "route": "RTMPose+ST-GCN++",
+      "samples": 415,
+      "baseline_accuracy": 0.6240963855421687,
+      "coverage": 0.8746987951807229,
+      "unknown": 52,
+      "blocked_errors": 35,
+      "blocked_correct": 17,
+      "selective_accuracy": 0.6666666666666666,
+      "reason_totals": {
+        "implausible_bone": 1540,
+        "target_jump": 1352,
+        "torso_missing": 3236,
+        "too_few_joints": 764
+      }
+    },
+    {
+      "route": "YOLO-Pose+ST-GCN++",
+      "samples": 415,
+      "baseline_accuracy": 0.6,
+      "coverage": 0.7662650602409639,
+      "unknown": 97,
+      "blocked_errors": 51,
+      "blocked_correct": 46,
+      "selective_accuracy": 0.6383647798742138,
+      "reason_totals": {
+        "too_few_joints": 5026,
+        "torso_missing": 5088,
+        "target_jump": 2605
+      }
+    }
+  ],
+  "interpretation": "UNKNOWN is an abstention, not a correct prediction. Report coverage and selective accuracy together."
+}

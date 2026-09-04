@@ -1,5 +1,7 @@
 # 基于人体姿态的跌倒检测基准与系统原型
 
+> GitHub 交付版保留源码、配置模板、文档、演示素材和结果表；新增的大批实验图片及特征缓存暂缓上传，本地原文件保留。模型权重、原始数据集和虚拟环境需另行准备。
+
 本项目以统一数据、骨架接口、训练划分和评价指标比较跌倒检测路线，并为后续摄像头系统提供算法与软件基础。当前已完成 **7 个姿态/跟踪前端 × 3 个时序分类器的 21 路正交网格，以及两条 RTMPose + ByteTrack 消融，共 23 条路线**的四折 300 轮内部实验。下一阶段是设备接入、多人跟踪修复和现场数据验证。
 
 ## 快速查看结果
@@ -10,12 +12,14 @@
 - RTMPose + ByteTrack 独立重训与丢轨分析：[`docs/RTMPOSE_BYTETRACK_RETRAIN.md`](docs/RTMPOSE_BYTETRACK_RETRAIN.md)
 - RTMPose 正式系统演示与滑窗冒烟验证：[`docs/FINAL_SYSTEM_DEMO.md`](docs/FINAL_SYSTEM_DEMO.md)
 - 部署对齐滑窗训练、指标与复现：[`docs/SLIDING_WINDOW_TRAINING.md`](docs/SLIDING_WINDOW_TRAINING.md)
+- 困难负样本重训练消融：[`results/hard_negative_ablation/README.md`](results/hard_negative_ablation/README.md)
 - MMPose Hourglass52 环境与实验：[`docs/MMPOSE_HOURGLASS.md`](docs/MMPOSE_HOURGLASS.md)
 - 正式内部结果：[`results/benchmark_summary.csv`](results/benchmark_summary.csv)
 - 正式外部结果：[`results/mcfd_external_benchmark/summary.csv`](results/mcfd_external_benchmark/summary.csv)
 - 中文阶段报告：[`results/三路线阶段实验报告.md`](results/三路线阶段实验报告.md)
 - 错误与融合分析：[`results/mcfd_error_analysis/错误分析报告.md`](results/mcfd_error_analysis/错误分析报告.md)
-- 典型错误视频：`outputs/mcfd_error_cases/`
+- 错例归因说明：[`docs/MCFD_ERROR_VIDEO_REVIEW.md`](docs/MCFD_ERROR_VIDEO_REVIEW.md)
+- 可直接汇报的六段错例合辑：`outputs/mcfd_error_cases/mcfd_error_review_compilation.mp4`
 
 固定阈值 0.5 下的核心结果：
 
@@ -142,8 +146,8 @@ python -m app.cli `
 
 默认使用部署对齐的 `RTMPose + ST-GCN++` 四折滑窗权重，输出 `annotated.mp4`、
 `windows.jsonl`、`events.jsonl` 和 `summary.json`。默认使用 64 帧窗口、
-16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警；姿态有效率
-低于 50% 时输出 `UNKNOWN`。
+16 帧步长、连续 3 个窗口、至少 3/4 折模型同意才确认报警。系统会检查有效关节、
+躯干关节、异常长骨骼和目标中心跳变；窗口内可用姿态低于 50% 时输出 `UNKNOWN`。
 
 更完整的数据准备和复现实验步骤见 [`docs/REPRODUCE.md`](docs/REPRODUCE.md)。
 
@@ -152,7 +156,8 @@ python -m app.cli `
 - 若优先总体均衡，使用 RTMPose + ST-GCN++ 作为单路线基线。
 - 若优先少漏报，使用 YOLO-Pose + ST-GCN++，并在独立验证集校准阈值。
 - 算力允许时，对两条 ST-GCN++ 路线做概率平均；当前外部测试的 Balanced Accuracy 为 62.76%，略高于任一单路线。
-- 姿态完全缺失时必须输出 `UNKNOWN`、重试姿态检测或切换后端，不能把全零骨架直接分类。
+- 姿态缺失、骨架严重错位或目标跳变时必须输出 `UNKNOWN`，不能把低质量骨架当作正常结果。
+- 不默认逐帧混用 RTMPose 与 YOLO-Pose；分类器必须与其训练时的姿态分布一致，跨后端回退仅作为实验选项。
 - 报警应由多个连续滑动窗口确认，并保存报警前后的视频证据。
 
 系统模块、状态机和 JSON 接口见 [`docs/SYSTEM_DESIGN.md`](docs/SYSTEM_DESIGN.md)。
@@ -165,4 +170,5 @@ python -m app.cli `
 | [`docs/SLIDING_WINDOW_TRAINING.md`](docs/SLIDING_WINDOW_TRAINING.md) | 部署对齐滑窗数据、300 轮训练、指标与系统复测 |
 | [`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) | 正式协议、指标、结果和已知限制 |
 | [`docs/SYSTEM_DESIGN.md`](docs/SYSTEM_DESIGN.md) | 软件模块、在线流程、状态机和接口 |
+| [`docs/MCFD_ERROR_VIDEO_REVIEW.md`](docs/MCFD_ERROR_VIDEO_REVIEW.md) | 预测错例的骨架/分类归因与质量门控效果 |
 | [`DATA_SOURCES.md`](DATA_SOURCES.md) | 数据来源、许可、完整性与取舍 |

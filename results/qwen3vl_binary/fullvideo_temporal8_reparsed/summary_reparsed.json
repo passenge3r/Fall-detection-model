@@ -1,0 +1,17 @@
+{
+  "protocol": "Qwen3-VL zero-shot, audited placeholder reparsing",
+  "samples": 160,
+  "parse_errors": 0,
+  "metrics": {
+    "accuracy": 0.65625,
+    "precision": 1.0,
+    "recall": 0.3037974683544304,
+    "specificity": 1.0,
+    "f1": 0.46601941747572817,
+    "balanced_accuracy": 0.6518987341772152,
+    "tp": 24,
+    "tn": 81,
+    "fp": 0,
+    "fn": 55
+  }
+}

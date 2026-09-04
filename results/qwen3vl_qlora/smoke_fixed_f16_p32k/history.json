@@ -1,0 +1,19 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 2.4443825483322144,
+    "samples": 2,
+    "accuracy": 0.5,
+    "macro_f1": 0.5,
+    "balanced_accuracy": 0.5,
+    "recall": 0.0,
+    "specificity": 1.0,
+    "f1_fall": 0.0,
+    "f1_safe": 1.0,
+    "parse_errors": 1,
+    "tp": 0,
+    "tn": 1,
+    "fp": 0,
+    "fn": 0
+  }
+]

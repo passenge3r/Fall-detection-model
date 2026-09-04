@@ -1,0 +1,59 @@
+{
+  "method": "out-of-fold hard-negative oversampling",
+  "threshold": 0.8,
+  "extra_copies": 2,
+  "unique_hard_negative_sources": 110,
+  "original_samples": 1548,
+  "output_samples": 1988,
+  "leakage_rule": "duplicates are training-only; validation and test rows are unchanged",
+  "folds": {
+    "1": {
+      "original_train": 779,
+      "hard_negative_sources": 44,
+      "extra_training_samples": 88,
+      "augmented_train": 867,
+      "validation_unchanged": 513,
+      "test_unchanged": 256,
+      "hard_negative_subjects": {
+        "3": 8,
+        "4": 36
+      }
+    },
+    "2": {
+      "original_train": 658,
+      "hard_negative_sources": 52,
+      "extra_training_samples": 104,
+      "augmented_train": 762,
+      "validation_unchanged": 377,
+      "test_unchanged": 513,
+      "hard_negative_subjects": {
+        "1": 16,
+        "4": 36
+      }
+    },
+    "3": {
+      "original_train": 769,
+      "hard_negative_sources": 66,
+      "extra_training_samples": 132,
+      "augmented_train": 901,
+      "validation_unchanged": 402,
+      "test_unchanged": 377,
+      "hard_negative_subjects": {
+        "1": 16,
+        "2": 50
+      }
+    },
+    "4": {
+      "original_train": 890,
+      "hard_negative_sources": 58,
+      "extra_training_samples": 116,
+      "augmented_train": 1006,
+      "validation_unchanged": 256,
+      "test_unchanged": 402,
+      "hard_negative_subjects": {
+        "2": 50,
+        "3": 8
+      }
+    }
+  }
+}

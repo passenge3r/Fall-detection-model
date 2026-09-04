@@ -1,0 +1,181 @@
+{
+  "shape": [
+    1071,
+    3,
+    64,
+    17,
+    1
+  ],
+  "windows": 1071,
+  "horizons_seconds": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "positives": {
+    "1s": 52,
+    "2s": 76,
+    "3s": 92
+  },
+  "stages": {
+    "ADL": 943,
+    "PRE_FALL_1_2S": 24,
+    "PRE_FALL_0_1S": 52,
+    "PRE_FALL_2_3S": 16,
+    "EARLY_FALL_VIDEO": 36
+  },
+  "excluded_at_or_after_onset": 513,
+  "window_frames": 64,
+  "stride_frames": 16,
+  "finite": true,
+  "checks": {
+    "nested_labels_y1_le_y2_le_y3": true,
+    "all_fall_windows_strictly_pre_onset": true
+  },
+  "splits": {
+    "1": {
+      "train": {
+        "samples": 560,
+        "positives": {
+          "1s": 20,
+          "2s": 28,
+          "3s": 34
+        },
+        "subjects": [
+          "3",
+          "4"
+        ]
+      },
+      "val": {
+        "samples": 350,
+        "positives": {
+          "1s": 25,
+          "2s": 40,
+          "3s": 50
+        },
+        "subjects": [
+          "2"
+        ]
+      },
+      "test": {
+        "samples": 161,
+        "positives": {
+          "1s": 7,
+          "2s": 8,
+          "3s": 8
+        },
+        "subjects": [
+          "1"
+        ]
+      }
+    },
+    "2": {
+      "train": {
+        "samples": 465,
+        "positives": {
+          "1s": 16,
+          "2s": 18,
+          "3s": 18
+        },
+        "subjects": [
+          "1",
+          "4"
+        ]
+      },
+      "val": {
+        "samples": 256,
+        "positives": {
+          "1s": 11,
+          "2s": 18,
+          "3s": 24
+        },
+        "subjects": [
+          "3"
+        ]
+      },
+      "test": {
+        "samples": 350,
+        "positives": {
+          "1s": 25,
+          "2s": 40,
+          "3s": 50
+        },
+        "subjects": [
+          "2"
+        ]
+      }
+    },
+    "3": {
+      "train": {
+        "samples": 511,
+        "positives": {
+          "1s": 32,
+          "2s": 48,
+          "3s": 58
+        },
+        "subjects": [
+          "1",
+          "2"
+        ]
+      },
+      "val": {
+        "samples": 304,
+        "positives": {
+          "1s": 9,
+          "2s": 10,
+          "3s": 10
+        },
+        "subjects": [
+          "4"
+        ]
+      },
+      "test": {
+        "samples": 256,
+        "positives": {
+          "1s": 11,
+          "2s": 18,
+          "3s": 24
+        },
+        "subjects": [
+          "3"
+        ]
+      }
+    },
+    "4": {
+      "train": {
+        "samples": 606,
+        "positives": {
+          "1s": 36,
+          "2s": 58,
+          "3s": 74
+        },
+        "subjects": [
+          "2",
+          "3"
+        ]
+      },
+      "val": {
+        "samples": 161,
+        "positives": {
+          "1s": 7,
+          "2s": 8,
+          "3s": 8
+        },
+        "subjects": [
+          "1"
+        ]
+      },
+      "test": {
+        "samples": 304,
+        "positives": {
+          "1s": 9,
+          "2s": 10,
+          "3s": 10
+        },
+        "subjects": [
+          "4"
+        ]
+      }
+    }
+  }
+}

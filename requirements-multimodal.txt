@@ -1,0 +1,5 @@
+# Install after requirements.txt and requirements-api.txt.
+transformers>=5.0,<6
+accelerate>=1.10,<2
+# Only required when MULTIMODAL_ADAPTER_PATH is configured.
+peft>=0.18,<1

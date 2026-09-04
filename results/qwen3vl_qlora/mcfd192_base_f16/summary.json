@@ -1,0 +1,25 @@
+{
+  "protocol": "MCFD cameras 2/4/5/6/7/8, fixed balanced subset",
+  "adapter": null,
+  "samples": 192,
+  "seed": 20260805,
+  "frames": 16,
+  "max_pixels_per_frame": 32768,
+  "mean_inference_seconds": 2.2215705546875077,
+  "total_seconds": 511.04330780000055,
+  "metrics": {
+    "samples": 192,
+    "accuracy": 0.2916666666666667,
+    "macro_f1": 0.25606837606837607,
+    "balanced_accuracy": 0.29166666666666663,
+    "recall": 0.07291666666666667,
+    "specificity": 0.5104166666666666,
+    "f1_fall": 0.09333333333333334,
+    "f1_safe": 0.4188034188034188,
+    "parse_errors": 93,
+    "tp": 7,
+    "tn": 49,
+    "fp": 47,
+    "fn": 89
+  }
+}

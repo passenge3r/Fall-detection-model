@@ -29,6 +29,16 @@ def main() -> None:
     parser.add_argument("--min-positive-folds", type=int, default=3)
     parser.add_argument("--pose-threshold", type=float, default=0.2)
     parser.add_argument("--yolo-confidence", type=float, default=0.1)
+    parser.add_argument(
+        "--pose-fallback",
+        choices=("none", "auto"),
+        default="none",
+        help="Experimental: mix the alternate pose backend after a primary quality failure",
+    )
+    parser.add_argument("--min-valid-joints", type=int, default=5)
+    parser.add_argument("--min-torso-joints", type=int, default=2)
+    parser.add_argument("--max-bone-image-ratio", type=float, default=0.35)
+    parser.add_argument("--max-center-jump-ratio", type=float, default=0.25)
     parser.add_argument("--max-frames", type=int)
     parser.add_argument("--no-video", action="store_true")
     args = parser.parse_args()
@@ -44,6 +54,11 @@ def main() -> None:
         stride_frames=args.stride_frames,
         pose_threshold=args.pose_threshold,
         yolo_confidence=args.yolo_confidence,
+        pose_fallback=args.pose_fallback,
+        min_valid_joints=args.min_valid_joints,
+        min_torso_joints=args.min_torso_joints,
+        max_bone_image_ratio=args.max_bone_image_ratio,
+        max_center_jump_ratio=args.max_center_jump_ratio,
         decision_config=DecisionConfig(
             threshold=args.threshold,
             confirm_windows=args.confirm_windows,

@@ -15,9 +15,35 @@ wheels/
 outputs/
 vendor_sources/
 tmp/
+*.credentials.json
+*.secret.json
+
+# Local secrets, downloaded datasets, dependencies and generated packages.
+.env
+.env.*
+!.env.example
+node_modules/
+data/external/
+artifact_work/
+output/
+*.safetensors
+*.zip
+*.7z
+*.tar
+*.gz
+~$*
+reports/_teacher_report_render/
 
 # Local exploratory runs retained for traceability but not published.
 results/gcn_matrix/
 results/mcfd_external/
 results/pilot/
 results/smoke/
+results/ezviz_sdk_smoke/capture.mp4
+
+# Deferred experiment images and feature caches in the GitHub deliverable.
+results/**/*.jpg
+results/**/*.jpeg
+results/**/*.png
+results/**/*.webp
+results/**/*.npz

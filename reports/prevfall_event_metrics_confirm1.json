@@ -1,0 +1,2004 @@
+{
+  "route_root": "outputs\\prevfall_rtmpose_stgcnpp_300e_b128",
+  "confirm_windows": 1,
+  "results": {
+    "1s": {
+      "eligible_fall_events": 72,
+      "detected_fall_events": 69,
+      "event_recall": 0.9583333333333334,
+      "lead_time_seconds": {
+        "mean": 0.6115941884057972,
+        "median": 0.666667,
+        "min": 0.033333,
+        "max": 1.0
+      },
+      "adl_duration_hours": 0.39359258972222216,
+      "adl_false_alarm_episodes": 17,
+      "adl_false_alarm_episodes_per_hour": 43.19187008067846,
+      "adl_alert_window_rate": 0.010192081536652292,
+      "early_false_alarm_episodes_in_fall_videos": 35,
+      "per_video": [
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.933333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.633333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.333333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.633333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.666667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.733333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.366667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.5,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM3.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM3.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM3.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM3.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.4,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.266667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.433333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.433333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.033333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 5,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 2,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 120
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 119
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.733333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.766667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.866667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.0,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.733333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 0.966667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.866667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM5.mp4",
+          "detected": false,
+          "lead_seconds": null,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.133333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 3,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 2,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 6,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 6,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.0,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.566667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.666667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.633333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.733333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.166667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 2,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM7.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM7.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM7.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM7.mp4",
+          "detected": false,
+          "lead_seconds": null,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.266667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.266667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.066667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.1,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.033333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.566667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.666667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM8.mp4",
+          "detected": false,
+          "lead_seconds": null,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.966667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.866667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.0,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.466667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.8,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.333333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.166667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.633333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 0
+        }
+      ]
+    },
+    "2s": {
+      "eligible_fall_events": 72,
+      "detected_fall_events": 70,
+      "event_recall": 0.9722222222222222,
+      "lead_time_seconds": {
+        "mean": 1.4090476285714286,
+        "median": 1.65,
+        "min": 0.033333,
+        "max": 2.0
+      },
+      "adl_duration_hours": 0.39359258972222216,
+      "adl_false_alarm_episodes": 43,
+      "adl_false_alarm_episodes_per_hour": 109.25002432171611,
+      "adl_alert_window_rate": 0.029008232065856527,
+      "early_false_alarm_episodes_in_fall_videos": 45,
+      "per_video": [
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.0,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.666667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.9,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.4,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.3,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.9,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.2,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.8,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 0.366667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.033333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM3.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 7,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM3.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 6,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM3.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM3.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 1,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.0,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 1.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 1.666667,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 1.933333,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.433333,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.966667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 0.033333,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 8,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 8,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 120
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 119
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.933333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 1.5,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM5.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 8,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM5.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 3,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 1.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4",
+          "detected": true,
+          "lead_seconds": 1.933333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 1.9,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM5.mp4",
+          "detected": false,
+          "lead_seconds": null,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.666667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 3,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 2,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 6,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 6,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.666667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.633333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.733333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 1.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.066667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.166667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 10,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM7.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 1,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM7.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM7.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 3,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM7.mp4",
+          "detected": false,
+          "lead_seconds": null,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.8,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.266667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.6,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.633333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.566667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM8.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.666667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.633333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.733333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.966667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 0.966667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.933333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 1.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM9.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 2,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM9.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.833333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.533333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.4,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.233333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 1.9,
+          "early_false_episodes": 0
+        }
+      ]
+    },
+    "3s": {
+      "eligible_fall_events": 72,
+      "detected_fall_events": 72,
+      "event_recall": 1.0,
+      "lead_time_seconds": {
+        "mean": 2.287036986111111,
+        "median": 2.366667,
+        "min": 0.166667,
+        "max": 3.0
+      },
+      "adl_duration_hours": 0.39359258972222216,
+      "adl_false_alarm_episodes": 83,
+      "adl_false_alarm_episodes_per_hour": 210.87795392331248,
+      "adl_alert_window_rate": 0.08467267738141905,
+      "early_false_alarm_episodes_in_fall_videos": 54,
+      "per_video": [
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM1.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 103
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.766667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.0,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.666667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.833333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.433333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.233333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4",
+          "detected": true,
+          "lead_seconds": 2.133333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 50
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM2.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 1,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM2.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 36
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.4,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.3,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.9,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4",
+          "detected": true,
+          "lead_seconds": 2.8,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.8,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4",
+          "detected": true,
+          "lead_seconds": 1.966667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4",
+          "detected": true,
+          "lead_seconds": 2.1,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM3.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 27,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM3.mp4",
+          "false_alarm_episodes": 6,
+          "alert_windows": 17,
+          "windows": 39
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM3.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 17,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM3.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 5,
+          "windows": 71
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.533333,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.666667,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.733333,
+          "early_false_episodes": 4
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 3.0,
+          "early_false_episodes": 4
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.933333,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.033333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.566667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4",
+          "detected": true,
+          "lead_seconds": 2.7,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4",
+          "false_alarm_episodes": 6,
+          "alert_windows": 8,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4",
+          "false_alarm_episodes": 5,
+          "alert_windows": 11,
+          "windows": 83
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 120
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM4.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 119
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.866666,
+          "early_false_episodes": 3
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.9,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.666667,
+          "early_false_episodes": 4
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 3.0,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.833333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.6,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4",
+          "detected": true,
+          "lead_seconds": 2.566667,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM5.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 16,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM5.mp4",
+          "false_alarm_episodes": 3,
+          "alert_windows": 13,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM5.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 72
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.666666,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.933333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4",
+          "detected": true,
+          "lead_seconds": 3.0,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.966666,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.133333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.3,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM5.mp4",
+          "detected": true,
+          "lead_seconds": 0.533333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4",
+          "detected": true,
+          "lead_seconds": 2.266667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 3,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 2,
+          "windows": 51
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 9,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 9,
+          "windows": 60
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.066667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.2,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.166667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.266667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.766667,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.333333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4",
+          "detected": true,
+          "lead_seconds": 2.733333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4",
+          "detected": true,
+          "lead_seconds": 0.166667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 20,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM7.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 14,
+          "windows": 80
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM7.mp4",
+          "false_alarm_episodes": 0,
+          "alert_windows": 0,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM7.mp4",
+          "false_alarm_episodes": 1,
+          "alert_windows": 4,
+          "windows": 91
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.433333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 1.866667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 1.133333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4",
+          "detected": true,
+          "lead_seconds": 2.966666,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4",
+          "detected": true,
+          "lead_seconds": 2.366667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4",
+          "detected": true,
+          "lead_seconds": 1.7,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4",
+          "detected": true,
+          "lead_seconds": 0.566667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM8.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 2,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM8.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 3,
+          "windows": 40
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM8.mp4",
+          "false_alarm_episodes": 4,
+          "alert_windows": 9,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM8.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 3,
+          "windows": 65
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.733333,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.833333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.7,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.8,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.033333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.033333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4",
+          "detected": true,
+          "lead_seconds": 3.0,
+          "early_false_episodes": 1
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4",
+          "detected": true,
+          "lead_seconds": 2.066667,
+          "early_false_episodes": 2
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM9.mp4",
+          "false_alarm_episodes": 3,
+          "alert_windows": 7,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM9.mp4",
+          "false_alarm_episodes": 3,
+          "alert_windows": 7,
+          "windows": 44
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM9.mp4",
+          "false_alarm_episodes": 2,
+          "alert_windows": 2,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM9.mp4",
+          "false_alarm_episodes": 7,
+          "alert_windows": 7,
+          "windows": 88
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.366667,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.6,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.933333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.833333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4",
+          "detected": true,
+          "lead_seconds": 3.0,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.3,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.233333,
+          "early_false_episodes": 0
+        },
+        {
+          "video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4",
+          "detected": true,
+          "lead_seconds": 2.433333,
+          "early_false_episodes": 0
+        }
+      ]
+    }
+  }
+}

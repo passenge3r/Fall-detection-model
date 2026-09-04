@@ -190,7 +190,8 @@ class STGCNPP(nn.Module):
         nn.init.normal_(self.fc.weight, 0, 0.01)
         nn.init.constant_(self.fc.bias, 0)
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
+    def forward_features(self, x: torch.Tensor) -> torch.Tensor:
+        """Return the pooled skeleton representation before dropout/classification."""
         n, c, t, v, m = x.shape
         x = x.permute(0, 4, 3, 1, 2).contiguous().view(n * m, v * c, t)
         x = self.data_bn(x)
@@ -198,6 +199,10 @@ class STGCNPP(nn.Module):
         for block in self.blocks:
             x = block(x)
         x = x.view(n, m, x.size(1), -1).mean(-1).mean(1)
+        return x
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        x = self.forward_features(x)
         return self.fc(self.dropout(x))
 
 

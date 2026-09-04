@@ -1,0 +1,27 @@
+{
+  "output": "reports\\prevfall_prefall_success_subject1.mp4",
+  "source_video": "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4",
+  "held_out_subject": 1,
+  "fold": 1,
+  "official_label": "fall",
+  "official_fall_onset_frame": 523,
+  "fps": 30.00000096308189,
+  "first_alert_lead_seconds": {
+    "2s": 1.9999999357945426,
+    "3s": 1.9999999357945426,
+    "1s": 0.9333333033707866
+  },
+  "thresholds": {
+    "1s": 0.4902987778186798,
+    "2s": 0.5754632353782654,
+    "3s": 0.6453288197517395
+  },
+  "detected_within_horizon": {
+    "1s": true,
+    "2s": true,
+    "3s": true
+  },
+  "false_alert": false,
+  "evaluation_stride_frames": 16,
+  "codec": "H.264/yuv420p"
+}

@@ -1,0 +1,756 @@
+﻿video_path,subject,fold,video_label,window_path,clip_start_seconds,clip_end_seconds,lead_seconds,skeleton_probability,skeleton_threshold,action_class,fall_stage,risk_level,confidence,qwen_positive,review_outcome,summary_zh,evidence,latency_seconds,model_output_valid,raw_output
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4,4,4,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM4.mp4#f832-895,27.833332999999996,32.333332999999996,,0.4011629521846771,0.010496225208044052,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站立在房间里，身体挺直，没有移动。,"A person is standing in a room, facing the camera. They are wearing a black shirt and dark pants. Their posture is upright, and they are not moving. The person is standing still, with their arms slightly bent and their legs apart.",14.907225400000243,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a black shirt and dark pants. Their posture is upright, and they are not moving. The person is standing still, with their arms slightly bent and their legs apart."",
+  ""summary_zh"": ""一个人站立在房间里，身体挺直，没有移动。""
+}"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM6.mp4#f672-735,22.499998,26.999998,,0.13032923638820648,0.07436475157737732,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站立在房间里,"A person is standing in a room, facing the camera. They are wearing a black shirt, gray pants, and yellow shoes. Their posture is upright, and they are not moving or leaning.",4.858633899999404,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room, facing the camera. They are wearing a black shirt, gray pants, and yellow shoes. Their posture is upright, and they are not moving or leaning."",
+  ""summary_zh"": ""一个人站立在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4,7,7,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLFM7.mp4#f0-63,0.09999999999999964,4.6,,1.0,0.9757722616195679,standing,normal,LOW,0.98,0,NOT_CORROBORATED,一个人站在房间中央，,"A person is standing in the middle of a room, facing a whiteboard. The person is wearing a grey shirt and dark pants. The room has a carpeted floor with yellow markers on it. There are tables and chairs in the room, and a projector is mount",5.640206200001558,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.98,
+  ""evidence"": ""A person is standing in the middle of a room, facing a whiteboard. The person is wearing a grey shirt and dark pants. The room has a carpeted floor with yellow markers on it. There are tables and chairs in the room, and a projector is mounted on the ceiling."",
+  ""summary_zh"": ""一个人站在房间中央，"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4,4,4,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM4.mp4#f1104-1167,36.9,41.4,,0.10764690488576889,0.010496225208044052,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,"A person is standing in a room with a whiteboard and a table. The person is wearing a black shirt and pants, and white shoes. The person is facing the wall and appears to be standing still. The person's posture is upright and the arms are r",5.578542199998992,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is wearing a black shirt and pants, and white shoes. The person is facing the wall and appears to be standing still. The person's posture is upright and the arms are relaxed."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_delirium/CLSM6.mp4#f656-719,21.966665,26.466665,,0.26942145824432373,0.07436475157737732,standing,normal,LOW,0.99,0,NOT_CORROBORATED,站立,"A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their posture is upright. The person's feet are on the floor, and they are not moving or leaning.",5.0134823999997025,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their posture is upright. The person's feet are on the floor, and they are not moving or leaning."",
+  ""summary_zh"": ""站立""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGFM6.mp4#f608-671,20.366667,24.866667,,0.11064232140779495,0.07436475157737732,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be stationary.,4.915634899998622,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and desks. The person is wearing a black shirt and gray pants. The person is facing the camera and appears to be stationary."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4,6,6,0,data/raw/PreVFall/v4_video_csv/Pre-VFall/confusion_nph/CGSM6.mp4#f576-639,19.3,23.8,,0.08722836524248123,0.07436475157737732,standing,normal,LOW,0.99,0,NOT_CORROBORATED,一个人站在房间里,"A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their posture is upright. There are yellow markers on the floor around the person, and the person is not moving or changing position.",5.348696999999447,True,"```json
+{
+  ""class"": ""standing"",
+  ""fall_stage"": ""normal"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""A person is standing in a room with a whiteboard and a table. The person is facing the camera, and their posture is upright. There are yellow markers on the floor around the person, and the person is not moving or changing position."",
+  ""summary_zh"": ""一个人站在房间里""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM1.mp4#f448-511,15.033332000000001,19.533332,0.700000,0.9690552353858948,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前摔倒,"a person is standing in a room, then bends forward and falls to the floor.",4.1491308999993635,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then bends forward and falls to the floor."",
+  ""summary_zh"": ""人向前摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM2.mp4#f224-287,7.566667000000001,12.066667,0.333333,0.9842479228973389,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前摔倒,"a person is walking towards the floor, then suddenly falls forward, with their body moving downward and their arms extended.",4.389019000000189,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the floor, then suddenly falls forward, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人向前摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM3.mp4#f432-495,14.5,19.0,0.400000,0.8392863869667053,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前摔倒在地,"a person is standing in a room, then bends forward and falls to the floor.",4.143441399999574,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then bends forward and falls to the floor."",
+  ""summary_zh"": ""人向前摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM4.mp4#f656-719,21.966665,26.466665,0.733333,0.9999997615814209,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,一个人在房间内摔倒,"a person is standing in a room, then bends down and falls to the floor.",4.073281900000438,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then bends down and falls to the floor."",
+  ""summary_zh"": ""一个人在房间内摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM5.mp4#f480-543,16.099999,20.599999,0.533333,0.9860180616378784,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.469263000000865,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM6.mp4#f432-495,14.5,19.0,1.000000,0.9533368349075317,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.29466820000016,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM8.mp4#f352-415,11.833331999999999,16.333332,0.600000,0.9262093901634216,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person in a green jacket is standing in a room, then suddenly bends forward and falls to the floor.",4.292845300000408,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person in a green jacket is standing in a room, then suddenly bends forward and falls to the floor."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM9.mp4#f400-463,13.433332999999998,17.933332999999998,0.766667,0.9999064207077026,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent.",4.475226000000475,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM1.mp4#f432-495,14.499998999999999,18.999999,0.933333,0.8752071261405945,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,男子摔倒在地,"a man in a grey hoodie and black pants is standing in a room with a whiteboard and a table. He then bends down and falls to the floor, with his hands on the ground and his body in a downward position.",5.4443032999988645,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a man in a grey hoodie and black pants is standing in a room with a whiteboard and a table. He then bends down and falls to the floor, with his hands on the ground and his body in a downward position."",
+  ""summary_zh"": ""男子摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM2.mp4#f208-271,7.033332,11.533332,0.766667,0.6610921025276184,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is seen in the middle of a room, then suddenly falls to the floor, with their body in a downward position.",4.552230200000849,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen in the middle of a room, then suddenly falls to the floor, with their body in a downward position."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM3.mp4#f432-495,14.5,19.0,0.533333,0.7476263642311096,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.605387800000244,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM4.mp4#f656-719,21.966667,26.466667,0.766667,0.9999997615814209,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person is seen bending down and then falling to the floor, with their body moving downward in a sudden motion.",4.446516599999086,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen bending down and then falling to the floor, with their body moving downward in a sudden motion."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM5.mp4#f480-543,16.099999,20.599999,0.800000,0.990415096282959,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.475136299999576,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM6.mp4#f448-511,15.033332999999999,19.533333,0.600000,0.9962360262870789,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人从站立姿势摔倒在地,"a person is seen falling from a standing position to the floor, with their body in mid-fall and arms outstretched.",4.64498790000107,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen falling from a standing position to the floor, with their body in mid-fall and arms outstretched."",
+  ""summary_zh"": ""人从站立姿势摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM7.mp4#f480-543,16.1,20.6,0.266667,0.9992910623550415,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.539331999998467,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM8.mp4#f352-415,11.833333,16.333333,0.700000,0.9715555906295776,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person in a green shirt and black shorts is seen bending down and then falling to the floor, with their body moving downward in a sudden motion.",4.719459700001607,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person in a green shirt and black shorts is seen bending down and then falling to the floor, with their body moving downward in a sudden motion."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFSM9.mp4#f416-479,13.966666,18.466666,0.466667,0.9999986886978149,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a horizontal position.",4.576151500001288,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a horizontal position."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM1.mp4#f400-463,13.433332,17.933332,0.600000,0.9397398829460144,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.4594426000003295,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM2.mp4#f256-319,8.633333,13.133333,0.633333,0.457290381193161,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向镜头走，突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.754286700001103,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人向镜头走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM3.mp4#f432-495,14.5,19.0,0.600000,0.8710952401161194,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向镜头走，突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.7099727999993775,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人向镜头走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM4.mp4#f672-735,22.5,27.0,0.533333,0.9999970197677612,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person is bending over and then falls to the floor, with their body moving downward abruptly.",4.214515499999834,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is bending over and then falls to the floor, with their body moving downward abruptly."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM5.mp4#f512-575,17.166667,21.666667,0.866667,0.9757575392723083,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent.",4.496762700000545,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM6.mp4#f448-511,15.033332000000001,19.533332,0.566667,0.9933369159698486,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.5520980000001146,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM7.mp4#f432-495,14.5,19.0,0.266667,0.9896824955940247,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent.",4.543831200000568,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their arms extended and legs bent."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM8.mp4#f336-399,11.3,15.8,0.566667,0.9548192024230957,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly bends forward and falls to the floor.",4.412898700000369,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly bends forward and falls to the floor."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSFM9.mp4#f448-511,15.033332999999999,19.533333,0.800000,0.9791499972343445,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.572174000000814,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM1.mp4#f416-479,13.966666,18.466666,0.700000,0.999518871307373,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly bends forward and falls to the floor.",4.230273299999681,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly bends forward and falls to the floor."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM2.mp4#f256-319,8.633332,13.133332,0.833333,0.9562795758247375,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向墙走，突然摔倒,"a person is walking towards the wall, then suddenly falls to the floor, with their body in a downward motion.",4.5570877000009204,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the wall, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人向墙走，突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM3.mp4#f432-495,14.499998999999999,18.999999,0.866667,0.999920129776001,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.357229999999618,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM4.mp4#f672-735,22.499998,26.999998,0.866667,0.9990060925483704,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒,"a person is bending over and then falling to the floor, with their body moving downward in a sudden motion.",4.39286440000069,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is bending over and then falling to the floor, with their body moving downward in a sudden motion."",
+  ""summary_zh"": ""人突然摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM5.mp4#f512-575,17.166665,21.666665,0.833333,0.9567320942878723,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.551045000000158,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM6.mp4#f448-511,15.033332999999999,19.533333,0.666667,0.998514711856842,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is seen in a room, then suddenly falls to the floor, with their body in a downward motion.",4.475453099999868,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM7.mp4#f448-511,15.033332000000001,19.533332,0.066667,0.9995781779289246,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.495635900000707,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM8.mp4#f336-399,11.3,15.8,0.666667,0.9717134833335876,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人从站立姿势摔倒在地,"a person in a green shirt and black shorts is seen bending over and then falling to the floor, with their body moving downward from a standing position.",4.805161499998576,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person in a green shirt and black shorts is seen bending over and then falling to the floor, with their body moving downward from a standing position."",
+  ""summary_zh"": ""人从站立姿势摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_side/FDSSM9.mp4#f448-511,15.033332999999999,19.533333,0.700000,0.9747279286384583,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.410603100001026,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM1.mp4#f400-463,13.433332999999998,17.933332999999998,0.833333,0.9113580584526062,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前走，然后摔倒在地,"a person is walking towards the floor, then bends down and falls on the floor.",4.267447900001571,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the floor, then bends down and falls on the floor."",
+  ""summary_zh"": ""人向前走，然后摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM2.mp4#f256-319,8.633333,13.133333,0.666667,0.4722745716571808,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前走并摔倒,"a person is walking towards the floor and then falls forward, with their body transitioning from standing to lying on the floor.",4.574166700000205,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the floor and then falls forward, with their body transitioning from standing to lying on the floor."",
+  ""summary_zh"": ""人向前走并摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM3.mp4#f368-431,12.366667,16.866667,0.266667,0.9999997615814209,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前摔倒,"a person is walking towards the camera, then suddenly falls forward onto the floor, with their arms extended and body in a downward position.",4.62961450000148,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls forward onto the floor, with their arms extended and body in a downward position."",
+  ""summary_zh"": ""人向前摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM4.mp4#f608-671,20.366667,24.866667,0.700000,1.0,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人摔倒在地,a person is bending down and then falling to the floor,4.028920500000822,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is bending down and then falling to the floor"",
+  ""summary_zh"": ""人摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM5.mp4#f528-591,17.7,22.2,0.533333,0.8844584226608276,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.579003700000612,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM6.mp4#f496-559,16.633333,21.133333,0.633333,0.9999516010284424,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.453854299999875,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM7.mp4#f448-511,15.033332000000001,19.533332,0.833333,0.9780707955360413,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前走，突然摔倒在地,"a person is walking towards the camera, then suddenly falls forward onto the floor, with their body in a downward motion.",4.566259199998967,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls forward onto the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人向前走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFFM9.mp4#f416-479,13.966667000000001,18.466667,0.333333,0.9995597004890442,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,一个人突然摔倒在地板上,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.5340114000009635,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""一个人突然摔倒在地板上""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM1.mp4#f400-463,13.433332999999998,17.933332999999998,0.633333,0.9602809548377991,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person wearing a mask is standing in a room, then suddenly falls to the ground, with their body moving downward.",4.487710400000651,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person wearing a mask is standing in a room, then suddenly falls to the ground, with their body moving downward."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM2.mp4#f256-319,8.633333,13.133333,0.733333,0.533004641532898,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is seen in a room, then suddenly bends forward and falls to the floor, with their body moving downward.",4.595237999999881,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen in a room, then suddenly bends forward and falls to the floor, with their body moving downward."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM3.mp4#f368-431,12.366666000000002,16.866666000000002,0.433333,0.9996931552886963,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.562782799999695,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM4.mp4#f592-655,19.833332,24.333332,1.000000,0.9999994039535522,0.010496225208044052,lying_sleeping,lying_sleeping,LOW,0.99,0,NOT_CORROBORATED,人躺在地上，身体稳定，手臂伸向地面。,"a person is lying on the floor, with their body positioned on the ground, and their arms are extended towards the floor. The person's head is down, and their legs are bent, indicating a stable or intentional lying posture.",5.687317800000528,True,"```json
+{
+  ""class"": ""lying_sleeping"",
+  ""fall_stage"": ""lying_sleeping"",
+  ""risk"": ""low"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is lying on the floor, with their body positioned on the ground, and their arms are extended towards the floor. The person's head is down, and their legs are bent, indicating a stable or intentional lying posture."",
+  ""summary_zh"": ""人躺在地上，身体稳定，手臂伸向地面。"""
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM5.mp4#f528-591,17.7,22.2,0.700000,0.967070996761322,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and arms extended.",4.612386599999809,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM6.mp4#f496-559,16.633332,21.133332,0.733333,0.9995297193527222,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended.",4.493645999998989,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body moving downward and their arms extended."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM7.mp4#f448-511,15.033332000000001,19.533332,0.766667,0.9968050718307495,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is seen in a room, then suddenly falls to the floor, with their body in a downward motion.",4.50687409999955,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM8.mp4#f256-319,8.633333,13.133333,0.966667,0.5826653242111206,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person in a green hoodie and black shorts is standing in a room with a whiteboard and a table. The person then bends forward and falls to the floor, with their body moving downward in a sudden motion.",5.328942400001324,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person in a green hoodie and black shorts is standing in a room with a whiteboard and a table. The person then bends forward and falls to the floor, with their body moving downward in a sudden motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_forward/FWFSM9.mp4#f416-479,13.966667000000001,18.466667,0.166667,0.9999316930770874,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body extending forward and arms outstretched.",4.378542099999322,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body extending forward and arms outstretched."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM1.mp4#f480-543,16.1,20.6,0.800000,0.9600865244865417,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the ground, with their body in a downward position.",4.403970699999263,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the ground, with their body in a downward position."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM2.mp4#f304-367,10.233333,14.733333,0.366667,0.7324846386909485,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前走，突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a prone position.",4.41351030000078,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a prone position."",
+  ""summary_zh"": ""人向前走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM3.mp4#f400-463,13.433332999999998,17.933332999999998,0.433333,0.9294096231460571,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.542616500000804,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM4.mp4#f656-719,21.966667,26.466667,0.733333,0.9999860525131226,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向地面摔倒,"a person is walking towards a yellow sticky note on the floor, then bends down and falls to the ground.",4.348319900000206,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards a yellow sticky note on the floor, then bends down and falls to the ground."",
+  ""summary_zh"": ""人向地面摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM6.mp4#f528-591,17.7,22.2,0.600000,0.12017327547073364,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a horizontal position.",4.408563400000276,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a horizontal position."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM7.mp4#f480-543,16.099999,20.599999,0.100000,0.9993745684623718,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前走，突然摔倒在地,"a person is walking towards the camera, then suddenly bends forward and falls to the floor.",4.342812699998831,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly bends forward and falls to the floor."",
+  ""summary_zh"": ""人向前走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM8.mp4#f256-319,8.633333,13.133333,0.866667,0.6984986662864685,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly bends forward and falls to the floor.",4.3758085999998,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly bends forward and falls to the floor."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM9.mp4#f432-495,14.5,19.0,0.633333,0.9994290471076965,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向镜头走，突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.674509600001329,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人向镜头走，突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4,1,1,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM1.mp4#f480-543,16.1,20.6,0.533333,0.9994958639144897,0.4902987778186798,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.5796186000006855,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4,2,2,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM2.mp4#f320-383,10.766667,15.266667,0.500000,0.9998869895935059,0.3069245219230652,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion.",4.491671199999473,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the camera, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4,3,3,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM3.mp4#f416-479,13.966667000000001,18.466667,0.033333,0.9999992847442627,0.2673068940639496,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is walking in a room, then suddenly falls to the floor, with their body in a downward motion.",4.633953999998994,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4,4,4,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM4.mp4#f656-719,21.966665,26.466665,0.966667,0.9999966621398926,0.010496225208044052,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人从站立姿势摔倒在地,"a person is seen bending over and then falling to the floor, with their body transitioning from a standing position to a lying position on the floor.",4.8199155000002065,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is seen bending over and then falling to the floor, with their body transitioning from a standing position to a lying position on the floor."",
+  ""summary_zh"": ""人从站立姿势摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4,5,5,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM5.mp4#f512-575,17.166667,21.666667,0.133333,0.9826023578643799,0.49445539712905884,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,男子摔倒在地,"a man is standing in a room, then he falls to the floor.",4.136013900000762,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a man is standing in a room, then he falls to the floor."",
+  ""summary_zh"": ""男子摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4,6,6,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM6.mp4#f544-607,18.233333,22.733333,0.166667,0.9054954051971436,0.07436475157737732,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.640858100001424,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4,7,7,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM7.mp4#f480-543,16.099999,20.599999,0.033333,0.9991338849067688,0.9757722616195679,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人向前摔倒,"a person is walking towards the floor, then suddenly falls forward, with their body in a downward motion, and their hands are extended towards the floor.",4.751348399999188,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking towards the floor, then suddenly falls forward, with their body in a downward motion, and their hands are extended towards the floor."",
+  ""summary_zh"": ""人向前摔倒""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4,8,8,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM8.mp4#f256-319,8.633333,13.133333,1.000000,0.7538567185401917,0.5460038781166077,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion.",4.432975099998657,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is standing in a room, then suddenly falls to the floor, with their body in a downward motion."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"
+data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4,9,9,1,data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSSM9.mp4#f416-479,13.966667000000001,18.466667,0.833333,0.9997745156288147,0.9646907448768616,falling,falling,HIGH,0.99,1,CORROBORATED_FALL,人突然摔倒在地,"a person is walking in a room, then suddenly falls to the floor, with their body in a downward position.",4.4439744999999675,True,"```json
+{
+  ""class"": ""falling"",
+  ""fall_stage"": ""falling"",
+  ""risk"": ""high"",
+  ""confidence"": 0.99,
+  ""evidence"": ""a person is walking in a room, then suddenly falls to the floor, with their body in a downward position."",
+  ""summary_zh"": ""人突然摔倒在地""
+}
+```"

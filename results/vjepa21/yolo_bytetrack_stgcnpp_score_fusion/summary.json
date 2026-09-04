@@ -1,0 +1,114 @@
+{
+  "method": "per-fold validation-selected score fusion; test data never selects weights",
+  "threshold": 0.5,
+  "skeleton_only": {
+    "accuracy": 0.89375,
+    "precision": 0.8690476190476191,
+    "recall": 0.9240506329113924,
+    "specificity": 0.8641975308641975,
+    "f1": 0.8957055214723927,
+    "balanced_accuracy": 0.8941240818877949,
+    "tp": 73,
+    "tn": 70,
+    "fp": 11,
+    "fn": 6
+  },
+  "vjepa_only": {
+    "accuracy": 0.70625,
+    "precision": 0.6777777777777778,
+    "recall": 0.7721518987341772,
+    "specificity": 0.6419753086419753,
+    "f1": 0.7218934911242604,
+    "balanced_accuracy": 0.7070636036880762,
+    "tp": 61,
+    "tn": 52,
+    "fp": 29,
+    "fn": 18
+  },
+  "fused": {
+    "accuracy": 0.7875,
+    "precision": 0.7142857142857143,
+    "recall": 0.9493670886075949,
+    "specificity": 0.6296296296296297,
+    "f1": 0.8152173913043479,
+    "balanced_accuracy": 0.7894983591186122,
+    "tp": 75,
+    "tn": 51,
+    "fp": 30,
+    "fn": 4
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "skeleton_weight": 0.15000000000000002,
+      "vjepa_weight": 0.85,
+      "validation_selection": "maximum F1, then balanced accuracy, fixed threshold 0.5",
+      "test": {
+        "accuracy": 0.53125,
+        "precision": 0.5161290322580645,
+        "recall": 1.0,
+        "specificity": 0.0625,
+        "f1": 0.6808510638297872,
+        "balanced_accuracy": 0.53125,
+        "tp": 16,
+        "tn": 1,
+        "fp": 15,
+        "fn": 0
+      }
+    },
+    {
+      "fold": 2,
+      "skeleton_weight": 1.0,
+      "vjepa_weight": 0.0,
+      "validation_selection": "maximum F1, then balanced accuracy, fixed threshold 0.5",
+      "test": {
+        "accuracy": 0.875,
+        "precision": 0.8275862068965517,
+        "recall": 0.96,
+        "specificity": 0.782608695652174,
+        "f1": 0.888888888888889,
+        "balanced_accuracy": 0.8713043478260869,
+        "tp": 24,
+        "tn": 18,
+        "fp": 5,
+        "fn": 1
+      }
+    },
+    {
+      "fold": 3,
+      "skeleton_weight": 0.45,
+      "vjepa_weight": 0.55,
+      "validation_selection": "maximum F1, then balanced accuracy, fixed threshold 0.5",
+      "test": {
+        "accuracy": 0.8604651162790697,
+        "precision": 0.8,
+        "recall": 0.9523809523809523,
+        "specificity": 0.7727272727272727,
+        "f1": 0.8695652173913043,
+        "balanced_accuracy": 0.8625541125541125,
+        "tp": 20,
+        "tn": 17,
+        "fp": 5,
+        "fn": 1
+      }
+    },
+    {
+      "fold": 4,
+      "skeleton_weight": 1.0,
+      "vjepa_weight": 0.0,
+      "validation_selection": "maximum F1, then balanced accuracy, fixed threshold 0.5",
+      "test": {
+        "accuracy": 0.8108108108108109,
+        "precision": 0.75,
+        "recall": 0.8823529411764706,
+        "specificity": 0.75,
+        "f1": 0.8108108108108107,
+        "balanced_accuracy": 0.8161764705882353,
+        "tp": 15,
+        "tn": 15,
+        "fp": 5,
+        "fn": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "shape": [
+    580,
+    3,
+    64,
+    17,
+    1
+  ],
+  "windows": 580,
+  "horizons_seconds": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "positives": {
+    "1s": 12,
+    "2s": 24,
+    "3s": 35
+  },
+  "stages": {
+    "ADL": 412,
+    "EARLY_FALL_VIDEO": 133,
+    "PRE_FALL_2_3S": 11,
+    "PRE_FALL_1_2S": 12,
+    "PRE_FALL_0_1S": 12
+  },
+  "excluded_at_or_after_onset": 35,
+  "window_frames": 64,
+  "stride_frames": 16,
+  "finite": true,
+  "checks": {
+    "nested_labels_y1_le_y2_le_y3": true,
+    "all_fall_windows_strictly_pre_onset": true
+  },
+  "splits": {}
+}

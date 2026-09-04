@@ -1,0 +1,11 @@
+path,label,prediction,raw_output
+Subject 4/ADL/01.mp4,0,0,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""No visible uncontrolled or abrupt downward transition toward the floor.""
+}"
+Subject 4/ADL/02.mp4,0,-1,"{
+  ""class"": ""SAFE"",
+  ""risk"": ""low"",
+  ""reason"": ""The person is standing still and not showing any signs of falling or uncontrolled movement.""
+}"

@@ -1,0 +1,16 @@
+{
+  "protocol": "first true-horizon OOF alert for fall videos; first OOF alert for ADL videos",
+  "horizon": "2s",
+  "clip_seconds": 4.5,
+  "post_seconds": 2.5,
+  "videos_total": 108,
+  "review_jobs": 85,
+  "skeleton_true_positive_videos": 70,
+  "skeleton_false_positive_videos": 15,
+  "skeleton_missed_fall_videos": 2,
+  "skeleton_misses": [
+    "data/raw/PreVFall/v4_video_csv/Pre-VFall/dizziness_fall_forward/FDFFM7.mp4",
+    "data/raw/PreVFall/v4_video_csv/Pre-VFall/weakness_fall_side/FWSFM5.mp4"
+  ],
+  "output": "data\\metadata\\prevfall_qwen_oof_triggers_2s_delayed25.csv"
+}
